@@ -60,7 +60,7 @@ The coefficient 0.6 and the graded matrices are editorial conventions, not stati
 
 ## Source coverage and limitations
 
-The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the additional source review, with [a readable review table](research-expansion.md). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately. The [Yashar programme review](yashar-review.md) records the official programme's mapping and remaining limits across all 20 questions.
+The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the earlier additional source review, with [a readable review table](research-expansion.md). The latest [targeted coverage review](coverage-review.md), including Arabic-language sources, records additions, replacements and withdrawn mappings from [coverage-review.json](coverage-review.json). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately. The [Yashar programme review](yashar-review.md) records the initial official-programme mapping across all 20 questions.
 
 This expansion draws on Israel Democracy Institute party profiles, Times of Israel reporting, Associated Press coverage, and historical Ynet reports. Sources document particular policy components rather than entire answer packages. Dated profiles and secondary reports are not substitutes for a comprehensive current manifesto. The earlier source investigation remains in [the archive](archive/agreement-scale-v1/compass-research.md); its old scoring rules are superseded.
 
@@ -90,10 +90,11 @@ for party in data['parties']:
     inferred = sum(c['status']=='I' or bool(c.get('inference')) for c in components)
     archived = sum(c['status']=='H' for c in components)
     gaps.append(f"| {party['ru']} | {sourced} | {inferred} | {archived} | {40-sourced-inferred} |\n")
-gaps.append("\nПоследний столбец относится к режиму без архивов. Вторичные источники и оценки включены по умолчанию; оценки можно отключить. Значение оценки основано только на указанном принципе или действии партии, а не на предполагаемой позиции по всему вопросу.\n\nНужны прямые и актуальные материалы по конкретным вопросам, особенно для Ликуда, Оцма Йехудит, ТААЛ и Резервистов. Присылайте ссылку, партию, тему и дату. [Обоснования дополнений](research-expansion.md), [компоненты](party-positions.csv), [вопросы](issues.html?lang=ru).\n")
+gaps.append("\nПоследний столбец относится к режиму без архивов. Вторичные источники и оценки включены по умолчанию; оценки можно отключить. Значение оценки основано только на указанном принципе или действии партии, а не на предполагаемой позиции по всему вопросу.\n\nНужны прямые и актуальные материалы по конкретным вопросам, особенно для Ликуда, Оцма Йехудит, ТААЛ и Религиозного сионизма. Присылайте ссылку, партию, тему и дату. [Последняя проверка, включая арабские источники](coverage-review.md), [обоснования предыдущих дополнений](research-expansion.md), [компоненты](party-positions.csv), [вопросы](issues.html?lang=ru).\n")
 (root/'source-gaps.md').write_text(''.join(gaps))
 expansion = json.loads((root/'research-expansion.json').read_text())
 review = ["# Дополнительные источники и выводы\n\nПроверено: 2026-09-29. R — вторичное описание позиции; H — исторический материал; I — редакционное предположение с коэффициентом 0,6, а не измеренной вероятностью. Записи, подтверждающие уже имеющуюся позицию, не дают дополнительных баллов.\n\n"]
+review.append('Последующая [проверка охвата](coverage-review.md) заменяет часть приведённых ниже первоначальных записей. Актуальные позиции находятся в compass-data.json.\n\n')
 for party in data['parties']:
     entries = [e for e in expansion['positions'] if e['party_id']==party['id']]
     if not entries: continue
@@ -105,3 +106,36 @@ for party in data['parties']:
         review.append(f"- **{e['question_id']} · {e['dimension_id']} · {e['status']} · {values}** — {rationale} {links}\n")
     review.append('\n')
 (root/'research-expansion.md').write_text(''.join(review))
+
+targeted = json.loads((root/'coverage-review.json').read_text())
+report = [f"# Targeted party-coverage review\n\nReviewed: {targeted['checked_at']}. Arabic-language research covers Hadash, Balad, Ta’al and Ra’am. Other additions focus on parties with sparse evidence. Counts below refer to documented policy components out of 40, **not match percentages**. Inferences are shown separately and discounted to 60%.\n\n"]
+report.append('| Party | Documented before | Documented now | Inferences before | Inferences now |\n|---|---:|---:|---:|---:|\n')
+for party in data['parties']:
+    components = [c for row in data['positions'] if row['party_id']==party['id'] for c in row['dimensions'].values()]
+    sourced = sum(c['status'] in ['P','S','R'] for c in components)
+    inferred = sum(c['status']=='I' or bool(c.get('inference')) for c in components)
+    before = targeted['baseline'][party['id']]
+    if (sourced, inferred) != (before['documented'], before['inferred']):
+        report.append(f"| {party['en']} | {before['documented']} | {sourced} | {before['inferred']} | {inferred} |\n")
+report.append('\n## Mappings and sources\n\nP = official policy; S = attributable statement; H = historical evidence, disabled by default. Nested I entries are separately labelled continuity assumptions. Replaced evidence is retained as `previous_evidence` in the generated dataset; it does not earn extra credit.\n\n')
+for party in data['parties']:
+    entries = [e for e in targeted['positions'] if e['party_id']==party['id']]
+    if not entries: continue
+    report.append(f"### {party['en']}\n\n")
+    for entry in entries:
+        values = entry.get('value') or ' / '.join(entry['values'])
+        links = ', '.join(f"[{sid}]({data['sources'][sid]['url']})" for sid in entry['source_ids'])
+        report.append(f"- **{entry['question_id']} · {entry['dimension_id']} · {entry['status']} · {values}** — {entry['rationale']} {links}\n")
+        if entry.get('inference'):
+            report.append(f"  Continuity inference (I, 0.6): {entry['inference']['rationale']}\n")
+    report.append('\n')
+report.append('## Withdrawn mappings\n\nThese details now remain unknown. Original records and removal reasons are preserved in `withdrawn_evidence`; opposition to annexation remains scored.\n\n')
+for entry in targeted.get('withdrawn_mappings', []):
+    report.append(f"- **{entry['party_id']} · {entry['question_id']} · {entry['dimension_id']}** — {entry['reason']}\n")
+report.append('\n## Limits and unresolved questions\n\n')
+report.extend(f"- {note}\n" for note in targeted['limitations'])
+report.append('\n## Sources reviewed\n\n| Source | Date | Language | Retrieval and attribution notes |\n|---|---|---|---|\n')
+for sid, source in targeted['sources'].items():
+    report.append(f"| [{source['title']}]({source['url']}) ({sid}) | {source.get('date') or 'Undated'} | {source.get('language', 'he')} | {source.get('note','')} |\n")
+report.append('\nAuthored records: [coverage-review.json](coverage-review.json). Full current coverage: [source-gaps.md](source-gaps.md). Each new mapping has an explanation in English, Hebrew and Russian in the application.\n')
+(root/'coverage-review.md').write_text(''.join(report))

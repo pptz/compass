@@ -2,6 +2,8 @@
 
 Проверено: 2026-09-29. R — вторичное описание позиции; H — исторический материал; I — редакционное предположение с коэффициентом 0,6, а не измеренной вероятностью. Записи, подтверждающие уже имеющуюся позицию, не дают дополнительных баллов.
 
+Последующая [проверка охвата](coverage-review.md) заменяет часть приведённых ниже первоначальных записей. Актуальные позиции находятся в compass-data.json.
+
 ## Ликуд
 
 - **Q8 · consumer_tool · R · competition** — The profile identifies competitive markets and limited government economic intervention. [IDI_LIKUD](https://en.idi.org.il/israeli-elections-and-parties/parties/likud/)

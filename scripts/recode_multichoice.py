@@ -129,6 +129,21 @@ for entry in expansion['positions']:
         if previous:
             evidence['previous_evidence'] = previous
         target[key] = evidence
+# Explicitly reviewed replacements can supersede earlier mappings, including
+# an inference now supported by a direct statement. Retain the audit trail.
+coverage_review = json.loads((root/'coverage-review.json').read_text())
+data['sources'].update(coverage_review['sources'])
+for entry in coverage_review.get('withdrawn_mappings', []):
+    row = next(p for p in positions if p['party_id']==entry['party_id'] and p['question_id']==entry['question_id'])
+    previous = row['dimensions'].pop(entry['dimension_id'])
+    row.setdefault('withdrawn_evidence', []).append({**entry, 'previous_evidence': previous})
+for entry in coverage_review['positions']:
+    target = next(p for p in positions if p['party_id']==entry['party_id'] and p['question_id']==entry['question_id'])['dimensions']
+    key = entry['dimension_id']
+    evidence = {k:v for k,v in entry.items() if k not in ['party_id','question_id','dimension_id']}
+    if key in target:
+        evidence['previous_evidence'] = target[key]
+    target[key] = evidence
 data['status_legend']['R'] = 'Reviewed secondary report or institutional profile; included by default; dates remain visible.'
 data['status_legend']['I'] = 'Explicit editorial inference from cited principles or conduct; discounted to 60% and separately switchable.'
 for party in data['parties']:

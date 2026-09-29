@@ -1,5 +1,7 @@
 # Yashar programme review
 
+Initial official-programme review. The subsequent [coverage review](coverage-review.md) adds a statehood statement and replaces the transport-authority inference with direct evidence, bringing current documented coverage to 16 of 40 components with 2 inferences. The table below preserves the initial programme-only findings.
+
 Reviewed on 29 September 2026 against all 20 quiz questions. The [ten-step agenda](https://yasharwitheisenkot.com/agenda_point/) and linked plans are official party proposals; undated pages are not presented as newly published manifestos. The inquiry proposal is a consultation draft.
 
 This review increases documented coverage from 9 to 14 of 40 components and adds 3 separately discounted inferences. It does not change the scoring formula. Unknown components continue to contribute no points.

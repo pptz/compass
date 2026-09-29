@@ -175,11 +175,45 @@ assertClose(yasharResult({Q9:'universal_core'},false).similarity,.375);
 assertClose(yasharResult({Q9:'autonomous'},false).similarity,0);
 assertClose(yasharResult({Q9:'universal_core'},false).documentedCoverage,.5);
 assertClose(yasharResult({Q2:'universal_military'},false).similarity,1);
-// Local discretion is an inference only; it does not supply a transport-service position.
-assertClose(yasharResult({Q6:'local_limited'}).similarity,.3);
-assertClose(yasharResult({Q6:'private_local'}).similarity,.3);
-assertClose(yasharResult({Q6:'local_limited'},false).similarity,0);
-assertClose(yasharResult({Q6:'local_limited'}).documentedCoverage,0);
+// A direct transport statement replaces the local-discretion inference, without
+// supplying an unknown service scale or double counting the earlier estimate.
+assertClose(yasharResult({Q6:'local_limited'}).similarity,.5);
+assertClose(yasharResult({Q6:'private_local'}).similarity,.5);
+assertClose(yasharResult({Q6:'local_limited'},false).similarity,.5);
+assertClose(yasharResult({Q6:'local_limited'}).documentedCoverage,.5);
+const reviewedResult = (party, answers, history=false, estimates=true) =>
+  score(data,answers,'long',history,Object.keys(answers),{},estimates).find(r=>r.party.id===party);
+// The Reservists explicitly allow either eight years or two terms.
+for (const option of ['two_terms','eight_years']) {
+  assertClose(reviewedResult('reservists',{Q14:option}).similarity,1);
+}
+assertClose(reviewedResult('reservists',{Q14:'elections'}).similarity,0);
+// Historical spending pledges do not become fully documented current positions.
+assertClose(reviewedResult('balad',{Q7:'progressive_expansion'}).similarity,.3);
+assertClose(reviewedResult('balad',{Q7:'progressive_expansion'},false,false).similarity,0);
+assertClose(reviewedResult('balad',{Q7:'progressive_expansion'},true).similarity,1);
+// The joint Hadash–Balad statement establishes opposition to compulsion only.
+for (const party of ['hadash','balad']) {
+  assertClose(reviewedResult(party,{Q19:'community_voluntary'},false,false).similarity,.5);
+  assertClose(reviewedResult(party,{Q19:'universal_military'},false,false).similarity,0);
+}
+// An umbrella-list response must not fill another member's missing position.
+assert.deepEqual(data.positions.find(p=>p.party_id==='raam' && p.question_id==='Q6').dimensions,{});
+for (const party of ['raam','hadash','balad']) {
+  const territory=data.positions.find(p=>p.party_id===party && p.question_id==='Q11');
+  assert(!territory.dimensions.territorial_route);
+  assert.equal(territory.dimensions.unilateral_sovereignty.value,'no');
+  assert.equal(territory.withdrawn_evidence[0].previous_evidence.value,'withdraw');
+}
+const reviewedEntries = require('../coverage-review.json').positions;
+assert.equal(new Set(reviewedEntries.map(e=>`${e.party_id}/${e.question_id}/${e.dimension_id}`)).size,reviewedEntries.length);
+for (const entry of reviewedEntries) {
+  const live=data.positions.find(p=>p.party_id===entry.party_id && p.question_id===entry.question_id).dimensions[entry.dimension_id];
+  assert.equal(live.status,entry.status);
+  assert.deepEqual(live.value || live.values,entry.value || entry.values);
+  for (const lang of ['en','he','ru']) assert(live.rationale_localized[lang]);
+}
+assert.equal(data.positions.find(p=>p.party_id==='yashar' && p.question_id==='Q6').dimensions.authority.previous_evidence.status,'I');
 // Explicit run IDs, including replacements, control both inclusion and weights.
 assertClose(score(weighted,{Q1:'one',Q2:'one',Q3:'three'},'short',false,['Q2','Q3'])[0].similarity,.5);
 assertClose(score(weighted,{Q1:'one',Q2:'one',Q3:'three'},'short',false,['Q3'])[0].similarity,0);

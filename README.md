@@ -42,7 +42,7 @@ To publish, follow [the GitHub Pages deployment instructions](DEPLOYMENT.md). Th
 - **Positions documented** excludes inferences and measures source completeness. Reviewed secondary reports are included by default. **Include reasoned estimates** is on by default and can be disabled independently of **Include historical sources**. Broad support (for example, allowing Shabbat transport) matches all compatible options equally without inventing a service scale or decision-making authority. The result card separates sourced and inferred contributions.
 - **Start again** clears answers and importance choices and restores the default evidence filter.
 
-The answer key remains a research draft. Low percentages can reflect incomplete source research as well as policy differences. They do not establish disagreement on unknown positions. Inferences have cited premises and multilingual explanations; see [the additional source review](research-expansion.md). The scoring tables are explicit editorial estimates, not scientific probabilities.
+The answer key remains a research draft. Low percentages can reflect incomplete source research as well as policy differences. They do not establish disagreement on unknown positions. Inferences have cited premises and multilingual explanations; see [the latest coverage review, including Arabic-language sources](coverage-review.md). The scoring tables are explicit editorial estimates, not scientific probabilities.
 
 To serve locally:
 
@@ -63,6 +63,7 @@ Authored inputs:
 - `topic-discussion.json`: multilingual open questions for the guide.
 - `evidence-additions.json`: reviewed additions to the source registry and party positions.
 - `research-expansion.json`: additional secondary sources, broad positions and explicitly labeled inferences. Source dates and prior evidence are retained.
+- `coverage-review.json`: targeted source review and explicit mapping corrections, with prior evidence preserved. [Readable report](coverage-review.md) lists coverage changes, sources and limitations.
 - `web/`: templates, styles, UI and scoring code.
 
 Rebuild the generated dataset, CSV, research report and two standalone pages:

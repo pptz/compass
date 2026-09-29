@@ -274,7 +274,9 @@
       "url": "https://www.altajamoa.org/نصوص-مؤسسة/2017/03/29/البرنامج-السياسي",
       "date": "2017-03-29",
       "type": "archive",
-      "note": "Official Arabic document. The page's own date is used."
+      "note": "Arabic text reread directly. Page bears 2017-03-29 but contains later references as well as older passages; revision dates are unclear. Kept historical, with separately labelled continuity inferences.",
+      "checked_at": "2026-09-29",
+      "language": "ar"
     },
     "DR": {
       "title": "Ynet: parties' responses on conscription",
@@ -294,7 +296,9 @@
       "url": "https://www.themiluimnikim.org.il/platform/",
       "date": null,
       "type": "party_program",
-      "note": "Component program; not presumed to be an agreed joint program with the Economic Party."
+      "note": "Full live programme reviewed on 2026-09-29, including service, crime, term limits and competition. Undated; not labelled as a new manifesto.",
+      "checked_at": "2026-09-29",
+      "language": "he"
     },
     "REG": {
       "title": "Platform discovery index",
@@ -568,6 +572,96 @@
       "type": "secondary_report",
       "accessed_at": "2026-09-29",
       "note": "Historical statement before the current party configuration; used only with the historical filter."
+    },
+    "AR_HB_SERVICE26": {
+      "title": "Al-Ittihad: Hadash–Balad statement against conscription",
+      "url": "https://alittihad44.com/الجماهير-العربية/news-2026-07-19-ninzrg",
+      "date": "2026-07-19",
+      "language": "ar",
+      "type": "party_statement",
+      "checked_at": "2026-09-29",
+      "note": "Joint statement explicitly attributed to these two parties; not generalized to Ta’al or Ra’am."
+    },
+    "AR_TAAL_INQUIRY": {
+      "title": "Radio Nas: Ahmad Tibi on an October 7 inquiry",
+      "url": "https://www.nasapp.net/article/r1xn4nd7zx",
+      "date": null,
+      "language": "ar",
+      "type": "interview",
+      "checked_at": "2026-09-29",
+      "note": "Direct interview; visible page lacks a publication date. Discussion concerns passage of the 2026 budget. Appointment mechanism not specified."
+    },
+    "AR_TAAL_POLICE25": {
+      "title": "Knooz: Tibi calls on police to fight criminal organizations",
+      "url": "https://www.knooznet.com/?app=article.show.86211",
+      "date": "2025-01-28",
+      "language": "ar",
+      "type": "news_report",
+      "checked_at": "2026-09-29",
+      "note": "Individual reactions are attributed separately. Opposition to banning a community organization does not establish a blanket position on Shin Bet assistance."
+    },
+    "AR_RAAM_CRIME26": {
+      "title": "Kul al-Arab: Abbas press conference on policing",
+      "url": "https://www.kul-alarab.com/Article/1125398",
+      "date": "2026-07-06",
+      "language": "ar",
+      "type": "news_report",
+      "checked_at": "2026-09-29",
+      "note": "Reported party-leader press conference; criticism of the proposed Shin Bet intervention is not treated as opposition to every possible intelligence role."
+    },
+    "AR_RAAM_BUDGET26": {
+      "title": "Radio Nas: Abbas opposes cuts to the five-year development plan",
+      "url": "https://www.nasapp.net/article/sj0diocf11g",
+      "date": null,
+      "language": "ar",
+      "type": "interview",
+      "checked_at": "2026-09-29",
+      "note": "Interview explicitly discusses 2026, but the visible page does not give a publication date. Protecting budgets does not establish a tax policy."
+    },
+    "AR_HADASH_ED26": {
+      "title": "Al-Ittihad: Hadash teachers’ faction education statement",
+      "url": "https://alittihad44.com/الجماهير-العربية/news-2026-08-30-qy3cla",
+      "date": "2026-08-30",
+      "language": "ar",
+      "type": "party_statement",
+      "checked_at": "2026-09-29",
+      "note": "Indexed Arabic statement from Hadash’s teachers’ faction. Scope is education; does not establish a nationwide fiscal package."
+    },
+    "YNET_TRANSPORT26": {
+      "title": "Ynet: parties’ responses on Shabbat transport",
+      "url": "https://www.ynet.co.il/news/elections2026/article/yokra14883243",
+      "date": "2026-08-31",
+      "language": "he",
+      "type": "news_report",
+      "checked_at": "2026-09-29",
+      "note": "Uses attributed party responses, not voter polling. Joint List response is not silently assigned to individual component parties."
+    },
+    "RZ_GAZA26": {
+      "title": "News1: Smotrich advocates Israeli government and settlements in Gaza",
+      "url": "https://www.news1.co.il/Archive/001-D-522346-00.html",
+      "date": "2026-08-16",
+      "language": "he",
+      "type": "news_report",
+      "checked_at": "2026-09-29",
+      "note": "Reported speech by the party leader; distinguishes his proposal from adopted government policy."
+    },
+    "STATEHOOD26": {
+      "title": "JDN: party leaders respond to Abbas’s statehood statement",
+      "url": "https://www.jdn.co.il/news/2714260/",
+      "date": "2026-08-22",
+      "language": "he",
+      "type": "news_report",
+      "checked_at": "2026-09-29",
+      "note": "Positions are assigned only to the named speakers. Eisenkot’s statement concerns the government he proposes to form."
+    },
+    "O710": {
+      "title": "Otzma Yehudit: Disengagement 710 programme",
+      "url": "https://710.ozma-yeudit.co.il/",
+      "date": null,
+      "language": "he",
+      "type": "party_program",
+      "checked_at": "2026-09-29",
+      "note": "Reviewed as a current campaign document. Its emigration mechanism does not specify the quiz’s civil-administration model."
     }
   },
   "status_legend": {
@@ -4787,7 +4881,23 @@
     {
       "party_id": "likud",
       "question_id": "Q6",
-      "dimensions": {},
+      "dimensions": {
+        "service": {
+          "status": "S",
+          "source_ids": [
+            "YNET_TRANSPORT26"
+          ],
+          "rationale": "Likud opposes expanding subsidized Shabbat service, retaining existing exceptional routes and private operations. Closest available value: no general public service.",
+          "rationale_localized": {
+            "en": "Likud opposes expanding subsidized Shabbat service, retaining existing exceptional routes and private operations. Closest available value: no general public service.",
+            "he": "הליכוד מתנגד להרחבת שירות מסובסד בשבת, ומשמר קווים חריגים ושירות פרטי. הערך הקרוב: ללא שירות ציבורי כללי.",
+            "ru": "Ликуд против расширения субсидируемого движения в субботу, сохраняя исключения и частные перевозки. Ближайший вариант: без общей общественной сети."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "none"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -4931,7 +5041,23 @@
     {
       "party_id": "yashar",
       "question_id": "Q1",
-      "dimensions": {},
+      "dimensions": {
+        "statehood": {
+          "status": "S",
+          "source_ids": [
+            "STATEHOOD26"
+          ],
+          "rationale": "Eisenkot says a government he forms will not establish a Palestinian state. This is a current-government commitment, not a specified permanent framework.",
+          "rationale_localized": {
+            "en": "Eisenkot says a government he forms will not establish a Palestinian state. This is a current-government commitment, not a specified permanent framework.",
+            "he": "איזנקוט אומר שממשלה שיקים לא תקים מדינה פלסטינית. זו התחייבות לממשלתו ולא מסגרת קבע מוגדרת.",
+            "ru": "Айзенкот заявляет, что его правительство не создаст палестинское государство. Это обязательство на период правительства, а не определённая окончательная модель."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "no"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -5015,20 +5141,35 @@
       "question_id": "Q6",
       "dimensions": {
         "authority": {
-          "value": "local",
-          "status": "I",
-          "confidence": 0.6,
+          "status": "S",
           "source_ids": [
-            "Y"
+            "YNET_TRANSPORT26"
           ],
-          "rationale": "Local discretion on Shabbat transport is inferred from community autonomy over religion-and-state arrangements. Service availability is unknown.",
+          "rationale": "The party’s transport response explicitly supports municipal discretion. Service scale remains unknown.",
           "rationale_localized": {
-            "en": "Local discretion on Shabbat transport is inferred from community autonomy over religion-and-state arrangements. Service availability is unknown.",
-            "he": "סמכות מקומית לתחבורה בשבת מוסקת מאוטונומיה קהילתית בהסדרי דת ומדינה. עצם הפעלת השירות אינו ידוע.",
-            "ru": "Местные полномочия по субботнему транспорту выводятся из автономии общин в вопросах религии и государства. Наличие движения неизвестно."
+            "en": "The party’s transport response explicitly supports municipal discretion. Service scale remains unknown.",
+            "he": "בתשובה בנושא תחבורה המפלגה תומכת במפורש בסמכות מקומית. היקף השירות אינו ידוע.",
+            "ru": "В ответе о транспорте партия прямо поддерживает местные полномочия. Масштаб движения неизвестен."
           },
           "checked_at": "2026-09-29",
-          "review_state": "editorial_draft"
+          "review_state": "editorial_draft",
+          "value": "local",
+          "previous_evidence": {
+            "value": "local",
+            "status": "I",
+            "confidence": 0.6,
+            "source_ids": [
+              "Y"
+            ],
+            "rationale": "Local discretion on Shabbat transport is inferred from community autonomy over religion-and-state arrangements. Service availability is unknown.",
+            "rationale_localized": {
+              "en": "Local discretion on Shabbat transport is inferred from community autonomy over religion-and-state arrangements. Service availability is unknown.",
+              "he": "סמכות מקומית לתחבורה בשבת מוסקת מאוטונומיה קהילתית בהסדרי דת ומדינה. עצם הפעלת השירות אינו ידוע.",
+              "ru": "Местные полномочия по субботнему транспорту выводятся из автономии общин в вопросах религии и государства. Наличие движения неизвестно."
+            },
+            "checked_at": "2026-09-29",
+            "review_state": "editorial_draft"
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -6142,7 +6283,23 @@
     {
       "party_id": "religious_zionism",
       "question_id": "Q6",
-      "dimensions": {},
+      "dimensions": {
+        "service": {
+          "status": "S",
+          "source_ids": [
+            "YNET_TRANSPORT26"
+          ],
+          "rationale": "The party opposes changing Shabbat transport policy to preserve public Sabbath observance.",
+          "rationale_localized": {
+            "en": "The party opposes changing Shabbat transport policy to preserve public Sabbath observance.",
+            "he": "המפלגה מתנגדת לשינוי מדיניות התחבורה בשבת לשם שמירת השבת בפרהסיה.",
+            "ru": "Партия против изменения субботней транспортной политики ради соблюдения шаббата в общественной сфере."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "none"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6224,6 +6381,21 @@
           "review_state": "editorial_draft",
           "checked_at": "2026-09-29",
           "value": "yes"
+        },
+        "administration": {
+          "status": "S",
+          "source_ids": [
+            "RZ_GAZA26"
+          ],
+          "rationale": "Smotrich proposes full Israeli control and military government in Gaza, alongside settlements; this is a proposal, not adopted policy.",
+          "rationale_localized": {
+            "en": "Smotrich proposes full Israeli control and military government in Gaza, alongside settlements; this is a proposal, not adopted policy.",
+            "he": "סמוטריץ׳ מציע שליטה ישראלית מלאה וממשל צבאי בעזה לצד התיישבות; זו הצעה ולא מדיניות שאומצה.",
+            "ru": "Смотрич предлагает полный израильский контроль и военную администрацию в Газе наряду с поселениями; это предложение, а не принятая политика."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "israeli"
         }
       },
       "checked_at": "2026-09-29",
@@ -6300,19 +6472,34 @@
       "question_id": "Q1",
       "dimensions": {
         "statehood": {
-          "status": "I",
+          "status": "S",
           "source_ids": [
-            "IDI_OTZMA"
+            "STATEHOOD26"
           ],
-          "rationale": "Greater-Israel sovereignty policy suggests opposition to a separate Palestinian state in the same territory.",
-          "review_state": "editorial_draft",
-          "checked_at": "2026-09-29",
-          "value": "no",
-          "confidence": 0.6,
+          "rationale": "Ben Gvir explicitly rejects Palestinian statehood in his response to Abbas.",
           "rationale_localized": {
-            "en": "Greater-Israel sovereignty policy suggests opposition to a separate Palestinian state in the same territory.",
-            "ru": "Из политики суверенитета в рамках «Великого Израиля» следует вероятное неприятие отдельного палестинского государства на той же территории.",
-            "he": "ממדיניות הריבונות בארץ ישראל השלמה מוסקת התנגדות למדינה פלסטינית נפרדת באותו שטח."
+            "en": "Ben Gvir explicitly rejects Palestinian statehood in his response to Abbas.",
+            "he": "בן גביר דוחה במפורש מדינה פלסטינית בתגובתו לעבאס.",
+            "ru": "Бен-Гвир прямо отвергает палестинскую государственность в ответе Аббасу."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "no",
+          "previous_evidence": {
+            "status": "I",
+            "source_ids": [
+              "IDI_OTZMA"
+            ],
+            "rationale": "Greater-Israel sovereignty policy suggests opposition to a separate Palestinian state in the same territory.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "no",
+            "confidence": 0.6,
+            "rationale_localized": {
+              "en": "Greater-Israel sovereignty policy suggests opposition to a separate Palestinian state in the same territory.",
+              "ru": "Из политики суверенитета в рамках «Великого Израиля» следует вероятное неприятие отдельного палестинского государства на той же территории.",
+              "he": "ממדיניות הריבונות בארץ ישראל השלמה מוסקת התנגדות למדינה פלסטינית נפרדת באותו שטח."
+            }
           }
         }
       },
@@ -7133,23 +7320,38 @@
       "question_id": "Q1",
       "dimensions": {
         "statehood": {
-          "status": "R",
+          "status": "S",
           "source_ids": [
-            "IDI_RAAM"
+            "STATEHOOD26"
           ],
-          "rationale": "The institutional profile explicitly supports a Palestinian state.",
-          "review_state": "editorial_draft",
+          "rationale": "Abbas explicitly calls for recognition of Palestine and peace between the two states.",
+          "rationale_localized": {
+            "en": "Abbas explicitly calls for recognition of Palestine and peace between the two states.",
+            "he": "עבאס קורא במפורש להכרה בפלסטין ולשלום בין שתי המדינות.",
+            "ru": "Аббас прямо призывает признать Палестину и установить мир между двумя государствами."
+          },
           "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
           "value": "yes",
           "previous_evidence": {
-            "value": "yes",
-            "status": "H",
+            "status": "R",
             "source_ids": [
-              "R"
+              "IDI_RAAM"
             ],
-            "rationale": "Archived platform seeks a Palestinian state alongside withdrawal from occupied territory.",
+            "rationale": "The institutional profile explicitly supports a Palestinian state.",
             "review_state": "editorial_draft",
-            "provenance": "Component-level recoding of cited research; other components not inferred."
+            "checked_at": "2026-09-29",
+            "value": "yes",
+            "previous_evidence": {
+              "value": "yes",
+              "status": "H",
+              "source_ids": [
+                "R"
+              ],
+              "rationale": "Archived platform seeks a Palestinian state alongside withdrawal from occupied territory.",
+              "review_state": "editorial_draft",
+              "provenance": "Component-level recoding of cited research; other components not inferred."
+            }
           }
         }
       },
@@ -7217,19 +7419,37 @@
       "question_id": "Q7",
       "dimensions": {
         "services": {
-          "status": "I",
+          "status": "S",
           "source_ids": [
-            "IDI_RAAM"
+            "AR_RAAM_BUDGET26"
           ],
-          "rationale": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
-          "review_state": "editorial_draft",
-          "checked_at": "2026-09-29",
-          "value": "expand",
-          "confidence": 0.6,
+          "rationale": "Abbas defends development and service budgets against cuts. Both preservation and expansion fit that direction; financing is unspecified.",
           "rationale_localized": {
-            "en": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
-            "ru": "Социальные и образовательные приоритеты партии позволяют предположить расширение общественных услуг. Конкретный бюджет и способ финансирования из этого не следуют.",
-            "he": "סדרי העדיפויות החברתיים והחינוכיים מצביעים על הרחבת שירותים ציבוריים. תקציב ומנגנון מימון מסוימים אינם מוסקים."
+            "en": "Abbas defends development and service budgets against cuts. Both preservation and expansion fit that direction; financing is unspecified.",
+            "he": "עבאס מגן על תקציבי פיתוח ושירותים מפני קיצוץ. שימור והרחבה תואמים כיוון זה; המימון לא מפורט.",
+            "ru": "Аббас защищает бюджеты развития и услуг от сокращений. Сохранение и расширение соответствуют этому направлению; финансирование не указано."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "values": [
+            "maintain",
+            "expand"
+          ],
+          "previous_evidence": {
+            "status": "I",
+            "source_ids": [
+              "IDI_RAAM"
+            ],
+            "rationale": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "expand",
+            "confidence": 0.6,
+            "rationale_localized": {
+              "en": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+              "ru": "Социальные и образовательные приоритеты партии позволяют предположить расширение общественных услуг. Конкретный бюджет и способ финансирования из этого не следуют.",
+              "he": "סדרי העדיפויות החברתיים והחינוכיים מצביעים על הרחבת שירותים ציבוריים. תקציב ומנגנון מימון מסוימים אינם מוסקים."
+            }
           }
         }
       },
@@ -7255,22 +7475,37 @@
       "question_id": "Q10",
       "dimensions": {
         "lead": {
-          "status": "I",
+          "status": "S",
           "source_ids": [
-            "TOI_ARAB_CRIME26"
+            "AR_RAAM_CRIME26"
           ],
-          "rationale": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
-          "review_state": "editorial_draft",
-          "checked_at": "2026-09-29",
-          "values": [
-            "national_police",
-            "local_police"
-          ],
-          "confidence": 0.6,
+          "rationale": "Abbas calls for effective law enforcement, resources and accountable police leadership. No general ban on intelligence assistance is established.",
           "rationale_localized": {
-            "en": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
-            "ru": "Требования эффективной работы полиции позволяют предположить её ведущую роль. Национальная или местная организация и участие ШАБАКа не определены.",
-            "he": "מהדרישה לשיטור יעיל מוסקת הובלה משטרתית. לא מוסקים מבנה ארצי או מקומי ועמדה לגבי סיוע השב״כ."
+            "en": "Abbas calls for effective law enforcement, resources and accountable police leadership. No general ban on intelligence assistance is established.",
+            "he": "עבאס דורש אכיפה יעילה, משאבים ואחריות בהנהגת המשטרה. לא נקבעת התנגדות גורפת לסיוע מודיעיני.",
+            "ru": "Аббас требует эффективной работы правоохранительных органов, ресурсов и ответственности полиции. Общий запрет разведывательной помощи не установлен."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "national_police",
+          "previous_evidence": {
+            "status": "I",
+            "source_ids": [
+              "TOI_ARAB_CRIME26"
+            ],
+            "rationale": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "values": [
+              "national_police",
+              "local_police"
+            ],
+            "confidence": 0.6,
+            "rationale_localized": {
+              "en": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+              "ru": "Требования эффективной работы полиции позволяют предположить её ведущую роль. Национальная или местная организация и участие ШАБАКа не определены.",
+              "he": "מהדרישה לשיטור יעיל מוסקת הובלה משטרתית. לא מוסקים מבנה ארצי או מקומי ועמדה לגבי סיוע השב״כ."
+            }
           }
         }
       },
@@ -7300,20 +7535,31 @@
             "review_state": "editorial_draft",
             "provenance": "Component-level recoding of cited research; other components not inferred."
           }
-        },
-        "territorial_route": {
-          "status": "R",
-          "source_ids": [
-            "IDI_RAAM"
-          ],
-          "rationale": "The profile explicitly advocates withdrawal from occupied territories or dismantling settlements.",
-          "review_state": "editorial_draft",
-          "checked_at": "2026-09-29",
-          "value": "withdraw"
         }
       },
       "checked_at": "2026-09-29",
-      "review_state": "editorial_draft"
+      "review_state": "editorial_draft",
+      "withdrawn_evidence": [
+        {
+          "party_id": "raam",
+          "question_id": "Q11",
+          "dimension_id": "territorial_route",
+          "source_ids": [
+            "IDI_RAAM"
+          ],
+          "reason": "Support for withdrawal or dismantling settlements does not establish unilateral withdrawal. The source does not specify the process required by this component; leave it unknown. Opposition to annexation remains separately documented.",
+          "previous_evidence": {
+            "status": "R",
+            "source_ids": [
+              "IDI_RAAM"
+            ],
+            "rationale": "The profile explicitly advocates withdrawal from occupied territories or dismantling settlements.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "withdraw"
+          }
+        }
+      ]
     },
     {
       "party_id": "raam",
@@ -7517,28 +7763,43 @@
       "question_id": "Q7",
       "dimensions": {
         "services": {
-          "value": "expand",
-          "status": "H",
+          "status": "S",
           "source_ids": [
-            "HH"
+            "AR_HADASH_ED26"
           ],
-          "rationale": "Public health and education and reversal of privatization.",
+          "rationale": "Hadash’s teachers’ faction requests additional education resources and infrastructure. Only the service-expansion component is supported.",
+          "rationale_localized": {
+            "en": "Hadash’s teachers’ faction requests additional education resources and infrastructure. Only the service-expansion component is supported.",
+            "he": "סיעת חד״ש בהסתדרות המורים דורשת משאבים ותשתיות נוספים לחינוך. נתמך רק מרכיב הרחבת השירותים.",
+            "ru": "Учительская фракция ХАДАШ требует дополнительных ресурсов и инфраструктуры образования. Подтверждён только компонент расширения услуг."
+          },
+          "checked_at": "2026-09-29",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred.",
-          "inference": {
-            "status": "I",
-            "source_ids": [
-              "IDI_HADASH"
-            ],
-            "rationale": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
-            "review_state": "editorial_draft",
-            "checked_at": "2026-09-29",
+          "value": "expand",
+          "previous_evidence": {
             "value": "expand",
-            "confidence": 0.6,
-            "rationale_localized": {
-              "en": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
-              "ru": "Социальные и образовательные приоритеты партии позволяют предположить расширение общественных услуг. Конкретный бюджет и способ финансирования из этого не следуют.",
-              "he": "סדרי העדיפויות החברתיים והחינוכיים מצביעים על הרחבת שירותים ציבוריים. תקציב ומנגנון מימון מסוימים אינם מוסקים."
+            "status": "H",
+            "source_ids": [
+              "HH"
+            ],
+            "rationale": "Public health and education and reversal of privatization.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred.",
+            "inference": {
+              "status": "I",
+              "source_ids": [
+                "IDI_HADASH"
+              ],
+              "rationale": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+              "review_state": "editorial_draft",
+              "checked_at": "2026-09-29",
+              "value": "expand",
+              "confidence": 0.6,
+              "rationale_localized": {
+                "en": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+                "ru": "Социальные и образовательные приоритеты партии позволяют предположить расширение общественных услуг. Конкретный бюджет и способ финансирования из этого не следуют.",
+                "he": "סדרי העדיפויות החברתיים והחינוכיים מצביעים על הרחבת שירותים ציבוריים. תקציב ומנגנון מימון מסוימים אינם מוסקים."
+              }
             }
           }
         },
@@ -7626,20 +7887,31 @@
             "review_state": "editorial_draft",
             "provenance": "Component-level recoding of cited research; other components not inferred."
           }
-        },
-        "territorial_route": {
-          "status": "R",
-          "source_ids": [
-            "IDI_HADASH"
-          ],
-          "rationale": "The profile explicitly advocates withdrawal from occupied territories or dismantling settlements.",
-          "review_state": "editorial_draft",
-          "checked_at": "2026-09-29",
-          "value": "withdraw"
         }
       },
       "checked_at": "2026-09-29",
-      "review_state": "editorial_draft"
+      "review_state": "editorial_draft",
+      "withdrawn_evidence": [
+        {
+          "party_id": "hadash",
+          "question_id": "Q11",
+          "dimension_id": "territorial_route",
+          "source_ids": [
+            "IDI_HADASH"
+          ],
+          "reason": "Support for withdrawal or dismantling settlements does not establish unilateral withdrawal. The source does not specify the process required by this component; leave it unknown. Opposition to annexation remains separately documented.",
+          "previous_evidence": {
+            "status": "R",
+            "source_ids": [
+              "IDI_HADASH"
+            ],
+            "rationale": "The profile explicitly advocates withdrawal from occupied territories or dismantling settlements.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "withdraw"
+          }
+        }
+      ]
     },
     {
       "party_id": "hadash",
@@ -7748,7 +8020,23 @@
     {
       "party_id": "hadash",
       "question_id": "Q19",
-      "dimensions": {},
+      "dimensions": {
+        "compulsory": {
+          "status": "S",
+          "source_ids": [
+            "AR_HB_SERVICE26"
+          ],
+          "rationale": "The July 2026 statement rejects compulsory military and civilian service for Arab citizens; it does not select a voluntary framework.",
+          "rationale_localized": {
+            "en": "The July 2026 statement rejects compulsory military and civilian service for Arab citizens; it does not select a voluntary framework.",
+            "he": "ההצהרה מיולי 2026 דוחה שירות צבאי ואזרחי כפוי לאזרחים ערבים; היא אינה בוחרת מסגרת התנדבותית.",
+            "ru": "Заявление июля 2026 года отвергает обязательную военную и гражданскую службу арабских граждан; добровольная модель не указана."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "no"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -7900,22 +8188,37 @@
       "question_id": "Q10",
       "dimensions": {
         "lead": {
-          "status": "I",
+          "status": "S",
           "source_ids": [
-            "TOI_ARAB_CRIME26"
+            "AR_TAAL_POLICE25"
           ],
-          "rationale": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
-          "review_state": "editorial_draft",
-          "checked_at": "2026-09-29",
-          "values": [
-            "national_police",
-            "local_police"
-          ],
-          "confidence": 0.6,
+          "rationale": "Tibi calls on Israel’s police to fight crime. This does not decide the separate Shin Bet component.",
           "rationale_localized": {
-            "en": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
-            "ru": "Требования эффективной работы полиции позволяют предположить её ведущую роль. Национальная или местная организация и участие ШАБАКа не определены.",
-            "he": "מהדרישה לשיטור יעיל מוסקת הובלה משטרתית. לא מוסקים מבנה ארצי או מקומי ועמדה לגבי סיוע השב״כ."
+            "en": "Tibi calls on Israel’s police to fight crime. This does not decide the separate Shin Bet component.",
+            "he": "טיבי דורש ממשטרת ישראל להילחם בפשיעה. אין בכך הכרעה במרכיב הנפרד של תפקיד השב״כ.",
+            "ru": "Тиби требует от полиции Израиля борьбы с преступностью. Отдельный вопрос об участии ШАБАКа этим не решается."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "national_police",
+          "previous_evidence": {
+            "status": "I",
+            "source_ids": [
+              "TOI_ARAB_CRIME26"
+            ],
+            "rationale": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "values": [
+              "national_police",
+              "local_police"
+            ],
+            "confidence": 0.6,
+            "rationale_localized": {
+              "en": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+              "ru": "Требования эффективной работы полиции позволяют предположить её ведущую роль. Национальная или местная организация и участие ШАБАКа не определены.",
+              "he": "מהדרישה לשיטור יעיל מוסקת הובלה משטרתית. לא מוסקים מבנה ארצי או מקומי ועמדה לגבי סיוע השב״כ."
+            }
           }
         }
       },
@@ -7939,7 +8242,23 @@
     {
       "party_id": "taal",
       "question_id": "Q13",
-      "dimensions": {},
+      "dimensions": {
+        "statutory": {
+          "status": "S",
+          "source_ids": [
+            "AR_TAAL_INQUIRY"
+          ],
+          "rationale": "Tibi supports a state inquiry including police conduct after October 7. The appointment route is not stated.",
+          "rationale_localized": {
+            "en": "Tibi supports a state inquiry including police conduct after October 7. The appointment route is not stated.",
+            "he": "טיבי תומך בוועדת חקירה ממלכתית שתבדוק גם את התנהלות המשטרה אחרי 7 באוקטובר. מסלול המינוי לא מפורט.",
+            "ru": "Тиби поддерживает государственное расследование, включая действия полиции после 7 октября. Порядок назначения не указан."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "yes"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -8051,26 +8370,57 @@
       "question_id": "Q4",
       "dimensions": {
         "equality": {
-          "value": "constitutional",
           "status": "H",
           "source_ids": [
             "BA"
           ],
-          "rationale": "Official 2017 program explicitly requires constitutional equality.",
+          "rationale": "The historical programme seeks constitutional equality.",
+          "rationale_localized": {
+            "en": "The historical programme seeks constitutional equality.",
+            "he": "המצע ההיסטורי דורש שוויון חוקתי.",
+            "ru": "Историческая программа требует конституционного равенства."
+          },
+          "checked_at": "2026-09-29",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred.",
-          "additional_evidence": [
-            {
-              "status": "H",
-              "source_ids": [
-                "YNET_BALAD08"
-              ],
-              "rationale": "The historical profile calls for a Basic Law guaranteeing Arab minority equality.",
-              "review_state": "editorial_draft",
-              "checked_at": "2026-09-29",
-              "value": "constitutional"
+          "value": "constitutional",
+          "inference": {
+            "value": "constitutional",
+            "status": "I",
+            "source_ids": [
+              "BA"
+            ],
+            "confidence": 0.6,
+            "checked_at": "2026-09-29",
+            "review_state": "editorial_draft",
+            "rationale": "The historical programme seeks constitutional equality. Continued support is inferred from its retention on the official site; not a verified 2026 pledge.",
+            "rationale_localized": {
+              "en": "The historical programme seeks constitutional equality. Continued support is inferred from its retention on the official site; not a verified 2026 pledge.",
+              "he": "המצע ההיסטורי דורש שוויון חוקתי. המשכיות התמיכה מוסקת מהשארתו באתר הרשמי; זו אינה התחייבות מאומתת ל-2026.",
+              "ru": "Историческая программа требует конституционного равенства. Продолжение поддержки предполагается по сохранению программы на официальном сайте; это не подтверждённое обещание 2026 года."
             }
-          ]
+          },
+          "previous_evidence": {
+            "value": "constitutional",
+            "status": "H",
+            "source_ids": [
+              "BA"
+            ],
+            "rationale": "Official 2017 program explicitly requires constitutional equality.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred.",
+            "additional_evidence": [
+              {
+                "status": "H",
+                "source_ids": [
+                  "YNET_BALAD08"
+                ],
+                "rationale": "The historical profile calls for a Basic Law guaranteeing Arab minority equality.",
+                "review_state": "editorial_draft",
+                "checked_at": "2026-09-29",
+                "value": "constitutional"
+              }
+            ]
+          }
         },
         "identity": {
           "status": "R",
@@ -8173,13 +8523,59 @@
       "question_id": "Q7",
       "dimensions": {
         "funding": {
-          "value": "progressive",
           "status": "H",
           "source_ids": [
             "BA"
           ],
-          "rationale": "The 2017 economic section proposes taxes on capital and wealth and lower taxes on labour, especially low incomes.",
-          "review_state": "editorial_draft"
+          "rationale": "The historical programme proposes taxes on capital and wealth.",
+          "rationale_localized": {
+            "en": "The historical programme proposes taxes on capital and wealth.",
+            "he": "המצע ההיסטורי מציע מסים על הון ועושר.",
+            "ru": "Историческая программа предлагает налоги на капитал и богатство."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "progressive",
+          "inference": {
+            "value": "progressive",
+            "status": "I",
+            "source_ids": [
+              "BA"
+            ],
+            "confidence": 0.6,
+            "checked_at": "2026-09-29",
+            "review_state": "editorial_draft",
+            "rationale": "The historical programme proposes taxes on capital and wealth. Continued support is inferred from its retention on the official site; not a verified 2026 pledge.",
+            "rationale_localized": {
+              "en": "The historical programme proposes taxes on capital and wealth. Continued support is inferred from its retention on the official site; not a verified 2026 pledge.",
+              "he": "המצע ההיסטורי מציע מסים על הון ועושר. המשכיות התמיכה מוסקת מהשארתו באתר הרשמי; זו אינה התחייבות מאומתת ל-2026.",
+              "ru": "Историческая программа предлагает налоги на капитал и богатство. Продолжение поддержки предполагается по сохранению программы на официальном сайте; это не подтверждённое обещание 2026 года."
+            }
+          },
+          "previous_evidence": {
+            "value": "progressive",
+            "status": "H",
+            "source_ids": [
+              "BA"
+            ],
+            "rationale": "The 2017 economic section proposes taxes on capital and wealth and lower taxes on labour, especially low incomes.",
+            "review_state": "editorial_draft"
+          }
+        },
+        "services": {
+          "status": "H",
+          "source_ids": [
+            "BA"
+          ],
+          "rationale": "The historical programme calls for broader healthcare provision. No current nationwide spending package is established.",
+          "rationale_localized": {
+            "en": "The historical programme calls for broader healthcare provision. No current nationwide spending package is established.",
+            "he": "המצע ההיסטורי קורא להרחבת שירותי הבריאות. לא נקבעת חבילת הוצאה כלל-ארצית עדכנית.",
+            "ru": "Историческая программа призывает расширить медицинские услуги. Актуальный общегосударственный пакет расходов не установлен."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "expand"
         }
       },
       "checked_at": "2026-09-29",
@@ -8230,16 +8626,6 @@
       "party_id": "balad",
       "question_id": "Q11",
       "dimensions": {
-        "territorial_route": {
-          "status": "R",
-          "source_ids": [
-            "IDI_BALAD"
-          ],
-          "rationale": "The profile explicitly advocates withdrawal from occupied territories or dismantling settlements.",
-          "review_state": "editorial_draft",
-          "checked_at": "2026-09-29",
-          "value": "withdraw"
-        },
         "unilateral_sovereignty": {
           "status": "R",
           "source_ids": [
@@ -8252,7 +8638,28 @@
         }
       },
       "checked_at": "2026-09-29",
-      "review_state": "editorial_draft"
+      "review_state": "editorial_draft",
+      "withdrawn_evidence": [
+        {
+          "party_id": "balad",
+          "question_id": "Q11",
+          "dimension_id": "territorial_route",
+          "source_ids": [
+            "IDI_BALAD"
+          ],
+          "reason": "Support for withdrawal or dismantling settlements does not establish unilateral withdrawal. The source does not specify the process required by this component; leave it unknown. Opposition to annexation remains separately documented.",
+          "previous_evidence": {
+            "status": "R",
+            "source_ids": [
+              "IDI_BALAD"
+            ],
+            "rationale": "The profile explicitly advocates withdrawal from occupied territories or dismantling settlements.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "withdraw"
+          }
+        }
+      ]
     },
     {
       "party_id": "balad",
@@ -8318,14 +8725,45 @@
       "question_id": "Q18",
       "dimensions": {
         "bargaining": {
-          "value": "collective",
           "status": "H",
           "source_ids": [
             "BA"
           ],
-          "rationale": "The 2017 program explicitly protects trade-union organizing and strikes.",
+          "rationale": "The historical programme protects union organization and strikes.",
+          "rationale_localized": {
+            "en": "The historical programme protects union organization and strikes.",
+            "he": "המצע ההיסטורי מגן על התארגנות עובדים ושביתות.",
+            "ru": "Историческая программа защищает профсоюзы и забастовки."
+          },
+          "checked_at": "2026-09-29",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "value": "collective",
+          "inference": {
+            "value": "collective",
+            "status": "I",
+            "source_ids": [
+              "BA"
+            ],
+            "confidence": 0.6,
+            "checked_at": "2026-09-29",
+            "review_state": "editorial_draft",
+            "rationale": "The historical programme protects union organization and strikes. Continued support is inferred from its retention on the official site; not a verified 2026 pledge.",
+            "rationale_localized": {
+              "en": "The historical programme protects union organization and strikes. Continued support is inferred from its retention on the official site; not a verified 2026 pledge.",
+              "he": "המצע ההיסטורי מגן על התארגנות עובדים ושביתות. המשכיות התמיכה מוסקת מהשארתו באתר הרשמי; זו אינה התחייבות מאומתת ל-2026.",
+              "ru": "Историческая программа защищает профсоюзы и забастовки. Продолжение поддержки предполагается по сохранению программы на официальном сайте; это не подтверждённое обещание 2026 года."
+            }
+          },
+          "previous_evidence": {
+            "value": "collective",
+            "status": "H",
+            "source_ids": [
+              "BA"
+            ],
+            "rationale": "The 2017 program explicitly protects trade-union organizing and strikes.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred."
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -8336,14 +8774,29 @@
       "question_id": "Q19",
       "dimensions": {
         "compulsory": {
-          "status": "H",
+          "status": "S",
           "source_ids": [
-            "YNET_SERVICE12"
+            "AR_HB_SERVICE26"
           ],
-          "rationale": "The historical report attributes opposition to compulsory national service to the party’s representative.",
-          "review_state": "editorial_draft",
+          "rationale": "The July 2026 statement rejects compulsory military and civilian service for Arab citizens; it does not select a voluntary framework.",
+          "rationale_localized": {
+            "en": "The July 2026 statement rejects compulsory military and civilian service for Arab citizens; it does not select a voluntary framework.",
+            "he": "ההצהרה מיולי 2026 דוחה שירות צבאי ואזרחי כפוי לאזרחים ערבים; היא אינה בוחרת מסגרת התנדבותית.",
+            "ru": "Заявление июля 2026 года отвергает обязательную военную и гражданскую службу арабских граждан; добровольная модель не указана."
+          },
           "checked_at": "2026-09-29",
-          "value": "no"
+          "review_state": "editorial_draft",
+          "value": "no",
+          "previous_evidence": {
+            "status": "H",
+            "source_ids": [
+              "YNET_SERVICE12"
+            ],
+            "rationale": "The historical report attributes opposition to compulsory national service to the party’s representative.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "no"
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -8966,7 +9419,41 @@
     {
       "party_id": "blue_white",
       "question_id": "Q6",
-      "dimensions": {},
+      "dimensions": {
+        "service": {
+          "status": "S",
+          "source_ids": [
+            "YNET_TRANSPORT26"
+          ],
+          "rationale": "Supports operating service; scale is left to municipalities.",
+          "rationale_localized": {
+            "en": "Supports operating service; scale is left to municipalities.",
+            "he": "תומכת בהפעלת שירות; היקפו נתון לרשויות המקומיות.",
+            "ru": "Поддерживает движение транспорта; масштаб определяют муниципалитеты."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "values": [
+            "limited",
+            "full"
+          ]
+        },
+        "authority": {
+          "status": "S",
+          "source_ids": [
+            "YNET_TRANSPORT26"
+          ],
+          "rationale": "Municipalities would set routes and frequency.",
+          "rationale_localized": {
+            "en": "Municipalities would set routes and frequency.",
+            "he": "הרשויות המקומיות יקבעו מסלולים ותדירות.",
+            "ru": "Муниципалитеты определяют маршруты и частоту движения."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "local"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -9153,6 +9640,21 @@
           "rationale": "Universal service with narrowly selected temporary talent exemptions.",
           "review_state": "editorial_draft",
           "provenance": "Component-level recoding of cited research; other components not inferred."
+        },
+        "pathway": {
+          "status": "P",
+          "source_ids": [
+            "M"
+          ],
+          "rationale": "The programme prioritizes military service over national service.",
+          "rationale_localized": {
+            "en": "The programme prioritizes military service over national service.",
+            "he": "המצע נותן קדימות לשירות צבאי על פני שירות לאומי.",
+            "ru": "Программа отдаёт приоритет военной службе перед национальной."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "military_priority"
         }
       },
       "checked_at": "2026-09-29",
@@ -9196,7 +9698,23 @@
     {
       "party_id": "reservists",
       "question_id": "Q8",
-      "dimensions": {},
+      "dimensions": {
+        "consumer_tool": {
+          "status": "P",
+          "source_ids": [
+            "M"
+          ],
+          "rationale": "Competition and limiting monopoly power are explicit. Import policy remains unknown.",
+          "rationale_localized": {
+            "en": "Competition and limiting monopoly power are explicit. Import policy remains unknown.",
+            "he": "תחרות והגבלת כוח מונופוליסטי מפורשות. מדיניות היבוא אינה ידועה.",
+            "ru": "Прямо указаны конкуренция и ограничение монополий. Импортная политика неизвестна."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "competition"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -9210,7 +9728,38 @@
     {
       "party_id": "reservists",
       "question_id": "Q10",
-      "dimensions": {},
+      "dimensions": {
+        "security_role": {
+          "status": "P",
+          "source_ids": [
+            "M"
+          ],
+          "rationale": "The programme assigns the Shin Bet an organized-crime enforcement role.",
+          "rationale_localized": {
+            "en": "The programme assigns the Shin Bet an organized-crime enforcement role.",
+            "he": "המצע מקצה לשב״כ תפקיד אכיפה נגד פשיעה מאורגנת.",
+            "ru": "Программа предусматривает участие ШАБАКа в борьбе с организованной преступностью."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "yes"
+        },
+        "lead": {
+          "status": "P",
+          "source_ids": [
+            "M"
+          ],
+          "rationale": "Shin Bet leadership is proposed until police rebuilding; the temporary qualification matters.",
+          "rationale_localized": {
+            "en": "Shin Bet leadership is proposed until police rebuilding; the temporary qualification matters.",
+            "he": "מוצעת הובלת שב״כ עד לבניית המשטרה מחדש; זו הובלה זמנית.",
+            "ru": "Предложено руководство ШАБАКа до перестройки полиции; эта роль временная."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "security"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -9238,7 +9787,41 @@
     {
       "party_id": "reservists",
       "question_id": "Q14",
-      "dimensions": {},
+      "dimensions": {
+        "binding_limit": {
+          "status": "P",
+          "source_ids": [
+            "M"
+          ],
+          "rationale": "An enforceable prime-ministerial tenure limit is explicit.",
+          "rationale_localized": {
+            "en": "An enforceable prime-ministerial tenure limit is explicit.",
+            "he": "מפורשת הגבלה מחייבת לכהונת ראש הממשלה.",
+            "ru": "Прямо предусмотрено обязательное ограничение пребывания премьера у власти."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "yes"
+        },
+        "mechanism": {
+          "status": "P",
+          "source_ids": [
+            "M"
+          ],
+          "rationale": "The text allows eight years or two terms; either alternative matches without choosing between them.",
+          "rationale_localized": {
+            "en": "The text allows eight years or two terms; either alternative matches without choosing between them.",
+            "he": "הטקסט מציע שמונה שנים או שתי קדנציות; שתי החלופות מתאימות ללא הכרעה ביניהן.",
+            "ru": "Текст предлагает восемь лет или два срока; подходят обе альтернативы без выбора между ними."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "values": [
+            "years",
+            "terms"
+          ]
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -9283,6 +9866,21 @@
           "rationale": "Compulsory service expressly includes Arab citizens.",
           "review_state": "editorial_draft",
           "provenance": "Component-level recoding of cited research; other components not inferred."
+        },
+        "service_model": {
+          "status": "P",
+          "source_ids": [
+            "M"
+          ],
+          "rationale": "The service framework includes Arab citizens with military priority and adapted civilian routes.",
+          "rationale_localized": {
+            "en": "The service framework includes Arab citizens with military priority and adapted civilian routes.",
+            "he": "מסגרת השירות כוללת אזרחים ערבים, עם קדימות צבאית ומסלולים אזרחיים מותאמים.",
+            "ru": "Схема охватывает арабских граждан: приоритет армии и адаптированные гражданские маршруты."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft",
+          "value": "military_priority"
         }
       },
       "checked_at": "2026-09-29",
