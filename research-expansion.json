@@ -1279,6 +1279,63 @@
         "ru": "Из политики суверенитета в рамках «Великого Израиля» следует вероятное неприятие отдельного палестинского государства на той же территории.",
         "he": "ממדיניות הריבונות בארץ ישראל השלמה מוסקת התנגדות למדינה פלסטינית נפרדת באותו שטח."
       }
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q6",
+      "dimension_id": "authority",
+      "value": "local",
+      "status": "I",
+      "confidence": 0.6,
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "Local discretion on Shabbat transport is inferred from community autonomy over religion-and-state arrangements. Service availability is unknown.",
+      "rationale_localized": {
+        "en": "Local discretion on Shabbat transport is inferred from community autonomy over religion-and-state arrangements. Service availability is unknown.",
+        "he": "סמכות מקומית לתחבורה בשבת מוסקת מאוטונומיה קהילתית בהסדרי דת ומדינה. עצם הפעלת השירות אינו ידוע.",
+        "ru": "Местные полномочия по субботнему транспорту выводятся из автономии общин в вопросах религии и государства. Наличие движения неизвестно."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q10",
+      "dimension_id": "lead",
+      "value": "national_police",
+      "status": "I",
+      "confidence": 0.6,
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "National police leadership is inferred from the national anti-crime cabinet and police reform. A Shin Bet role is unspecified.",
+      "rationale_localized": {
+        "en": "National police leadership is inferred from the national anti-crime cabinet and police reform. A Shin Bet role is unspecified.",
+        "he": "הובלה משטרתית ארצית מוסקת מקבינט הפשיעה הלאומי ושיקום המשטרה. תפקיד השב״כ לא מפורט.",
+        "ru": "Ведущая роль национальной полиции выводится из общегосударственного антикриминального кабинета и реформы полиции. Роль ШАБАКа не указана."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q17",
+      "dimension_id": "housing_tool",
+      "value": "private_supply",
+      "status": "I",
+      "confidence": 0.6,
+      "source_ids": [
+        "Y_ECON"
+      ],
+      "rationale": "Private supply incentives are inferred from urban renewal and taxes on undeveloped land. No opposition to public housing is inferred.",
+      "rationale_localized": {
+        "en": "Private supply incentives are inferred from urban renewal and taxes on undeveloped land. No opposition to public housing is inferred.",
+        "he": "תמריצים להיצע פרטי מוסקים מהתחדשות עירונית ומיסוי קרקע לא מפותחת. אין הסקת התנגדות לדיור ציבורי.",
+        "ru": "Стимулирование частного предложения выводится из обновления застройки и налога на неосваиваемую землю. Противодействие социальному жилью не предполагается."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
     }
   ]
 }

@@ -99,11 +99,12 @@
   ],
   "sources": {
     "Y": {
-      "title": "Yashar: ten steps",
-      "url": "https://yasharwitheisenkot.com/",
+      "title": "Yashar: ten-step programme",
+      "url": "https://yasharwitheisenkot.com/agenda_point/",
       "date": null,
       "type": "party_program",
-      "note": "Current homepage; detailed subpages intermittently returned a verification screen."
+      "checked_at": "2026-09-29",
+      "note": "Retrieved on 2026-09-29; publication date not stated. Full agenda reviewed; replaces the earlier homepage reference."
     },
     "D": {
       "title": "Democrats: agenda, July 2025",
@@ -343,6 +344,38 @@
       "date": "2020-01-28",
       "type": "archive",
       "note": "Party principles archived by the Knesset channel; heading explicitly dates the election document. Section 4 visually inspected. Historical evidence, not a 2026 manifesto."
+    },
+    "Y_ED": {
+      "title": "Yashar: education plan",
+      "url": "https://yasharwitheisenkot.com/principles/education/",
+      "date": null,
+      "type": "party_program",
+      "checked_at": "2026-09-29",
+      "note": "Retrieved on 2026-09-29; publication date not stated. Detailed funding conditions qualify the broad core-for-all pledge."
+    },
+    "Y_SERVICE": {
+      "title": "Yashar: service for all",
+      "url": "https://yasharwitheisenkot.com/principles/service-for-all/",
+      "date": null,
+      "type": "party_program",
+      "checked_at": "2026-09-29",
+      "note": "Retrieved on 2026-09-29; publication date not stated. Direct programme; limited deferrals are distinguished from sector-wide exemptions."
+    },
+    "Y_ECON": {
+      "title": "Yashar: economy and cost of living",
+      "url": "https://yasharwitheisenkot.com/principles/economics/",
+      "date": null,
+      "type": "party_program",
+      "checked_at": "2026-09-29",
+      "note": "Retrieved on 2026-09-29; publication date not stated. Substantive policy sections reviewed; the page also contains a placeholder paragraph, which is not evidence."
+    },
+    "Y_INQUIRY": {
+      "title": "Yashar: state inquiry proposal (consultation draft)",
+      "url": "https://yasharwitheisenkot.com/wp-content/uploads/2026/08/מתווה-ישר-לועדת-חקירה-ממלכתית-לטבח-ה-7-באוקטובר-טיוטה-לשיתוף-הציבור.pdf",
+      "date": null,
+      "type": "party_program",
+      "checked_at": "2026-09-29",
+      "note": "Retrieved on 2026-09-29; publication date not stated. Linked from /vaadat-hakira/. PDF page 3 specifies judicial appointment. Consultation remains open until 2026-10-07; this is a party proposal, not enacted policy."
     },
     "IDI_BALAD": {
       "title": "IDI: Balad party profile",
@@ -4910,11 +4943,31 @@
           "value": "universal",
           "status": "P",
           "source_ids": [
-            "Y"
+            "Y_SERVICE"
           ],
-          "rationale": "Mandatory service for all, including Haredim; detailed reported response allows a narrow talent exception.",
-          "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "rationale": "Universal service, with limited supervised deferrals including a Torah-study allocation of up to 3% of each cohort.",
+          "rationale_localized": {
+            "en": "Universal service, with limited supervised deferrals including a Torah-study allocation of up to 3% of each cohort.",
+            "he": "חובת שירות לכל, עם דחיות מוגבלות ומפוקחות, לרבות עד 3% מהמחזור ללימודי תורה.",
+            "ru": "Всеобщая служба с ограниченными контролируемыми отсрочками, включая изучение Торы для не более 3% призывного потока."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
+        },
+        "pathway": {
+          "value": "military_priority",
+          "status": "P",
+          "source_ids": [
+            "Y_SERVICE"
+          ],
+          "rationale": "The army selects recruits first; those not recruited must serve in civilian routes.",
+          "rationale_localized": {
+            "en": "The army selects recruits first; those not recruited must serve in civilian routes.",
+            "he": "צה״ל בוחר תחילה; מי שלא יגויס חייב בשירות אזרחי.",
+            "ru": "Армия отбирает призывников первой; остальные обязаны пройти гражданскую службу."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
         }
       },
       "checked_at": "2026-09-29",
@@ -4930,7 +4983,23 @@
     {
       "party_id": "yashar",
       "question_id": "Q4",
-      "dimensions": {},
+      "dimensions": {
+        "identity": {
+          "value": "jewish_democratic",
+          "status": "P",
+          "source_ids": [
+            "Y"
+          ],
+          "rationale": "Explicit Jewish and democratic identity; the legal form of an equality guarantee is unspecified.",
+          "rationale_localized": {
+            "en": "Explicit Jewish and democratic identity; the legal form of an equality guarantee is unspecified.",
+            "he": "זהות יהודית ודמוקרטית מפורשת; לא מוגדרת הצורה המשפטית של הבטחת השוויון.",
+            "ru": "Прямо указана еврейская и демократическая идентичность; правовая форма гарантии равенства не определена."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -4944,7 +5013,24 @@
     {
       "party_id": "yashar",
       "question_id": "Q6",
-      "dimensions": {},
+      "dimensions": {
+        "authority": {
+          "value": "local",
+          "status": "I",
+          "confidence": 0.6,
+          "source_ids": [
+            "Y"
+          ],
+          "rationale": "Local discretion on Shabbat transport is inferred from community autonomy over religion-and-state arrangements. Service availability is unknown.",
+          "rationale_localized": {
+            "en": "Local discretion on Shabbat transport is inferred from community autonomy over religion-and-state arrangements. Service availability is unknown.",
+            "he": "סמכות מקומית לתחבורה בשבת מוסקת מאוטונומיה קהילתית בהסדרי דת ומדינה. עצם הפעלת השירות אינו ידוע.",
+            "ru": "Местные полномочия по субботнему транспорту выводятся из автономии общин в вопросах религии и государства. Наличие движения неизвестно."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -4958,9 +5044,14 @@
           "source_ids": [
             "Y"
           ],
-          "rationale": "Ten steps commit to large public investment in education and health and better public services.",
-          "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "rationale": "Expanded investment in public services; no matching financing package is specified.",
+          "rationale_localized": {
+            "en": "Expanded investment in public services; no matching financing package is specified.",
+            "he": "הרחבת ההשקעה בשירותים ציבוריים; לא מפורטת חבילת מימון התואמת לחלופות.",
+            "ru": "Расширение вложений в общественные услуги; соответствующий вариант финансирования не указан."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
         }
       },
       "checked_at": "2026-09-29",
@@ -4974,21 +5065,31 @@
           "value": "open",
           "status": "P",
           "source_ids": [
-            "Y"
+            "Y_ECON"
           ],
-          "rationale": "International standards and stronger import competition are explicit.",
-          "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "rationale": "Remove unjustified import barriers and enable parallel imports; support for agriculture does not itself establish tariff protection.",
+          "rationale_localized": {
+            "en": "Remove unjustified import barriers and enable parallel imports; support for agriculture does not itself establish tariff protection.",
+            "he": "הסרת חסמי יבוא לא מוצדקים ופתיחת יבוא מקביל; תמיכה בחקלאות אינה כשלעצמה הגנת מכס.",
+            "ru": "Снятие необоснованных импортных барьеров и параллельный импорт; поддержка сельского хозяйства сама по себе не означает тарифную защиту."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
         },
         "consumer_tool": {
           "value": "competition",
           "status": "P",
           "source_ids": [
-            "Y"
+            "Y_ECON"
           ],
-          "rationale": "Import reform is explicitly framed as a competition policy.",
-          "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "rationale": "Competition and action against concentrated market power are explicit tools.",
+          "rationale_localized": {
+            "en": "Competition and action against concentrated market power are explicit tools.",
+            "he": "תחרות ומאבק בריכוזיות הם כלים מפורשים.",
+            "ru": "Прямо предусмотрены конкуренция и борьба с концентрацией рыночной власти."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
         }
       },
       "checked_at": "2026-09-29",
@@ -4997,14 +5098,47 @@
     {
       "party_id": "yashar",
       "question_id": "Q9",
-      "dimensions": {},
+      "dimensions": {
+        "core_condition": {
+          "value": "yes",
+          "status": "P",
+          "source_ids": [
+            "Y_ED"
+          ],
+          "rationale": "Core studies condition full public funding; noncompliant schools face reduced funding. This is not an explicit mandate for wholly private schools.",
+          "rationale_localized": {
+            "en": "Core studies condition full public funding; noncompliant schools face reduced funding. This is not an explicit mandate for wholly private schools.",
+            "he": "לימודי ליבה כתנאי למימון ציבורי מלא; התקצוב יופחת למוסדות שלא יעמדו בתנאי. אין כאן חובה מפורשת למוסדות פרטיים לחלוטין.",
+            "ru": "Общее ядро — условие полного бюджетного финансирования; нарушителям сокращают средства. Прямого требования к полностью частным школам нет."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
     {
       "party_id": "yashar",
       "question_id": "Q10",
-      "dimensions": {},
+      "dimensions": {
+        "lead": {
+          "value": "national_police",
+          "status": "I",
+          "confidence": 0.6,
+          "source_ids": [
+            "Y"
+          ],
+          "rationale": "National police leadership is inferred from the national anti-crime cabinet and police reform. A Shin Bet role is unspecified.",
+          "rationale_localized": {
+            "en": "National police leadership is inferred from the national anti-crime cabinet and police reform. A Shin Bet role is unspecified.",
+            "he": "הובלה משטרתית ארצית מוסקת מקבינט הפשיעה הלאומי ושיקום המשטרה. תפקיד השב״כ לא מפורט.",
+            "ru": "Ведущая роль национальной полиции выводится из общегосударственного антикриминального кабинета и реформы полиции. Роль ШАБАКа не указана."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -5030,21 +5164,31 @@
           "value": "yes",
           "status": "P",
           "source_ids": [
-            "Y"
+            "Y_INQUIRY"
           ],
-          "rationale": "State commission on October 7 is explicit.",
-          "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "rationale": "The consultation draft proposes a statutory state commission under the Commissions of Inquiry Law.",
+          "rationale_localized": {
+            "en": "The consultation draft proposes a statutory state commission under the Commissions of Inquiry Law.",
+            "he": "הטיוטה להתייעצות מציעה ועדה ממלכתית מכוח חוק ועדות חקירה.",
+            "ru": "Проект для обсуждения предлагает государственную комиссию на основании закона о следственных комиссиях."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
         },
         "appointment": {
           "value": "judicial",
           "status": "P",
           "source_ids": [
-            "Y"
+            "Y_INQUIRY"
           ],
-          "rationale": "The cited commitment is to a state commission, matching the court-president appointment route in the reviewed question.",
-          "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "rationale": "PDF page 3 assigns appointment to the Supreme Court president, with consultation rather than a political veto.",
+          "rationale_localized": {
+            "en": "PDF page 3 assigns appointment to the Supreme Court president, with consultation rather than a political veto.",
+            "he": "עמוד 3 מפקיד את המינוי בידי נשיא בית המשפט העליון, עם התייעצות ולא וטו פוליטי.",
+            "ru": "Страница 3 поручает назначение председателю Верховного суда, с консультациями, а не политическим вето."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
         }
       },
       "checked_at": "2026-09-29",
@@ -5060,9 +5204,14 @@
           "source_ids": [
             "Y"
           ],
-          "rationale": "Prime minister limited to two terms.",
-          "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "rationale": "A binding prime-ministerial term limit is explicit.",
+          "rationale_localized": {
+            "en": "A binding prime-ministerial term limit is explicit.",
+            "he": "הגבלת כהונת ראש הממשלה מפורשת.",
+            "ru": "Прямо предусмотрено ограничение срока полномочий премьера."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
         },
         "mechanism": {
           "value": "terms",
@@ -5070,9 +5219,14 @@
           "source_ids": [
             "Y"
           ],
-          "rationale": "The stated limit is two terms.",
-          "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "rationale": "Two terms, rather than a specified cumulative number of years.",
+          "rationale_localized": {
+            "en": "Two terms, rather than a specified cumulative number of years.",
+            "he": "שתי קדנציות, ולא מספר שנים מצטבר מוגדר.",
+            "ru": "Два срока, а не установленное суммарное число лет."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
         }
       },
       "checked_at": "2026-09-29",
@@ -5088,14 +5242,47 @@
     {
       "party_id": "yashar",
       "question_id": "Q16",
-      "dimensions": {},
+      "dimensions": {
+        "funding_model": {
+          "value": "institution",
+          "status": "P",
+          "source_ids": [
+            "Y_ED"
+          ],
+          "rationale": "School heads and local authorities receive budget powers; this supports institutional funding, not parent-held vouchers. Admissions remain unspecified.",
+          "rationale_localized": {
+            "en": "School heads and local authorities receive budget powers; this supports institutional funding, not parent-held vouchers. Admissions remain unspecified.",
+            "he": "סמכויות תקציב למנהלים ולרשויות תומכות במימון מוסדי ולא בשוברים להורים. תנאי הקבלה אינם מפורטים.",
+            "ru": "Бюджетные полномочия передаются директорам и муниципалитетам: институциональное финансирование, а не ваучеры родителей. Правила приёма не указаны."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
     {
       "party_id": "yashar",
       "question_id": "Q17",
-      "dimensions": {},
+      "dimensions": {
+        "housing_tool": {
+          "value": "private_supply",
+          "status": "I",
+          "confidence": 0.6,
+          "source_ids": [
+            "Y_ECON"
+          ],
+          "rationale": "Private supply incentives are inferred from urban renewal and taxes on undeveloped land. No opposition to public housing is inferred.",
+          "rationale_localized": {
+            "en": "Private supply incentives are inferred from urban renewal and taxes on undeveloped land. No opposition to public housing is inferred.",
+            "he": "תמריצים להיצע פרטי מוסקים מהתחדשות עירונית ומיסוי קרקע לא מפותחת. אין הסקת התנגדות לדיור ציבורי.",
+            "ru": "Стимулирование частного предложения выводится из обновления застройки и налога на неосваиваемую землю. Противодействие социальному жилью не предполагается."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -5114,12 +5301,31 @@
           "value": "yes",
           "status": "P",
           "source_ids": [
-            "Y",
-            "DR"
+            "Y_SERVICE"
           ],
-          "rationale": "Arab citizens included in mandatory service; civilian obligation explicit in response.",
-          "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "rationale": "Arab citizens are explicitly included in universal service.",
+          "rationale_localized": {
+            "en": "Arab citizens are explicitly included in universal service.",
+            "he": "אזרחים ערבים נכללים במפורש בחובת השירות.",
+            "ru": "Арабские граждане прямо включены во всеобщую обязательную службу."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
+        },
+        "service_model": {
+          "value": "military_priority",
+          "status": "P",
+          "source_ids": [
+            "Y_SERVICE"
+          ],
+          "rationale": "The universal framework prioritizes military service, with a civilian route for others; no community-run alternative is specified.",
+          "rationale_localized": {
+            "en": "The universal framework prioritizes military service, with a civilian route for others; no community-run alternative is specified.",
+            "he": "המסגרת הכללית נותנת קדימות לצבא ומסלול אזרחי לאחרים; לא מוצעת חלופה בניהול קהילתי.",
+            "ru": "Общая схема отдаёт приоритет армии, с гражданским маршрутом для остальных; общинная альтернатива не предусмотрена."
+          },
+          "checked_at": "2026-09-29",
+          "review_state": "editorial_draft"
         }
       },
       "checked_at": "2026-09-29",

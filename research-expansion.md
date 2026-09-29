@@ -9,6 +9,12 @@
 - **Q3 · appointments · I · parliament** — Продвигаемая руководителями партии модель 2025 года ближе к политическому назначению судей, но не тождественна прямому избранию Кнессетом. [TOI_JUDGES25](https://www.timesofisrael.com/knesset-passes-law-greatly-boosting-political-control-over-judicial-appointments/)
 - **Q7 · funding · I · lower_taxes** — Принципы ограниченного вмешательства государства и рыночной конкуренции предполагают предпочтение низких налогов; конкретный бюджетный план не известен. [IDI_LIKUD](https://en.idi.org.il/israeli-elections-and-parties/parties/likud/)
 
+## Яшар
+
+- **Q6 · authority · I · local** — Местные полномочия по субботнему транспорту выводятся из автономии общин в вопросах религии и государства. Наличие движения неизвестно. [Y](https://yasharwitheisenkot.com/agenda_point/)
+- **Q10 · lead · I · national_police** — Ведущая роль национальной полиции выводится из общегосударственного антикриминального кабинета и реформы полиции. Роль ШАБАКа не указана. [Y](https://yasharwitheisenkot.com/agenda_point/)
+- **Q17 · housing_tool · I · private_supply** — Стимулирование частного предложения выводится из обновления застройки и налога на неосваиваемую землю. Противодействие социальному жилью не предполагается. [Y_ECON](https://yasharwitheisenkot.com/principles/economics/)
+
 ## Беяхад
 
 - **Q6 · service · R · limited / full** — Supports Shabbat transport; the report does not settle service intensity. Both operating-service answers match this broad position. [TOI_REL26](https://www.timesofisrael.com/liveblog_entry/ex-pm-bennett-backs-public-transport-on-shabbat-civil-marriage-sparking-haredi-backlash/)

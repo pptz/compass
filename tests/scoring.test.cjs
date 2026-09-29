@@ -168,6 +168,18 @@ assert.equal(optionSimilarity(schools,schoolOption('universal_core'),schoolOptio
 const schoolFixture={questions:[schools],parties:fixture.parties,positions:[position('Q9',{core_condition:known('yes')})]};
 assertClose(score(schoolFixture,{Q9:'universal_core'})[0].similarity,.375);
 assertClose(score(schoolFixture,{Q9:'universal_core'})[0].coverage,.5);
+// The detailed Yashar plan supports a funding condition, not an entire answer package.
+const yasharResult = (answers, estimates=true) => score(data,answers,'long',false,Object.keys(answers),{},estimates).find(r=>r.party.id==='yashar');
+assertClose(yasharResult({Q9:'mixed_core'},false).similarity,.5);
+assertClose(yasharResult({Q9:'universal_core'},false).similarity,.375);
+assertClose(yasharResult({Q9:'autonomous'},false).similarity,0);
+assertClose(yasharResult({Q9:'universal_core'},false).documentedCoverage,.5);
+assertClose(yasharResult({Q2:'universal_military'},false).similarity,1);
+// Local discretion is an inference only; it does not supply a transport-service position.
+assertClose(yasharResult({Q6:'local_limited'}).similarity,.3);
+assertClose(yasharResult({Q6:'private_local'}).similarity,.3);
+assertClose(yasharResult({Q6:'local_limited'},false).similarity,0);
+assertClose(yasharResult({Q6:'local_limited'}).documentedCoverage,0);
 // Explicit run IDs, including replacements, control both inclusion and weights.
 assertClose(score(weighted,{Q1:'one',Q2:'one',Q3:'three'},'short',false,['Q2','Q3'])[0].similarity,.5);
 assertClose(score(weighted,{Q1:'one',Q2:'one',Q3:'three'},'short',false,['Q3'])[0].similarity,0);

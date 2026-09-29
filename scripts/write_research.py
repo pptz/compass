@@ -60,7 +60,7 @@ The coefficient 0.6 and the graded matrices are editorial conventions, not stati
 
 ## Source coverage and limitations
 
-The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the additional source review, with [a readable review table](research-expansion.md). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately.
+The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the additional source review, with [a readable review table](research-expansion.md). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately. The [Yashar programme review](yashar-review.md) records the official programme's mapping and remaining limits across all 20 questions.
 
 This expansion draws on Israel Democracy Institute party profiles, Times of Israel reporting, Associated Press coverage, and historical Ynet reports. Sources document particular policy components rather than entire answer packages. Dated profiles and secondary reports are not substitutes for a comprehensive current manifesto. The earlier source investigation remains in [the archive](archive/agreement-scale-v1/compass-research.md); its old scoring rules are superseded.
 

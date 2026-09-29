@@ -54,7 +54,7 @@ The coefficient 0.6 and the graded matrices are editorial conventions, not stati
 
 ## Source coverage and limitations
 
-The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the additional source review, with [a readable review table](research-expansion.md). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately.
+The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the additional source review, with [a readable review table](research-expansion.md). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately. The [Yashar programme review](yashar-review.md) records the official programme's mapping and remaining limits across all 20 questions.
 
 This expansion draws on Israel Democracy Institute party profiles, Times of Israel reporting, Associated Press coverage, and historical Ynet reports. Sources document particular policy components rather than entire answer packages. Dated profiles and secondary reports are not substitutes for a comprehensive current manifesto. The earlier source investigation remains in [the archive](archive/agreement-scale-v1/compass-research.md); its old scoring rules are superseded.
 
@@ -592,7 +592,7 @@ Dates and retrieval limitations are preserved from the research. An undated live
 
 | ID | Source | Date | Note |
 |---|---|---|---|
-| Y | [Yashar: ten steps](https://yasharwitheisenkot.com/) | Undated | Current homepage; detailed subpages intermittently returned a verification screen. |
+| Y | [Yashar: ten-step programme](https://yasharwitheisenkot.com/agenda_point/) | Undated | Retrieved on 2026-09-29; publication date not stated. Full agenda reviewed; replaces the earlier homepage reference. |
 | D | [Democrats: agenda, July 2025](https://democrats.org.il/wp-content/uploads/2025/09/agenda2025.pdf) | 2025-07 | Date taken from the document cover, not search-engine publication metadata. Newer plans also exist at yes.democrats.org.il; the parsed index did not expose their text. |
 | DC | [Democrats: current commitments](https://fighters.democrats.org.il/) | Undated |  |
 | B | [Beyahad: published plans](https://be-yahad.org.il/plans/?bennett_plans_cat=198) | Undated |  |
@@ -629,6 +629,10 @@ Dates and retrieval limitations are preserved from the research. An undated live
 | RDE21 | [Religious Zionism: economic platform](https://zionutdatit.org.il/wp-content/uploads/2021/12/כלכלה.pdf) | 2021-12 | Official linked PDF, visually inspected. Explicitly calls for compulsory arbitration in essential services. |
 | RDB23 | [Religious Zionism: 2023–24 budget policy](https://zionutdatit.org.il/budget/) | 2023–2024 | Official text retrieved directly; internal budget-year references establish date. Not a new 2026 program. |
 | OZ20 | [Otzma Yehudit: principles for the 23rd Knesset election (2020)](https://www.knesset.tv/media/34728/מצע-עוצמה-יהודית.pdf) | 2020-01-28 | Party principles archived by the Knesset channel; heading explicitly dates the election document. Section 4 visually inspected. Historical evidence, not a 2026 manifesto. |
+| Y_ED | [Yashar: education plan](https://yasharwitheisenkot.com/principles/education/) | Undated | Retrieved on 2026-09-29; publication date not stated. Detailed funding conditions qualify the broad core-for-all pledge. |
+| Y_SERVICE | [Yashar: service for all](https://yasharwitheisenkot.com/principles/service-for-all/) | Undated | Retrieved on 2026-09-29; publication date not stated. Direct programme; limited deferrals are distinguished from sector-wide exemptions. |
+| Y_ECON | [Yashar: economy and cost of living](https://yasharwitheisenkot.com/principles/economics/) | Undated | Retrieved on 2026-09-29; publication date not stated. Substantive policy sections reviewed; the page also contains a placeholder paragraph, which is not evidence. |
+| Y_INQUIRY | [Yashar: state inquiry proposal (consultation draft)](https://yasharwitheisenkot.com/wp-content/uploads/2026/08/מתווה-ישר-לועדת-חקירה-ממלכתית-לטבח-ה-7-באוקטובר-טיוטה-לשיתוף-הציבור.pdf) | Undated | Retrieved on 2026-09-29; publication date not stated. Linked from /vaadat-hakira/. PDF page 3 specifies judicial appointment. Consultation remains open until 2026-10-07; this is a party proposal, not enacted policy. |
 | IDI_BALAD | [IDI: Balad party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/balad/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |
 | IDI_HADASH | [IDI: Hadash party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/hadash/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |
 | IDI_TAAL | [IDI: Ta’al party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/taal/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |

@@ -41,6 +41,46 @@
       "date": "2020-01-28",
       "type": "archive",
       "note": "Party principles archived by the Knesset channel; heading explicitly dates the election document. Section 4 visually inspected. Historical evidence, not a 2026 manifesto."
+    },
+    "Y": {
+      "title": "Yashar: ten-step programme",
+      "url": "https://yasharwitheisenkot.com/agenda_point/",
+      "date": null,
+      "type": "party_program",
+      "checked_at": "2026-09-29",
+      "note": "Retrieved on 2026-09-29; publication date not stated. Full agenda reviewed; replaces the earlier homepage reference."
+    },
+    "Y_ED": {
+      "title": "Yashar: education plan",
+      "url": "https://yasharwitheisenkot.com/principles/education/",
+      "date": null,
+      "type": "party_program",
+      "checked_at": "2026-09-29",
+      "note": "Retrieved on 2026-09-29; publication date not stated. Detailed funding conditions qualify the broad core-for-all pledge."
+    },
+    "Y_SERVICE": {
+      "title": "Yashar: service for all",
+      "url": "https://yasharwitheisenkot.com/principles/service-for-all/",
+      "date": null,
+      "type": "party_program",
+      "checked_at": "2026-09-29",
+      "note": "Retrieved on 2026-09-29; publication date not stated. Direct programme; limited deferrals are distinguished from sector-wide exemptions."
+    },
+    "Y_ECON": {
+      "title": "Yashar: economy and cost of living",
+      "url": "https://yasharwitheisenkot.com/principles/economics/",
+      "date": null,
+      "type": "party_program",
+      "checked_at": "2026-09-29",
+      "note": "Retrieved on 2026-09-29; publication date not stated. Substantive policy sections reviewed; the page also contains a placeholder paragraph, which is not evidence."
+    },
+    "Y_INQUIRY": {
+      "title": "Yashar: state inquiry proposal (consultation draft)",
+      "url": "https://yasharwitheisenkot.com/wp-content/uploads/2026/08/מתווה-ישר-לועדת-חקירה-ממלכתית-לטבח-ה-7-באוקטובר-טיוטה-לשיתוף-הציבור.pdf",
+      "date": null,
+      "type": "party_program",
+      "checked_at": "2026-09-29",
+      "note": "Retrieved on 2026-09-29; publication date not stated. Linked from /vaadat-hakira/. PDF page 3 specifies judicial appointment. Consultation remains open until 2026-10-07; this is a party proposal, not enacted policy."
     }
   },
   "positions": [
@@ -174,6 +214,258 @@
         "OZ20"
       ],
       "rationale": "Section 4 explicitly calls for sovereignty in all parts of the land, rather than only selected areas.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q2",
+      "dimension_id": "obligation",
+      "value": "universal",
+      "status": "P",
+      "source_ids": [
+        "Y_SERVICE"
+      ],
+      "rationale": "Universal service, with limited supervised deferrals including a Torah-study allocation of up to 3% of each cohort.",
+      "rationale_localized": {
+        "en": "Universal service, with limited supervised deferrals including a Torah-study allocation of up to 3% of each cohort.",
+        "he": "חובת שירות לכל, עם דחיות מוגבלות ומפוקחות, לרבות עד 3% מהמחזור ללימודי תורה.",
+        "ru": "Всеобщая служба с ограниченными контролируемыми отсрочками, включая изучение Торы для не более 3% призывного потока."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q2",
+      "dimension_id": "pathway",
+      "value": "military_priority",
+      "status": "P",
+      "source_ids": [
+        "Y_SERVICE"
+      ],
+      "rationale": "The army selects recruits first; those not recruited must serve in civilian routes.",
+      "rationale_localized": {
+        "en": "The army selects recruits first; those not recruited must serve in civilian routes.",
+        "he": "צה״ל בוחר תחילה; מי שלא יגויס חייב בשירות אזרחי.",
+        "ru": "Армия отбирает призывников первой; остальные обязаны пройти гражданскую службу."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q4",
+      "dimension_id": "identity",
+      "value": "jewish_democratic",
+      "status": "P",
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "Explicit Jewish and democratic identity; the legal form of an equality guarantee is unspecified.",
+      "rationale_localized": {
+        "en": "Explicit Jewish and democratic identity; the legal form of an equality guarantee is unspecified.",
+        "he": "זהות יהודית ודמוקרטית מפורשת; לא מוגדרת הצורה המשפטית של הבטחת השוויון.",
+        "ru": "Прямо указана еврейская и демократическая идентичность; правовая форма гарантии равенства не определена."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q7",
+      "dimension_id": "services",
+      "value": "expand",
+      "status": "P",
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "Expanded investment in public services; no matching financing package is specified.",
+      "rationale_localized": {
+        "en": "Expanded investment in public services; no matching financing package is specified.",
+        "he": "הרחבת ההשקעה בשירותים ציבוריים; לא מפורטת חבילת מימון התואמת לחלופות.",
+        "ru": "Расширение вложений в общественные услуги; соответствующий вариант финансирования не указан."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q8",
+      "dimension_id": "imports",
+      "value": "open",
+      "status": "P",
+      "source_ids": [
+        "Y_ECON"
+      ],
+      "rationale": "Remove unjustified import barriers and enable parallel imports; support for agriculture does not itself establish tariff protection.",
+      "rationale_localized": {
+        "en": "Remove unjustified import barriers and enable parallel imports; support for agriculture does not itself establish tariff protection.",
+        "he": "הסרת חסמי יבוא לא מוצדקים ופתיחת יבוא מקביל; תמיכה בחקלאות אינה כשלעצמה הגנת מכס.",
+        "ru": "Снятие необоснованных импортных барьеров и параллельный импорт; поддержка сельского хозяйства сама по себе не означает тарифную защиту."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q8",
+      "dimension_id": "consumer_tool",
+      "value": "competition",
+      "status": "P",
+      "source_ids": [
+        "Y_ECON"
+      ],
+      "rationale": "Competition and action against concentrated market power are explicit tools.",
+      "rationale_localized": {
+        "en": "Competition and action against concentrated market power are explicit tools.",
+        "he": "תחרות ומאבק בריכוזיות הם כלים מפורשים.",
+        "ru": "Прямо предусмотрены конкуренция и борьба с концентрацией рыночной власти."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q9",
+      "dimension_id": "core_condition",
+      "value": "yes",
+      "status": "P",
+      "source_ids": [
+        "Y_ED"
+      ],
+      "rationale": "Core studies condition full public funding; noncompliant schools face reduced funding. This is not an explicit mandate for wholly private schools.",
+      "rationale_localized": {
+        "en": "Core studies condition full public funding; noncompliant schools face reduced funding. This is not an explicit mandate for wholly private schools.",
+        "he": "לימודי ליבה כתנאי למימון ציבורי מלא; התקצוב יופחת למוסדות שלא יעמדו בתנאי. אין כאן חובה מפורשת למוסדות פרטיים לחלוטין.",
+        "ru": "Общее ядро — условие полного бюджетного финансирования; нарушителям сокращают средства. Прямого требования к полностью частным школам нет."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q16",
+      "dimension_id": "funding_model",
+      "value": "institution",
+      "status": "P",
+      "source_ids": [
+        "Y_ED"
+      ],
+      "rationale": "School heads and local authorities receive budget powers; this supports institutional funding, not parent-held vouchers. Admissions remain unspecified.",
+      "rationale_localized": {
+        "en": "School heads and local authorities receive budget powers; this supports institutional funding, not parent-held vouchers. Admissions remain unspecified.",
+        "he": "סמכויות תקציב למנהלים ולרשויות תומכות במימון מוסדי ולא בשוברים להורים. תנאי הקבלה אינם מפורטים.",
+        "ru": "Бюджетные полномочия передаются директорам и муниципалитетам: институциональное финансирование, а не ваучеры родителей. Правила приёма не указаны."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q13",
+      "dimension_id": "statutory",
+      "value": "yes",
+      "status": "P",
+      "source_ids": [
+        "Y_INQUIRY"
+      ],
+      "rationale": "The consultation draft proposes a statutory state commission under the Commissions of Inquiry Law.",
+      "rationale_localized": {
+        "en": "The consultation draft proposes a statutory state commission under the Commissions of Inquiry Law.",
+        "he": "הטיוטה להתייעצות מציעה ועדה ממלכתית מכוח חוק ועדות חקירה.",
+        "ru": "Проект для обсуждения предлагает государственную комиссию на основании закона о следственных комиссиях."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q13",
+      "dimension_id": "appointment",
+      "value": "judicial",
+      "status": "P",
+      "source_ids": [
+        "Y_INQUIRY"
+      ],
+      "rationale": "PDF page 3 assigns appointment to the Supreme Court president, with consultation rather than a political veto.",
+      "rationale_localized": {
+        "en": "PDF page 3 assigns appointment to the Supreme Court president, with consultation rather than a political veto.",
+        "he": "עמוד 3 מפקיד את המינוי בידי נשיא בית המשפט העליון, עם התייעצות ולא וטו פוליטי.",
+        "ru": "Страница 3 поручает назначение председателю Верховного суда, с консультациями, а не политическим вето."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q14",
+      "dimension_id": "binding_limit",
+      "value": "yes",
+      "status": "P",
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "A binding prime-ministerial term limit is explicit.",
+      "rationale_localized": {
+        "en": "A binding prime-ministerial term limit is explicit.",
+        "he": "הגבלת כהונת ראש הממשלה מפורשת.",
+        "ru": "Прямо предусмотрено ограничение срока полномочий премьера."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q14",
+      "dimension_id": "mechanism",
+      "value": "terms",
+      "status": "P",
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "Two terms, rather than a specified cumulative number of years.",
+      "rationale_localized": {
+        "en": "Two terms, rather than a specified cumulative number of years.",
+        "he": "שתי קדנציות, ולא מספר שנים מצטבר מוגדר.",
+        "ru": "Два срока, а не установленное суммарное число лет."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q19",
+      "dimension_id": "compulsory",
+      "value": "yes",
+      "status": "P",
+      "source_ids": [
+        "Y_SERVICE"
+      ],
+      "rationale": "Arab citizens are explicitly included in universal service.",
+      "rationale_localized": {
+        "en": "Arab citizens are explicitly included in universal service.",
+        "he": "אזרחים ערבים נכללים במפורש בחובת השירות.",
+        "ru": "Арабские граждане прямо включены во всеобщую обязательную службу."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q19",
+      "dimension_id": "service_model",
+      "value": "military_priority",
+      "status": "P",
+      "source_ids": [
+        "Y_SERVICE"
+      ],
+      "rationale": "The universal framework prioritizes military service, with a civilian route for others; no community-run alternative is specified.",
+      "rationale_localized": {
+        "en": "The universal framework prioritizes military service, with a civilian route for others; no community-run alternative is specified.",
+        "he": "המסגרת הכללית נותנת קדימות לצבא ומסלול אזרחי לאחרים; לא מוצעת חלופה בניהול קהילתי.",
+        "ru": "Общая схема отдаёт приоритет армии, с гражданским маршрутом для остальных; общинная альтернатива не предусмотрена."
+      },
+      "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     }
   ]
