@@ -6,7 +6,7 @@ root = Path(__file__).resolve().parent.parent
 data = json.loads((root/'compass-data.json').read_text())
 lines = ['''# Your Choice — Your Vote — policy choices, sources and reasoned estimates (v0.5)
 
-The browser contains **20 original questions, 90 substantive choices and 40 policy components**, in English, Hebrew and Russian. Each question offers at most five substantive answers. [Open the quiz](index.html) or [read the issue guide](issues.html). Each guide section introduces the dispute, presents competing approaches, poses open questions and links to further reading. The question-mark help and “About this issue” elements explain the issue itself; calculation details are separate.
+The browser contains **22 original questions, 100 substantive choices and 44 policy components**, in English, Hebrew and Russian. Each question offers at most five substantive answers. [Open the quiz](index.html) or [read the issue guide](issues.html). Each guide section introduces the dispute, presents competing approaches, poses open questions and links to further reading. The question-mark help and “About this issue” elements explain the issue itself; calculation details are separate.
 
 [Zehut's compass](https://zehut.org.il/compass), inspected on 29 September 2026, informed the policy-choice format. These are newly authored questions; neither its question bank nor its party-specific weights are reused.
 
@@ -14,11 +14,11 @@ The browser contains **20 original questions, 90 substantive choices and 40 poli
 
 The quiz shows one question per step. A substantive answer, Skip or None receives a brief visual confirmation before advancing to the next question; the last choice opens results. Back restores earlier answers and importance; Next continues after an importance-only edit or when retaining a saved answer. Language changes preserve the current step. Replacement keeps the same step number, and restarting resets to step one.
 
-Every new short run draws **two random questions from each of five domains**, then shuffles all ten. This balances topic coverage; it does not designate ten questions as the most important. The long run shuffles all twenty. Substantive answer choices are also shuffled once per run; revisiting a question or switching language preserves their order and answer IDs. Overlap tables use the same displayed order. Switching language preserves the run and answers; starting again creates a new run.
+Every new short run draws **one question from each of six domains and a second question from four randomly selected domains**, then shuffles all ten. Every domain appears, with an equal chance of receiving the extra question; exact equality within ten questions is impossible with six domains. The long run shuffles all 22. The Status of Women domain contains Q21 (party representation) and Q22 (social equality and gender separation). Substantive answer choices are also shuffled once per run; revisiting a question or switching language preserves their order and answer IDs. Overlap tables use the same displayed order. Switching language preserves the run and answers; starting again creates a new run.
 
 Importance appears immediately beneath the question text, before the answer options. **Change question** immediately draws an unused question, preferring a random question from the same domain when possible. The importance menu offers the same action. **Skip** is a separate unscored choice that retains the question in the run and moves forward, as does “None of these fits”. Back allows either choice to be revised. Selecting “Not important” additionally offers a manual replacement chooser.
 
-Replaced questions stay retired for that run; after ten replacements in a short run there are no spares. The long form starts with all twenty questions, so it has no spares. The change action is disabled with an explanation when no unused questions remain; Skip remains available. Other answers and importance choices are preserved, and the replacement starts with default importance. Scores use the actual selected questions, including replacements.
+Replaced questions stay retired for that run; after twelve replacements in a short run there are no spares. The long form starts with all 22 questions, so it has no spares. The change action is disabled with an explanation when no unused questions remain; Skip remains available. Other answers and importance choices are preserved, and the replacement starts with default importance. Scores use the actual selected questions, including replacements.
 
 ## Scoring and evidence
 
@@ -60,7 +60,7 @@ The coefficient 0.6 and the graded matrices are editorial conventions, not stati
 
 ## Source coverage and limitations
 
-The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the earlier additional source review, with [a readable review table](research-expansion.md). The latest [targeted coverage review](coverage-review.md), including Arabic-language sources, records additions, replacements and withdrawn mappings from [coverage-review.json](coverage-review.json). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately. The [Yashar programme review](yashar-review.md) records the initial official-programme mapping across all 20 questions.
+The [Status of Women review](women-review.md) documents the two added questions and their evidence, including the distinction between exclusion and quotas. The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the earlier additional source review, with [a readable review table](research-expansion.md). The latest [targeted coverage review](coverage-review.md), including Arabic-language sources, records additions, replacements and withdrawn mappings from [coverage-review.json](coverage-review.json). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately. The [Yashar programme review](yashar-review.md) records the initial official-programme mapping across all 20 questions.
 
 This expansion draws on Israel Democracy Institute party profiles, Times of Israel reporting, Associated Press coverage, and historical Ynet reports. Sources document particular policy components rather than entire answer packages. Dated profiles and secondary reports are not substitutes for a comprehensive current manifesto. The earlier source investigation remains in [the archive](archive/agreement-scale-v1/compass-research.md); its old scoring rules are superseded.
 
@@ -80,17 +80,18 @@ for q in data['questions']:
 lines += ['\n## Source registry\n\nDates and retrieval limitations are preserved from the research. An undated live page is not proof of a newly issued 2026 manifesto.\n\n| ID | Source | Date | Note |\n|---|---|---|---|\n']
 for key, source in data['sources'].items():
     lines += [f"| {key} | [{source['title']}]({source['url']}) | {source.get('date') or 'Undated'} | {source.get('note','')} |\n"]
-(root/'compass-research.md').write_text(''.join(lines))
+(root/'compass-research.md').write_text(''.join(lines).replace('\n  \n', '\n\n'))
 print('Updated research report, evidence coverage and source review.')
 
-gaps = ["# Источники и оставшиеся пробелы\n\nВ банке 40 компонентов на партию. Это число заполненных компонентов, а не процент совпадения. Предположения приведены отдельно и не считаются документированными позициями. Архив может занимать тот же компонент, что и предположение.\n\n| Партия | Источники P/S/R | Предположения I | Архив H | Без источника и оценки |\n|---|---:|---:|---:|---:|\n"]
+component_count = sum(len(q['dimensions']) for q in data['questions'])
+gaps = [f"# Источники и оставшиеся пробелы\n\nЧисло компонентов на партию: {component_count}. Это число заполненных компонентов, а не процент совпадения. Предположения приведены отдельно и не считаются документированными позициями. Архив может занимать тот же компонент, что и предположение.\n\n| Партия | Источники P/S/R | Предположения I | Архив H | Без источника и оценки |\n|---|---:|---:|---:|---:|\n"]
 for party in data['parties']:
     components = [c for row in data['positions'] if row['party_id']==party['id'] for c in row['dimensions'].values()]
     sourced = sum(c['status'] in ['P','S','R'] for c in components)
     inferred = sum(c['status']=='I' or bool(c.get('inference')) for c in components)
     archived = sum(c['status']=='H' for c in components)
-    gaps.append(f"| {party['ru']} | {sourced} | {inferred} | {archived} | {40-sourced-inferred} |\n")
-gaps.append("\nПоследний столбец относится к режиму без архивов. Вторичные источники и оценки включены по умолчанию; оценки можно отключить. Значение оценки основано только на указанном принципе или действии партии, а не на предполагаемой позиции по всему вопросу.\n\nНужны прямые и актуальные материалы по конкретным вопросам, особенно для Ликуда, Оцма Йехудит, ТААЛ и Религиозного сионизма. Присылайте ссылку, партию, тему и дату. [Последняя проверка, включая арабские источники](coverage-review.md), [обоснования предыдущих дополнений](research-expansion.md), [компоненты](party-positions.csv), [вопросы](issues.html?lang=ru).\n")
+    gaps.append(f"| {party['ru']} | {sourced} | {inferred} | {archived} | {component_count-sourced-inferred} |\n")
+gaps.append("\nПоследний столбец относится к режиму без архивов. Вторичные источники и оценки включены по умолчанию; оценки можно отключить. Значение оценки основано только на указанном принципе или действии партии, а не на предполагаемой позиции по всему вопросу.\n\nНужны прямые и актуальные материалы по конкретным вопросам, особенно для Ликуда, Оцма Йехудит, ТААЛ и Религиозного сионизма. Присылайте ссылку, партию, тему и дату. [Новая категория: положение женщины](women-review.md), [проверка арабских источников](coverage-review.md), [обоснования предыдущих дополнений](research-expansion.md), [компоненты](party-positions.csv), [вопросы](issues.html?lang=ru).\n")
 (root/'source-gaps.md').write_text(''.join(gaps))
 expansion = json.loads((root/'research-expansion.json').read_text())
 review = ["# Дополнительные источники и выводы\n\nПроверено: 2026-09-29. R — вторичное описание позиции; H — исторический материал; I — редакционное предположение с коэффициентом 0,6, а не измеренной вероятностью. Записи, подтверждающие уже имеющуюся позицию, не дают дополнительных баллов.\n\n"]
@@ -108,10 +109,10 @@ for party in data['parties']:
 (root/'research-expansion.md').write_text(''.join(review))
 
 targeted = json.loads((root/'coverage-review.json').read_text())
-report = [f"# Targeted party-coverage review\n\nReviewed: {targeted['checked_at']}. Arabic-language research covers Hadash, Balad, Ta’al and Ra’am. Other additions focus on parties with sparse evidence. Counts below refer to documented policy components out of 40, **not match percentages**. Inferences are shown separately and discounted to 60%.\n\n"]
+report = [f"# Targeted party-coverage review\n\nReviewed: {targeted['checked_at']}. Arabic-language research covers Hadash, Balad, Ta’al and Ra’am. Other additions focus on parties with sparse evidence. This report covers the original Q1–Q20 only; the subsequent [women’s-status additions](women-review.md) are separate. Counts below refer to documented policy components out of 40, **not match percentages**. Inferences are shown separately and discounted to 60%.\n\n"]
 report.append('| Party | Documented before | Documented now | Inferences before | Inferences now |\n|---|---:|---:|---:|---:|\n')
 for party in data['parties']:
-    components = [c for row in data['positions'] if row['party_id']==party['id'] for c in row['dimensions'].values()]
+    components = [c for row in data['positions'] if row['party_id']==party['id'] and row['question_id'] not in ['Q21','Q22'] for c in row['dimensions'].values()]
     sourced = sum(c['status'] in ['P','S','R'] for c in components)
     inferred = sum(c['status']=='I' or bool(c.get('inference')) for c in components)
     before = targeted['baseline'][party['id']]
@@ -139,3 +140,23 @@ for sid, source in targeted['sources'].items():
     report.append(f"| [{source['title']}]({source['url']}) ({sid}) | {source.get('date') or 'Undated'} | {source.get('language', 'he')} | {source.get('note','')} |\n")
 report.append('\nAuthored records: [coverage-review.json](coverage-review.json). Full current coverage: [source-gaps.md](source-gaps.md). Each new mapping has an explanation in English, Hebrew and Russian in the application.\n')
 (root/'coverage-review.md').write_text(''.join(report))
+
+
+women = json.loads((root/'women-evidence.json').read_text())
+women_lines = ["# Status of Women · מעמד האישה · Положение Женщины\n\nReviewed: 2026-09-29. Q21 concerns access to party candidacy and representation mechanisms. Q22 concerns equality policy in work, education and public life, separately from gender-separated provision. Each question has five choices, two scored components, translations and an issue-guide section.\n\nThe short quiz remains ten questions: one from each of six categories, then one more from four random categories. The full quiz contains 22 questions. The question bank now has 44 components per party. Category selection adds no hidden score weight.\n\n"]
+women_lines.append('## Evidence and boundaries\n\n')
+for party in data['parties']:
+    entries = [e for e in women['positions'] if e['party_id']==party['id']]
+    if not entries: continue
+    women_lines.append(f"### {party['en']}\n\n")
+    for entry in entries:
+        values = entry.get('value') or ' / '.join(entry['values'])
+        links = ', '.join(f"[{sid}]({data['sources'][sid]['url']})" for sid in entry['source_ids'])
+        women_lines.append(f"- **{entry['question_id']} · {entry['dimension_id']} · {entry['status']} · {values}** — {entry['rationale']} {links}\n")
+        if entry.get('inference'):
+            women_lines.append(f"  Discounted continuity estimate (I, 0.6): {entry['inference']['rationale']}\n")
+    women_lines.append('\n')
+women_lines.append('## Limitations\n\n')
+women_lines.extend(f"- {note}\n" for note in women['limitations'])
+women_lines.append('\nSources and multilingual rationales: [women-evidence.json](women-evidence.json). Unknown components still earn zero points and remain in the denominator. Historical evidence and inferences retain separate switches.\n')
+(root/'women-review.md').write_text(''.join(women_lines))

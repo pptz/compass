@@ -69,9 +69,9 @@
     "brand": "Ideological Compass",
     "eyebrow": "Your views. Published positions.",
     "title": "Your Choice — Your Vote",
-    "subtitle": "Choose between concrete policy approaches. Each short run draws two questions per domain at random; the long run shuffles all twenty.",
+    "subtitle": "Choose between concrete policy approaches. Each short run covers all six topics, with a second question from four randomly chosen topics; the long run shuffles all 22.",
     "short": "Short · 10 questions",
-    "long": "Long · 20 questions",
+    "long": "Long · 22 questions",
     "reset": "Start again",
     "quiz": "Questions",
     "results": "Results",
@@ -107,7 +107,8 @@
       "institutions": "Democratic institutions",
       "religion": "Religion & state",
       "economy": "Economy & welfare",
-      "services": "Education & public services"
+      "services": "Education & public services",
+      "women": "Status of Women"
     },
     "statuses": {
       "P": "Published policy",
@@ -161,9 +162,9 @@
     "brand": "מצפן אידאולוגי",
     "eyebrow": "העמדות שלך. המדיניות המוצהרת.",
     "title": "הבחירה שלך - הקול שלך",
-    "subtitle": "בחרו בין דרכי פעולה קונקרטיות. בכל סבב קצר נבחרות באקראי שתי שאלות מכל תחום; בסבב המלא מתערבב סדר כל עשרים השאלות.",
+    "subtitle": "בחרו בין דרכי פעולה קונקרטיות. הסבב הקצר כולל את כל ששת התחומים ועוד שאלה מארבעה תחומים שנבחרים באקראי; הסבב המלא מערבב את כל 22 השאלות.",
     "short": "קצר · 10 שאלות",
-    "long": "מלא · 20 שאלות",
+    "long": "מלא · 22 שאלות",
     "reset": "התחלה מחדש",
     "quiz": "שאלות",
     "results": "תוצאות",
@@ -199,7 +200,8 @@
       "institutions": "מוסדות דמוקרטיים",
       "religion": "דת ומדינה",
       "economy": "כלכלה ורווחה",
-      "services": "חינוך ושירותים ציבוריים"
+      "services": "חינוך ושירותים ציבוריים",
+      "women": "מעמד האישה"
     },
     "statuses": {
       "P": "מדיניות שפורסמה",
@@ -253,9 +255,9 @@
     "brand": "Идеологический Компас",
     "eyebrow": "Ваши взгляды. Публичные позиции.",
     "title": "Ваш Выбор — Ваш Голос",
-    "subtitle": "Выбирайте конкретные политические подходы к различным темам.\nКороткий опрос случайно выбирает по два вопроса из каждой темы; полный перемешивает все двадцать.",
+    "subtitle": "Выбирайте конкретные политические подходы к различным темам.\nКороткий опрос включает все шесть тем и ещё по вопросу из четырёх случайно выбранных тем; полный перемешивает все 22 вопроса.",
     "short": "Короткий · 10 вопросов",
-    "long": "Полный · 20 вопросов",
+    "long": "Полный · 22 вопроса",
     "reset": "Начать заново",
     "quiz": "Вопросы",
     "results": "Результаты",
@@ -291,7 +293,8 @@
       "institutions": "Демократические институты",
       "religion": "Религия и государство",
       "economy": "Экономика и социальная поддержка",
-      "services": "Образование и общественные услуги"
+      "services": "Образование и общественные услуги",
+      "women": "Положение Женщины"
     },
     "statuses": {
       "P": "Опубликованная политика",

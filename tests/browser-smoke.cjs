@@ -71,6 +71,8 @@ const fs = require('node:fs');
   await navigate('http://127.0.0.1:8765/?lang=ru','document.querySelectorAll(".question").length===1');
   await assertSingle();
   assert.equal(await evaluate('document.getElementById("step-label").textContent'),'Вопрос 1 из 10');
+  assert.equal(await evaluate('document.querySelectorAll("#topics li").length'),6);
+  assert((await evaluate('document.getElementById("topics").textContent')).includes('Положение Женщины'));
   assert.equal(await evaluate('document.getElementById("back").disabled'),true);
   assert.equal(await evaluate('document.getElementById("next").disabled'),true);
   assert.equal(await evaluate('document.getElementById("calculate").hidden'),true);
@@ -79,10 +81,12 @@ const fs = require('node:fs');
   const originalOptions=await optionIds();
   await setImportance(1);assert.equal(await currentId(),first);
   await changeLanguage('he');
+  assert((await evaluate('document.getElementById("topics").textContent')).includes('מעמד האישה'));
   assert.equal(await currentId(),first);
   assert.equal(await evaluate('document.documentElement.dir'),'rtl');
   assert.equal(await evaluate('document.querySelector(".importance-select").value'),'1');
   await changeLanguage('en');
+  assert((await evaluate('document.getElementById("topics").textContent')).includes('Status of Women'));
   assert.deepEqual(await optionIds(),originalOptions,'Language changes must preserve option order');
   assert.equal(await evaluate('document.querySelector(".overlap-table th[scope=col]").title'),await evaluate('document.querySelector(".choice span:last-child").textContent'));
   // The same topic help is available within a single step.
@@ -127,7 +131,7 @@ const fs = require('node:fs');
   // Replacements occupy the same step; both entry points exhaust the pool without repeats.
   await setImportance(.1);assert.equal(await evaluate('document.querySelectorAll(".replacement-select").length'),1);
   const retired=new Set([first,third]);
-  for(let i=0;i<10;i++){
+  for(let i=0;i<12;i++){
     const old=await currentId();retired.add(old);
     if(i%2)await setImportance('__replace');else await click('.change-question');
     const replacement=await currentId();assert(!retired.has(replacement));
@@ -149,16 +153,16 @@ const fs = require('node:fs');
   assert.equal(await evaluate('document.getElementById("next").hidden'),true);
   assert.equal(await evaluate('document.getElementById("calculate").disabled'),false);
   await setImportance(1);await click('#calculate');await assertRanking();
-  // A fresh long run has twenty distinct sequential steps and no replacement pool.
+  // A fresh long run has 22 distinct sequential steps and no replacement pool.
   await click('#long');await assertSingle();assert.equal(await step(),1);
-  assert.equal(await evaluate('document.getElementById("progress").max'),20);
+  assert.equal(await evaluate('document.getElementById("progress").max'),22);
   assert.equal(await evaluate('document.querySelector(".change-question").disabled'),true);
   assert.equal(await evaluate('document.querySelector(".importance-select").value'),'0.8');
-  const longOrder=await finishRun();assert.equal(longOrder.length,20);assert.equal(new Set(longOrder).size,20);
-  assert.equal(await evaluate('document.getElementById("progress").value'),20);
+  const longOrder=await finishRun();assert.equal(longOrder.length,22);assert.equal(new Set(longOrder).size,22);
+  assert.equal(await evaluate('document.getElementById("progress").value'),22);
   const before=await assertRanking();
   await click('#edit');
-  for(let i=19;i>longOrder.indexOf('Q1');i--)await click('#back');
+  for(let i=21;i>longOrder.indexOf('Q1');i--)await click('#back');
   assert.equal(await currentId(),'Q1');await setImportance(1);await click('#results-tab');
   const after=await assertRanking();assert.notDeepEqual(before,after);
   assert(Number(await evaluate('document.querySelector("[data-party=balad]").dataset.documented'))>0);
@@ -263,10 +267,10 @@ const fs = require('node:fs');
     }
   }
   // Guide and local-file artifacts remain independent of the step state.
-  await navigate('http://127.0.0.1:8765/issues.html?lang=ru#Q3','document.querySelectorAll(".issue-section").length===20');
+  await navigate('http://127.0.0.1:8765/issues.html?lang=ru#Q3','document.querySelectorAll(".issue-section").length===22');
   assert.equal(await evaluate('location.hash'),'#Q3');
-  assert.equal(await evaluate('document.querySelectorAll(".open-questions li").length'),41);
-  assert.equal(await evaluate('document.querySelectorAll(".reading-links a").length'),40);
+  assert.equal(await evaluate('document.querySelectorAll(".open-questions li").length'),48);
+  assert.equal(await evaluate('document.querySelectorAll(".reading-links a").length'),44);
   assert.equal(await evaluate('document.documentElement.scrollWidth<=innerWidth'),true);
   for(const width of [320,390]){
     await call('Emulation.setDeviceMetricsOverride',{width,height:740,deviceScaleFactor:1,mobile:true});
@@ -279,7 +283,7 @@ const fs = require('node:fs');
   const path=require('node:path');
   await navigate('file://'+path.resolve(__dirname,'../index.html'),'document.querySelectorAll(".question").length===1');
   await click('.choices input');assert.equal(await step(),2);await click('#back');assert.equal(await step(),1);
-  await navigate('file://'+path.resolve(__dirname,'../issues.html')+'?lang=ru#Q14','document.querySelectorAll(".issue-section").length===20');
+  await navigate('file://'+path.resolve(__dirname,'../issues.html')+'?lang=ru#Q14','document.querySelectorAll(".issue-section").length===22');
   assert.equal(errors.length,0,JSON.stringify(errors));
   ws.close();
   console.log('Browser checks passed: step flow, editing, replacements and scores; answer confirmation and cancellation, shuffled options, transitions in three languages at six viewport sizes (320–844px), sticky navigation, touch targets, expanded results, mobile guide and direct-file loading.');

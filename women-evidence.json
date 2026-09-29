@@ -1,0 +1,638 @@
+{
+  "checked_at": "2026-09-29",
+  "sources": {
+    "W_LIST26": {
+      "title": "IDI: women in the 2026 electoral lists",
+      "url": "https://www.idi.org.il/articles/66220",
+      "date": "2026-09-22",
+      "note": "List presence supports access to candidacy only. Poll-dependent percentages are not scored and do not establish quota rules. Joint-list figures are not assigned to component parties.",
+      "language": "he",
+      "checked_at": "2026-09-29"
+    },
+    "W_RULES26": {
+      "title": "IDI: candidate-selection rules for 2026",
+      "url": "https://www.idi.org.il/articles/65737",
+      "date": null,
+      "note": "Current election review: Likud guarantees named places; Democrats alternate women and men. Used for party rules, not a universal statutory obligation.",
+      "language": "he",
+      "checked_at": "2026-09-29"
+    },
+    "W_HAREDI": {
+      "title": "IDI: Haredi local elections and exclusion of women",
+      "url": "https://www.idi.org.il/articles/52982",
+      "date": null,
+      "note": "2024 review reproduces Shas and UTJ’s older explanation of sex-specific political roles. Read with the 2026 lists; not a blanket description of all Haredi people or parties.",
+      "language": "he",
+      "checked_at": "2026-09-29"
+    },
+    "W_BEYAHAD": {
+      "title": "Beyahad: programme on the status of women",
+      "url": "https://be-yahad.org.il/plans/women/",
+      "date": null,
+      "note": "Official live plan. Distinguishes party-funding incentives from a 50% target for senior public-service posts.",
+      "language": "he",
+      "checked_at": "2026-09-29"
+    },
+    "W_DEMOCRATS": {
+      "title": "Democrats: five-point vision, July 2025",
+      "url": "https://democrats.org.il/wp-content/uploads/2025/09/vision0725.pdf",
+      "date": "2025-07",
+      "note": "Pages 3 and 7: active inclusion and equal rights. Opposition to exclusion does not specify every voluntary-separation arrangement.",
+      "language": "he",
+      "checked_at": "2026-09-29"
+    },
+    "W_HADASH": {
+      "title": "Hadash: current bilingual principles and candidates",
+      "url": "https://hadash.org.il/",
+      "date": null,
+      "note": "Arabic and Hebrew principles explicitly support women’s equality; its own candidates include women. No Joint List attribution.",
+      "language": "ar/he",
+      "checked_at": "2026-09-29"
+    },
+    "W_OTZMA26": {
+      "title": "Arutz 7: Son Har-Melech on separate academic tracks",
+      "url": "https://www.inn.co.il/news/701665",
+      "date": "2026-07-16",
+      "note": "Attributable statement supporting optional separate tracks. Does not establish every equality safeguard or a general position against women’s employment.",
+      "language": "he",
+      "checked_at": "2026-09-29"
+    },
+    "W_COALITION23": {
+      "title": "Law professors’ forum: gender separation provisions in coalition agreements",
+      "url": "https://fs.knesset.gov.il/25/Committees/25_cs_bg_1834209.pdf",
+      "date": "2023",
+      "note": "Historical analysis hosted by the Knesset; indexed text names Shas, UTJ and Religious Zionism separately. Direct PDF retrieval failed. Current continuity is explicitly an inference.",
+      "language": "he",
+      "checked_at": "2026-09-29"
+    },
+    "W_EXCLUSION26": {
+      "title": "Israel Women’s Network: exclusion of women from public life",
+      "url": "https://iwn.org.il/wp-content/uploads/2026/02/נייר-עמדה-מטעם-שדולת-הנשים-בישראל-בנוגע-להדרת-נשים-במרחב-הציבורי.pdf",
+      "date": "2026",
+      "language": "he",
+      "checked_at": "2026-09-29",
+      "note": "Advocacy organization’s submission to the Knesset committee, page 1: explicitly identifies ideological exclusion in Shas and UTJ. Used for party practice, not its separate legal assessment. Printed numeric and Hebrew dates are inconsistent; year only."
+    }
+  },
+  "positions": [
+    {
+      "party_id": "likud",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "R",
+      "source_ids": [
+        "W_LIST26"
+      ],
+      "rationale": "Women are included in the party’s list; quota rules are separate.",
+      "rationale_localized": {
+        "en": "Women are included in the party’s list; quota rules are separate.",
+        "he": "ברשימת המפלגה נכללות נשים; כללי מכסות נבחנים בנפרד.",
+        "ru": "В списке партии есть женщины; правила квот оцениваются отдельно."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "open"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "R",
+      "source_ids": [
+        "W_LIST26"
+      ],
+      "rationale": "Women are included in the party’s list; quota rules are separate.",
+      "rationale_localized": {
+        "en": "Women are included in the party’s list; quota rules are separate.",
+        "he": "ברשימת המפלגה נכללות נשים; כללי מכסות נבחנים בנפרד.",
+        "ru": "В списке партии есть женщины; правила квот оцениваются отдельно."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "open"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "R",
+      "source_ids": [
+        "W_LIST26"
+      ],
+      "rationale": "Women are included in the party’s list; quota rules are separate.",
+      "rationale_localized": {
+        "en": "Women are included in the party’s list; quota rules are separate.",
+        "he": "ברשימת המפלגה נכללות נשים; כללי מכסות נבחנים בנפרד.",
+        "ru": "В списке партии есть женщины; правила квот оцениваются отдельно."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "open"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "R",
+      "source_ids": [
+        "W_LIST26"
+      ],
+      "rationale": "Women are included in the party’s list; quota rules are separate.",
+      "rationale_localized": {
+        "en": "Women are included in the party’s list; quota rules are separate.",
+        "he": "ברשימת המפלגה נכללות נשים; כללי מכסות נבחנים בנפרד.",
+        "ru": "В списке партии есть женщины; правила квот оцениваются отдельно."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "open"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "R",
+      "source_ids": [
+        "W_LIST26"
+      ],
+      "rationale": "Women are included in the party’s list; quota rules are separate.",
+      "rationale_localized": {
+        "en": "Women are included in the party’s list; quota rules are separate.",
+        "he": "ברשימת המפלגה נכללות נשים; כללי מכסות נבחנים בנפרד.",
+        "ru": "В списке партии есть женщины; правила квот оцениваются отдельно."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "open"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "R",
+      "source_ids": [
+        "W_LIST26"
+      ],
+      "rationale": "Women are included in the party’s list; quota rules are separate.",
+      "rationale_localized": {
+        "en": "Women are included in the party’s list; quota rules are separate.",
+        "he": "ברשימת המפלגה נכללות נשים; כללי מכסות נבחנים בנפרד.",
+        "ru": "В списке партии есть женщины; правила квот оцениваются отдельно."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "open"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "R",
+      "source_ids": [
+        "W_LIST26"
+      ],
+      "rationale": "Women are included in the party’s list; quota rules are separate.",
+      "rationale_localized": {
+        "en": "Women are included in the party’s list; quota rules are separate.",
+        "he": "ברשימת המפלגה נכללות נשים; כללי מכסות נבחנים בנפרד.",
+        "ru": "В списке партии есть женщины; правила квот оцениваются отдельно."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "open"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "R",
+      "source_ids": [
+        "W_HAREDI",
+        "W_LIST26",
+        "W_EXCLUSION26"
+      ],
+      "rationale": "Exclusion from candidacy is policy, not an accidental all-male result.",
+      "rationale_localized": {
+        "en": "Exclusion from candidacy is policy, not an accidental all-male result.",
+        "he": "הדרת נשים מהתמודדות היא מדיניות, לא תוצאה מקרית של בחירת גברים.",
+        "ru": "Исключение женщин из кандидатов — политика, а не случайный мужской состав."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "exclude"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q21",
+      "dimension_id": "representation",
+      "status": "I",
+      "source_ids": [
+        "W_HAREDI",
+        "W_LIST26",
+        "W_EXCLUSION26"
+      ],
+      "rationale": "Exclusion implies no mechanism guaranteeing women places; this is a separate inference.",
+      "rationale_localized": {
+        "en": "Exclusion implies no mechanism guaranteeing women places; this is a separate inference.",
+        "he": "מההדרה משתמע שאין מנגנון להבטחת מקומות לנשים; זו הערכה נפרדת.",
+        "ru": "Из запрета выдвижения следует отсутствие гарантий мест для женщин; это отдельный вывод."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "none",
+      "confidence": 0.6
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "R",
+      "source_ids": [
+        "W_HAREDI",
+        "W_LIST26",
+        "W_EXCLUSION26"
+      ],
+      "rationale": "Exclusion from candidacy is policy, not an accidental all-male result.",
+      "rationale_localized": {
+        "en": "Exclusion from candidacy is policy, not an accidental all-male result.",
+        "he": "הדרת נשים מהתמודדות היא מדיניות, לא תוצאה מקרית של בחירת גברים.",
+        "ru": "Исключение женщин из кандидатов — политика, а не случайный мужской состав."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "exclude"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q21",
+      "dimension_id": "representation",
+      "status": "I",
+      "source_ids": [
+        "W_HAREDI",
+        "W_LIST26",
+        "W_EXCLUSION26"
+      ],
+      "rationale": "Exclusion implies no mechanism guaranteeing women places; this is a separate inference.",
+      "rationale_localized": {
+        "en": "Exclusion implies no mechanism guaranteeing women places; this is a separate inference.",
+        "he": "מההדרה משתמע שאין מנגנון להבטחת מקומות לנשים; זו הערכה נפרדת.",
+        "ru": "Из запрета выдвижения следует отсутствие гарантий мест для женщин; это отдельный вывод."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "none",
+      "confidence": 0.6
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "P",
+      "source_ids": [
+        "W_HADASH"
+      ],
+      "rationale": "The party’s own current candidate presentation includes women.",
+      "rationale_localized": {
+        "en": "The party’s own current candidate presentation includes women.",
+        "he": "בהצגת מועמדי המפלגה עצמה נכללות נשים.",
+        "ru": "Женщины представлены среди собственных кандидатов партии."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "open"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q21",
+      "dimension_id": "representation",
+      "status": "R",
+      "source_ids": [
+        "W_RULES26"
+      ],
+      "rationale": "The 2026 rules guarantee women specified list places, not parity.",
+      "rationale_localized": {
+        "en": "The 2026 rules guarantee women specified list places, not parity.",
+        "he": "כללי 2026 מבטיחים לנשים מקומות מסוימים ברשימה, לא שוויון מספרי.",
+        "ru": "Правила 2026 года гарантируют женщинам определённые места, но не паритет."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "quota"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q21",
+      "dimension_id": "representation",
+      "status": "R",
+      "source_ids": [
+        "W_RULES26"
+      ],
+      "rationale": "Candidate rules alternate women and men after the party leader.",
+      "rationale_localized": {
+        "en": "Candidate rules alternate women and men after the party leader.",
+        "he": "כללי השיבוץ מחליפים בין נשים לגברים אחרי יו״ר המפלגה.",
+        "ru": "Правила предусматривают чередование женщин и мужчин после лидера партии."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "parity"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q21",
+      "dimension_id": "representation",
+      "status": "P",
+      "source_ids": [
+        "W_BEYAHAD"
+      ],
+      "rationale": "The plan proposes funding incentives for women in Knesset lists.",
+      "rationale_localized": {
+        "en": "The plan proposes funding incentives for women in Knesset lists.",
+        "he": "התוכנית מציעה תמריצי מימון לשילוב נשים ברשימות לכנסת.",
+        "ru": "Программа предлагает финансовые стимулы за включение женщин в списки."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "incentives"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q22",
+      "dimension_id": "equality_policy",
+      "status": "P",
+      "source_ids": [
+        "W_BEYAHAD"
+      ],
+      "rationale": "The programme proposes targeted measures to advance women’s equal opportunities.",
+      "rationale_localized": {
+        "en": "The programme proposes targeted measures to advance women’s equal opportunities.",
+        "he": "התוכנית מציעה צעדים ייעודיים לקידום שוויון הזדמנויות לנשים.",
+        "ru": "Программа предусматривает специальные меры для равных возможностей женщин."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "active"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q22",
+      "dimension_id": "equality_policy",
+      "status": "P",
+      "source_ids": [
+        "W_DEMOCRATS"
+      ],
+      "rationale": "The programme proposes targeted measures to advance women’s equal opportunities.",
+      "rationale_localized": {
+        "en": "The programme proposes targeted measures to advance women’s equal opportunities.",
+        "he": "התוכנית מציעה צעדים ייעודיים לקידום שוויון הזדמנויות לנשים.",
+        "ru": "Программа предусматривает специальные меры для равных возможностей женщин."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "active"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q22",
+      "dimension_id": "equality_policy",
+      "status": "R",
+      "source_ids": [
+        "W_LIST26"
+      ],
+      "rationale": "The programme proposes targeted measures to advance women’s equal opportunities.",
+      "rationale_localized": {
+        "en": "The programme proposes targeted measures to advance women’s equal opportunities.",
+        "he": "התוכנית מציעה צעדים ייעודיים לקידום שוויון הזדמנויות לנשים.",
+        "ru": "Программа предусматривает специальные меры для равных возможностей женщин."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "active"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q22",
+      "dimension_id": "separation",
+      "status": "P",
+      "source_ids": [
+        "W_BEYAHAD"
+      ],
+      "rationale": "The plan opposes expanded academic separation and forced public exclusion. Common civil services are the closest general approach; private worship is outside this question.",
+      "rationale_localized": {
+        "en": "The plan opposes expanded academic separation and forced public exclusion. Common civil services are the closest general approach; private worship is outside this question.",
+        "he": "התוכנית מתנגדת להרחבת הפרדה באקדמיה ולהדרה כפויה בציבור. שירותים אזרחיים משותפים הם הגישה הכללית הקרובה; פולחן פרטי אינו נבחן כאן.",
+        "ru": "Программа против расширения разделения в вузах и принудительного исключения из общественной жизни. Ближайший общий подход — совместные гражданские услуги; частная религиозная практика здесь не оценивается."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "integrated"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q22",
+      "dimension_id": "separation",
+      "status": "S",
+      "source_ids": [
+        "W_OTZMA26"
+      ],
+      "rationale": "Supports permitting separate academic settings. The broad set records permission, not endorsement of coercion or every safeguard in an answer.",
+      "rationale_localized": {
+        "en": "Supports permitting separate academic settings. The broad set records permission, not endorsement of coercion or every safeguard in an answer.",
+        "he": "תומכת בהתרת מסגרות אקדמיות נפרדות. הקבוצה הרחבה מבטאת היתר, לא תמיכה בכפייה או בכל תנאי שבחלופה.",
+        "ru": "Поддерживает допустимость раздельного обучения. Широкое соответствие означает разрешение, а не поддержку принуждения или всех гарантий выбранного ответа."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "values": [
+        "voluntary",
+        "community"
+      ]
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q22",
+      "dimension_id": "separation",
+      "status": "H",
+      "source_ids": [
+        "W_COALITION23"
+      ],
+      "rationale": "The older agreement sought permission for gender-separated provision. Exact consent and access safeguards are not established.",
+      "rationale_localized": {
+        "en": "The older agreement sought permission for gender-separated provision. Exact consent and access safeguards are not established.",
+        "he": "ההסכם הישן ביקש להתיר מסגרות נפרדות מגדרית. תנאי הסכמה ונגישות מדויקים לא הוכחו.",
+        "ru": "Прежнее соглашение предусматривало разрешение гендерного разделения. Точные гарантии согласия и доступа не установлены."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "values": [
+        "voluntary",
+        "community"
+      ],
+      "inference": {
+        "values": [
+          "voluntary",
+          "community"
+        ],
+        "status": "I",
+        "confidence": 0.6,
+        "source_ids": [
+          "W_COALITION23"
+        ],
+        "rationale": "Continued support for allowing separation is inferred from the earlier negotiated commitment, not religious identity. No general view on women’s work or pay is inferred.",
+        "rationale_localized": {
+          "en": "Continued support for allowing separation is inferred from the earlier negotiated commitment, not religious identity. No general view on women’s work or pay is inferred.",
+          "he": "המשך התמיכה בהתרת הפרדה מוסק מהתחייבות קודמת במשא ומתן, ולא מזהות דתית. אין להסיק עמדה כללית על תעסוקת נשים או שכרן.",
+          "ru": "Сохранение поддержки допустимости разделения предполагается на основе прежнего договорённого обязательства, а не религиозной принадлежности. Позиции о работе и оплате труда женщин не выводятся."
+        }
+      }
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q22",
+      "dimension_id": "separation",
+      "status": "H",
+      "source_ids": [
+        "W_COALITION23"
+      ],
+      "rationale": "The older agreement sought permission for gender-separated provision. Exact consent and access safeguards are not established.",
+      "rationale_localized": {
+        "en": "The older agreement sought permission for gender-separated provision. Exact consent and access safeguards are not established.",
+        "he": "ההסכם הישן ביקש להתיר מסגרות נפרדות מגדרית. תנאי הסכמה ונגישות מדויקים לא הוכחו.",
+        "ru": "Прежнее соглашение предусматривало разрешение гендерного разделения. Точные гарантии согласия и доступа не установлены."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "values": [
+        "voluntary",
+        "community"
+      ],
+      "inference": {
+        "values": [
+          "voluntary",
+          "community"
+        ],
+        "status": "I",
+        "confidence": 0.6,
+        "source_ids": [
+          "W_COALITION23"
+        ],
+        "rationale": "Continued support for allowing separation is inferred from the earlier negotiated commitment, not religious identity. No general view on women’s work or pay is inferred.",
+        "rationale_localized": {
+          "en": "Continued support for allowing separation is inferred from the earlier negotiated commitment, not religious identity. No general view on women’s work or pay is inferred.",
+          "he": "המשך התמיכה בהתרת הפרדה מוסק מהתחייבות קודמת במשא ומתן, ולא מזהות דתית. אין להסיק עמדה כללית על תעסוקת נשים או שכרן.",
+          "ru": "Сохранение поддержки допустимости разделения предполагается на основе прежнего договорённого обязательства, а не религиозной принадлежности. Позиции о работе и оплате труда женщин не выводятся."
+        }
+      }
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q22",
+      "dimension_id": "separation",
+      "status": "H",
+      "source_ids": [
+        "W_COALITION23"
+      ],
+      "rationale": "The older agreement sought permission for gender-separated provision. Exact consent and access safeguards are not established.",
+      "rationale_localized": {
+        "en": "The older agreement sought permission for gender-separated provision. Exact consent and access safeguards are not established.",
+        "he": "ההסכם הישן ביקש להתיר מסגרות נפרדות מגדרית. תנאי הסכמה ונגישות מדויקים לא הוכחו.",
+        "ru": "Прежнее соглашение предусматривало разрешение гендерного разделения. Точные гарантии согласия и доступа не установлены."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "values": [
+        "voluntary",
+        "community"
+      ],
+      "inference": {
+        "values": [
+          "voluntary",
+          "community"
+        ],
+        "status": "I",
+        "confidence": 0.6,
+        "source_ids": [
+          "W_COALITION23"
+        ],
+        "rationale": "Continued support for allowing separation is inferred from the earlier negotiated commitment, not religious identity. No general view on women’s work or pay is inferred.",
+        "rationale_localized": {
+          "en": "Continued support for allowing separation is inferred from the earlier negotiated commitment, not religious identity. No general view on women’s work or pay is inferred.",
+          "he": "המשך התמיכה בהתרת הפרדה מוסק מהתחייבות קודמת במשא ומתן, ולא מזהות דתית. אין להסיק עמדה כללית על תעסוקת נשים או שכרן.",
+          "ru": "Сохранение поддержки допустимости разделения предполагается на основе прежнего договорённого обязательства, а не религиозной принадлежности. Позиции о работе и оплате труда женщин не выводятся."
+        }
+      }
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q21",
+      "dimension_id": "eligibility",
+      "status": "H",
+      "source_ids": [
+        "BA"
+      ],
+      "rationale": "The historical Arabic programme supports women’s political participation and measures against discrimination.",
+      "rationale_localized": {
+        "en": "The historical Arabic programme supports women’s political participation and measures against discrimination.",
+        "he": "המצע הערבי ההיסטורי תומך בהשתתפות פוליטית של נשים ובצעדים נגד אפליה.",
+        "ru": "Историческая арабская программа поддерживает политическое участие женщин и меры против дискриминации."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "open",
+      "inference": {
+        "value": "open",
+        "status": "I",
+        "confidence": 0.6,
+        "source_ids": [
+          "BA"
+        ],
+        "rationale": "Continuity is inferred from the programme retained on the official site; this is not a verified 2026 commitment.",
+        "rationale_localized": {
+          "en": "Continuity is inferred from the programme retained on the official site; this is not a verified 2026 commitment.",
+          "he": "המשכיות מוסקת מהמצע שנותר באתר הרשמי; זו אינה התחייבות מאומתת ל-2026.",
+          "ru": "Преемственность предполагается по программе, сохраняемой на официальном сайте; это не подтверждённое обещание 2026 года."
+        }
+      }
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q22",
+      "dimension_id": "equality_policy",
+      "status": "H",
+      "source_ids": [
+        "BA"
+      ],
+      "rationale": "The historical Arabic programme supports women’s political participation and measures against discrimination.",
+      "rationale_localized": {
+        "en": "The historical Arabic programme supports women’s political participation and measures against discrimination.",
+        "he": "המצע הערבי ההיסטורי תומך בהשתתפות פוליטית של נשים ובצעדים נגד אפליה.",
+        "ru": "Историческая арабская программа поддерживает политическое участие женщин и меры против дискриминации."
+      },
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft",
+      "value": "active",
+      "inference": {
+        "value": "active",
+        "status": "I",
+        "confidence": 0.6,
+        "source_ids": [
+          "BA"
+        ],
+        "rationale": "Continuity is inferred from the programme retained on the official site; this is not a verified 2026 commitment.",
+        "rationale_localized": {
+          "en": "Continuity is inferred from the programme retained on the official site; this is not a verified 2026 commitment.",
+          "he": "המשכיות מוסקת מהמצע שנותר באתר הרשמי; זו אינה התחייבות מאומתת ל-2026.",
+          "ru": "Преемственность предполагается по программе, сохраняемой на официальном сайте; это не подтверждённое обещание 2026 года."
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Q21 compares a party’s own candidacy rules and practice, not an inferred view on forcing all other parties to adopt the same rule. Named exclusions distinguish an ideological bar from an accidental all-male list.",
+    "A quota at specific list positions can be weaker than the respondent’s preferred minimum. The coarse quota component captures the mechanism and does not assert a particular percentage. List percentages alone are never converted into quota or parity commitments.",
+    "Q22 separates active or formal equality policies from gender-separated provision. Support for separate provision does not mean opposition to women working, studying or holding every leadership role.",
+    "Broad permission for separation does not establish consent safeguards, compulsory separation, or every detail in a respondent’s answer. Historical coalition commitments remain historical; continuity inferences are visible and discounted.",
+    "No values are assigned from a party’s religious or secular identity alone. Several parties and components remain unknown. Short runs include one or two questions from this category, never a hidden category multiplier.",
+    "Arabic sources were reviewed for Hadash and Balad. Joint-list totals are not transferred to Ta’al, Balad or Hadash. Old Balad programme text remains historical with separately discounted continuity estimates."
+  ]
+}

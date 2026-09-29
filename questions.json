@@ -1983,5 +1983,213 @@
     ],
     "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
     "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q21",
+    "short": false,
+    "domain": "women",
+    "en": "How should parties include women in their electoral lists?",
+    "he": "כיצד צריכות מפלגות לשלב נשים ברשימותיהן לכנסת?",
+    "dimensions": [
+      {
+        "id": "eligibility",
+        "en": "Access to candidacy",
+        "he": "אפשרות להתמודד",
+        "weight": 1,
+        "values": [
+          {
+            "id": "open",
+            "en": "Open to women and men",
+            "he": "פתוחה לנשים ולגברים"
+          },
+          {
+            "id": "exclude",
+            "en": "Rules barring women from candidacy",
+            "he": "כללים האוסרים על נשים להתמודד"
+          }
+        ]
+      },
+      {
+        "id": "representation",
+        "en": "Mechanism for representation",
+        "he": "מנגנון להבטחת ייצוג",
+        "weight": 1,
+        "values": [
+          {
+            "id": "none",
+            "en": "No special mechanism",
+            "he": "ללא מנגנון מיוחד"
+          },
+          {
+            "id": "incentives",
+            "en": "Recruitment and financial incentives",
+            "he": "עידוד התמודדות ותמריצים כספיים"
+          },
+          {
+            "id": "quota",
+            "en": "Guaranteed minimum in viable places",
+            "he": "ייצוג מינימלי מובטח במקומות ריאליים"
+          },
+          {
+            "id": "parity",
+            "en": "Parity and alternating places",
+            "he": "שוויון מספרי ומקומות לסירוגין"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "party_autonomy",
+        "en": "Retain rules barring women from candidacy in parties that follow this religious policy, such as Shas and United Torah Judaism, without representation requirements.",
+        "he": "לשמר כללים האוסרים על נשים להתמודד ברשימות מפלגות הנוהגות כך מטעמי דת, כגון ש״ס ויהדות התורה, ללא דרישות לייצוג נשים.",
+        "profile": {
+          "eligibility": "exclude",
+          "representation": "none"
+        }
+      },
+      {
+        "id": "open_selection",
+        "en": "Open candidacy to women and men; choose candidates without gender quotas or special incentives.",
+        "he": "לפתוח התמודדות לנשים ולגברים ולבחור מועמדים ללא מכסות מגדריות או תמריצים מיוחדים.",
+        "profile": {
+          "eligibility": "open",
+          "representation": "none"
+        }
+      },
+      {
+        "id": "incentives",
+        "en": "Open candidacy equally and encourage women through recruitment programmes and party-funding incentives, without binding quotas.",
+        "he": "לפתוח התמודדות שוויונית ולעודד נשים באמצעות תוכניות גיוס ותמריצים במימון מפלגות, ללא מכסות מחייבות.",
+        "profile": {
+          "eligibility": "open",
+          "representation": "incentives"
+        }
+      },
+      {
+        "id": "minimum_quota",
+        "en": "Open candidacy equally and reserve a minimum share of viable list places for women, while leaving other places to ordinary selection.",
+        "he": "לפתוח התמודדות שוויונית ולהבטיח לנשים שיעור מינימלי מהמקומות הריאליים; יתר המקומות ייקבעו בהליך הבחירה הרגיל.",
+        "profile": {
+          "eligibility": "open",
+          "representation": "quota"
+        }
+      },
+      {
+        "id": "parity",
+        "en": "Require equal representation, with women and men alternating throughout the electoral list.",
+        "he": "לקבוע ייצוג שווה לנשים ולגברים, במקומות לסירוגין לאורך הרשימה.",
+        "profile": {
+          "eligibility": "open",
+          "representation": "parity"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q22",
+    "short": false,
+    "domain": "women",
+    "en": "How should the state promote women’s equality in work, education and public life while addressing community traditions?",
+    "he": "כיצד על המדינה לקדם שוויון לנשים בתעסוקה, בהשכלה ובחיים הציבוריים, תוך התייחסות למסורות קהילתיות?",
+    "dimensions": [
+      {
+        "id": "equality_policy",
+        "en": "State approach to equality",
+        "he": "גישת המדינה לשוויון",
+        "weight": 1,
+        "values": [
+          {
+            "id": "active",
+            "en": "Targeted measures to remove structural barriers",
+            "he": "צעדים ייעודיים להסרת חסמים מבניים"
+          },
+          {
+            "id": "formal",
+            "en": "Equal legal rules without gender-specific programmes",
+            "he": "כללים משפטיים שווים ללא תוכניות מגדריות ייעודיות"
+          },
+          {
+            "id": "community",
+            "en": "Community autonomy over gender roles",
+            "he": "אוטונומיה קהילתית בקביעת תפקידי מגדר"
+          }
+        ]
+      },
+      {
+        "id": "separation",
+        "en": "Gender separation in publicly funded settings",
+        "he": "הפרדה מגדרית במסגרות במימון ציבורי",
+        "weight": 1,
+        "values": [
+          {
+            "id": "integrated",
+            "en": "Common services as the rule",
+            "he": "שירותים משותפים ככלל"
+          },
+          {
+            "id": "voluntary",
+            "en": "Separate options with free choice and equal access",
+            "he": "אפשרויות נפרדות עם בחירה חופשית ונגישות שווה"
+          },
+          {
+            "id": "community",
+            "en": "Community rules may govern separate settings",
+            "he": "כללי הקהילה יכולים לקבוע מסגרות נפרדות"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "active_common",
+        "en": "Actively reduce pay and career gaps and support shared caregiving; provide common public services without gender separation as the rule.",
+        "he": "לפעול לצמצום פערי שכר וקידום ולתמוך בחלוקת הטיפול במשפחה; להפעיל ככלל שירותים ציבוריים משותפים ללא הפרדה מגדרית.",
+        "profile": {
+          "equality_policy": "active",
+          "separation": "integrated"
+        }
+      },
+      {
+        "id": "formal_common",
+        "en": "Enforce equal legal access to jobs, education and leadership without gender-specific programmes; keep public services common to women and men.",
+        "he": "לאכוף גישה משפטית שווה לעבודה, להשכלה ולהנהגה ללא תוכניות מגדריות ייעודיות; לקיים שירותים ציבוריים משותפים לנשים ולגברים.",
+        "profile": {
+          "equality_policy": "formal",
+          "separation": "integrated"
+        }
+      },
+      {
+        "id": "active_choice",
+        "en": "Actively remove economic and career barriers; also allow separate services where participation is voluntary, resources equal and a mixed alternative accessible.",
+        "he": "להסיר באופן פעיל חסמים כלכליים ותעסוקתיים; לאפשר גם שירותים נפרדים כאשר ההשתתפות מרצון, המשאבים שווים וחלופה מעורבת נגישה.",
+        "profile": {
+          "equality_policy": "active",
+          "separation": "voluntary"
+        }
+      },
+      {
+        "id": "formal_choice",
+        "en": "Guarantee equal legal opportunities without special gender programmes; permit voluntary separate settings with equal resources and access to a mixed alternative.",
+        "he": "להבטיח הזדמנויות משפטיות שוות ללא תוכניות מגדריות מיוחדות; להתיר מסגרות נפרדות מרצון עם משאבים שווים וחלופה מעורבת נגישה.",
+        "profile": {
+          "equality_policy": "formal",
+          "separation": "voluntary"
+        }
+      },
+      {
+        "id": "community_autonomy",
+        "en": "Let religious communities preserve their own rules on women’s and men’s roles and run separate institutions with public support; limit state intervention in those arrangements.",
+        "he": "לאפשר לקהילות דתיות לשמר כללים משלהן לתפקידי נשים וגברים ולהפעיל מוסדות נפרדים בתמיכה ציבורית; לצמצם התערבות מדינה בהסדרים אלה.",
+        "profile": {
+          "equality_policy": "community",
+          "separation": "community"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
   }
 ]

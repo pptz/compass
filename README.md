@@ -29,13 +29,14 @@ To publish, follow [the GitHub Pages deployment instructions](DEPLOYMENT.md). Th
 - The quiz and guide start in the first supported browser language (English, Hebrew or Russian), falling back to English. A link with `?lang=en`, `?lang=he` or `?lang=ru` overrides detection. Switching language preserves answers, question order and the current step.
 - One question is shown at a time. Choosing an answer, **Skip**, or **None of these fits** briefly highlights the choice, then smoothly advances to the next question. The final choice opens results automatically. Repeated taps during the transition are ignored; reduced-motion preferences retain the selection pause without movement.
 - **Back** restores the previous question with its answer and importance. **Next** continues with a saved answer after an importance-only edit. **Edit answers** returns from results to the last viewed question.
-- Each short run randomly draws two questions per domain (ten total). The long run shuffles all twenty. **Start again** creates a new run. Substantive answer options are also shuffled per run and stay in that order when returning or switching languages; skip and replacement actions remain separate.
+- Each short run draws one question from each of six domains and a second from four randomly chosen domains (ten total). The long run shuffles all 22. **Start again** creates a new run. Substantive answer options are also shuffled per run and stay in that order when returning or switching languages; skip and replacement actions remain separate.
 - Set each question’s importance: Critical (1.0), Important (0.8, default), Not very important (0.5), or Not important (0.1). Only verbal labels appear in the interface; numeric weights are internal. Change question is the final menu action in the short form. Importance supplies the question weight directly; topic domains add no extra multiplier.
 - Importance appears directly below each question, above the answers.
 - **Change question** immediately replaces the question with a random unused one, preferring the same domain. The importance menu has the same action. Replaced questions do not repeat; other answers and importance choices are preserved, and the new question starts at default importance.
-- **Skip** is separate: it leaves the question in the run unscored and advances to the next step, as does **None of these fits**. You can return with **Back**. When no spare questions remain (including the full 20-question form), changing is disabled with an explanation; skipping remains available.
+- **Skip** is separate: it leaves the question in the run unscored and advances to the next step, as does **None of these fits**. You can return with **Back**. When no spare questions remain (including the full 22-question form), changing is disabled with an explanation; skipping remains available.
 - **Not important** also offers a chooser if you prefer to select the replacement topic yourself.
 - Hover, focus or tap **?** for an overview of the issue. **About this issue** adds reading links. **Explore the issue** opens its section in the separate guide, preserving the quiz in its tab.
+- **Status of Women / מעמד האישה / Положение Женщины** is a separate category: party candidacy and representation (Q21), and social equality and gender separation (Q22). Each has five substantive choices. [Sources and mapping limits](women-review.md).
 - The guide discusses each issue through background, competing approaches and open questions. It is available in all three languages.
 - **How these approaches overlap** displays the graded similarity table. Results compare each evidenced policy component, including partial similarity between different but related approaches.
 - Expand a party for sources and explanations. The percentage combines sourced policy similarity with separately labeled inferences discounted to 60%. Unknown components still add no points and remain in the denominator. Two complete sourced matches and eight unknowns still give 20%. Results sort by total similarity, with more documented evidence breaking ties. The discount is editorial, not a statistical probability.
@@ -64,6 +65,7 @@ Authored inputs:
 - `evidence-additions.json`: reviewed additions to the source registry and party positions.
 - `research-expansion.json`: additional secondary sources, broad positions and explicitly labeled inferences. Source dates and prior evidence are retained.
 - `coverage-review.json`: targeted source review and explicit mapping corrections, with prior evidence preserved. [Readable report](coverage-review.md) lists coverage changes, sources and limitations.
+- `women-evidence.json`: sourced positions and explicitly discounted inferences for Q21 and Q22.
 - `web/`: templates, styles, UI and scoring code.
 
 Rebuild the generated dataset, CSV, research report and two standalone pages:

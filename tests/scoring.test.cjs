@@ -99,10 +99,10 @@ const ranking=[
 assert.deepEqual(ranking.sort(compareResults).map(r=>r.party.id),['broad','tie-more-data','sparse','known-zero','unknown','unanswered']);
 
 // Validate all live policy packages and their evidence links.
-assert.equal(data.questions.length,20);
+assert.equal(data.questions.length,22);
 assert.equal(data.questions.filter(q=>q.short).length,10);
 assert(!data.choices, 'The old global agreement scale must not survive.');
-assert.equal(new Set(data.positions.map(p=>`${p.party_id}/${p.question_id}`)).size,320);
+assert.equal(new Set(data.positions.map(p=>`${p.party_id}/${p.question_id}`)).size,data.parties.length*data.questions.length);
 for (const question of data.questions) {
   assert(question.options.length >= 4 && question.options.length <= 5, `${question.id} must offer 4–5 substantive answers`);
   assert.equal(new Set(question.options.map(o=>o.id)).size,question.options.length);
@@ -214,24 +214,49 @@ for (const entry of reviewedEntries) {
   for (const lang of ['en','he','ru']) assert(live.rationale_localized[lang]);
 }
 assert.equal(data.positions.find(p=>p.party_id==='yashar' && p.question_id==='Q6').dimensions.authority.previous_evidence.status,'I');
+// Women's candidacy and quota rules are independent: a balanced list alone
+// never becomes a parity commitment. Unknown quota preferences stay unknown.
+assertClose(reviewedResult('democrats',{Q21:'parity'},false,false).similarity,1);
+assertClose(reviewedResult('likud',{Q21:'minimum_quota'},false,false).similarity,1);
+assertClose(reviewedResult('beyahad',{Q21:'incentives'},false,false).similarity,1);
+assertClose(reviewedResult('yashar',{Q21:'parity'},false,false).similarity,.5);
+assertClose(reviewedResult('shas',{Q21:'parity'}).similarity,0);
+assertClose(reviewedResult('utj',{Q21:'party_autonomy'},false,false).similarity,.5);
+assertClose(reviewedResult('taal',{Q21:'parity'}).similarity,0);
+// Equal social policy and different separation arrangements earn partial credit.
+assertClose(reviewedResult('beyahad',{Q22:'active_common'},false,false).similarity,1);
+assertClose(reviewedResult('beyahad',{Q22:'active_choice'},false,false).similarity,.75);
+assertClose(reviewedResult('shas',{Q22:'community_autonomy'}).similarity,.3);
+assertClose(reviewedResult('shas',{Q22:'community_autonomy'},false,false).similarity,0);
+assertClose(reviewedResult('shas',{Q22:'community_autonomy'},true,false).similarity,.5);
+assertClose(reviewedResult('shas',{Q22:'active_common'}).similarity,0);
+for (const entry of require('../women-evidence.json').positions) {
+  assert(['Q21','Q22'].includes(entry.question_id));
+  for (const lang of ['en','he','ru']) assert(entry.rationale_localized[lang]);
+}
 // Explicit run IDs, including replacements, control both inclusion and weights.
 assertClose(score(weighted,{Q1:'one',Q2:'one',Q3:'three'},'short',false,['Q2','Q3'])[0].similarity,.5);
 assertClose(score(weighted,{Q1:'one',Q2:'one',Q3:'three'},'short',false,['Q3'])[0].similarity,0);
 assert.throws(()=>score(weighted,{},'short',false,['Q1','Q1']),/Invalid question run/);
 assert.throws(()=>score(weighted,{},'short',false,['missing']),/Invalid question run/);
-// Reproducible random trials: two per domain, no duplicates, all topics reachable.
+// Ten questions cover all six domains: four appear twice, two once.
 let seed=12345;
 const random=()=>((seed=(Math.imul(seed,1664525)+1013904223)>>>0)/2**32);
-const original=data.questions.map(q=>q.id), seen=new Set(), runs=new Set();
+const original=data.questions.map(q=>q.id), seen=new Set(), runs=new Set(), extraDomains=new Set();
 for(let i=0;i<100;i++){
   const run=createRun(data,'short',random);
   assert.equal(run.length,10);assert.equal(new Set(run).size,10);
   const counts={};
   run.forEach(id=>{seen.add(id);const domain=data.questions.find(q=>q.id===id).domain;counts[domain]=(counts[domain]||0)+1;});
-  assert.equal(Object.keys(counts).length,5);assert(Object.values(counts).every(n=>n===2));
+  assert.equal(Object.keys(counts).length,6);
+  assert.deepEqual(Object.values(counts).sort(),[1,1,2,2,2,2]);
+  for (const [domain,count] of Object.entries(counts)) if (count===2) extraDomains.add(domain);
   runs.add(run.join(','));
 }
-assert.equal(seen.size,20);assert(runs.size>90);
+assert.equal(seen.size,22);assert(runs.size>90);assert.equal(extraDomains.size,6);
+// The sampler also terminates with a small or uneven question bank.
+assert.deepEqual(createRun({questions:[]},'short',random),[]);
+assert.equal(createRun({questions:data.questions.slice(0,3)},'short',random).length,3);
 assert.deepEqual([...createRun(data,'long',random)].sort(),[...original].sort());
 assert.deepEqual(data.questions.map(q=>q.id),original);
 assert(data.parties.every(p=>p.ru));

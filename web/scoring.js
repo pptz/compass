@@ -12,8 +12,19 @@
   }
   function createRun(data, form, random = Math.random) {
     if (form === 'long') return shuffle(data.questions.map(q => q.id), random);
+    // Deal questions in rounds across shuffled domains. With six domains and
+    // ten places, all six appear once and four random domains appear twice.
     const domains = [...new Set(data.questions.map(q => q.domain))];
-    return shuffle(domains.flatMap(domain => shuffle(data.questions.filter(q => q.domain === domain), random).slice(0,2).map(q=>q.id)), random);
+    const pools = new Map(domains.map(domain => [domain, shuffle(data.questions.filter(q => q.domain === domain), random)]));
+    const selected = [], target = Math.min(10, data.questions.length);
+    while (selected.length < target) {
+      for (const domain of shuffle(domains, random)) {
+        const question = pools.get(domain).pop();
+        if (question) selected.push(question.id);
+        if (selected.length === target) break;
+      }
+    }
+    return shuffle(selected, random);
   }
   function componentSimilarity(dimension, a, b) {
     const value = dimension.similarity?.matrix[a]?.[b];

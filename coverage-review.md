@@ -1,6 +1,6 @@
 # Targeted party-coverage review
 
-Reviewed: 2026-09-29. Arabic-language research covers Hadash, Balad, Ta’al and Ra’am. Other additions focus on parties with sparse evidence. Counts below refer to documented policy components out of 40, **not match percentages**. Inferences are shown separately and discounted to 60%.
+Reviewed: 2026-09-29. Arabic-language research covers Hadash, Balad, Ta’al and Ra’am. Other additions focus on parties with sparse evidence. This report covers the original Q1–Q20 only; the subsequent [women’s-status additions](women-review.md) are separate. Counts below refer to documented policy components out of 40, **not match percentages**. Inferences are shown separately and discounted to 60%.
 
 | Party | Documented before | Documented now | Inferences before | Inferences now |
 |---|---:|---:|---:|---:|

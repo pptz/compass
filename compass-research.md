@@ -1,6 +1,6 @@
 # Your Choice — Your Vote — policy choices, sources and reasoned estimates (v0.5)
 
-The browser contains **20 original questions, 90 substantive choices and 40 policy components**, in English, Hebrew and Russian. Each question offers at most five substantive answers. [Open the quiz](index.html) or [read the issue guide](issues.html). Each guide section introduces the dispute, presents competing approaches, poses open questions and links to further reading. The question-mark help and “About this issue” elements explain the issue itself; calculation details are separate.
+The browser contains **22 original questions, 100 substantive choices and 44 policy components**, in English, Hebrew and Russian. Each question offers at most five substantive answers. [Open the quiz](index.html) or [read the issue guide](issues.html). Each guide section introduces the dispute, presents competing approaches, poses open questions and links to further reading. The question-mark help and “About this issue” elements explain the issue itself; calculation details are separate.
 
 [Zehut's compass](https://zehut.org.il/compass), inspected on 29 September 2026, informed the policy-choice format. These are newly authored questions; neither its question bank nor its party-specific weights are reused.
 
@@ -8,11 +8,11 @@ The browser contains **20 original questions, 90 substantive choices and 40 poli
 
 The quiz shows one question per step. A substantive answer, Skip or None receives a brief visual confirmation before advancing to the next question; the last choice opens results. Back restores earlier answers and importance; Next continues after an importance-only edit or when retaining a saved answer. Language changes preserve the current step. Replacement keeps the same step number, and restarting resets to step one.
 
-Every new short run draws **two random questions from each of five domains**, then shuffles all ten. This balances topic coverage; it does not designate ten questions as the most important. The long run shuffles all twenty. Substantive answer choices are also shuffled once per run; revisiting a question or switching language preserves their order and answer IDs. Overlap tables use the same displayed order. Switching language preserves the run and answers; starting again creates a new run.
+Every new short run draws **one question from each of six domains and a second question from four randomly selected domains**, then shuffles all ten. Every domain appears, with an equal chance of receiving the extra question; exact equality within ten questions is impossible with six domains. The long run shuffles all 22. The Status of Women domain contains Q21 (party representation) and Q22 (social equality and gender separation). Substantive answer choices are also shuffled once per run; revisiting a question or switching language preserves their order and answer IDs. Overlap tables use the same displayed order. Switching language preserves the run and answers; starting again creates a new run.
 
 Importance appears immediately beneath the question text, before the answer options. **Change question** immediately draws an unused question, preferring a random question from the same domain when possible. The importance menu offers the same action. **Skip** is a separate unscored choice that retains the question in the run and moves forward, as does “None of these fits”. Back allows either choice to be revised. Selecting “Not important” additionally offers a manual replacement chooser.
 
-Replaced questions stay retired for that run; after ten replacements in a short run there are no spares. The long form starts with all twenty questions, so it has no spares. The change action is disabled with an explanation when no unused questions remain; Skip remains available. Other answers and importance choices are preserved, and the replacement starts with default importance. Scores use the actual selected questions, including replacements.
+Replaced questions stay retired for that run; after twelve replacements in a short run there are no spares. The long form starts with all 22 questions, so it has no spares. The change action is disabled with an explanation when no unused questions remain; Skip remains available. Other answers and importance choices are preserved, and the replacement starts with default importance. Scores use the actual selected questions, including replacements.
 
 ## Scoring and evidence
 
@@ -54,7 +54,7 @@ The coefficient 0.6 and the graded matrices are editorial conventions, not stati
 
 ## Source coverage and limitations
 
-The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the earlier additional source review, with [a readable review table](research-expansion.md). The latest [targeted coverage review](coverage-review.md), including Arabic-language sources, records additions, replacements and withdrawn mappings from [coverage-review.json](coverage-review.json). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately. The [Yashar programme review](yashar-review.md) records the initial official-programme mapping across all 20 questions.
+The [Status of Women review](women-review.md) documents the two added questions and their evidence, including the distinction between exclusion and quotas. The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the earlier additional source review, with [a readable review table](research-expansion.md). The latest [targeted coverage review](coverage-review.md), including Arabic-language sources, records additions, replacements and withdrawn mappings from [coverage-review.json](coverage-review.json). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately. The [Yashar programme review](yashar-review.md) records the initial official-programme mapping across all 20 questions.
 
 This expansion draws on Israel Democracy Institute party profiles, Times of Israel reporting, Associated Press coverage, and historical Ynet reports. Sources document particular policy components rather than entire answer packages. Dated profiles and secondary reports are not substitutes for a comprehensive current manifesto. The earlier source investigation remains in [the archive](archive/agreement-scale-v1/compass-research.md); its old scoring rules are superseded.
 
@@ -65,19 +65,19 @@ Stable IDs below identify topics, not their order in a run. All questions can ap
 ### Q1 · What political framework should Israel pursue with the Palestinians?
 **איזו מסגרת מדינית על ישראל לקדם ביחס לפלסטינים?**
 - **A.** Negotiate two states with enforceable security safeguards and agreed borders.
-  
+
   לנהל משא ומתן לשתי מדינות, עם הסדרי ביטחון ניתנים לאכיפה וגבולות מוסכמים.
 - **B.** Pursue a Palestinian state only within a wider regional agreement with Arab states and security guarantees.
-  
+
   לקדם מדינה פלסטינית רק כחלק מהסדר אזורי רחב עם מדינות ערב וערבויות ביטחוניות.
 - **C.** Maintain Israeli security control and Palestinian civil autonomy, without a separate Palestinian state.
-  
+
   לקיים שליטה ביטחונית ישראלית ואוטונומיה אזרחית פלסטינית, ללא מדינה פלסטינית נפרדת.
 - **D.** Defer the final-status decision and pursue practical interim agreements on security, movement and economic life.
-  
+
   לדחות את ההכרעה על הסדר הקבע ולקדם הסכמי ביניים בנושאי ביטחון, תנועה וכלכלה.
 - **E.** Work toward one democratic state with equal citizenship for Israelis and Palestinians, rather than two states.
-  
+
   לפעול למדינה דמוקרטית אחת עם אזרחות שווה לישראלים ולפלסטינים, במקום שתי מדינות.
 
 Components: A separate Palestinian state / Political framework.
@@ -93,16 +93,16 @@ Components: A separate Palestinian state / Political framework.
 ### Q2 · How should military and civilian service be organized, including for yeshiva students?
 **כיצד יש להסדיר שירות צבאי ואזרחי, כולל לתלמידי ישיבות?**
 - **A.** Require service from everyone, with the army choosing whom it needs and civilian service for the rest; allow only narrow individual exceptions.
-  
+
   לחייב את כולם בשירות: הצבא יבחר את מי שנחוץ לו, והשאר ישרתו בשירות אזרחי; לאפשר רק חריגים אישיים מצומצמים.
 - **B.** Require a contribution from everyone, but let each person choose between military service and an equally recognized civilian route.
-  
+
   לחייב את כולם בתרומה, אך לאפשר לכל אדם לבחור בין שירות צבאי למסלול אזרחי בעל מעמד שווה.
 - **C.** Keep compulsory military service, while exempting full-time yeshiva students and offering adapted service to those who leave study.
-  
+
   להשאיר שירות צבאי חובה, לפטור תלמידי ישיבות הלומדים במשרה מלאה ולהציע שירות מותאם למי שעוזבים את הלימודים.
 - **D.** Move to a paid professional military and voluntary civilian service, ending compulsory service for everyone.
-  
+
   לעבור לצבא מקצועי בשכר ולשירות אזרחי מרצון, ולבטל את חובת השירות לכולם.
 
 Components: Who is obliged to serve? / Service pathway.
@@ -117,16 +117,16 @@ Components: Who is obliged to serve? / Service pathway.
 ### Q3 · How should power be divided between the Knesset and the judiciary?
 **כיצד יש לחלק את הכוח בין הכנסת למערכת המשפט?**
 - **A.** Keep rights-based judicial review without an ordinary-majority override; use a professionally led judicial appointments committee.
-  
+
   לשמור על ביקורת שיפוטית להגנת זכויות ללא התגברות ברוב רגיל; למנות שופטים בוועדה בהובלה מקצועית.
 - **B.** Require government–opposition agreement on judicial appointments, and prohibit overriding rights judgments by an ordinary coalition majority.
-  
+
   לחייב הסכמה בין קואליציה לאופוזיציה במינוי שופטים, ולא לאפשר לרוב קואליציוני רגיל להתגבר על פסיקות המגינות על זכויות.
 - **C.** Let an ordinary Knesset majority override invalidation of a law and give elected legislators control over judicial appointments.
-  
+
   לאפשר לרוב רגיל בכנסת להתגבר על פסילת חוק ולהעניק לנבחרי הציבור שליטה במינוי שופטים.
 - **D.** Allow an ordinary-majority override, but have the public elect senior judges directly for fixed terms.
-  
+
   לאפשר התגברות ברוב רגיל, אך לבחור שופטים בכירים בבחירה ישירה של הציבור לתקופות קצובות.
 
 Components: Override by an ordinary coalition majority / Who selects judges?.
@@ -141,19 +141,19 @@ Components: Override by an ordinary coalition majority / Who selects judges?.
 ### Q4 · How should equality and the state's national identity be expressed in constitutional law?
 **כיצד יש לבטא את השוויון ואת הזהות הלאומית של המדינה בחוקי היסוד?**
 - **A.** Guarantee equal individual civil rights in a Basic Law while retaining Israel's identity as a Jewish and democratic state.
-  
+
   לעגן בחוק יסוד שוויון זכויות אזרחיות אישיות, לצד זהותה של ישראל כמדינה יהודית ודמוקרטית.
 - **B.** Guarantee constitutional equality and define the state in civic terms as belonging equally to all its citizens.
-  
+
   לעגן שוויון חוקתי ולהגדיר את המדינה במונחים אזרחיים כשייכת באופן שווה לכל אזרחיה.
 - **C.** Guarantee equal individual rights and recognize both Jewish and Arab national collectives in the constitutional framework.
-  
+
   לעגן שוויון זכויות אישיות ולהכיר במסגרת החוקתית הן בקולקטיב הלאומי היהודי והן בקולקטיב הלאומי הערבי.
 - **D.** Retain the Jewish and democratic constitutional definition, and protect equality through ordinary legislation.
-  
+
   להשאיר את ההגדרה החוקתית היהודית והדמוקרטית ולהגן על השוויון בחקיקה רגילה.
 - **E.** Keep the Jewish and democratic definition and existing rights protections, without adding a new equality guarantee.
-  
+
   להשאיר את ההגדרה היהודית והדמוקרטית ואת הגנות הזכויות הקיימות, ללא עיגון חדש של השוויון.
 
 Components: Legal protection for equal civil rights / National identity.
@@ -169,16 +169,16 @@ Components: Legal protection for equal civil rights / National identity.
 ### Q5 · What routes should couples have for marriage, partnership and separation?
 **אילו מסלולים יש להציע לזוגות לנישואים, לזוגיות ולפרידה?**
 - **A.** Offer civil marriage and divorce alongside an optional, legally recognized religious route.
-  
+
   להציע נישואים וגירושים אזרחיים לצד מסלול דתי מוכר לבחירת הזוג.
 - **B.** Use civil marriage and divorce for everyone legally; religious ceremonies remain a private choice.
-  
+
   להסדיר את הנישואים והגירושים של כולם במערכת אזרחית; טקס דתי יישאר בחירה פרטית.
 - **C.** Add civil partnership registration with legal protections, while retaining religious marriage as a separate recognized route.
-  
+
   להוסיף רישום זוגיות אזרחית עם הגנות משפטיות, לצד נישואים דתיים כמסלול מוכר נפרד.
 - **D.** Keep marriage and divorce under the religious institutions, without adding a domestic civil route.
-  
+
   להשאיר את הנישואים והגירושים בסמכות מוסדות הדת, ללא הוספת מסלול אזרחי בישראל.
 
 Components: Civil legal route / Role of religious institutions.
@@ -193,19 +193,19 @@ Components: Civil legal route / Role of religious institutions.
 ### Q6 · Who should decide on Shabbat transport, and what service should be available?
 **מי צריך להחליט על תחבורה בשבת, ואיזה שירות צריך להיות זמין?**
 - **A.** Let municipalities run limited routes suited to local needs and avoid routes through religious neighborhoods.
-  
+
   לאפשר לרשויות להפעיל קווים מצומצמים לפי הצורך המקומי, תוך הימנעות ממעבר בשכונות דתיות.
 - **B.** Set a national limited network connecting hospitals, employment centers and major towns, with uniform rules.
-  
+
   לקבוע רשת ארצית מצומצמת המחברת בתי חולים, מוקדי תעסוקה ויישובים מרכזיים, לפי כללים אחידים.
 - **C.** Operate a regular national public transport network on Shabbat, with service frequency adjusted to demand.
-  
+
   להפעיל בשבת רשת תחבורה ציבורית ארצית רגילה, בתדירות המותאמת לביקוש.
 - **D.** Keep public transport closed, but let municipalities authorize privately funded shared transport.
-  
+
   להשאיר את התחבורה הציבורית סגורה, אך לאפשר לרשויות להתיר תחבורה שיתופית במימון פרטי.
 - **E.** Maintain a national rest-day policy without public transport; keep exceptions under national rules.
-  
+
   לקיים מדיניות יום מנוחה ארצית ללא תחבורה ציבורית, עם חריגים לפי כללים ארציים.
 
 Components: Public transport on Shabbat / Decision-making level.
@@ -221,19 +221,19 @@ Components: Public transport on Shabbat / Decision-making level.
 ### Q7 · What fiscal approach should guide healthcare, education and welfare?
 **איזו מדיניות תקציבית צריכה להנחות את הבריאות, החינוך והרווחה?**
 - **A.** Expand public services, financed mainly by higher taxes on high incomes and wealth.
-  
+
   להרחיב שירותים ציבוריים, בעיקר באמצעות הגדלת המס על הכנסות גבוהות ועל הון.
 - **B.** Expand universal services and finance them through broader tax increases shared across the population.
-  
+
   להרחיב שירותים אוניברסליים ולממן אותם בהעלאות מס רחבות המתחלקות על פני האוכלוסייה.
 - **C.** Expand services by cutting other spending and improving efficiency, without planning a tax increase.
-  
+
   להרחיב שירותים באמצעות קיצוץ הוצאות אחרות והתייעלות, ללא העלאת מס מתוכננת.
 - **D.** Keep the present scale of public services and concentrate on efficiency and reallocating existing budgets.
-  
+
   לשמר את היקף השירותים הציבוריים ולהתמקד בהתייעלות ובחלוקה מחדש של התקציבים הקיימים.
 - **E.** Reduce taxes and state provision, with a larger role for private insurance, households and community support.
-  
+
   להפחית מסים ואת היקף השירות המדינתי, ולהרחיב את תפקיד הביטוח הפרטי, משקי הבית והסיוע הקהילתי.
 
 Components: Scale of publicly funded services / Main funding approach.
@@ -249,19 +249,19 @@ Components: Scale of publicly funded services / Main funding approach.
 ### Q8 · Which mix of tools should address the cost of everyday goods?
 **באיזה שילוב כלים יש לטפל ביוקר המוצרים היומיומיים?**
 - **A.** Reduce import barriers broadly and enforce competition rules, while retaining product-safety standards.
-  
+
   לצמצם חסמי יבוא באופן רחב ולאכוף תחרות, תוך שמירה על תקני בטיחות למוצרים.
 - **B.** Open more markets to imports, protect strategic local production, and fight domestic concentration.
-  
+
   לפתוח שווקים נוספים ליבוא, להגן על ייצור מקומי אסטרטגי ולהיאבק בריכוזיות המקומית.
 - **C.** Retain broad protection for local producers and use price controls on essential goods.
-  
+
   לשמור על הגנה רחבה ליצרנים מקומיים ולהפעיל פיקוח מחירים על מוצרי יסוד.
 - **D.** Open imports broadly, but cushion living costs mainly through targeted support for low-income households.
-  
+
   לפתוח את היבוא באופן רחב, אך להקל על יוקר המחיה בעיקר בסיוע ממוקד למשקי בית מעוטי הכנסה.
 - **E.** Keep protection for strategic production and use targeted household support to offset higher living costs.
-  
+
   להשאיר הגנה על ייצור אסטרטגי ולפצות על יוקר המחיה באמצעות סיוע ממוקד למשקי בית.
 
 Components: Import policy / Main consumer policy tool.
@@ -277,19 +277,19 @@ Components: Import policy / Main consumer policy tool.
 ### Q9 · What common curriculum should schools teach, and how should they be funded and governed?
 **איזו תוכנית לימודים משותפת צריכה לחול בבתי הספר, וכיצד יש לממן ולנהל אותם?**
 - **A.** Fund state education streams with a common core curriculum, while allowing cultural and religious content alongside it.
-  
+
   לממן זרמי חינוך ממלכתיים עם ליבה משותפת, לצד תכנים תרבותיים ודתיים.
 - **B.** Fund both state and independent schools, but make core studies a condition of public funding.
-  
+
   לממן בתי ספר ממלכתיים ועצמאיים, אך להתנות מימון ציבורי בלימודי ליבה.
 - **C.** Fund state and independent religious or community schools without making the common core a funding condition.
-  
+
   לממן בתי ספר ממלכתיים וקהילתיים או דתיים עצמאיים, בלי להתנות את המימון בליבה משותפת.
 - **D.** Let parents direct funding through vouchers, without a common-core condition imposed by the state.
-  
+
   לאפשר להורים לכוון את המימון בשוברים, בלי שהמדינה תתנה אותו בליבה משותפת.
 - **E.** Require a common core curriculum in every education stream and school, regardless of funding, while allowing additional cultural and religious subjects. Fund both state and independent schools.
-  
+
   לחייב תוכנית ליבה משותפת בכל זרמי החינוך ובכל בתי הספר, ללא תלות במקור המימון, ולאפשר לצדה תכנים תרבותיים ודתיים נוספים. לממן בתי ספר ממלכתיים ועצמאיים.
 
 Components: Scope of the common-core requirement / School funding and governance.
@@ -305,16 +305,16 @@ Components: Scope of the common-core requirement / School funding and governance
 ### Q10 · How should serious organized crime and protection rackets be tackled?
 **כיצד יש להתמודד עם פשיעה מאורגנת חמורה וגביית דמי חסות?**
 - **A.** Strengthen police investigations, financial enforcement and prosecution; keep the Shin Bet focused on security threats.
-  
+
   לחזק חקירות משטרה, אכיפה כלכלית ופרקליטות; להשאיר את השב״כ ממוקד באיומים ביטחוניים.
 - **B.** Keep the police in charge, with a legally defined Shin Bet intelligence role in serious organized crime and judicial oversight.
-  
+
   להשאיר את ההובלה במשטרה, עם תפקיד מודיעיני מוגדר בחוק לשב״כ בפשיעה מאורגנת חמורה ובפיקוח שיפוטי.
 - **C.** Give security services the lead against serious protection rackets, including cases not already linked to terrorism.
-  
+
   להעניק לשירותי הביטחון הובלה במאבק בגביית דמי חסות חמורה, גם במקרים שטרם נקשרו לטרור.
 - **D.** Build locally accountable policing and prevention services, supported by national investigators, without a Shin Bet role.
-  
+
   לבנות שיטור ושירותי מניעה באחריות מקומית ובסיוע חוקרים ארציים, ללא תפקיד לשב״כ.
 
 Components: Shin Bet role beyond terrorism / Institutional lead.
@@ -329,19 +329,19 @@ Components: Shin Bet role beyond terrorism / Institutional lead.
 ### Q11 · What territorial policy should Israel pursue in the West Bank / Judea and Samaria?
 **איזו מדיניות טריטוריאלית על ישראל לקדם ביהודה ושומרון / הגדה המערבית?**
 - **A.** Extend sovereignty unilaterally to selected areas, while leaving other areas outside Israeli sovereignty.
-  
+
   להחיל ריבונות באופן חד־צדדי על אזורים נבחרים, ולהשאיר אזורים אחרים מחוץ לריבונות ישראל.
 - **B.** Extend Israeli sovereignty to the entire territory.
-  
+
   להחיל ריבונות ישראלית על השטח כולו.
 - **C.** Make territorial changes only through a negotiated agreement with agreed borders.
-  
+
   לבצע שינויים טריטוריאליים רק במסגרת הסכם וגבולות מוסכמים.
 - **D.** Avoid annexation or withdrawal for now; maintain security control while deferring final borders.
-  
+
   להימנע כעת מסיפוח ומנסיגה, ולשמר שליטה ביטחונית תוך דחיית ההכרעה על גבולות הקבע.
 - **E.** Withdraw unilaterally from selected areas and settlements to reduce permanent involvement, without waiting for an agreement.
-  
+
   לסגת באופן חד־צדדי מאזורים ומיישובים נבחרים כדי לצמצם מעורבות קבועה, בלי להמתין להסכם.
 
 Components: Unilateral extension of sovereignty / Territorial approach.
@@ -357,16 +357,16 @@ Components: Unilateral extension of sovereignty / Territorial approach.
 ### Q12 · What should the long-term arrangement in Gaza be?
 **מה צריך להיות ההסדר ארוך הטווח ברצועת עזה?**
 - **A.** Establish Israeli civilian settlements and long-term Israeli civil administration.
-  
+
   להקים יישובים אזרחיים ישראליים ומנהל אזרחי ישראלי ארוך טווח.
 - **B.** Maintain long-term Israeli administration for security and reconstruction, without civilian settlements.
-  
+
   לקיים מנהל ישראלי ארוך טווח לצורכי ביטחון ושיקום, ללא יישובים אזרחיים.
 - **C.** Establish Palestinian civil administration with enforceable security arrangements and no Israeli civilian settlements.
-  
+
   להקים מנהל אזרחי פלסטיני עם הסדרי ביטחון ניתנים לאכיפה וללא יישובים אזרחיים ישראליים.
 - **D.** Seek an international or regional administration for reconstruction and governance, without Israeli civilian settlements.
-  
+
   לפעול למנהל בינלאומי או אזורי לשיקום ולניהול אזרחי, ללא יישובים אזרחיים ישראליים.
 
 Components: Israeli civilian settlements / Civil administration.
@@ -381,16 +381,16 @@ Components: Israeli civilian settlements / Civil administration.
 ### Q13 · What kind of inquiry should investigate the October 7 failures?
 **איזה סוג של חקירה צריך לבדוק את מחדלי 7 באוקטובר?**
 - **A.** Use a state commission of inquiry whose members are appointed by the president of the Supreme Court.
-  
+
   להקים ועדת חקירה ממלכתית שחבריה מתמנים בידי נשיא בית המשפט העליון.
 - **B.** Create a statutory independent commission under a new appointment arrangement agreed by government and opposition.
-  
+
   להקים ועדה עצמאית מכוח חוק, לפי הסדר מינוי חדש שיוסכם בין קואליציה לאופוזיציה.
 - **C.** Use a government-appointed inquiry with professional investigators and a publicly defined mandate.
-  
+
   לקיים בדיקה במינוי הממשלה, עם חוקרים מקצועיים ומנדט שיפורסם לציבור.
 - **D.** Rely on an independent public and professional review, rather than a state commission.
-  
+
   להסתמך על בדיקה ציבורית ומקצועית עצמאית, במקום ועדת חקירה ממלכתית.
 
 Components: Independent statutory commission / Who appoints the members?.
@@ -405,16 +405,16 @@ Components: Independent statutory commission / Who appoints the members?.
 ### Q14 · How should the prime minister's tenure and accountability be regulated?
 **כיצד יש להסדיר את משך כהונת ראש הממשלה ואת האחריות כלפי הציבור?**
 - **A.** Limit the prime minister to two terms, even if voters would otherwise elect them again.
-  
+
   להגביל את ראש הממשלה לשתי כהונות, גם אם הבוחרים היו מעוניינים לבחור בו שוב.
 - **B.** Set an eight-year cumulative limit, regardless of how many governments or elections occur.
-  
+
   לקבוע הגבלה מצטברת של שמונה שנים, בלי קשר למספר הממשלות או מערכות הבחירות.
 - **C.** Allow unlimited terms but add a public recall procedure between elections.
-  
+
   לאפשר כהונות ללא הגבלה, אך להוסיף הליך הדחה ביוזמת הציבור בין בחירות.
 - **D.** Keep tenure unlimited and leave replacement to elections and parliamentary confidence.
-  
+
   להשאיר את משך הכהונה ללא הגבלה ולהותיר את ההחלפה לבחירות ולאמון הכנסת.
 
 Components: Binding tenure limit / Accountability mechanism.
@@ -429,16 +429,16 @@ Components: Binding tenure limit / Accountability mechanism.
 ### Q15 · How should the law recognize same-sex families?
 **כיצד צריך החוק להכיר במשפחות של זוגות מאותו מין?**
 - **A.** Give same-sex parents equal legal status; decide adoption and surrogacy eligibility separately.
-  
+
   להעניק להורים מאותו מין מעמד משפטי שווה, ולהסדיר בנפרד את הזכאות לאימוץ ולפונדקאות.
 - **B.** Provide equal parental recognition and equal adoption criteria; regulate surrogacy separately.
-  
+
   להעניק הכרה הורית שווה ותנאי אימוץ שווים, ולהסדיר פונדקאות בנפרד.
 - **C.** Apply equal parental recognition and the same eligibility criteria to adoption and surrogacy.
-  
+
   להעניק הכרה הורית שווה ולהחיל תנאי זכאות זהים באימוץ ובפונדקאות.
 - **D.** Do not give same-sex couples equivalent joint parental status, and reserve adoption and surrogacy routes for different-sex couples.
-  
+
   לא להעניק לזוגות מאותו מין מעמד הורי משותף מקביל, ולייחד מסלולי אימוץ ופונדקאות לזוגות ממינים שונים.
 
 Components: Equal legal parental status / Adoption and surrogacy policy.
@@ -453,16 +453,16 @@ Components: Equal legal parental status / Adoption and surrogacy policy.
 ### Q16 · How should school choice, funding and admissions fit together?
 **כיצד יש לשלב בחירת בית ספר, תקצוב וקבלה של תלמידים?**
 - **A.** Let funding follow the child to a parent-chosen school, with open admissions and a fair allocation rule when places run out.
-  
+
   לתקצב באמצעות שובר לבית הספר שבחרו ההורים, עם קבלה פתוחה וכלל הקצאה הוגן כשהביקוש עולה על מספר המקומות.
 - **B.** Let funding follow the child, while allowing schools to use published educational admission criteria.
-  
+
   לתקצב באמצעות שובר שהולך עם התלמיד, ולאפשר לבתי הספר להשתמש בקריטריוני קבלה חינוכיים שיפורסמו מראש.
 - **C.** Fund institutions directly and offer choice within a public network, with open admissions and fair allocation.
-  
+
   לתקצב מוסדות ישירות ולהציע בחירה בתוך רשת ציבורית, עם קבלה פתוחה והקצאה הוגנת.
 - **D.** Fund institutions directly but allow specialist schools to select pupils under published educational criteria.
-  
+
   לתקצב מוסדות ישירות, אך לאפשר לבתי ספר ייחודיים למיין תלמידים לפי קריטריונים חינוכיים מפורסמים.
 
 Components: Funding model / Admissions rules.
@@ -477,19 +477,19 @@ Components: Funding model / Admissions rules.
 ### Q17 · What should be the main approach to affordable housing?
 **מה צריכה להיות הדרך המרכזית לקידום דיור בר־השגה?**
 - **A.** Build a substantial new stock of publicly owned rental homes for eligible households.
-  
+
   לבנות מלאי גדול של דירות ציבוריות חדשות להשכרה לזכאים.
 - **B.** Expand public rental housing by buying homes from private builders, rather than making the state the builder.
-  
+
   להרחיב דיור ציבורי להשכרה באמצעות רכישת דירות מקבלנים, במקום שהמדינה תהיה הגוף הבונה.
 - **C.** Focus on private construction and long-term rental incentives, without expanding public ownership.
-  
+
   להתמקד בבנייה פרטית ובתמריצים לשכירות ארוכת טווח, ללא הרחבת הבעלות הציבורית.
 - **D.** Direct additional resources to rent assistance for households, rather than a larger public housing stock.
-  
+
   להפנות משאבים נוספים לסיוע בשכר דירה למשקי בית, במקום להגדיל את מלאי הדיור הציבורי.
 - **E.** Prioritize releasing land and simplifying development, without expanding publicly owned housing.
-  
+
   לתעדף שחרור קרקעות ופישוט תהליכי פיתוח, ללא הרחבת מלאי הדיור בבעלות ציבורית.
 
 Components: Expand publicly owned rental housing / Main housing tool.
@@ -505,16 +505,16 @@ Components: Expand publicly owned rental housing / Main housing tool.
 ### Q18 · How should wages, collective bargaining and industrial disputes be handled?
 **כיצד יש להסדיר שכר, משא ומתן קיבוצי וסכסוכי עבודה?**
 - **A.** Strengthen unions and collective bargaining, with strikes available after negotiation and voluntary mediation.
-  
+
   לחזק התאגדות ומשא ומתן קיבוצי, עם אפשרות לשביתה לאחר משא ומתן וגישור מרצון.
 - **B.** Strengthen collective bargaining, but require binding arbitration in essential services.
-  
+
   לחזק משא ומתן קיבוצי, אך לחייב בוררות בשירותים חיוניים.
 - **C.** Prioritize individual employment contracts and resolve disputes through negotiation and voluntary mediation.
-  
+
   לתת עדיפות לחוזי עבודה אישיים וליישב סכסוכים במשא ומתן ובגישור מרצון.
 - **D.** Prioritize individual contracts and use binding arbitration to resolve industrial disputes across sectors.
-  
+
   לתת עדיפות לחוזים אישיים ולהכריע בסכסוכי עבודה באמצעות בוררות מחייבת בכלל הענפים.
 
 Components: Main bargaining model / Dispute-resolution approach.
@@ -529,19 +529,19 @@ Components: Main bargaining model / Dispute-resolution approach.
 ### Q19 · What service framework should apply to Arab citizens?
 **איזו מסגרת שירות צריכה לחול על אזרחים ערבים?**
 - **A.** Require civilian service, with a choice of placements in healthcare, emergency services, education or local communities.
-  
+
   לחייב שירות אזרחי, עם בחירה בין בריאות, חירום, חינוך או מסגרות קהילתיות.
 - **B.** Apply the same service obligation as to other citizens: military service where needed, with a civilian alternative.
-  
+
   להחיל חובת שירות כמו על יתר האזרחים: שירות צבאי לפי הצורך, עם חלופה אזרחית.
 - **C.** Keep service voluntary and support community-run programs shaped by Arab municipalities and civil society.
-  
+
   להשאיר את השירות התנדבותי ולתמוך בתוכניות קהילתיות בעיצוב רשויות ערביות והחברה האזרחית.
 - **D.** Keep service voluntary while opening military and national civilian routes on equal terms.
-  
+
   להשאיר את השירות התנדבותי ולפתוח מסלולים צבאיים ואזרחיים ארציים בתנאים שווים.
 - **E.** Do not create a service obligation or a dedicated national-service framework; invest directly in ordinary public services.
-  
+
   לא ליצור חובת שירות או מסגרת שירות לאומי ייעודית; להשקיע ישירות בשירותים ציבוריים רגילים.
 
 Components: Compulsory service / Service framework.
@@ -557,19 +557,19 @@ Components: Compulsory service / Service framework.
 ### Q20 · Which approach should lead climate and energy policy?
 **איזו גישה צריכה להוביל את מדיניות האקלים והאנרגיה?**
 - **A.** Set binding emissions targets in law and fund sector-by-sector plans for transport, buildings and energy.
-  
+
   לקבוע בחוק יעדי פליטות מחייבים ולתקצב תוכניות ענפיות לתחבורה, למבנים ולאנרגיה.
 - **B.** Set binding emissions targets, but rely mainly on carbon pricing and let firms choose how to reduce emissions.
-  
+
   לקבוע יעדי פליטות מחייבים, אך להסתמך בעיקר על תמחור פחמן ולאפשר לחברות לבחור כיצד להפחית פליטות.
 - **C.** Avoid binding national targets; prioritize clean technology, efficiency and competitive energy markets.
-  
+
   להימנע מיעדים לאומיים מחייבים ולתעדף טכנולוגיה נקייה, התייעלות ושוק אנרגיה תחרותי.
 - **D.** Prioritize nuclear generation for reliable low-emission electricity, without binding national emissions targets.
-  
+
   לתעדף ייצור גרעיני לחשמל אמין ודל פליטות, ללא יעדי פליטות לאומיים מחייבים.
 - **E.** Keep binding emissions targets, with nuclear generation as the main long-term supply strategy.
-  
+
   לשמור על יעדי פליטות מחייבים, עם ייצור גרעיני כאסטרטגיית אספקה מרכזית לטווח הארוך.
 
 Components: Binding emissions targets / Main policy instrument.
@@ -581,6 +581,62 @@ Components: Binding emissions targets / Main policy instrument.
 | C | No | Technology and efficiency incentives |
 | D | No | Nuclear generation |
 | E | Yes | Nuclear generation |
+
+### Q21 · How should parties include women in their electoral lists?
+**כיצד צריכות מפלגות לשלב נשים ברשימותיהן לכנסת?**
+- **A.** Retain rules barring women from candidacy in parties that follow this religious policy, such as Shas and United Torah Judaism, without representation requirements.
+
+  לשמר כללים האוסרים על נשים להתמודד ברשימות מפלגות הנוהגות כך מטעמי דת, כגון ש״ס ויהדות התורה, ללא דרישות לייצוג נשים.
+- **B.** Open candidacy to women and men; choose candidates without gender quotas or special incentives.
+
+  לפתוח התמודדות לנשים ולגברים ולבחור מועמדים ללא מכסות מגדריות או תמריצים מיוחדים.
+- **C.** Open candidacy equally and encourage women through recruitment programmes and party-funding incentives, without binding quotas.
+
+  לפתוח התמודדות שוויונית ולעודד נשים באמצעות תוכניות גיוס ותמריצים במימון מפלגות, ללא מכסות מחייבות.
+- **D.** Open candidacy equally and reserve a minimum share of viable list places for women, while leaving other places to ordinary selection.
+
+  לפתוח התמודדות שוויונית ולהבטיח לנשים שיעור מינימלי מהמקומות הריאליים; יתר המקומות ייקבעו בהליך הבחירה הרגיל.
+- **E.** Require equal representation, with women and men alternating throughout the electoral list.
+
+  לקבוע ייצוג שווה לנשים ולגברים, במקומות לסירוגין לאורך הרשימה.
+
+Components: Access to candidacy / Mechanism for representation.
+
+| Choice | Access to candidacy | Mechanism for representation |
+|---|---|---|
+| A | Rules barring women from candidacy | No special mechanism |
+| B | Open to women and men | No special mechanism |
+| C | Open to women and men | Recruitment and financial incentives |
+| D | Open to women and men | Guaranteed minimum in viable places |
+| E | Open to women and men | Parity and alternating places |
+
+### Q22 · How should the state promote women’s equality in work, education and public life while addressing community traditions?
+**כיצד על המדינה לקדם שוויון לנשים בתעסוקה, בהשכלה ובחיים הציבוריים, תוך התייחסות למסורות קהילתיות?**
+- **A.** Actively reduce pay and career gaps and support shared caregiving; provide common public services without gender separation as the rule.
+
+  לפעול לצמצום פערי שכר וקידום ולתמוך בחלוקת הטיפול במשפחה; להפעיל ככלל שירותים ציבוריים משותפים ללא הפרדה מגדרית.
+- **B.** Enforce equal legal access to jobs, education and leadership without gender-specific programmes; keep public services common to women and men.
+
+  לאכוף גישה משפטית שווה לעבודה, להשכלה ולהנהגה ללא תוכניות מגדריות ייעודיות; לקיים שירותים ציבוריים משותפים לנשים ולגברים.
+- **C.** Actively remove economic and career barriers; also allow separate services where participation is voluntary, resources equal and a mixed alternative accessible.
+
+  להסיר באופן פעיל חסמים כלכליים ותעסוקתיים; לאפשר גם שירותים נפרדים כאשר ההשתתפות מרצון, המשאבים שווים וחלופה מעורבת נגישה.
+- **D.** Guarantee equal legal opportunities without special gender programmes; permit voluntary separate settings with equal resources and access to a mixed alternative.
+
+  להבטיח הזדמנויות משפטיות שוות ללא תוכניות מגדריות מיוחדות; להתיר מסגרות נפרדות מרצון עם משאבים שווים וחלופה מעורבת נגישה.
+- **E.** Let religious communities preserve their own rules on women’s and men’s roles and run separate institutions with public support; limit state intervention in those arrangements.
+
+  לאפשר לקהילות דתיות לשמר כללים משלהן לתפקידי נשים וגברים ולהפעיל מוסדות נפרדים בתמיכה ציבורית; לצמצם התערבות מדינה בהסדרים אלה.
+
+Components: State approach to equality / Gender separation in publicly funded settings.
+
+| Choice | State approach to equality | Gender separation in publicly funded settings |
+|---|---|---|
+| A | Targeted measures to remove structural barriers | Common services as the rule |
+| B | Equal legal rules without gender-specific programmes | Common services as the rule |
+| C | Targeted measures to remove structural barriers | Separate options with free choice and equal access |
+| D | Equal legal rules without gender-specific programmes | Separate options with free choice and equal access |
+| E | Community autonomy over gender roles | Community rules may govern separate settings |
 
 ## Source registry
 
@@ -663,3 +719,12 @@ Dates and retrieval limitations are preserved from the research. An undated live
 | RZ_GAZA26 | [News1: Smotrich advocates Israeli government and settlements in Gaza](https://www.news1.co.il/Archive/001-D-522346-00.html) | 2026-08-16 | Reported speech by the party leader; distinguishes his proposal from adopted government policy. |
 | STATEHOOD26 | [JDN: party leaders respond to Abbas’s statehood statement](https://www.jdn.co.il/news/2714260/) | 2026-08-22 | Positions are assigned only to the named speakers. Eisenkot’s statement concerns the government he proposes to form. |
 | O710 | [Otzma Yehudit: Disengagement 710 programme](https://710.ozma-yeudit.co.il/) | Undated | Reviewed as a current campaign document. Its emigration mechanism does not specify the quiz’s civil-administration model. |
+| W_LIST26 | [IDI: women in the 2026 electoral lists](https://www.idi.org.il/articles/66220) | 2026-09-22 | List presence supports access to candidacy only. Poll-dependent percentages are not scored and do not establish quota rules. Joint-list figures are not assigned to component parties. |
+| W_RULES26 | [IDI: candidate-selection rules for 2026](https://www.idi.org.il/articles/65737) | Undated | Current election review: Likud guarantees named places; Democrats alternate women and men. Used for party rules, not a universal statutory obligation. |
+| W_HAREDI | [IDI: Haredi local elections and exclusion of women](https://www.idi.org.il/articles/52982) | Undated | 2024 review reproduces Shas and UTJ’s older explanation of sex-specific political roles. Read with the 2026 lists; not a blanket description of all Haredi people or parties. |
+| W_BEYAHAD | [Beyahad: programme on the status of women](https://be-yahad.org.il/plans/women/) | Undated | Official live plan. Distinguishes party-funding incentives from a 50% target for senior public-service posts. |
+| W_DEMOCRATS | [Democrats: five-point vision, July 2025](https://democrats.org.il/wp-content/uploads/2025/09/vision0725.pdf) | 2025-07 | Pages 3 and 7: active inclusion and equal rights. Opposition to exclusion does not specify every voluntary-separation arrangement. |
+| W_HADASH | [Hadash: current bilingual principles and candidates](https://hadash.org.il/) | Undated | Arabic and Hebrew principles explicitly support women’s equality; its own candidates include women. No Joint List attribution. |
+| W_OTZMA26 | [Arutz 7: Son Har-Melech on separate academic tracks](https://www.inn.co.il/news/701665) | 2026-07-16 | Attributable statement supporting optional separate tracks. Does not establish every equality safeguard or a general position against women’s employment. |
+| W_COALITION23 | [Law professors’ forum: gender separation provisions in coalition agreements](https://fs.knesset.gov.il/25/Committees/25_cs_bg_1834209.pdf) | 2023 | Historical analysis hosted by the Knesset; indexed text names Shas, UTJ and Religious Zionism separately. Direct PDF retrieval failed. Current continuity is explicitly an inference. |
+| W_EXCLUSION26 | [Israel Women’s Network: exclusion of women from public life](https://iwn.org.il/wp-content/uploads/2026/02/נייר-עמדה-מטעם-שדולת-הנשים-בישראל-בנוגע-להדרת-נשים-במרחב-הציבורי.pdf) | 2026 | Advocacy organization’s submission to the Knesset committee, page 1: explicitly identifies ideological exclusion in Shas and UTJ. Used for party practice, not its separate legal assessment. Printed numeric and Hebrew dates are inconsistent; year only. |

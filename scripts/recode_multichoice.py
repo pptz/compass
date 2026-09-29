@@ -32,7 +32,7 @@ lookup = {(p['party_id'], p['question_id']): p for p in old['positions']}
 positions = []
 for party in old['parties']:
     for q in questions:
-        previous = lookup[(party['id'], q['id'])]
+        previous = lookup.get((party['id'], q['id']), {'value': None})
         row = dict(party_id=party['id'], question_id=q['id'], dimensions={},
                    checked_at='2026-09-29', review_state='editorial_draft')
         value = previous['value']
@@ -144,6 +144,11 @@ for entry in coverage_review['positions']:
     if key in target:
         evidence['previous_evidence'] = target[key]
     target[key] = evidence
+women_review = json.loads((root/'women-evidence.json').read_text())
+data['sources'].update(women_review['sources'])
+for entry in women_review['positions']:
+    target = next(p for p in positions if p['party_id']==entry['party_id'] and p['question_id']==entry['question_id'])['dimensions']
+    target[entry['dimension_id']] = {k:v for k,v in entry.items() if k not in ['party_id','question_id','dimension_id']}
 data['status_legend']['R'] = 'Reviewed secondary report or institutional profile; included by default; dates remain visible.'
 data['status_legend']['I'] = 'Explicit editorial inference from cited principles or conduct; discounted to 60% and separately switchable.'
 for party in data['parties']:

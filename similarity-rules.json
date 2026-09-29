@@ -997,6 +997,104 @@
         "he": "תכנון, תמחור וחדשנות עשויים להפחית פליטות בכלים שונים; גרעין הוא טכנולוגיית אספקה מסוימת.",
         "ru": "Планы, ценообразование и инновации сокращают выбросы разными инструментами; атомная энергетика — конкретная технология генерации."
       }
+    },
+    "Q21.eligibility": {
+      "matrix": {
+        "open": {
+          "open": 1,
+          "exclude": 0
+        },
+        "exclude": {
+          "open": 0,
+          "exclude": 1
+        }
+      },
+      "rationale": {
+        "en": "Open candidacy and exclusion on grounds of sex are opposed. This component concerns a party’s own rules and practice, not whether it supports a nationwide legal requirement.",
+        "he": "פתיחת ההתמודדות והדרה על בסיס מין הן עמדות מנוגדות. המרכיב עוסק בכללי המפלגה ובנוהג שלה, ולא בתמיכתה בחובה חוקית לכל המפלגות.",
+        "ru": "Открытое выдвижение и исключение по признаку пола противоположны. Здесь оцениваются правила и практика самой партии, а не её поддержка общего закона."
+      }
+    },
+    "Q21.representation": {
+      "matrix": {
+        "none": {
+          "none": 1,
+          "incentives": 0.5,
+          "quota": 0.25,
+          "parity": 0
+        },
+        "incentives": {
+          "none": 0.5,
+          "incentives": 1,
+          "quota": 0.75,
+          "parity": 0.5
+        },
+        "quota": {
+          "none": 0.25,
+          "incentives": 0.75,
+          "quota": 1,
+          "parity": 0.75
+        },
+        "parity": {
+          "none": 0,
+          "incentives": 0.5,
+          "quota": 0.75,
+          "parity": 1
+        }
+      },
+      "rationale": {
+        "en": "Incentives, minimum guarantees and parity share a representation goal but impose different constraints. Actual list percentages do not establish a quota policy.",
+        "he": "תמריצים, הבטחת מינימום ושוויון מספרי חולקים יעד של ייצוג אך מטילים מגבלות שונות. שיעור הנשים בפועל אינו מוכיח מדיניות מכסות.",
+        "ru": "Стимулы, минимальные квоты и паритет преследуют общую цель, но по-разному ограничивают отбор. Доля женщин в списке сама по себе не доказывает поддержку квот."
+      }
+    },
+    "Q22.equality_policy": {
+      "matrix": {
+        "active": {
+          "active": 1,
+          "formal": 0.75,
+          "community": 0
+        },
+        "formal": {
+          "active": 0.75,
+          "formal": 1,
+          "community": 0.25
+        },
+        "community": {
+          "active": 0,
+          "formal": 0.25,
+          "community": 1
+        }
+      },
+      "rationale": {
+        "en": "Active and formal equality share equal-rights principles but differ on targeted intervention. Deferring gender-role rules to communities can conflict with individual equality.",
+        "he": "שוויון פעיל ופורמלי חולקים זכויות שוות אך נבדלים בהתערבות ייעודית. מסירת כללי תפקידי המגדר לקהילות עלולה להתנגש בשוויון הפרט.",
+        "ru": "Активная политика и формальное равноправие разделяют принцип равных прав, но различаются специальными мерами. Передача общинам правил о гендерных ролях может противоречить личному равноправию."
+      }
+    },
+    "Q22.separation": {
+      "matrix": {
+        "integrated": {
+          "integrated": 1,
+          "voluntary": 0.5,
+          "community": 0
+        },
+        "voluntary": {
+          "integrated": 0.5,
+          "voluntary": 1,
+          "community": 0.5
+        },
+        "community": {
+          "integrated": 0,
+          "voluntary": 0.5,
+          "community": 1
+        }
+      },
+      "rationale": {
+        "en": "Optional separate provision partly overlaps with both common services and community separation. Consent, equal resources and access to alternatives matter; support for separation does not establish opposition to women’s employment.",
+        "he": "אפשרות להפרדה מרצון חופפת חלקית לשירותים משותפים ולהפרדה קהילתית. הסכמה, משאבים שווים וחלופות חשובים; תמיכה בהפרדה אינה מוכיחה התנגדות לתעסוקת נשים.",
+        "ru": "Добровольное разделение частично пересекается и с совместными услугами, и с общинным разделением. Важны согласие, равные ресурсы и альтернативы; поддержка разделения не означает отрицания права женщин работать."
+      }
     }
   }
 }
