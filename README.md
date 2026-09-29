@@ -2,15 +2,21 @@
 
 **English**
 
-A political compass for the 2026 Israeli elections that helps people compare their views with the positions of Israeli political parties. Users answer a short or full multiple-choice quiz, set how much each issue matters to them, and receive ranked similarity scores that account for partial agreement. The project also explains the issues and links to sources, distinguishing documented party positions from reasoned estimates. Available in Hebrew, Russian, and English.
+A political compass for the 2026 Israeli elections that helps people compare their views with the positions of Israeli political parties. Users answer a short or full multiple-choice quiz, set how much each issue matters to them, and receive match percentages with the views of the various parties. The project also explains the issues and links to sources, distinguishing documented party positions from reasoned estimates. Available in Hebrew, Russian, and English.
+
+Where available, party positions were taken from official programmes and public statements, supplemented by news reporting and institutional analyses. Where direct evidence is missing, the compass uses clearly marked, source-based inferences.
 
 <p dir="rtl" lang="he"><strong>עברית</strong></p>
 
-<p dir="rtl" lang="he">מצפן פוליטי לבחירות 2026 בישראל, המסייע להשוות בין עמדות המשתמשים לעמדות המפלגות. המשתמשים עונים על שאלון קצר או מלא עם שאלות רב־ברירה, בוחרים את מידת החשיבות של כל נושא ומקבלים דירוג התאמה המתחשב גם בהסכמה חלקית. המיזם מציג הסברים על הסוגיות וקישורים למקורות, תוך הבחנה בין עמדות מפלגה מתועדות להערכות מנומקות. זמין בעברית, ברוסית ובאנגלית.</p>
+<p dir="rtl" lang="he">מצפן פוליטי לבחירות 2026 בישראל, המסייע להשוות בין עמדות המשתמשים לעמדות המפלגות. המשתמשים עונים על שאלון קצר או מלא עם שאלות רב־ברירה, בוחרים את מידת החשיבות של כל נושא ומקבלים אחוזי התאמה לעמדות המפלגות השונות. המיזם מציג הסברים על הסוגיות וקישורים למקורות, תוך הבחנה בין עמדות מפלגה מתועדות להערכות מנומקות. זמין בעברית, ברוסית ובאנגלית.</p>
+
+<p dir="rtl" lang="he">ככל שהיו זמינים, עמדות המפלגות נלקחו ממצעים רשמיים ומהצהרות פומביות, והושלמו באמצעות דיווחים עיתונאיים וניתוחים של מכוני מחקר. כשאין תיעוד ישיר, המצפן משתמש בהערכות המבוססות על מקורות ומסומנות בבירור ככאלה.</p>
 
 **Русский**
 
-Политический компас к выборам 2026 года в Израиле, который помогает сравнить свои взгляды с позициями израильских партий. Пользователи проходят короткий или полный тест с вариантами ответов, указывают важность каждой темы и получают рейтинг сходства, учитывающий частичное совпадение взглядов. Проект также объясняет спорные вопросы и даёт ссылки на источники, отделяя документированные позиции партий от обоснованных предположений. Доступен на иврите, русском и английском.
+Политический компас к выборам 2026 года в Израиле, который помогает сравнить свои взгляды с позициями израильских партий. Пользователи проходят короткий или полный тест с вариантами ответов, указывают важность каждой темы и получают проценты совпадения с позициями различных партий. Проект также объясняет спорные вопросы и даёт ссылки на источники, отделяя документированные позиции партий от обоснованных предположений. Доступен на иврите, русском и английском.
+
+Где это было возможно, позиции партий взяты из официальных программ и публичных заявлений, дополненных публикациями СМИ и аналитикой исследовательских институтов. При отсутствии прямых данных компас использует предположения, основанные на источниках и явно обозначенные как таковые.
 
 [Try the compass](https://pptz.github.io/compass/).
 
