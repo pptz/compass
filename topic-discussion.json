@@ -1,0 +1,285 @@
+{
+  "Q1": {
+    "en": [
+      "What security guarantees could actually be enforced, and by whom?",
+      "What citizenship and political rights would people have under each proposed arrangement?"
+    ],
+    "he": [
+      "אילו ערבויות ביטחוניות אפשר לאכוף בפועל, ועל ידי מי?",
+      "אילו זכויות אזרחיות ופוליטיות יהיו לתושבים בכל הסדר מוצע?"
+    ],
+    "ru": [
+      "Какие гарантии безопасности реально исполнимы и кто их обеспечит?",
+      "Какие гражданские и политические права получат жители при каждом устройстве?"
+    ]
+  },
+  "Q2": {
+    "en": [
+      "Who should decide which exemptions are legitimate and which service routes meet real needs?",
+      "How should lost earnings, public cost and the burden on those who serve be compared?"
+    ],
+    "he": [
+      "מי יקבע אילו פטורים מוצדקים ואילו מסלולי שירות עונים על צרכים אמיתיים?",
+      "כיצד משווים אובדן הכנסה, עלות ציבורית והנטל על המשרתים?"
+    ],
+    "ru": [
+      "Кто определяет обоснованные исключения и реально нужные виды службы?",
+      "Как сопоставить потерянный заработок, бюджетные расходы и нагрузку на служащих?"
+    ]
+  },
+  "Q3": {
+    "en": [
+      "Which decisions should an elected majority be unable to make without broader agreement?",
+      "How can judges be accountable without making their decisions dependent on electoral pressure?"
+    ],
+    "he": [
+      "אילו החלטות רוב נבחר לא צריך להיות רשאי לקבל בלי הסכמה רחבה יותר?",
+      "כיצד יוצרים אחריות של שופטים בלי להכפיף את פסיקותיהם ללחץ אלקטורלי?"
+    ],
+    "ru": [
+      "Какие решения избранное большинство не должно принимать без более широкого согласия?",
+      "Как обеспечить подотчётность судей без зависимости решений от избирательного давления?"
+    ]
+  },
+  "Q4": {
+    "en": [
+      "When do equal individual rights require recognition of collective language or cultural rights?",
+      "How should conflicts between national symbols, public resources and equal belonging be resolved?"
+    ],
+    "he": [
+      "מתי שוויון זכויות אישי מחייב הכרה בזכויות לשוניות או תרבותיות קיבוציות?",
+      "כיצד פותרים התנגשות בין סמלים לאומיים, משאבים ציבוריים ושייכות שווה?"
+    ],
+    "ru": [
+      "Когда равные личные права требуют признания коллективных языковых или культурных прав?",
+      "Как разрешать конфликты между национальными символами, ресурсами и равной принадлежностью?"
+    ]
+  },
+  "Q5": {
+    "en": [
+      "Would the available routes provide genuinely comparable rights, including when a relationship ends?",
+      "How should the state handle a disagreement between partners over religious and civil jurisdiction?"
+    ],
+    "he": [
+      "האם המסלולים יספקו זכויות מקבילות בפועל, גם כשהקשר מסתיים?",
+      "כיצד המדינה תטפל במחלוקת בין בני זוג על סמכות דתית או אזרחית?"
+    ],
+    "ru": [
+      "Дадут ли разные пути сопоставимые права, в том числе при расставании?",
+      "Как государству решать разногласия партнёров о религиозной и гражданской юрисдикции?"
+    ]
+  },
+  "Q6": {
+    "en": [
+      "Who pays for the service, and how are workers who want a shared rest day protected?",
+      "How can one municipality's decision avoid imposing costs or traffic on its neighbors?"
+    ],
+    "he": [
+      "מי מממן את השירות, וכיצד מגינים על עובדים המעוניינים ביום מנוחה משותף?",
+      "כיצד מונעים מהחלטה ברשות אחת להטיל עלויות או תנועה על שכנותיה?"
+    ],
+    "ru": [
+      "Кто оплачивает сообщение и как защитить работников, желающих общего дня отдыха?",
+      "Как избежать переноса расходов и трафика из одного муниципалитета в соседние?"
+    ]
+  },
+  "Q7": {
+    "en": [
+      "If expansion relies on efficiency, what happens if the expected savings do not materialize?",
+      "Which households bear the cost, and which services or future investments would otherwise lose funding?"
+    ],
+    "he": [
+      "אם ההרחבה נשענת על התייעלות, מה קורה כשהחיסכון הצפוי אינו מתממש?",
+      "אילו משקי בית נושאים בעלות, ואילו שירותים או השקעות עתידיות עלולים לאבד מימון?"
+    ],
+    "ru": [
+      "Что делать, если расширение опирается на эффективность, а экономия не возникает?",
+      "Какие семьи несут расходы и какие услуги или будущие инвестиции теряют финансирование?"
+    ]
+  },
+  "Q8": {
+    "en": [
+      "How can lower import costs be passed on to shoppers rather than retained by concentrated retailers?",
+      "When is protection needed for supply resilience, and when does it merely preserve an expensive incumbent?"
+    ],
+    "he": [
+      "כיצד מבטיחים שהוזלת היבוא תגיע לקונים ולא תישאר אצל קמעונאים ריכוזיים?",
+      "מתי הגנה נדרשת לחוסן האספקה, ומתי היא רק משמרת ספק יקר?"
+    ],
+    "ru": [
+      "Как передать снижение импортных затрат покупателям, а не крупным торговым сетям?",
+      "Когда защита нужна для устойчивости поставок, а когда лишь сохраняет дорогого действующего поставщика?"
+    ]
+  },
+  "Q9": {
+    "en": [
+      "Who defines the common core, and how much room remains for cultural or religious difference?",
+      "If funding is withdrawn, how can children be protected from the consequences of an institution's decision?",
+      "Should the common core also be mandatory in schools that receive no public funding, and how should that requirement be enforced?"
+    ],
+    "he": [
+      "מי מגדיר את הליבה המשותפת, וכמה מקום נותר לשונות תרבותית או דתית?",
+      "אם המימון נשלל, כיצד מגינים על ילדים מפני השלכות החלטת המוסד?",
+      "האם הליבה צריכה להיות חובה גם בבתי ספר שאינם מקבלים מימון ציבורי, וכיצד יש לאכוף זאת?"
+    ],
+    "ru": [
+      "Кто определяет базовую программу и сколько места остаётся культурным и религиозным различиям?",
+      "Как защитить детей от последствий решения учреждения, если его финансирование отзывают?",
+      "Должно ли общее ядро быть обязательным и в школах без бюджетной поддержки, и как обеспечивать выполнение этого требования?"
+    ]
+  },
+  "Q10": {
+    "en": [
+      "What limits would prevent exceptional intelligence powers from becoming routine policing tools?",
+      "What evidence would show that the chosen intervention reduces violence without undermining public trust?"
+    ],
+    "he": [
+      "אילו מגבלות ימנעו מסמכויות מודיעין חריגות להפוך לכלי שיטור שגרתי?",
+      "איזה מידע יראה שההתערבות מפחיתה אלימות בלי לפגוע באמון הציבור?"
+    ],
+    "ru": [
+      "Что помешает превращению исключительных разведывательных полномочий в обычный полицейский инструмент?",
+      "Какие данные покажут снижение насилия без подрыва общественного доверия?"
+    ]
+  },
+  "Q11": {
+    "en": [
+      "What legal status and political representation would residents of each affected area receive?",
+      "Which steps preserve future options, and which create commitments that are hard to reverse?"
+    ],
+    "he": [
+      "איזה מעמד משפטי וייצוג פוליטי יקבלו תושבי כל אזור מושפע?",
+      "אילו צעדים משמרים אפשרויות עתידיות, ואילו יוצרים מחויבויות שקשה להפוך?"
+    ],
+    "ru": [
+      "Какой правовой статус и политическое представительство получат жители затронутых районов?",
+      "Какие шаги сохраняют будущие варианты, а какие создают труднообратимые обязательства?"
+    ]
+  },
+  "Q12": {
+    "en": [
+      "Who would be willing and able to govern, and why would residents accept that authority?",
+      "How would security, reconstruction funding and responsibility for civilians be divided?"
+    ],
+    "he": [
+      "מי יסכים ויוכל למשול, ומדוע התושבים יקבלו את סמכותו?",
+      "כיצד יחולקו האחריות לביטחון, מימון השיקום והאחריות לאזרחים?"
+    ],
+    "ru": [
+      "Кто захочет и сможет управлять и почему жители признают эту власть?",
+      "Как распределить безопасность, финансирование восстановления и ответственность за гражданских?"
+    ]
+  },
+  "Q13": {
+    "en": [
+      "How can a commission compel evidence while safeguarding due process and sensitive information?",
+      "What appointment method earns trust when both the government and its critics dispute the institutions?"
+    ],
+    "he": [
+      "כיצד ועדה תשיג ראיות מחייבות תוך הגנה על הליך הוגן ועל מידע רגיש?",
+      "איזו שיטת מינוי תזכה לאמון כשהממשלה ומבקריה חולקים על המוסדות?"
+    ],
+    "ru": [
+      "Как комиссия получит доказательства, сохраняя надлежащую процедуру и защиту чувствительной информации?",
+      "Какое назначение вызывает доверие, если институты оспаривают и правительство, и его критики?"
+    ]
+  },
+  "Q14": {
+    "en": [
+      "Should a short caretaker government count as a full term, and should nonconsecutive years be added together?",
+      "How can a recall mechanism enable accountability without becoming a permanent election campaign?"
+    ],
+    "he": [
+      "האם ממשלת מעבר קצרה תיספר ככהונה מלאה, והאם שנים לא רצופות יצטברו?",
+      "כיצד מנגנון הדחה יאפשר אחריות בלי להפוך לקמפיין בחירות מתמשך?"
+    ],
+    "ru": [
+      "Считать ли короткую переходную администрацию полным сроком и суммировать ли непоследовательные годы?",
+      "Как отзыв обеспечит подотчётность, не превращаясь в непрерывную избирательную кампанию?"
+    ]
+  },
+  "Q15": {
+    "en": [
+      "Which rights belong to the child regardless of how the family was formed?",
+      "Should legal recognition of an existing family be decided separately from access to adoption or surrogacy?"
+    ],
+    "he": [
+      "אילו זכויות שייכות לילד ללא קשר לדרך שבה נוצרה המשפחה?",
+      "האם הכרה במשפחה קיימת צריכה להיות נפרדת מהגישה לאימוץ או לפונדקאות?"
+    ],
+    "ru": [
+      "Какие права принадлежат ребёнку независимо от способа создания семьи?",
+      "Нужно ли отделять признание существующей семьи от доступа к усыновлению или суррогатному материнству?"
+    ]
+  },
+  "Q16": {
+    "en": [
+      "Can families genuinely choose if transport, extra fees or admissions screening exclude them?",
+      "What happens to pupils and schools left behind when funding follows those who move?"
+    ],
+    "he": [
+      "האם משפחות יכולות לבחור באמת כשמחיר הנסיעה, תשלומים נוספים או מיון חוסמים אותן?",
+      "מה קורה לתלמידים ולבתי הספר שנותרו מאחור כשהתקציב עובר עם העוזבים?"
+    ],
+    "ru": [
+      "Реален ли выбор, если мешают транспорт, доплаты или отбор?",
+      "Что происходит с учениками и школами, оставшимися без средств, ушедших вслед за другими детьми?"
+    ]
+  },
+  "Q17": {
+    "en": [
+      "Which approach helps people needing a home now, and which changes supply over a decade?",
+      "How can eligibility rules, location and maintenance prevent the benefit from missing those most in need?"
+    ],
+    "he": [
+      "איזה מסלול מסייע למי שזקוקים לבית עכשיו, ואיזה משנה את ההיצע בעשור הקרוב?",
+      "כיצד כללי זכאות, מיקום ותחזוקה מבטיחים שהסיוע יגיע למי שזקוקים לו ביותר?"
+    ],
+    "ru": [
+      "Какой подход помогает нуждающимся в жилье сейчас, а какой меняет предложение за десятилетие?",
+      "Как правила доступа, расположение и обслуживание направят помощь наиболее нуждающимся?"
+    ]
+  },
+  "Q18": {
+    "en": [
+      "Who decides which services are essential, and how much disruption is tolerable during a dispute?",
+      "How can an arbitrator be independent, and what bargaining power remains if a strike is unavailable?"
+    ],
+    "he": [
+      "מי קובע אילו שירותים חיוניים, ומהו השיבוש שאפשר לשאת בזמן סכסוך?",
+      "כיצד מבטיחים עצמאות לבורר, ואיזה כוח מיקוח נותר כשאי אפשר לשבות?"
+    ],
+    "ru": [
+      "Кто определяет жизненно важные службы и допустимый уровень нарушения их работы?",
+      "Как обеспечить независимость арбитра и какая переговорная сила остаётся без забастовки?"
+    ]
+  },
+  "Q19": {
+    "en": [
+      "Who should design placements so that service meets real community needs and earns trust?",
+      "How should an obligation relate to equal rights, opportunities and objections of national identity or conscience?"
+    ],
+    "he": [
+      "מי יעצב את המסגרות כדי שהשירות יענה על צרכים קהילתיים אמיתיים ויזכה לאמון?",
+      "כיצד חובת שירות צריכה להתייחס לשוויון זכויות והזדמנויות ולהתנגדות מטעמי זהות לאומית או מצפון?"
+    ],
+    "ru": [
+      "Кто должен разработать места службы, чтобы они отвечали реальным нуждам и вызывали доверие?",
+      "Как обязанность соотносится с равными правами, возможностями и возражениями национальной идентичности или совести?"
+    ]
+  },
+  "Q20": {
+    "en": [
+      "How will progress be measured, and what happens when a sector misses a binding target?",
+      "Who bears higher energy costs today, and how should reliability, long-term risk and emissions be balanced?"
+    ],
+    "he": [
+      "כיצד תימדד ההתקדמות, ומה יקרה כשענף לא יעמוד ביעד מחייב?",
+      "מי יישא בעליית מחירי האנרגיה היום, וכיצד מאזנים אמינות, סיכון ארוך טווח ופליטות?"
+    ],
+    "ru": [
+      "Как измерять прогресс и что происходит, если отрасль не достигает обязательной цели?",
+      "Кто платит за энергию сегодня и как сбалансировать надёжность, долгосрочный риск и выбросы?"
+    ]
+  }
+}

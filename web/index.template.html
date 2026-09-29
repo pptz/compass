@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"><meta name="theme-color" content="#1d4ed8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>Your Choice — Your Vote</title>
+  <style>/* STYLES */</style>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#">◈ <span id="brand"></span></a><div class="top-actions"><select id="language" aria-label="Language / שפה / Язык"><option value="en">English</option><option value="he">עברית</option><option value="ru">Русский</option></select></div></header>
+  <main>
+    <section class="intro"><p class="eyebrow" id="eyebrow"></p><h1 id="title"></h1><ul id="topics" class="topic-list"></ul><p id="subtitle"></p><a id="issues-link" href="issues.html" target="_blank" rel="noopener"></a></section>
+    <section class="toolbar" aria-label="Questionnaire controls">
+      <div class="segments"><button type="button" id="short"></button><button type="button" id="long"></button></div>
+      <div class="toolbar-actions"><button type="button" id="reset"></button></div>
+    </section>
+    <div class="progress-line"><span id="progress-label" role="status"></span><span id="date"></span></div><progress id="progress" value="0" max="10"></progress>
+    <nav class="tabs"><button type="button" id="quiz-tab"></button><button type="button" id="results-tab"></button></nav>
+    <section id="quiz"><div id="question-navigation" class="question-navigation"><button id="back" type="button"></button><span id="step-label" role="status" aria-live="polite"></span></div><div id="questions"></div><div class="finish"><p id="skip-note"></p><div class="step-actions"><button class="primary" id="next" type="button"></button><button class="primary" id="calculate" type="button" hidden></button></div></div></section>
+    <section id="results" hidden aria-label="Results">
+      <div class="result-heading"><div><h2 id="results-title" tabindex="-1"></h2><p id="results-subtitle"></p></div><button type="button" id="edit"></button></div>
+      <div class="research-options"><label><input type="checkbox" id="historical"><span id="historical-label"></span></label></div>
+      <p id="mode-note" class="notice"></p>
+      <p id="coverage-note" class="coverage-note"></p>
+      <div id="result-cards"></div>
+      <details class="method"><summary id="method-title"></summary><p id="method-body"></p></details>
+    </section>
+    <footer id="footer"></footer>
+  </main>
+  <script id="compass-data" type="application/json">/* DATA */</script>
+  <script>/* SCORING */</script>
+  <script>/* APP */</script>
+</body>
+</html>

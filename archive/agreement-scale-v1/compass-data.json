@@ -1,0 +1,3894 @@
+{
+  "version": "0.1-research-draft",
+  "checked_at": "2026-09-29",
+  "publication_ready": false,
+  "description": "Published-position comparison, not a prediction of voting behavior. All assignments are editorial interpretations requiring review.",
+  "choices": [
+    {
+      "value": -2,
+      "en": "Strongly disagree",
+      "he": "מתנגד/ת מאוד"
+    },
+    {
+      "value": -1,
+      "en": "Tend to disagree",
+      "he": "נוטה להתנגד"
+    },
+    {
+      "value": 0,
+      "en": "Mixed / neutral",
+      "he": "עמדה מעורבת / ניטרלית"
+    },
+    {
+      "value": 1,
+      "en": "Tend to agree",
+      "he": "נוטה להסכים"
+    },
+    {
+      "value": 2,
+      "en": "Strongly agree",
+      "he": "מסכים/ה מאוד"
+    },
+    {
+      "value": null,
+      "en": "Don't know / skip",
+      "he": "לא יודע/ת / דילוג"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "domain": "security",
+      "topic": "Palestinian state",
+      "en": "Israel should pursue a negotiated Palestinian state alongside Israel, subject to enforceable security arrangements.",
+      "he": "על ישראל לפעול להסכם להקמת מדינה פלסטינית לצד ישראל, בכפוף להסדרי ביטחון שניתן לאכוף.",
+      "note": "This asks about the goal of an agreement, not immediate or unconditional recognition.",
+      "short": true
+    },
+    {
+      "id": "Q2",
+      "domain": "security",
+      "topic": "Yeshiva students and service",
+      "en": "Full-time yeshiva students should be subject to a military or civilian service obligation, with no blanket exemption for their sector.",
+      "he": "יש להחיל על תלמידי ישיבות חובת שירות צבאי או אזרחי, ללא פטור גורף למגזר.",
+      "note": "Individual medical exemptions and narrowly defined exceptional-talent arrangements are compatible with agreement.",
+      "short": true
+    },
+    {
+      "id": "Q3",
+      "domain": "institutions",
+      "topic": "Judicial override",
+      "en": "The Knesset should be able to re-enact, by an ordinary coalition majority, a law the Supreme Court invalidated for violating basic rights.",
+      "he": "יש לאפשר לכנסת לחוקק מחדש, ברוב קואליציוני רגיל, חוק שבית המשפט העליון פסל בשל פגיעה בזכויות יסוד.",
+      "note": "Support for any judicial reform does not by itself answer this specific question.",
+      "short": true
+    },
+    {
+      "id": "Q4",
+      "domain": "institutions",
+      "topic": "Constitutional equality",
+      "en": "A Basic Law should explicitly guarantee equal civil rights regardless of religion or nationality.",
+      "he": "יש לעגן בחוק יסוד שוויון זכויות אזרחיות ללא הבדל דת או לאום.",
+      "note": "This asks about individual civil rights; it does not decide national self-determination or the state's national symbols.",
+      "short": true
+    },
+    {
+      "id": "Q5",
+      "domain": "religion",
+      "topic": "Civil marriage",
+      "en": "Couples should be able to choose a domestic civil marriage and divorce route outside the religious courts.",
+      "he": "יש לאפשר לזוגות לבחור במסלול נישואים וגירושים אזרחי בישראל, מחוץ לבתי הדין הדתיים.",
+      "note": "A civil-union registration scheme is recorded as a narrower proposal unless its legal equivalence is established.",
+      "short": true
+    },
+    {
+      "id": "Q6",
+      "domain": "religion",
+      "topic": "Shabbat transport",
+      "en": "Municipalities should be allowed to authorize limited public transport on Shabbat according to local needs.",
+      "he": "יש לאפשר לרשויות מקומיות להפעיל תחבורה ציבורית מצומצמת בשבת בהתאם לצורכי המקום.",
+      "note": "Agreement does not require nationwide operation or service through religious neighborhoods.",
+      "short": true
+    },
+    {
+      "id": "Q7",
+      "domain": "economy",
+      "topic": "Public services",
+      "en": "Israel should expand publicly funded healthcare, education and welfare services.",
+      "he": "על ישראל להרחיב את שירותי הבריאות, החינוך והרווחה במימון ציבורי.",
+      "note": "Expansion has budget costs. This item does not assume that a party endorses a particular tax increase; tax policy needs separate evidence.",
+      "short": true
+    },
+    {
+      "id": "Q8",
+      "domain": "economy",
+      "topic": "Import competition",
+      "en": "Israel should reduce import barriers to increase competition, while retaining product-safety requirements.",
+      "he": "על ישראל לצמצם חסמי יבוא כדי להגביר תחרות, תוך שמירה על דרישות בטיחות למוצרים.",
+      "note": "This does not mean abandoning safety standards or automatically abolishing all agricultural protection.",
+      "short": true
+    },
+    {
+      "id": "Q9",
+      "domain": "services",
+      "topic": "Core studies and school funding",
+      "en": "Public funding for schools should depend on teaching the core curriculum.",
+      "he": "יש להתנות מימון ציבורי לבתי ספר בהוראת תוכנית הליבה.",
+      "note": "The core curriculum includes general subjects such as mathematics and English. Religious studies can be additional. Supporting core studies alone does not establish support for the funding condition.",
+      "short": true
+    },
+    {
+      "id": "Q10",
+      "domain": "services",
+      "topic": "Shin Bet and organized crime",
+      "en": "The Shin Bet should have a role in tackling serious domestic organized crime, even when it is not linked to terrorism.",
+      "he": "יש לתת לשב״כ תפקיד במאבק בפשיעה מאורגנת חמורה בישראל, גם כשאינה קשורה לטרור.",
+      "note": "This asks about extending security-service involvement, not whether organized crime should be fought.",
+      "short": true
+    },
+    {
+      "id": "Q11",
+      "domain": "security",
+      "topic": "West Bank annexation",
+      "en": "Israel should unilaterally extend its sovereignty to territory in the West Bank / Judea and Samaria.",
+      "he": "על ישראל להחיל באופן חד־צדדי ריבונות על שטחים ביהודה ושומרון / הגדה המערבית.",
+      "note": "Security control, settlement construction, negotiated border changes and formal annexation are distinct policies.",
+      "short": false
+    },
+    {
+      "id": "Q12",
+      "domain": "security",
+      "topic": "Gaza settlements",
+      "en": "Israel should establish Israeli civilian settlements in the Gaza Strip.",
+      "he": "על ישראל להקים יישובים אזרחיים ישראליים ברצועת עזה.",
+      "note": "Military presence and policies concerning emigration do not by themselves answer this question.",
+      "short": false
+    },
+    {
+      "id": "Q13",
+      "domain": "institutions",
+      "topic": "October 7 inquiry",
+      "en": "The October 7 failures should be investigated by a state commission whose members are appointed by the president of the Supreme Court.",
+      "he": "יש לחקור את מחדלי 7 באוקטובר בוועדת חקירה ממלכתית שחבריה ממונים בידי נשיא בית המשפט העליון.",
+      "note": "Support for an investigation with a different appointment mechanism is not full support for this proposition.",
+      "short": false
+    },
+    {
+      "id": "Q14",
+      "domain": "institutions",
+      "topic": "Prime minister term limits",
+      "en": "There should be a binding limit on the number of terms or years a prime minister may serve.",
+      "he": "יש להגביל בחוק את מספר הכהונות או את שנות הכהונה של ראש הממשלה.",
+      "note": "Record the party's actual proposal in the explanation; this item does not equate two terms with exactly eight years.",
+      "short": false
+    },
+    {
+      "id": "Q15",
+      "domain": "religion",
+      "topic": "Same-sex parenthood",
+      "en": "Same-sex couples should have equal legal recognition as parents.",
+      "he": "יש להעניק לזוגות מאותו מין הכרה משפטית שווה כהורים.",
+      "note": "This asks about equal parental status. Adoption and surrogacy eligibility need separate evidence and are not bundled into this item.",
+      "short": false
+    },
+    {
+      "id": "Q16",
+      "domain": "services",
+      "topic": "Education vouchers",
+      "en": "Most public school funding should follow each child through a voucher usable at an approved school chosen by the parents.",
+      "he": "רוב המימון הציבורי לבתי הספר צריך לעבור באמצעות שובר אישי לכל תלמיד, למוסד מאושר שהוריו יבחרו.",
+      "note": "Local school autonomy or choice within the public system is not necessarily a voucher policy.",
+      "short": false
+    },
+    {
+      "id": "Q17",
+      "domain": "economy",
+      "topic": "Public housing",
+      "en": "The state should substantially expand the stock of publicly owned rental housing for eligible households.",
+      "he": "על המדינה להגדיל באופן משמעותי את מלאי הדירות הציבוריות להשכרה לזכאים.",
+      "note": "Private construction, mortgage subsidies and privately owned long-term rentals are different policies.",
+      "short": false
+    },
+    {
+      "id": "Q18",
+      "domain": "economy",
+      "topic": "Collective bargaining",
+      "en": "Policy should strengthen collective bargaining and workers' ability to organize into trade unions.",
+      "he": "יש לחזק את המשא ומתן הקיבוצי ואת יכולתם של עובדים להתאגד.",
+      "note": "Supporting higher wages or individual employment contracts does not alone establish a position.",
+      "short": false
+    },
+    {
+      "id": "Q19",
+      "domain": "security",
+      "topic": "Arab citizens and civilian service",
+      "en": "Arab citizens who are not called up for military service should be required to perform civilian service.",
+      "he": "יש לחייב אזרחים ערבים שאינם נקראים לשירות צבאי לבצע שירות אזרחי.",
+      "note": "Voluntary community service is not the same as a legal obligation.",
+      "short": false
+    },
+    {
+      "id": "Q20",
+      "domain": "services",
+      "topic": "Climate legislation",
+      "en": "Israel should adopt a funded climate law with binding sectoral targets for reducing emissions.",
+      "he": "על ישראל לחוקק חוק אקלים מתוקצב עם יעדים מחייבים להפחתת פליטות לפי ענפים.",
+      "note": "General support for nature conservation or renewable energy does not establish support for binding targets.",
+      "short": false
+    }
+  ],
+  "parties": [
+    {
+      "id": "likud",
+      "en": "Likud",
+      "he": "הליכוד"
+    },
+    {
+      "id": "yashar",
+      "en": "Yashar",
+      "he": "ישר!"
+    },
+    {
+      "id": "beyahad",
+      "en": "Beyahad",
+      "he": "ביחד"
+    },
+    {
+      "id": "democrats",
+      "en": "Democrats",
+      "he": "הדמוקרטים"
+    },
+    {
+      "id": "religious_zionism",
+      "en": "Religious Zionism",
+      "he": "הציונות הדתית"
+    },
+    {
+      "id": "otzma",
+      "en": "Otzma Yehudit",
+      "he": "עוצמה יהודית"
+    },
+    {
+      "id": "shas",
+      "en": "Shas",
+      "he": "ש״ס"
+    },
+    {
+      "id": "beytenu",
+      "en": "Yisrael Beytenu",
+      "he": "ישראל ביתנו"
+    },
+    {
+      "id": "raam",
+      "en": "Ra'am",
+      "he": "רע״ם"
+    },
+    {
+      "id": "hadash",
+      "en": "Hadash",
+      "he": "חד״ש"
+    },
+    {
+      "id": "taal",
+      "en": "Ta'al",
+      "he": "תע״ל"
+    },
+    {
+      "id": "balad",
+      "en": "Balad",
+      "he": "בל״ד"
+    },
+    {
+      "id": "utj",
+      "en": "United Torah Judaism",
+      "he": "יהדות התורה"
+    },
+    {
+      "id": "zehut",
+      "en": "Zehut",
+      "he": "זהות"
+    },
+    {
+      "id": "blue_white",
+      "en": "Blue and White",
+      "he": "כחול לבן"
+    },
+    {
+      "id": "reservists",
+      "en": "Reservists",
+      "he": "המילואימניקים"
+    }
+  ],
+  "sources": {
+    "Y": {
+      "title": "Yashar: ten steps",
+      "url": "https://yasharwitheisenkot.com/",
+      "date": null,
+      "type": "party_program",
+      "note": "Current homepage; detailed subpages intermittently returned a verification screen."
+    },
+    "D": {
+      "title": "Democrats: agenda, July 2025",
+      "url": "https://democrats.org.il/wp-content/uploads/2025/09/agenda2025.pdf",
+      "date": "2025-07",
+      "type": "party_program",
+      "note": "Date taken from the document cover, not search-engine publication metadata. Newer plans also exist at yes.democrats.org.il; the parsed index did not expose their text."
+    },
+    "DC": {
+      "title": "Democrats: current commitments",
+      "url": "https://fighters.democrats.org.il/",
+      "date": null,
+      "type": "party_program"
+    },
+    "B": {
+      "title": "Beyahad: published plans",
+      "url": "https://be-yahad.org.il/plans/?bennett_plans_cat=198",
+      "date": null,
+      "type": "party_program"
+    },
+    "BE": {
+      "title": "Beyahad: environment plan",
+      "url": "https://be-yahad.org.il/plans/enviroment/",
+      "date": null,
+      "type": "party_program"
+    },
+    "IB": {
+      "title": "Yisrael Beytenu: platform",
+      "url": "https://beytenu.org.il/party-platform/",
+      "date": null,
+      "type": "party_program",
+      "note": "Current living page; contains both new priorities and legacy sections. Unresolved internal tensions must be flagged."
+    },
+    "Z": {
+      "title": "Zehut: full web platform",
+      "url": "https://zehut.org.il/platform/full",
+      "date": null,
+      "type": "party_program"
+    },
+    "ZC": {
+      "title": "Zehut: compass",
+      "url": "https://zehut.org.il/compass",
+      "date": null,
+      "type": "party_program"
+    },
+    "RD": {
+      "title": "Religious Zionism: platform index",
+      "url": "https://zionutdatit.org.il/מצע-המפלגה/",
+      "date": null,
+      "type": "party_index",
+      "note": "Index located in search; direct retrieval timed out or returned 403. This is not evidence for unseen policy chapters."
+    },
+    "RJ": {
+      "title": "Religious Zionism: Law and Justice booklet",
+      "url": "https://digitaler.cld.bz/zionutdatit",
+      "date": null,
+      "type": "party_program",
+      "note": "Earlier booklet. A September 2026 sequel exists; see RJ2. Do not label this booklet the 2026 edition."
+    },
+    "RJ2": {
+      "title": "N12: publication of Law and Justice 2.0",
+      "url": "https://www.mako.co.il/news-israel-elections/2026/Article-8bc88f253f4a0a1027.htm",
+      "date": "2026-09-15",
+      "type": "report"
+    },
+    "RS": {
+      "title": "Knesset: Smotrich calls for sovereignty",
+      "url": "https://main.knesset.gov.il/News/PressReleases/pages/press29.07.25cx.aspx",
+      "date": "2025-07-29",
+      "type": "official_statement",
+      "note": "Indexed excerpt contains the call for a sovereignty decision; direct page returned no parsed text."
+    },
+    "O": {
+      "title": "Otzma Yehudit: Disengagement 710 plan",
+      "url": "https://ozmayeudit.com/יו״ר-עוצמה-יהודית-השר-בן-גביר-מציג-את-תו/",
+      "date": "2026-09-04",
+      "type": "party_program",
+      "note": "Retrieved in indexed text. Concerns state-supported emigration; does not itself establish positions on civilian settlements, taxation or marriage."
+    },
+    "OH": {
+      "title": "Otzma Yehudit: archived principles",
+      "url": "https://www.idi.org.il/media/13907/עוצמה-יהודית.pdf",
+      "date": null,
+      "type": "archive",
+      "note": "Image-only historical document located; not used to code unseen text."
+    },
+    "OI": {
+      "title": "IDI: Otzma Yehudit",
+      "url": "https://www.idi.org.il/policy/parties-and-elections/parties/otzma-yehudit/",
+      "date": null,
+      "type": "secondary_profile"
+    },
+    "L": {
+      "title": "Likud: constitution",
+      "url": "https://www.likud.org.il/images/veida4_docs/60.pdf",
+      "date": null,
+      "type": "party_constitution",
+      "note": "Historical/standing principles, not a newly published election platform; indexed text retrieved."
+    },
+    "LI": {
+      "title": "IDI: Likud and its platform publication history",
+      "url": "https://www.idi.org.il/policy/parties-and-elections/parties/likud/",
+      "date": null,
+      "type": "secondary_profile"
+    },
+    "LS": {
+      "title": "Prime Minister's Office: Netanyahu on Palestinian statehood",
+      "url": "https://www.gov.il/en/pages/spoke-pm210925",
+      "date": "2025-09-21",
+      "type": "official_statement"
+    },
+    "S": {
+      "title": "Shas: principles for the 17th Knesset",
+      "url": "https://www.idi.org.il/media/6856/shas-17.pdf",
+      "date": "2006",
+      "type": "archive",
+      "note": "Explicit references to the 17th Knesset and targets for 2007. Not a 2026 platform."
+    },
+    "UT": {
+      "title": "United Torah Judaism: archived platform",
+      "url": "https://www.idi.org.il/media/16889/יהדות-התורה-1999.pdf",
+      "date": "1999",
+      "type": "archive",
+      "note": "Election year from archive attribution; saved copy carries 2002 print metadata."
+    },
+    "R": {
+      "title": "Ra'am: archived platform",
+      "url": "https://www.idi.org.il/media/16883/רעמ-1999.pdf",
+      "date": "1999",
+      "type": "archive",
+      "note": "Saved copy carries 2002 metadata; historical only."
+    },
+    "RI": {
+      "title": "IDI: Ra'am",
+      "url": "https://www.idi.org.il/policy/parties-and-elections/parties/raam/",
+      "date": null,
+      "type": "secondary_profile"
+    },
+    "H": {
+      "title": "Hadash: current principles",
+      "url": "https://hadash.org.il/",
+      "date": null,
+      "type": "party_principles"
+    },
+    "HH": {
+      "title": "Hadash: 2013 platform",
+      "url": "https://www.idi.org.il/media/6524/חדש.pdf",
+      "date": "2013",
+      "type": "archive",
+      "note": "The document explicitly identifies the 19th Knesset. The original /matzahadash/ URL now returns 404."
+    },
+    "H22": {
+      "title": "Zo Haderekh: Hadash–Ta'al 2022 economic program",
+      "url": "https://zoha.org.il/116306/",
+      "date": "2022-10-27",
+      "type": "party_affiliated_archive"
+    },
+    "TI": {
+      "title": "IDI: Ta'al",
+      "url": "https://www.idi.org.il/policy/parties-and-elections/parties/ta-al/",
+      "date": null,
+      "type": "secondary_profile",
+      "note": "No standalone current primary platform located in this search."
+    },
+    "BA": {
+      "title": "Balad: political program",
+      "url": "https://www.altajamoa.org/نصوص-مؤسسة/2017/03/29/البرنامج-السياسي",
+      "date": "2017-03-29",
+      "type": "archive",
+      "note": "Official Arabic document. The page's own date is used."
+    },
+    "DR": {
+      "title": "Ynet: parties' responses on conscription",
+      "url": "https://www.ynet.co.il/news/elections2026/article/yokra14898966",
+      "date": "2026-09-16",
+      "type": "reported_party_responses",
+      "note": "Party responses distinguished from the reporter's characterizations. Joint List response is attributed to the list, not separately asserted by all components."
+    },
+    "BW": {
+      "title": "Blue and White: principles",
+      "url": "https://kachollavan.org.il/wp-content/uploads/2025/07/20527_3_A5_Hoveret_Ekronot_ONE_PAGE_A.pdf",
+      "date": "2025-07 (file path)",
+      "type": "party_program"
+    },
+    "M": {
+      "title": "Reservists: platform",
+      "url": "https://www.themiluimnikim.org.il/platform/",
+      "date": null,
+      "type": "party_program",
+      "note": "Component program; not presumed to be an agreed joint program with the Economic Party."
+    },
+    "REG": {
+      "title": "Platform discovery index",
+      "url": "https://www.dor-why.co.il/platforms",
+      "date": "2026-09-15",
+      "type": "discovery_only",
+      "note": "Used to locate originals; summaries and electoral-list labels are not the party answer key."
+    }
+  },
+  "status_legend": {
+    "P": "Party-published program or policy page being used as current evidence; may be undated.",
+    "S": "Specific attributable public statement, possibly reported by a news outlet.",
+    "H": "Historical document; excluded from current-mode scoring.",
+    "R": "Secondary characterization; excluded from current-mode scoring.",
+    "U": "Unknown or insufficiently specific; never scored as zero."
+  },
+  "positions": [
+    {
+      "party_id": "likud",
+      "question_id": "Q1",
+      "value": -2,
+      "status": "S",
+      "source_ids": [
+        "LS"
+      ],
+      "rationale": "Chair explicitly rejects a Palestinian state west of the Jordan. Statement, not a comprehensive platform.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q2",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q4",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q7",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q8",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q19",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "likud",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q1",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q2",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "Mandatory service for all, including Haredim; detailed reported response allows a narrow talent exception.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q4",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q7",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "Ten steps commit to large public investment in education and health and better public services.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q8",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "International standards and stronger import competition are explicit.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q13",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "State commission on October 7 is explicit.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q14",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "Y"
+      ],
+      "rationale": "Prime minister limited to two terms.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q19",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "Y",
+        "DR"
+      ],
+      "rationale": "Arab citizens included in mandatory service; civilian obligation explicit in response.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "yashar",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q1",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q2",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "Service obligation for all; ending financial support for refusal.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q4",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "Plan explicitly promises constitutional equality.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q5",
+      "value": 1,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "Domestic civil registration with full rights is promised; terminology differs from civil marriage and divorce.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q6",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "Local choice over Shabbat public transport.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q7",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "Public healthcare, childcare and welfare expansion.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q8",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "Lower import regulation and increased competition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q9",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "Full core studies are an explicit public-funding condition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q10",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "National organized-crime campaign explicitly involves Shin Bet.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q13",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "State commission promised.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q14",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "Eight-year prime-minister limit.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q15",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "B"
+      ],
+      "rationale": "Equal parenthood from the outset is explicit.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q19",
+      "value": 2,
+      "status": "S",
+      "source_ids": [
+        "DR"
+      ],
+      "rationale": "Party response explicitly includes Arab citizens in compulsory military or civilian service.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beyahad",
+      "question_id": "Q20",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "BE"
+      ],
+      "rationale": "Funded binding climate legislation and sectoral implementation targets.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q1",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Future demilitarized Palestinian state with Israeli security safeguards.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q2",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Sectoral exemptions removed; civilian pathways alongside military priority.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q3",
+      "value": -2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Protect judicial review and prevent sweeping override.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q4",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Constitutional individual equality across religions and nationalities.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q5",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Domestic civil marriage and civil divorce for those marrying civilly.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q6",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Limited Shabbat service with local discretion.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q7",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Expand public social services and public healthcare.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q8",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Open food imports and remove unnecessary standards barriers.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q9",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Single publicly funded state framework with mandatory common core; coding follows the stated funding model.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q11",
+      "value": -2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Stop legal and de facto annexation.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q13",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "DC"
+      ],
+      "rationale": "Explicit commitment to a state commission.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q14",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "D"
+      ],
+      "rationale": "Binding time limits on executive office including prime minister.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q19",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "D",
+        "DR"
+      ],
+      "rationale": "Universal obligation includes Arab citizens; civilian alternative confirmed.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "democrats",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q1",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q2",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q3",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "RJ"
+      ],
+      "rationale": "Older party booklet explicitly supports override by an ordinary majority; 2026 sequel located but exact threshold not independently rechecked.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q4",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q7",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q8",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q11",
+      "value": 2,
+      "status": "S",
+      "source_ids": [
+        "RS"
+      ],
+      "rationale": "Chair calls for a government sovereignty decision; based on official indexed excerpt, requiring full-page archival verification before release.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q19",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q1",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q2",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q4",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q7",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q8",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q19",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q1",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q2",
+      "value": -2,
+      "status": "R",
+      "source_ids": [
+        "DR"
+      ],
+      "rationale": "Current reported position retains protection for full-time study while discussing adapted service for those leaving study; verify exact exemption text before release.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q4",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q5",
+      "value": -2,
+      "status": "H",
+      "source_ids": [
+        "S"
+      ],
+      "rationale": "Preserving religious status quo implies opposition to the proposed optional civil route; historical interpretation.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q6",
+      "value": -2,
+      "status": "H",
+      "source_ids": [
+        "S"
+      ],
+      "rationale": "Preserving religious status quo; historical interpretation, not a current response.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q7",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "S"
+      ],
+      "rationale": "Explicit welfare-state and public-service expansion.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q8",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q17",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "S"
+      ],
+      "rationale": "Explicit expansion of public housing stock.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q19",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "shas",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q1",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q2",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "Current opening principles require service for every citizen; older section also mentions lowering exemption age, which needs reconciliation in detailed explanation.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q3",
+      "value": -2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "Explicit opposition to override clause.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q4",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "Amend Nation-State Law to include equal rights across religions and nationalities.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q5",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "Explicit civil marriage and divorce.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q6",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "Local control over Shabbat transport.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q7",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "Program expands early education, public health capacity and social protection.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q8",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "Expand import competition and remove barriers.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q9",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "Full core curriculum is an explicit funding condition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q13",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "State commission is a first-government decision.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q14",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "Two-term prime minister limit.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q19",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "IB"
+      ],
+      "rationale": "Military or civilian service for every citizen regardless of religion.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "beytenu",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q1",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "R"
+      ],
+      "rationale": "Archived platform seeks a Palestinian state alongside withdrawal from occupied territory.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q2",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q4",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "R"
+      ],
+      "rationale": "Archived platform demands constitutionally protected minority rights and equality.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q7",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q8",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q11",
+      "value": -2,
+      "status": "H",
+      "source_ids": [
+        "R"
+      ],
+      "rationale": "Withdrawal and evacuation of settlements are inconsistent with unilateral annexation.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q12",
+      "value": -2,
+      "status": "H",
+      "source_ids": [
+        "R"
+      ],
+      "rationale": "Withdrawal and evacuation of settlements; historical policy applied to this proposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q19",
+      "value": -2,
+      "status": "S",
+      "source_ids": [
+        "DR"
+      ],
+      "rationale": "Current reported response opposes compulsory civilian as well as military service for Arab citizens.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "raam",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q1",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "HH"
+      ],
+      "rationale": "2013 platform explicitly supports a Palestinian state alongside Israel.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q2",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q4",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "HH"
+      ],
+      "rationale": "Constitution protecting equal citizenship.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q7",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "HH"
+      ],
+      "rationale": "Public health and education and reversal of privatization.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q8",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q11",
+      "value": -2,
+      "status": "H",
+      "source_ids": [
+        "HH"
+      ],
+      "rationale": "Withdrawal from occupied territories and opposition to settlement expansion.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q17",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "HH"
+      ],
+      "rationale": "Social/public housing expansion.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q18",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "H22"
+      ],
+      "rationale": "Collective agreements and stronger worker protection in the 2022 joint economic program.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q19",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "hadash",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q1",
+      "value": 2,
+      "status": "R",
+      "source_ids": [
+        "TI"
+      ],
+      "rationale": "Current secondary profile reports support for a Palestinian state; primary platform not located.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q2",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q4",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q7",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q8",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q18",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "H22"
+      ],
+      "rationale": "2022 Hadash–Ta'al joint economic commitments; not presumed a separate 2026 Ta'al platform.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q19",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "taal",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q1",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q2",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q4",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "BA"
+      ],
+      "rationale": "Official 2017 program explicitly requires constitutional equality.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q7",
+      "value": 1,
+      "status": "H",
+      "source_ids": [
+        "BA"
+      ],
+      "rationale": "The 2017 program protects public social, health and education services against cuts and market allocation; narrower than an explicit expansion commitment.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q8",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q18",
+      "value": 2,
+      "status": "H",
+      "source_ids": [
+        "BA"
+      ],
+      "rationale": "The 2017 program explicitly protects trade-union organizing and strikes.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q19",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q1",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q2",
+      "value": -2,
+      "status": "S",
+      "source_ids": [
+        "DR"
+      ],
+      "rationale": "Current report describes continuing opposition to a general conscription law.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q4",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q5",
+      "value": -2,
+      "status": "H",
+      "source_ids": [
+        "UT"
+      ],
+      "rationale": "Exclusive halakhic personal-status framework; historical interpretation.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q6",
+      "value": -2,
+      "status": "H",
+      "source_ids": [
+        "UT"
+      ],
+      "rationale": "Opposes expansion of Shabbat work and commerce.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q7",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q8",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q9",
+      "value": -2,
+      "status": "H",
+      "source_ids": [
+        "UT"
+      ],
+      "rationale": "Public support for autonomous Torah education; historical inference about the proposed funding condition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q19",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "utj",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q1",
+      "value": -2,
+      "status": "P",
+      "source_ids": [
+        "Z"
+      ],
+      "rationale": "Explicitly rejects an additional state between river and sea.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q2",
+      "value": -2,
+      "status": "P",
+      "source_ids": [
+        "Z"
+      ],
+      "rationale": "Rejects coercive conscription in favor of voluntary service.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q4",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q7",
+      "value": -2,
+      "status": "P",
+      "source_ids": [
+        "Z"
+      ],
+      "rationale": "Replace centralized welfare with community and private arrangements; shrink government.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q8",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "Z"
+      ],
+      "rationale": "Remove import barriers and tariffs.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q9",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "Z"
+      ],
+      "rationale": "FAQ explicitly withholds education vouchers from schools omitting core studies.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q10",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "ZC"
+      ],
+      "rationale": "Compass's declared party answer assigns protection rackets to Shin Bet.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q11",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "Z"
+      ],
+      "rationale": "Full sovereignty over West Bank and Gaza.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q12",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "ZC"
+      ],
+      "rationale": "Compass explicitly calls for Israeli settlement of Gaza.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q16",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "Z"
+      ],
+      "rationale": "Explicit parent-controlled education vouchers.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q19",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "zehut",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q1",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q2",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q4",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "BW"
+      ],
+      "rationale": "Basic Law entrenching equal individual rights.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q7",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "BW"
+      ],
+      "rationale": "Strengthen public health, education and public services.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q8",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "BW"
+      ],
+      "rationale": "Open imports and remove unnecessary barriers.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q14",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "BW"
+      ],
+      "rationale": "Eight-year prime-minister limit.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q19",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "blue_white",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q1",
+      "value": -2,
+      "status": "P",
+      "source_ids": [
+        "M"
+      ],
+      "rationale": "Explicitly prevent a Palestinian state.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q2",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "M"
+      ],
+      "rationale": "Universal service with narrowly selected temporary talent exemptions.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q3",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q4",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q5",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q6",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q7",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q8",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q9",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q10",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q11",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q12",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q13",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q14",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q15",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q16",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q17",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q18",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q19",
+      "value": 2,
+      "status": "P",
+      "source_ids": [
+        "M"
+      ],
+      "rationale": "Compulsory service expressly includes Arab citizens.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "reservists",
+      "question_id": "Q20",
+      "value": null,
+      "status": "U",
+      "source_ids": [],
+      "rationale": "No sufficiently specific, attributable position established in this research. This is not neutrality or opposition.",
+      "checked_at": "2026-09-29",
+      "review_state": "editorial_draft"
+    }
+  ]
+}
+

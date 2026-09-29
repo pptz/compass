@@ -1,0 +1,582 @@
+{
+  "Q1": {
+    "overview": {
+      "en": "The dispute concerns sovereignty, security and political rights. Two-state, autonomy and shared-state proposals allocate these differently. Interim arrangements defer the final decision; a regional agreement adds neighboring states and guarantees.",
+      "he": "המחלוקת עוסקת בריבונות, בביטחון ובזכויות פוליטיות. שתי מדינות, אוטונומיה ומדינה משותפת מחלקות אותם אחרת. הסדר ביניים דוחה הכרעה סופית; הסדר אזורי מוסיף מדינות שכנות וערבויות.",
+      "ru": "Спор касается суверенитета, безопасности и политических прав. Два государства, автономия и общее государство распределяют их по-разному. Временные договорённости откладывают окончательное решение, а региональное соглашение привлекает соседние страны и гарантии."
+    },
+    "links": [
+      {
+        "url": "https://www.inss.org.il/publication/the-day-after/",
+        "title": {
+          "en": "INSS: Regional proposals for post-war Gaza",
+          "he": "INSS: מתווים אזוריים לעזה לאחר המלחמה",
+          "ru": "INSS: региональные варианты послевоенного устройства Газы"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://www.altajamoa.org/نصوص-مؤسسة/2017/03/29/البرنامج-السياسي",
+        "title": {
+          "en": "Balad: political program (2017)",
+          "he": "בל״ד: תוכנית פוליטית (2017)",
+          "ru": "БАЛАД: политическая программа (2017)"
+        },
+        "kind": "party",
+        "language": "ar"
+      }
+    ]
+  },
+  "Q2": {
+    "overview": {
+      "en": "Service policy has two separate questions: who must serve, and who chooses the route. The debate weighs military staffing and equal burdens against religious study, individual freedom and the costs of alternative service.",
+      "he": "מדיניות השירות כוללת שתי שאלות נפרדות: מי חייב לשרת ומי בוחר את המסלול. הדיון מאזן בין צורכי כוח האדם והשוויון בנטל לבין לימוד תורה, חירות הפרט ועלות המסלולים החלופיים.",
+      "ru": "Политика службы ставит два вопроса: кто обязан служить и кто выбирает путь. Обсуждаются потребности армии и равенство обязанностей, а также религиозная учёба, личная свобода и стоимость альтернативной службы."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/articles/53301",
+        "title": {
+          "en": "IDI: Development of the Haredi exemption law",
+          "he": "IDI: התפתחות הסדרי הפטור לחרדים",
+          "ru": "IDI: история освобождения харедим от службы"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://zehut.org.il/platform/full",
+        "title": {
+          "en": "Zehut: published program",
+          "he": "זהות: המצע המפורסם",
+          "ru": "Зеут: опубликованная программа"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q3": {
+    "overview": {
+      "en": "An override clause would let the Knesset re-enact a law invalidated for conflicting with constitutional rights. Supporters emphasize elected lawmakers' authority; critics emphasize minority-rights safeguards. The required majority, duration and judicial appointment system affect the balance.",
+      "he": "פסקת התגברות נועדה לאפשר לכנסת לחוקק מחדש חוק שנפסל בשל סתירה לזכויות חוקתיות. תומכים מדגישים את סמכות הנבחרים; מתנגדים מדגישים הגנה על זכויות מיעוט. הרוב הדרוש, משך ההתגברות ושיטת מינוי השופטים משפיעים על האיזון.",
+      "ru": "Положение о преодолении судебного вето позволило бы Кнессету вновь принять закон, отменённый судом из-за нарушения конституционных прав. Сторонники подчёркивают полномочия избранных законодателей, критики — защиту меньшинств. Баланс зависит от требуемого большинства, срока действия и порядка назначения судей."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/articles/46387",
+        "title": {
+          "en": "IDI: The override clause explained",
+          "he": "IDI: הסבר על פסקת ההתגברות",
+          "ru": "IDI: что такое преодоление судебного вето"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://zionutdatit.org.il/wp-content/uploads/2021/12/משפט.pdf",
+        "title": {
+          "en": "Religious Zionism: judicial proposals (2021)",
+          "he": "הציונות הדתית: הצעות בתחום המשפט (2021)",
+          "ru": "Религиозный сионизм: судебные предложения (2021)"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q4": {
+    "overview": {
+      "en": "Equal individual citizenship and a state's national identity are related but distinct. The dispute asks both how strongly equality should be legally protected and whether national belonging is defined as Jewish, civic or shared by two national communities.",
+      "he": "שוויון אזרחי אישי וזהותה הלאומית של מדינה קשורים אך אינם זהים. המחלוקת עוסקת בעוצמת העיגון המשפטי של השוויון ובשאלה אם השייכות הלאומית מוגדרת כיהודית, אזרחית או משותפת לשתי קהילות לאומיות.",
+      "ru": "Равное личное гражданство и национальный характер государства связаны, но не тождественны. Спор касается силы правовой защиты равенства и определения принадлежности: еврейской, гражданской или общей для двух национальных сообществ."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/articles/24241",
+        "title": {
+          "en": "IDI: Nation-State Law explainer",
+          "he": "IDI: הסבר על חוק הלאום",
+          "ru": "IDI: разбор Закона о национальном государстве"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://www.altajamoa.org/نصوص-مؤسسة/2017/03/29/البرنامج-السياسي",
+        "title": {
+          "en": "Balad: political program (2017)",
+          "he": "בל״ד: תוכנית פוליטית (2017)",
+          "ru": "БАЛАД: политическая программа (2017)"
+        },
+        "kind": "party",
+        "language": "ar"
+      }
+    ]
+  },
+  "Q5": {
+    "overview": {
+      "en": "Marriage, civil partnership and religious ceremonies need not have identical legal effects. The debate combines freedom to form a family with religious institutions' role, including who handles separation. A civil registry is not automatically equivalent to civil marriage.",
+      "he": "לנישואים, לרישום זוגיות ולטקס דתי אין בהכרח אותן תוצאות משפטיות. הדיון משלב חופש להקים משפחה עם תפקיד מוסדות הדת, כולל סמכות בענייני פרידה. רישום אזרחי אינו בהכרח זהה לנישואים אזרחיים.",
+      "ru": "Брак, гражданское партнёрство и религиозная церемония не обязательно имеют одинаковые правовые последствия. Спор соединяет свободу создания семьи с ролью религиозных учреждений, включая расставание. Регистрация не автоматически равна гражданскому браку."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/articles/6539",
+        "title": {
+          "en": "IDI: Civil unions for all",
+          "he": "IDI: ברית זוגיות לכולם",
+          "ru": "IDI: гражданские союзы для всех"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://zionutdatit.org.il/wp-content/uploads/2021/12/זהות-יהודית.pdf",
+        "title": {
+          "en": "Religious Zionism: Jewish identity (2021)",
+          "he": "הציונות הדתית: זהות יהודית (2021)",
+          "ru": "Религиозный сионизм: еврейский характер (2021)"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q6": {
+    "overview": {
+      "en": "Shabbat transport involves mobility for people without cars, a shared day of rest, workers' conditions and neighborhood character. Separate choices concern the extent of service and whether national or local authorities decide.",
+      "he": "תחבורה בשבת נוגעת לניידות של מי שאין להם רכב, ליום מנוחה משותף, לתנאי עובדים ולאופי השכונות. שתי הכרעות נפרדות הן היקף השירות וזהות הגורם המחליט — הממשלה או הרשות המקומית.",
+      "ru": "Транспорт в шаббат затрагивает мобильность людей без автомобиля, общий день отдыха, условия работников и характер районов. Отдельные решения касаются объёма сообщения и того, кто решает — государство или муниципалитет."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/articles/5269",
+        "title": {
+          "en": "IDI: Transport on Shabbat and religion–state tensions",
+          "he": "IDI: תחבורה בשבת ומחלוקת דת ומדינה",
+          "ru": "IDI: транспорт в шаббат и отношения религии и государства"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://zionutdatit.org.il/wp-content/uploads/2021/12/זהות-יהודית.pdf",
+        "title": {
+          "en": "Religious Zionism: Jewish identity (2021)",
+          "he": "הציונות הדתית: זהות יהודית (2021)",
+          "ru": "Религиозный сионизм: еврейский характер (2021)"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q7": {
+    "overview": {
+      "en": "Larger public services require resources. Taxes, spending cuts elsewhere and efficiency measures distribute the costs differently. Favoring better services does not by itself settle who should pay, or whether more provision should be public or private.",
+      "he": "הרחבת שירותים ציבוריים דורשת משאבים. מסים, קיצוץ בסעיפים אחרים והתייעלות מחלקים את העלות אחרת. תמיכה בשירות טוב יותר אינה קובעת לבדה מי ישלם, או אם ההרחבה תהיה ציבורית או פרטית.",
+      "ru": "Расширение общественных услуг требует ресурсов. Налоги, сокращение других расходов и эффективность по-разному распределяют издержки. Желание лучших услуг само по себе не определяет, кто платит и кто их предоставляет."
+    },
+    "links": [
+      {
+        "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-israel-2025_d6dd02bc-en/full-report/maintaining-macroeconomic-stability_329dd12a.html",
+        "title": {
+          "en": "OECD: Israel's fiscal choices (2025)",
+          "he": "OECD: אפשרויות המדיניות התקציבית בישראל (2025)",
+          "ru": "ОЭСР: бюджетные решения Израиля (2025)"
+        },
+        "kind": "research",
+        "language": "en"
+      },
+      {
+        "url": "https://democrats.org.il/wp-content/uploads/2025/09/agenda2025.pdf",
+        "title": {
+          "en": "Democrats: July 2025 agenda",
+          "he": "הדמוקרטים: תוכנית יולי 2025",
+          "ru": "Демократы: программа июля 2025 года"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q8": {
+    "overview": {
+      "en": "Imports and competition can put pressure on prices; protection can support domestic production and supply resilience. Price controls and targeted aid address affordability differently. The trade-off depends on which sectors and households a policy covers.",
+      "he": "יבוא ותחרות יכולים ללחוץ להורדת מחירים; הגנה יכולה לתמוך בייצור מקומי ובחוסן האספקה. פיקוח מחירים וסיוע ממוקד מטפלים ביכולת הקנייה בדרכים שונות. הפשרה תלויה בענפים ובמשקי הבית שהמדיניות מכסה.",
+      "ru": "Импорт и конкуренция могут сдерживать цены, а защита — поддерживать местное производство и устойчивость поставок. Контроль цен и адресная помощь действуют по-разному. Компромисс зависит от охваченных отраслей и домохозяйств."
+    },
+    "links": [
+      {
+        "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-israel-2025_d6dd02bc-en/full-report/addressing-the-high-cost-of-living_bfe408a2.html",
+        "title": {
+          "en": "OECD: Addressing Israel's high cost of living",
+          "he": "OECD: התמודדות עם יוקר המחיה בישראל",
+          "ru": "ОЭСР: борьба с дороговизной в Израиле"
+        },
+        "kind": "research",
+        "language": "en"
+      },
+      {
+        "url": "https://zionutdatit.org.il/budget/",
+        "title": {
+          "en": "Religious Zionism: budget policies (2023–24)",
+          "he": "הציונות הדתית: מדיניות תקציב (2023–24)",
+          "ru": "Религиозный сионизм: бюджетная политика (2023–24)"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q9": {
+    "overview": {
+      "en": "A common core curriculum sets shared knowledge and skills, such as mathematics and languages, while leaving room for cultural and religious subjects. It can be required in every school regardless of funding, or only as a condition of public support; another approach leaves public funding unconditional on core studies. Who defines this core, who runs schools and how they are funded are separate choices.",
+      "he": "תוכנית ליבה משותפת קובעת ידע ומיומנויות משותפים, כגון מתמטיקה ושפות, לצד מקום לתכנים תרבותיים ודתיים. אפשר לחייב אותה בכל בית ספר ללא תלות במימון, או רק כתנאי לתמיכה ציבורית; גישה אחרת אינה מתנה מימון בלימודי ליבה. מי מגדיר את הליבה, מי מנהל את בתי הספר וכיצד מממנים אותם הן בחירות נפרדות.",
+      "ru": "Общее ядро программы задаёт общие знания и навыки, например по математике и языкам, оставляя место культурным и религиозным предметам. Его можно сделать обязательным во всех школах независимо от финансирования или только условием бюджетной поддержки; ещё один подход — не связывать финансирование с общим ядром. Кто определяет ядро, кто управляет школами и как их финансировать — отдельные вопросы."
+    },
+    "links": [
+      {
+        "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-israel-2025_d6dd02bc-en.html",
+        "title": {
+          "en": "OECD: Israel 2025 — education, skills and the economy",
+          "he": "OECD: ישראל 2025 — חינוך, מיומנויות וכלכלה",
+          "ru": "ОЭСР: Израиль 2025 — образование, навыки и экономика"
+        },
+        "kind": "research",
+        "language": "en"
+      },
+      {
+        "url": "https://zehut.org.il/platform/full",
+        "title": {
+          "en": "Zehut: published program",
+          "he": "זהות: המצע המפורסם",
+          "ru": "Зеут: опубликованная программа"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q10": {
+    "overview": {
+      "en": "Police and security services have different purposes and powers. The debate weighs stronger intelligence against limits on surveillance and accountability. It also asks whether national bodies or locally accountable institutions should lead prevention and enforcement.",
+      "he": "למשטרה ולשירותי הביטחון מטרות וסמכויות שונות. הדיון מאזן בין יכולות מודיעין חזקות יותר לבין מגבלות מעקב ופיקוח. הוא עוסק גם בשאלה אם גופים ארציים או מוסדות באחריות מקומית יובילו מניעה ואכיפה.",
+      "ru": "У полиции и спецслужб разные задачи и полномочия. Спор сопоставляет разведывательные возможности с ограничением слежки и подотчётностью. Он также касается национального или местного руководства профилактикой и правоприменением."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/articles/65195",
+        "title": {
+          "en": "IDI: Shin Bet involvement in serious crime",
+          "he": "IDI: מעורבות השב״כ בפשיעה חמורה",
+          "ru": "IDI: участие ШАБАКа в борьбе с тяжёлой преступностью"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://be-yahad.org.il/plans/?bennett_plans_cat=198",
+        "title": {
+          "en": "Beyahad: published policy plans",
+          "he": "ביחד: תוכניות המדיניות",
+          "ru": "Беяхад: опубликованные планы"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q11": {
+    "overview": {
+      "en": "Formal sovereignty, military control and settlement construction are different acts. Annexation, negotiated borders and withdrawal have different implications for security, residents' rights and future agreements. The amount of territory and the status of its residents matter.",
+      "he": "ריבונות רשמית, שליטה צבאית ובניית יישובים הן פעולות שונות. לסיפוח, לגבולות מוסכמים ולנסיגה השלכות שונות על ביטחון, זכויות תושבים והסכמים עתידיים. היקף השטח ומעמד התושבים חשובים.",
+      "ru": "Формальный суверенитет, военный контроль и строительство поселений — разные действия. Аннексия, согласованные границы и вывод по-разному влияют на безопасность, права жителей и будущие соглашения. Важны площадь территории и статус жителей."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/articles/31883",
+        "title": {
+          "en": "IDI: Application of sovereignty — explainer",
+          "he": "IDI: הסבר על החלת ריבונות",
+          "ru": "IDI: распространение суверенитета — разбор"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://zionutdatit.org.il/hityashvut/sovereignty/",
+        "title": {
+          "en": "Religious Zionism: sovereignty policy",
+          "he": "הציונות הדתית: מדיניות הריבונות",
+          "ru": "Религиозный сионизм: политика суверенитета"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q12": {
+    "overview": {
+      "en": "Civil administration manages everyday life and reconstruction; it is not the same as military operations. Gaza proposals differ over who governs and whether Israeli civilian settlements return. Security arrangements and governing legitimacy are central to the disagreement.",
+      "he": "מנהל אזרחי עוסק בחיי היום־יום ובשיקום ואינו זהה לפעילות צבאית. ההצעות לעזה שונות בזהות הגוף השולט ובשאלת חידוש ההתיישבות האזרחית הישראלית. הסדרי הביטחון ולגיטימיות השלטון עומדים במרכז המחלוקת.",
+      "ru": "Гражданская администрация управляет повседневной жизнью и восстановлением, а не тождественна военным операциям. Предложения по Газе различаются властью и возвращением израильских поселений. Центральны безопасность и легитимность управления."
+    },
+    "links": [
+      {
+        "url": "https://www.inss.org.il/publication/the-day-after/",
+        "title": {
+          "en": "INSS: Regional proposals for post-war Gaza",
+          "he": "INSS: מתווים אזוריים לעזה לאחר המלחמה",
+          "ru": "INSS: региональные варианты послевоенного устройства Газы"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://zehut.org.il/platform/full",
+        "title": {
+          "en": "Zehut: published program",
+          "he": "זהות: המצע המפורסם",
+          "ru": "Зеут: опубликованная программа"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q13": {
+    "overview": {
+      "en": "An inquiry's credibility depends on who appoints it, its independence and its powers to obtain evidence. The debate concerns how to investigate decision-makers without letting those being investigated control the process, while securing broad public trust.",
+      "he": "אמינות החקירה תלויה במינוי החברים, בעצמאות ובסמכויות להשגת ראיות. המחלוקת היא כיצד לחקור מקבלי החלטות בלי שהנחקרים ישלטו בתהליך, ובו בזמן לזכות באמון ציבורי רחב.",
+      "ru": "Доверие к расследованию зависит от назначения членов, независимости и доступа к доказательствам. Спор — как расследовать действия руководителей, не отдавая им контроль над проверкой, и добиться широкого общественного доверия."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/articles/32929",
+        "title": {
+          "en": "IDI: What is a commission of inquiry?",
+          "he": "IDI: מהי ועדת חקירה?",
+          "ru": "IDI: что такое следственная комиссия?"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://be-yahad.org.il/plans/?bennett_plans_cat=198",
+        "title": {
+          "en": "Beyahad: published policy plans",
+          "he": "ביחד: תוכניות המדיניות",
+          "ru": "Беяхад: опубликованные планы"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q14": {
+    "overview": {
+      "en": "Tenure limits encourage turnover but restrict voters' ability to retain a leader. Two terms and eight years are not equivalent when elections occur early. Recall procedures instead let voters initiate removal without a fixed tenure cap.",
+      "he": "הגבלת כהונה מעודדת תחלופה אך מגבילה את יכולת הבוחרים להשאיר מנהיג בתפקיד. שתי כהונות ושמונה שנים אינן זהות כשבחירות מוקדמות. הליך הדחה ציבורי מאפשר לבוחרים ליזום החלפה בלי תקרת כהונה קבועה.",
+      "ru": "Лимиты обеспечивают сменяемость, но ограничивают возможность сохранить лидера. Два срока не равны восьми годам при досрочных выборах. Отзыв позволяет гражданам инициировать отстранение без фиксированного предела пребывания у власти."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/articles/64011",
+        "title": {
+          "en": "IDI: The debate over prime-minister term limits",
+          "he": "IDI: הדיון על הגבלת כהונת ראש ממשלה",
+          "ru": "IDI: спор об ограничении сроков премьер-министра"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://beytenu.org.il/party-platform/",
+        "title": {
+          "en": "Yisrael Beytenu: party platform",
+          "he": "ישראל ביתנו: מצע המפלגה",
+          "ru": "Наш дом Израиль: программа партии"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q15": {
+    "overview": {
+      "en": "Recognizing someone as a legal parent differs from setting eligibility for adoption or surrogacy. Debates involve equal treatment, children's interests and competing views of family. These questions can be regulated separately rather than as one all-or-nothing package.",
+      "he": "הכרה באדם כהורה משפטי נפרדת מקביעת זכאות לאימוץ או לפונדקאות. הדיון כולל שוויון, טובת ילדים ותפיסות שונות של משפחה. אפשר להסדיר את השאלות בנפרד ולא כחבילה של הכול או לא כלום.",
+      "ru": "Признание юридического родительства отличается от права на усыновление или суррогатное материнство. Обсуждаются равенство, интересы детей и разные представления о семье. Эти вопросы можно регулировать отдельно."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/articles/6539",
+        "title": {
+          "en": "IDI: Civil unions for all",
+          "he": "IDI: ברית זוגיות לכולם",
+          "ru": "IDI: гражданские союзы для всех"
+        },
+        "kind": "analysis",
+        "language": "en"
+      },
+      {
+        "url": "https://be-yahad.org.il/plans/?bennett_plans_cat=198",
+        "title": {
+          "en": "Beyahad: published policy plans",
+          "he": "ביחד: תוכניות המדיניות",
+          "ru": "Беяхад: опубликованные планы"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q16": {
+    "overview": {
+      "en": "A voucher directs public funding with the pupil rather than directly to a school. Choice can widen access, but admission rules, transport and extra fees affect who benefits. Funding design and selective admissions are separate policy decisions.",
+      "he": "שובר מעביר מימון ציבורי עם התלמיד במקום ישירות למוסד. בחירה עשויה להרחיב נגישות, אך כללי קבלה, תחבורה ותשלומים נוספים משפיעים על הנהנים. מודל המימון ומיון תלמידים הם החלטות נפרדות.",
+      "ru": "Ваучер направляет бюджетные средства за учеником, а не прямо школе. Выбор может расширить доступ, но приём, транспорт и доплаты влияют на получателей выгод. Финансирование и отбор — разные решения."
+    },
+    "links": [
+      {
+        "url": "https://www.oecd.org/en/publications/balancing-school-choice-and-equity_2592c974-en/full-report/component-5.html",
+        "title": {
+          "en": "OECD: School choice, student sorting and equity",
+          "he": "OECD: בחירת בית ספר, מיון תלמידים ושוויון",
+          "ru": "ОЭСР: выбор школы, отбор учеников и равенство"
+        },
+        "kind": "research",
+        "language": "en"
+      },
+      {
+        "url": "https://zehut.org.il/platform/full",
+        "title": {
+          "en": "Zehut: published program",
+          "he": "זהות: המצע המפורסם",
+          "ru": "Зеут: опубликованная программа"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q17": {
+    "overview": {
+      "en": "Affordable housing can come from public rental stock, private supply or help with rent. Building or buying public homes changes ownership; rent assistance does not. Each approach differs in speed, cost and who receives the benefit.",
+      "he": "דיור בר־השגה יכול להגיע ממלאי ציבורי, מהיצע פרטי או מסיוע בשכר דירה. בנייה או רכישה ציבורית משנות בעלות; סיוע בשכירות אינו משנה אותה. לכל מסלול קצב, עלות וזכאים שונים.",
+      "ru": "Доступное жильё обеспечивают государственный фонд, частное предложение или помощь с арендой. Государственное строительство и покупка меняют собственность, а субсидия на аренду — нет. Подходы различаются скоростью, стоимостью и получателями."
+    },
+    "links": [
+      {
+        "url": "https://www.oecd.org/en/publications/oecd-economic-surveys-israel-2025_d6dd02bc-en/full-report/addressing-the-high-cost-of-living_bfe408a2.html",
+        "title": {
+          "en": "OECD: Addressing Israel's high cost of living",
+          "he": "OECD: התמודדות עם יוקר המחיה בישראל",
+          "ru": "ОЭСР: борьба с дороговизной в Израиле"
+        },
+        "kind": "research",
+        "language": "en"
+      },
+      {
+        "url": "https://democrats.org.il/wp-content/uploads/2025/09/agenda2025.pdf",
+        "title": {
+          "en": "Democrats: July 2025 agenda",
+          "he": "הדמוקרטים: תוכנית יולי 2025",
+          "ru": "Демократы: программа июля 2025 года"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q18": {
+    "overview": {
+      "en": "Collective bargaining lets workers negotiate jointly; individual contracts negotiate separately. Strikes create bargaining power but can disrupt essential services. Binding arbitration replaces some freedom to continue a dispute with a compulsory decision by an arbitrator.",
+      "he": "משא ומתן קיבוצי מאפשר לעובדים להתמקח יחד; חוזים אישיים מסדירים תנאים בנפרד. שביתה יוצרת כוח מיקוח אך יכולה לשבש שירותים חיוניים. בוררות מחייבת מחליפה חלק מהחופש להמשיך בסכסוך בהחלטת בורר.",
+      "ru": "Коллективные переговоры объединяют работников, индивидуальные договоры заключаются отдельно. Забастовка даёт переговорную силу, но может нарушать жизненно важные услуги. Обязательный арбитраж заменяет часть свободы продолжать спор решением арбитра."
+    },
+    "links": [
+      {
+        "url": "https://www.ilo.org/ilo-helpdesk-questions-and-answers-business-and-collective-bargaining",
+        "title": {
+          "en": "ILO: Collective bargaining — questions and answers",
+          "he": "ILO: שאלות ותשובות על משא ומתן קיבוצי",
+          "ru": "МОТ: вопросы и ответы о коллективных переговорах"
+        },
+        "kind": "research",
+        "language": "en"
+      },
+      {
+        "url": "https://zionutdatit.org.il/wp-content/uploads/2021/12/כלכלה.pdf",
+        "title": {
+          "en": "Religious Zionism: economic proposals (2021)",
+          "he": "הציונות הדתית: הצעות כלכליות (2021)",
+          "ru": "Религиозный сионизм: экономические предложения (2021)"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q19": {
+    "overview": {
+      "en": "Civilian service can contribute to communities without being military service. The dispute concerns compulsory versus voluntary participation, who controls placements, and how citizenship obligations relate to Arab national identity and equal access to opportunities.",
+      "he": "שירות אזרחי יכול לתרום לקהילה בלי להיות שירות צבאי. המחלוקת עוסקת בחובה לעומת התנדבות, בזהות הגוף המנהל וביחס בין חובות אזרחיות, זהות לאומית ערבית ושוויון הזדמנויות.",
+      "ru": "Гражданская служба позволяет помогать сообществу вне армии. Спор касается обязательности, управления местами службы и соотношения гражданских обязанностей с арабской национальной идентичностью и равным доступом к возможностям."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/centers/4462/4465",
+        "title": {
+          "en": "IDI: Jewish–Arab dialogue on service and citizenship",
+          "he": "IDI: שיח יהודי–ערבי על שירות ואזרחות",
+          "ru": "IDI: еврейско-арабский диалог о службе и гражданстве"
+        },
+        "kind": "discussion",
+        "language": "en"
+      },
+      {
+        "url": "https://beytenu.org.il/party-platform/",
+        "title": {
+          "en": "Yisrael Beytenu: party platform",
+          "he": "ישראל ביתנו: מצע המפלגה",
+          "ru": "Наш дом Израиль: программа партии"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  },
+  "Q20": {
+    "overview": {
+      "en": "Binding emissions targets set an obligation; budgets, carbon pricing and technology incentives are ways to pursue it. Nuclear power concerns the supply mix. The debate weighs cost, reliability and emissions, and who carries implementation risks.",
+      "he": "יעדי פליטות מחייבים קובעים חובה; תקציבים, תמחור פחמן ותמריצים טכנולוגיים הם דרכים להשגתה. אנרגיה גרעינית נוגעת לתמהיל האספקה. הדיון מאזן עלות, אמינות ופליטות ושואל מי נושא בסיכוני היישום.",
+      "ru": "Обязательные цели устанавливают требование; бюджеты, плата за углерод и стимулы технологиям — способы его достижения. Атомная энергетика относится к составу генерации. Обсуждаются стоимость, надёжность, выбросы и распределение рисков."
+    },
+    "links": [
+      {
+        "url": "https://en.idi.org.il/media/18866/carbon-pricing-in-israel-israel-2050-a-thriving-economy-in-a-sustainable-environment.pdf",
+        "title": {
+          "en": "IDI / Environment Ministry: Carbon pricing in Israel",
+          "he": "IDI והמשרד להגנת הסביבה: תמחור פחמן בישראל",
+          "ru": "IDI / Минэкологии: плата за углерод в Израиле"
+        },
+        "kind": "research",
+        "language": "en"
+      },
+      {
+        "url": "https://be-yahad.org.il/plans/enviroment/",
+        "title": {
+          "en": "Beyahad: environment plan",
+          "he": "ביחד: התוכנית הסביבתית",
+          "ru": "Беяхад: экологический план"
+        },
+        "kind": "party",
+        "language": "he"
+      }
+    ]
+  }
+}

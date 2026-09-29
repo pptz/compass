@@ -1,0 +1,100 @@
+/* Policy packages need readable sentences, not a row of scale buttons. */
+.choices{display:flex;flex-direction:column;gap:9px}
+.choice{justify-content:flex-start;align-items:center;text-align:start;gap:13px;min-height:64px;padding:14px 16px;font-size:15px;line-height:1.55}
+.option-letter{display:grid;place-items:center;flex:0 0 30px;height:30px;border:1px solid var(--line);border-radius:50%;font-size:12px;font-weight:700;color:var(--muted)}
+.choice:has(input:checked) .option-letter{background:var(--accent);border-color:var(--accent);color:#fff}
+.choice.skip{align-self:flex-start;min-height:34px;max-width:100%;font-size:13px}
+.component{margin:12px 0;padding:12px 15px;background:#f3f6fc;border-radius:8px}
+.component h5{font-size:13px;margin:0 0 7px}
+.component .component-match{color:var(--accent);font-weight:650}
+@media(max-width:650px){.choice{font-size:14px;padding:12px;gap:10px}.option-letter{flex-basis:25px;height:25px}.choice.skip{font-size:12px}.component{padding:11px}.question legend{font-size:19px}}
+select{font:inherit;color:inherit;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px;max-width:100%;min-height:42px}
+select:focus-visible{outline:3px solid #3b82f6;outline-offset:3px}
+.intro>a{display:inline-block;margin-top:17px;font-size:14px}
+.help-wrap{position:relative;margin-inline-start:auto;text-transform:none;letter-spacing:normal}
+.help-button{padding:0;min-height:28px;width:28px;height:28px;border-radius:50%;font-size:16px;font-weight:700}
+.issue-tooltip{position:absolute;z-index:5;inset-inline-end:0;top:36px;width:min(440px,calc(100vw - 72px));background:#17386b;color:#fff;padding:18px;border-radius:12px;box-shadow:0 10px 30px #132f5730;font-size:14px;line-height:1.65;font-weight:400}
+.issue-tooltip::before{content:'';position:absolute;top:-12px;inset-inline:0;height:14px}
+.issue-tooltip a{display:block;color:#d6e6ff;font-weight:650;margin-top:12px}
+.reading-links{display:flex;flex-direction:column;gap:10px;margin:14px 0;line-height:1.6}
+.reading-links bdi{font-size:11px;white-space:nowrap;color:var(--muted)}
+.explore-issue{display:inline-block;margin-top:12px;font-size:13px}
+.overlap-details{color:var(--muted);margin-top:15px}
+.table-scroll{max-width:100%;overflow:auto}.overlap-table{border-collapse:collapse;margin-top:10px;width:100%;max-width:470px;font-size:12px;font-variant-numeric:tabular-nums}
+.overlap-table caption{text-align:start;padding:8px 0;font-weight:650}.overlap-table td,.overlap-table th{padding:9px;border:1px solid var(--line);text-align:center}.overlap-table th{background:#eaf1fc}
+.replacement:empty{display:none}.replacement{padding:14px;background:#edf3fc;border-radius:8px;margin:12px 0;font-size:13px;line-height:1.6}
+.replacement-label{display:block;margin-bottom:8px}.replacement-controls{display:flex;gap:8px}.replacement-controls select{flex:1;min-width:0;width:0}.replacement-controls button{flex-shrink:0}
+.no-spares{margin:0}.evidence-gap{font-size:13px;line-height:1.6;color:var(--muted);background:#eef3fb;border-radius:7px;padding:12px}.evidence-gap button{font-size:12px;margin-top:8px;display:block}
+.question-match{font-size:13px}.issues-page{max-width:980px}#contents{display:flex;flex-direction:column;gap:10px;margin:0 0 28px}#topic-jump{width:100%}
+.coverage-note{font-size:13px;line-height:1.7;color:var(--muted);margin:16px 0 22px}
+.question-importance{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px 16px;border-bottom:1px solid var(--line);margin:0 0 16px;padding-bottom:16px;font-size:13px;line-height:1.5}.question-importance label{font-weight:600}.question-importance small{grid-column:1/-1;color:var(--muted);font-size:12px}.importance-select{width:210px}
+@media(max-width:650px){.question-importance{grid-template-columns:minmax(0,1fr)}.importance-select{width:100%}}
+.issue-section{scroll-margin-top:20px;padding:30px;background:white;border:1px solid var(--line);border-radius:14px;margin:24px 0}.issue-section h2{font-size:27px;line-height:1.35;margin:10px 0 18px}.issue-section h3{font-size:16px;margin:26px 0 12px}.issue-introduction{font-size:17px;line-height:1.8;color:var(--muted)}.open-questions{background:#eaf1fc;border-radius:10px;padding:18px 35px;line-height:1.8}.open-questions li+li,.approach-list li+li{margin-top:12px}.approach-list{font-size:15px;line-height:1.8;padding-inline-start:23px}
+@media(max-width:650px){.replacement-controls{flex-direction:column}.replacement-controls select{width:100%}.issue-section{padding:20px}.issue-section h2{font-size:22px}.issue-introduction{font-size:16px}.topbar{gap:10px}.brand{font-size:17px}.top-actions{min-width:0}.top-actions select{max-width:125px}}
+
+.change-question-control{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.change-question-control small{font-size:12px;color:var(--muted)}.change-question{font-size:13px}
+.topic-list{list-style:none;display:flex;flex-wrap:wrap;gap:8px 20px;padding:0;margin:0 0 20px;font-size:14px;line-height:1.6;color:var(--muted)}.topic-list li::before{content:'•';color:var(--accent);margin-inline-end:8px}.topbar .brand{min-width:0;line-height:1.35}.top-actions{flex-shrink:0}
+.question-navigation{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px;scroll-margin-top:16px}.question-navigation span{font-size:14px;color:var(--muted);font-weight:600}.step-actions{flex-shrink:0}.question legend:focus{outline:none}
+@media(max-width:650px){.step-actions button{width:100%}.step-actions{width:100%}}
+
+#subtitle{white-space:pre-line}
+
+/* Phone layouts keep text readable and controls large enough to tap. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.question-domain{min-width:0;overflow-wrap:anywhere}
+.question-number,.help-wrap{flex-shrink:0}
+.reading-links a,.evidence a{overflow-wrap:anywhere}
+@media(max-width:650px){
+  main{padding:0 max(14px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left))}
+  .topbar{padding:12px max(14px,env(safe-area-inset-right)) 12px max(14px,env(safe-area-inset-left));gap:12px}
+  .topbar .brand{font-size:16px;letter-spacing:0}
+  button,select{min-height:48px;font-size:16px;touch-action:manipulation}
+  #language{width:112px;padding:8px;flex-shrink:0}
+  .intro{padding:24px 0 12px}
+  h1{font-size:clamp(28px,8vw,36px);line-height:1.2;letter-spacing:-.6px;text-wrap:balance}
+  .topic-list{gap:4px 16px;margin-bottom:16px;line-height:1.5}
+  #subtitle{font-size:16px;line-height:1.6;color:var(--muted)}
+  .intro>a{margin-top:8px;padding:10px 0;min-height:44px}
+  .toolbar{gap:10px;padding:12px 0}
+  .segments{width:100%}.segments button{min-width:0;padding:10px;line-height:1.4}
+  .progress-line{flex-wrap:wrap;gap:4px 12px;line-height:1.5;font-size:12px}
+  .tabs{margin:20px 0 14px}.tabs button{flex:1;min-width:0}
+  .question-navigation{position:sticky;top:0;z-index:6;background:#f4f7fc;padding:8px 0;margin-bottom:8px;scroll-margin-top:0;border-bottom:1px solid var(--line)}
+  .question-navigation span{text-align:end}
+  .question{padding:16px;border-radius:12px}
+  .question-meta{gap:8px;line-height:1.5;margin-bottom:12px}
+  .help-button{width:44px;height:44px;min-height:44px}
+  .issue-tooltip{top:50px;width:min(440px,calc(100vw - 64px));max-height:60vh;max-height:60dvh;overflow:auto;font-size:15px;padding:16px}
+  .question legend{font-size:20px;line-height:1.45;margin-bottom:16px}
+  .question-importance{gap:8px;font-size:14px}
+  .question-importance small{font-size:13px;line-height:1.5}
+  .choice{font-size:16px;line-height:1.55;padding:13px 12px;gap:10px;min-height:52px}
+  .option-letter{flex:0 0 26px;height:26px}
+  .choice>span:last-child{min-width:0;overflow-wrap:anywhere}
+  .choice.skip{align-self:stretch;font-size:14px;min-height:44px;padding:10px 12px;background:#f3f6fc}
+  .change-question-control{gap:6px}.change-question{width:100%;font-size:16px}
+  .question summary,.result-card>details>summary,.method>summary{min-height:44px;padding:12px 0;font-size:14px;line-height:1.5}
+  .explore-issue{display:block;min-height:44px;font-size:14px;padding:10px 0;line-height:1.5;margin-top:4px}
+  .finish{gap:14px;margin:16px 0}.finish p{font-size:14px}
+  .result-heading{flex-direction:column;align-items:stretch}.result-heading button{align-self:flex-start}
+  .result-main{display:grid;grid-template-columns:minmax(0,1fr) minmax(88px,116px);gap:12px}
+  .result-main>div:first-child{display:contents}
+  .result-main h3{grid-column:1;grid-row:1;font-size:19px;line-height:1.4;overflow-wrap:anywhere}
+  .result-meta{grid-column:1/-1;grid-row:2;font-size:13px}
+  .score{grid-column:2;grid-row:1;font-size:32px;line-height:1.2}
+  .score small{font-size:12px;margin-top:5px;max-width:none}
+  .research-options{font-size:14px}.research-options label{align-items:flex-start;line-height:1.6}
+  .research-options input{flex-shrink:0;width:20px;height:20px;margin-top:2px}
+  .notice,.coverage-note,.evidence-gap{font-size:14px}
+  .evidence-gap button{font-size:14px;max-width:100%}
+  .evidence,.component{font-size:14px}.evidence h4{font-size:16px}
+  .issue-section{padding:18px 16px}.issue-section h2{font-size:23px;overflow-wrap:anywhere}
+  .open-questions{padding:16px;padding-inline-start:32px}
+  .approach-list{font-size:16px}.reading-links{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+@media(pointer:coarse){button,select{min-height:48px;font-size:16px}.help-button{width:44px;height:44px;min-height:44px}.issue-tooltip{top:50px}}
+.choice{transition:background-color 140ms ease,border-color 140ms ease,color 140ms ease,box-shadow 140ms ease}
+.choice.is-confirmed:has(input:checked){background:var(--accent);border-color:var(--accent);color:white;box-shadow:inset 0 0 0 1px var(--accent)}
+.choice.is-confirmed:has(input:checked) .option-letter{background:white;color:var(--accent);border-color:white}
+@media(prefers-reduced-motion:reduce){.choice{transition:none}}

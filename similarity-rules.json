@@ -1,0 +1,1002 @@
+{
+  "version": "0.3-graded-overlap",
+  "scale": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "description": "Symmetric editorial estimates of policy overlap; not empirical probabilities or party-endorsed percentages.",
+  "dimensions": {
+    "Q1.statehood": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0,
+          "defer": 0.5
+        },
+        "no": {
+          "yes": 0,
+          "no": 1,
+          "defer": 0.5
+        },
+        "defer": {
+          "yes": 0.5,
+          "no": 0.5,
+          "defer": 1
+        }
+      },
+      "rationale": {
+        "en": "Deferral leaves either final outcome open; accepting and rejecting a separate state are opposed.",
+        "he": "דחיית ההכרעה משאירה את שתי התוצאות פתוחות; תמיכה במדינה נפרדת ושלילתה מנוגדות.",
+        "ru": "Отсрочка оставляет открытыми оба исхода; поддержка и отрицание отдельного государства противоположны."
+      }
+    },
+    "Q1.framework": {
+      "matrix": {
+        "bilateral": {
+          "bilateral": 1,
+          "regional": 0.75,
+          "autonomy": 0.25,
+          "interim": 0.5,
+          "shared": 0
+        },
+        "regional": {
+          "bilateral": 0.75,
+          "regional": 1,
+          "autonomy": 0.25,
+          "interim": 0.5,
+          "shared": 0
+        },
+        "autonomy": {
+          "bilateral": 0.25,
+          "regional": 0.25,
+          "autonomy": 1,
+          "interim": 0.5,
+          "shared": 0
+        },
+        "interim": {
+          "bilateral": 0.5,
+          "regional": 0.5,
+          "autonomy": 0.5,
+          "interim": 1,
+          "shared": 0
+        },
+        "shared": {
+          "bilateral": 0,
+          "regional": 0,
+          "autonomy": 0,
+          "interim": 0,
+          "shared": 1
+        }
+      },
+      "rationale": {
+        "en": "Negotiated frameworks overlap strongly; interim arrangements share practical tools with several end-state models.",
+        "he": "מסגרות של הסכם חופפות במידה רבה; להסדרי ביניים כלים משותפים עם כמה מודלים של הסדר קבע.",
+        "ru": "Переговорные модели сильно пересекаются; временные договорённости разделяют практические инструменты с несколькими конечными моделями."
+      }
+    },
+    "Q2.obligation": {
+      "matrix": {
+        "universal": {
+          "universal": 1,
+          "sector_exemption": 0.5,
+          "voluntary": 0
+        },
+        "sector_exemption": {
+          "universal": 0.5,
+          "sector_exemption": 1,
+          "voluntary": 0.25
+        },
+        "voluntary": {
+          "universal": 0,
+          "sector_exemption": 0.25,
+          "voluntary": 1
+        }
+      },
+      "rationale": {
+        "en": "Universal and sector-exemption models retain conscription; an exemption shares only limited voluntariness with an all-volunteer system.",
+        "he": "חובה כללית ופטור מגזרי משמרים גיוס חובה; לפטור יש רק חפיפה מוגבלת עם שירות מרצון לכולם.",
+        "ru": "Всеобщая обязанность и секторные исключения сохраняют призыв; исключение лишь частично сходно с полностью добровольной системой."
+      }
+    },
+    "Q2.pathway": {
+      "matrix": {
+        "military_priority": {
+          "military_priority": 1,
+          "equal_choice": 0.5
+        },
+        "equal_choice": {
+          "military_priority": 0.5,
+          "equal_choice": 1
+        }
+      },
+      "rationale": {
+        "en": "Both provide military and civilian routes, but differ over who chooses the route.",
+        "he": "בשני המודלים קיימים מסלולים צבאיים ואזרחיים, אך זהות הגורם הבוחר שונה.",
+        "ru": "Обе модели предусматривают военный и гражданский пути, но различаются тем, кто выбирает путь."
+      }
+    },
+    "Q3.ordinary_override": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0
+        },
+        "no": {
+          "yes": 0,
+          "no": 1
+        }
+      },
+      "rationale": {
+        "en": "These are opposed answers to this explicit policy commitment; shared aspects are scored in the other component.",
+        "he": "אלה תשובות מנוגדות להתחייבות המדיניות המפורשת; היבטים משותפים נבחנים במרכיב האחר.",
+        "ru": "Это противоположные ответы на конкретный вопрос политики; общие аспекты учитываются другим компонентом."
+      }
+    },
+    "Q3.appointments": {
+      "matrix": {
+        "professional": {
+          "professional": 1,
+          "shared": 0.75,
+          "parliament": 0.25,
+          "direct": 0
+        },
+        "shared": {
+          "professional": 0.75,
+          "shared": 1,
+          "parliament": 0.5,
+          "direct": 0.25
+        },
+        "parliament": {
+          "professional": 0.25,
+          "shared": 0.5,
+          "parliament": 1,
+          "direct": 0.5
+        },
+        "direct": {
+          "professional": 0,
+          "shared": 0.25,
+          "parliament": 0.5,
+          "direct": 1
+        }
+      },
+      "rationale": {
+        "en": "Credit reflects shared professional checks or electoral accountability, not the identity of a party supporting a model.",
+        "he": "החפיפה מבוססת על בקרה מקצועית או אחריות לנבחרים, ולא על המפלגה התומכת במודל.",
+        "ru": "Сходство отражает общие профессиональные сдержки или выборную подотчётность, а не партийную принадлежность."
+      }
+    },
+    "Q4.equality": {
+      "matrix": {
+        "constitutional": {
+          "constitutional": 1,
+          "ordinary": 0.5,
+          "existing": 0.25
+        },
+        "ordinary": {
+          "constitutional": 0.5,
+          "ordinary": 1,
+          "existing": 0.5
+        },
+        "existing": {
+          "constitutional": 0.25,
+          "ordinary": 0.5,
+          "existing": 1
+        }
+      },
+      "rationale": {
+        "en": "All refer to rights protection but differ in explicitness and legal entrenchment.",
+        "he": "האפשרויות עוסקות בהגנת זכויות אך שונות במפורשות ובעוצמת העיגון המשפטי.",
+        "ru": "Все варианты касаются защиты прав, но различаются её прямотой и уровнем правового закрепления."
+      }
+    },
+    "Q4.identity": {
+      "matrix": {
+        "jewish_democratic": {
+          "jewish_democratic": 1,
+          "civic": 0.25,
+          "binational": 0.25
+        },
+        "civic": {
+          "jewish_democratic": 0.25,
+          "civic": 1,
+          "binational": 0.75
+        },
+        "binational": {
+          "jewish_democratic": 0.25,
+          "civic": 0.75,
+          "binational": 1
+        }
+      },
+      "rationale": {
+        "en": "Civic and binational models overlap in equal belonging; national definitions remain a substantive distinction.",
+        "he": "למודל אזרחי ולמודל דו־לאומי חפיפה בשייכות שווה; ההגדרה הלאומית היא הבדל מהותי.",
+        "ru": "Гражданская и двунациональная модели близки по равной принадлежности; национальное определение остаётся существенным различием."
+      }
+    },
+    "Q5.civil_route": {
+      "matrix": {
+        "marriage": {
+          "marriage": 1,
+          "registration": 0.75,
+          "none": 0
+        },
+        "registration": {
+          "marriage": 0.75,
+          "registration": 1,
+          "none": 0.25
+        },
+        "none": {
+          "marriage": 0,
+          "registration": 0.25,
+          "none": 1
+        }
+      },
+      "rationale": {
+        "en": "Civil registration shares legal protection outside religious marriage, but is not assumed legally equivalent to marriage and divorce.",
+        "he": "רישום אזרחי מעניק הגנות מחוץ לנישואים דתיים, אך אינו נחשב זהה משפטית לנישואים ולגירושים.",
+        "ru": "Гражданская регистрация даёт защиту вне религиозного брака, но не считается юридически равной браку и разводу."
+      }
+    },
+    "Q5.religious_role": {
+      "matrix": {
+        "optional": {
+          "optional": 1,
+          "private": 0.5,
+          "exclusive": 0.25
+        },
+        "private": {
+          "optional": 0.5,
+          "private": 1,
+          "exclusive": 0
+        },
+        "exclusive": {
+          "optional": 0.25,
+          "private": 0,
+          "exclusive": 1
+        }
+      },
+      "rationale": {
+        "en": "Optional and private routes share freedom of choice; optional and exclusive routes retain some formal religious role.",
+        "he": "מסלול לבחירה וטקס פרטי חולקים חופש בחירה; מסלול לבחירה וסמכות בלעדית משמרים תפקיד דתי רשמי כלשהו.",
+        "ru": "Добровольный и частный пути разделяют свободу выбора; добровольный и исключительный сохраняют некоторую официальную роль религии."
+      }
+    },
+    "Q6.service": {
+      "matrix": {
+        "limited": {
+          "limited": 1,
+          "full": 0.75,
+          "none": 0.25
+        },
+        "full": {
+          "limited": 0.75,
+          "full": 1,
+          "none": 0
+        },
+        "none": {
+          "limited": 0.25,
+          "full": 0,
+          "none": 1
+        }
+      },
+      "rationale": {
+        "en": "Limited and regular service both provide public mobility; limited service retains more rest-day restrictions.",
+        "he": "שירות מצומצם ורגיל מספקים ניידות ציבורית; שירות מצומצם משמר יותר מגבלות של יום מנוחה.",
+        "ru": "Ограниченное и обычное сообщение обеспечивают общественную мобильность; ограниченное сохраняет больше ограничений дня отдыха."
+      }
+    },
+    "Q6.authority": {
+      "matrix": {
+        "local": {
+          "local": 1,
+          "national": 0
+        },
+        "national": {
+          "local": 0,
+          "national": 1
+        }
+      },
+      "rationale": {
+        "en": "Local discretion and a uniform national decision are different allocations of authority.",
+        "he": "שיקול דעת מקומי והכרעה ארצית אחידה הם חלוקות סמכות שונות.",
+        "ru": "Местное усмотрение и единое общенациональное решение по-разному распределяют полномочия."
+      }
+    },
+    "Q7.services": {
+      "matrix": {
+        "expand": {
+          "expand": 1,
+          "maintain": 0.5,
+          "reduce": 0
+        },
+        "maintain": {
+          "expand": 0.5,
+          "maintain": 1,
+          "reduce": 0.5
+        },
+        "reduce": {
+          "expand": 0,
+          "maintain": 0.5,
+          "reduce": 1
+        }
+      },
+      "rationale": {
+        "en": "Maintaining scale is intermediate between expanding and reducing it.",
+        "he": "שימור ההיקף הוא מצב ביניים בין הרחבה לצמצום.",
+        "ru": "Сохранение объёма занимает промежуточное положение между расширением и сокращением."
+      }
+    },
+    "Q7.funding": {
+      "matrix": {
+        "progressive": {
+          "progressive": 1,
+          "broad": 0.5,
+          "reprioritize": 0.25,
+          "lower_taxes": 0
+        },
+        "broad": {
+          "progressive": 0.5,
+          "broad": 1,
+          "reprioritize": 0.25,
+          "lower_taxes": 0
+        },
+        "reprioritize": {
+          "progressive": 0.25,
+          "broad": 0.25,
+          "reprioritize": 1,
+          "lower_taxes": 0.25
+        },
+        "lower_taxes": {
+          "progressive": 0,
+          "broad": 0,
+          "reprioritize": 0.25,
+          "lower_taxes": 1
+        }
+      },
+      "rationale": {
+        "en": "Tax increases overlap as revenue tools; reallocations have limited overlap with either tax-based expansion or tax reduction.",
+        "he": "העלאות מס חופפות ככלי הכנסה; לשינוי סדרי עדיפויות חפיפה מוגבלת עם הרחבה במיסוי או עם הפחתת מס.",
+        "ru": "Повышения налогов близки как источник доходов; перераспределение лишь частично сходно с расширением за счёт налогов или их снижением."
+      }
+    },
+    "Q8.imports": {
+      "matrix": {
+        "open": {
+          "open": 1,
+          "selective": 0.5,
+          "protect": 0
+        },
+        "selective": {
+          "open": 0.5,
+          "selective": 1,
+          "protect": 0.5
+        },
+        "protect": {
+          "open": 0,
+          "selective": 0.5,
+          "protect": 1
+        }
+      },
+      "rationale": {
+        "en": "Selective opening shares liberalization with open trade and protection with the protected model.",
+        "he": "פתיחה סלקטיבית חולקת פתיחת שווקים עם יבוא פתוח והגנה עם המודל המוגן.",
+        "ru": "Выборочное открытие разделяет либерализацию с открытым импортом и защиту с протекционизмом."
+      }
+    },
+    "Q8.consumer_tool": {
+      "matrix": {
+        "competition": {
+          "competition": 1,
+          "prices": 0,
+          "support": 0.25
+        },
+        "prices": {
+          "competition": 0,
+          "prices": 1,
+          "support": 0.5
+        },
+        "support": {
+          "competition": 0.25,
+          "prices": 0.5,
+          "support": 1
+        }
+      },
+      "rationale": {
+        "en": "Price controls and household support both intervene directly in affordability, but through different mechanisms.",
+        "he": "פיקוח מחירים וסיוע למשקי בית מתערבים ישירות ביכולת הקנייה, אך במנגנונים שונים.",
+        "ru": "Контроль цен и помощь домохозяйствам прямо влияют на доступность товаров, но разными механизмами."
+      }
+    },
+    "Q9.core_condition": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0,
+          "universal": 0.75
+        },
+        "no": {
+          "yes": 0,
+          "no": 1,
+          "universal": 0
+        },
+        "universal": {
+          "yes": 0.75,
+          "no": 0,
+          "universal": 1
+        }
+      },
+      "rationale": {
+        "en": "A universal requirement and a funding condition both require core studies in publicly funded schools, but differ on schools without public funding; their similarity is estimated at 0.75. Support for a funding condition alone does not establish support for a universal mandate. Neither requirement overlaps with leaving public funding unconditional on core studies. Governance is scored separately.",
+        "he": "חובה כללית ותנאי למימון מחייבים שניהם לימודי ליבה בבתי ספר המקבלים מימון ציבורי, אך שונים ביחס לבתי ספר שאינם מקבלים אותו; הדמיון מוערך ב־0.75. תמיכה בתנאי למימון לבדה אינה מעידה על תמיכה בחובה כללית. שתי הדרישות מנוגדות למימון ללא תנאי ליבה. מודל הניהול נבחן בנפרד.",
+        "ru": "Всеобщая обязанность и условие финансирования требуют общего ядра в бюджетно финансируемых школах, но различаются в отношении школ без бюджетной поддержки; сходство оценено в 0,75. Поддержка условия финансирования сама по себе не доказывает поддержку всеобщей обязанности. Оба требования противоположны финансированию без условия общего ядра. Модель управления сравнивается отдельно."
+      }
+    },
+    "Q9.school_model": {
+      "matrix": {
+        "state": {
+          "state": 1,
+          "mixed": 0.5,
+          "voucher": 0.25
+        },
+        "mixed": {
+          "state": 0.5,
+          "mixed": 1,
+          "voucher": 0.5
+        },
+        "voucher": {
+          "state": 0.25,
+          "mixed": 0.5,
+          "voucher": 1
+        }
+      },
+      "rationale": {
+        "en": "Mixed provision shares public institutions with a state model and plural providers with vouchers.",
+        "he": "מודל מעורב חולק מוסדות ציבוריים עם המודל הממלכתי וריבוי ספקים עם שוברים.",
+        "ru": "Смешанная модель разделяет государственные учреждения с государственной моделью и разнообразие поставщиков с ваучерной."
+      }
+    },
+    "Q10.security_role": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0
+        },
+        "no": {
+          "yes": 0,
+          "no": 1
+        }
+      },
+      "rationale": {
+        "en": "These are opposed answers to this explicit policy commitment; shared aspects are scored in the other component.",
+        "he": "אלה תשובות מנוגדות להתחייבות המדיניות המפורשת; היבטים משותפים נבחנים במרכיב האחר.",
+        "ru": "Это противоположные ответы на конкретный вопрос политики; общие аспекты учитываются другим компонентом."
+      }
+    },
+    "Q10.lead": {
+      "matrix": {
+        "national_police": {
+          "national_police": 1,
+          "local_police": 0.75,
+          "security": 0.25
+        },
+        "local_police": {
+          "national_police": 0.75,
+          "local_police": 1,
+          "security": 0
+        },
+        "security": {
+          "national_police": 0.25,
+          "local_police": 0,
+          "security": 1
+        }
+      },
+      "rationale": {
+        "en": "National and local police remain civilian policing; security-service leadership is a different institutional mandate.",
+        "he": "משטרה ארצית ומקומית הן שיטור אזרחי; הובלת שירותי ביטחון היא מנדט מוסדי שונה.",
+        "ru": "Национальная и местная полиция остаются гражданской полицией; руководство спецслужб означает иной мандат."
+      }
+    },
+    "Q11.unilateral_sovereignty": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0
+        },
+        "no": {
+          "yes": 0,
+          "no": 1
+        }
+      },
+      "rationale": {
+        "en": "These are opposed answers to this explicit policy commitment; shared aspects are scored in the other component.",
+        "he": "אלה תשובות מנוגדות להתחייבות המדיניות המפורשת; היבטים משותפים נבחנים במרכיב האחר.",
+        "ru": "Это противоположные ответы на конкретный вопрос политики; общие аспекты учитываются другим компонентом."
+      }
+    },
+    "Q11.territorial_route": {
+      "matrix": {
+        "partial": {
+          "partial": 1,
+          "all": 0.75,
+          "agreement": 0,
+          "freeze": 0.25,
+          "withdraw": 0
+        },
+        "all": {
+          "partial": 0.75,
+          "all": 1,
+          "agreement": 0,
+          "freeze": 0,
+          "withdraw": 0
+        },
+        "agreement": {
+          "partial": 0,
+          "all": 0,
+          "agreement": 1,
+          "freeze": 0.5,
+          "withdraw": 0.5
+        },
+        "freeze": {
+          "partial": 0.25,
+          "all": 0,
+          "agreement": 0.5,
+          "freeze": 1,
+          "withdraw": 0.25
+        },
+        "withdraw": {
+          "partial": 0,
+          "all": 0,
+          "agreement": 0.5,
+          "freeze": 0.25,
+          "withdraw": 1
+        }
+      },
+      "rationale": {
+        "en": "Partial and full annexation share the sovereignty instrument; agreement and withdrawal may share separation but differ on consent and process.",
+        "he": "סיפוח חלקי ומלא חולקים החלת ריבונות; הסכם ונסיגה עשויים לחלוק הפרדה אך נבדלים בהסכמה ובתהליך.",
+        "ru": "Частичная и полная аннексия используют суверенитет; соглашение и вывод могут разделять идею размежевания, но отличаются процессом и согласием."
+      }
+    },
+    "Q12.settlements": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0
+        },
+        "no": {
+          "yes": 0,
+          "no": 1
+        }
+      },
+      "rationale": {
+        "en": "These are opposed answers to this explicit policy commitment; shared aspects are scored in the other component.",
+        "he": "אלה תשובות מנוגדות להתחייבות המדיניות המפורשת; היבטים משותפים נבחנים במרכיב האחר.",
+        "ru": "Это противоположные ответы на конкретный вопрос политики; общие аспекты учитываются другим компонентом."
+      }
+    },
+    "Q12.administration": {
+      "matrix": {
+        "israeli": {
+          "israeli": 1,
+          "palestinian": 0,
+          "international": 0.25
+        },
+        "palestinian": {
+          "israeli": 0,
+          "palestinian": 1,
+          "international": 0.5
+        },
+        "international": {
+          "israeli": 0.25,
+          "palestinian": 0.5,
+          "international": 1
+        }
+      },
+      "rationale": {
+        "en": "International administration has some overlap with non-Israeli governance and limited overlap with externally administered reconstruction.",
+        "he": "למנהל בינלאומי חפיפה מסוימת עם שלטון שאינו ישראלי וחפיפה מוגבלת עם ניהול שיקום חיצוני.",
+        "ru": "Международная администрация частично сходна с неизраильским управлением и в меньшей степени — с внешним управлением восстановлением."
+      }
+    },
+    "Q13.statutory": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0
+        },
+        "no": {
+          "yes": 0,
+          "no": 1
+        }
+      },
+      "rationale": {
+        "en": "These are opposed answers to this explicit policy commitment; shared aspects are scored in the other component.",
+        "he": "אלה תשובות מנוגדות להתחייבות המדיניות המפורשת; היבטים משותפים נבחנים במרכיב האחר.",
+        "ru": "Это противоположные ответы на конкретный вопрос политики; общие аспекты учитываются другим компонентом."
+      }
+    },
+    "Q13.appointment": {
+      "matrix": {
+        "judicial": {
+          "judicial": 1,
+          "consensus": 0.75,
+          "government": 0,
+          "public": 0.5
+        },
+        "consensus": {
+          "judicial": 0.75,
+          "consensus": 1,
+          "government": 0.25,
+          "public": 0.5
+        },
+        "government": {
+          "judicial": 0,
+          "consensus": 0.25,
+          "government": 1,
+          "public": 0
+        },
+        "public": {
+          "judicial": 0.5,
+          "consensus": 0.5,
+          "government": 0,
+          "public": 1
+        }
+      },
+      "rationale": {
+        "en": "Judicial and cross-party appointment share separation from unilateral government control; public review differs in mandate.",
+        "he": "מינוי שיפוטי ובהסכמה רחבה חולקים הפרדה משליטה ממשלתית חד־צדדית; בדיקה ציבורית שונה במנדט.",
+        "ru": "Судебное и межпартийное назначение отделены от одностороннего контроля правительства; общественная проверка отличается мандатом."
+      }
+    },
+    "Q14.binding_limit": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0
+        },
+        "no": {
+          "yes": 0,
+          "no": 1
+        }
+      },
+      "rationale": {
+        "en": "These are opposed answers to this explicit policy commitment; shared aspects are scored in the other component.",
+        "he": "אלה תשובות מנוגדות להתחייבות המדיניות המפורשת; היבטים משותפים נבחנים במרכיב האחר.",
+        "ru": "Это противоположные ответы на конкретный вопрос политики; общие аспекты учитываются другим компонентом."
+      }
+    },
+    "Q14.mechanism": {
+      "matrix": {
+        "terms": {
+          "terms": 1,
+          "years": 0.75,
+          "recall": 0.25,
+          "elections": 0
+        },
+        "years": {
+          "terms": 0.75,
+          "years": 1,
+          "recall": 0.25,
+          "elections": 0
+        },
+        "recall": {
+          "terms": 0.25,
+          "years": 0.25,
+          "recall": 1,
+          "elections": 0.5
+        },
+        "elections": {
+          "terms": 0,
+          "years": 0,
+          "recall": 0.5,
+          "elections": 1
+        }
+      },
+      "rationale": {
+        "en": "Term and year caps both impose mandatory turnover but differ with early elections; recall shares voter control with ordinary elections.",
+        "he": "מגבלת כהונות ושנים מחייבות תחלופה אך שונות במצב של בחירות מוקדמות; הדחה ביוזמת הציבור חולקת שליטה של הבוחר עם בחירות.",
+        "ru": "Лимиты сроков и лет требуют сменяемости, но различаются при досрочных выборах; отзыв и выборы разделяют контроль избирателей."
+      }
+    },
+    "Q15.parent_status": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0
+        },
+        "no": {
+          "yes": 0,
+          "no": 1
+        }
+      },
+      "rationale": {
+        "en": "These are opposed answers to this explicit policy commitment; shared aspects are scored in the other component.",
+        "he": "אלה תשובות מנוגדות להתחייבות המדיניות המפורשת; היבטים משותפים נבחנים במרכיב האחר.",
+        "ru": "Это противоположные ответы на конкретный вопрос политики; общие аспекты учитываются другим компонентом."
+      }
+    },
+    "Q15.family_routes": {
+      "matrix": {
+        "separate": {
+          "separate": 1,
+          "adoption": 0.5,
+          "all": 0.25,
+          "traditional": 0.25
+        },
+        "adoption": {
+          "separate": 0.5,
+          "adoption": 1,
+          "all": 0.75,
+          "traditional": 0
+        },
+        "all": {
+          "separate": 0.25,
+          "adoption": 0.75,
+          "all": 1,
+          "traditional": 0
+        },
+        "traditional": {
+          "separate": 0.25,
+          "adoption": 0,
+          "all": 0,
+          "traditional": 1
+        }
+      },
+      "rationale": {
+        "en": "Equal adoption overlaps strongly with equal adoption and surrogacy; leaving eligibility separate does not imply endorsing either endpoint.",
+        "he": "אימוץ שוויוני חופף במידה רבה לאימוץ ולפונדקאות שוויוניים; הסדרה נפרדת אינה תמיכה אוטומטית באף קצה.",
+        "ru": "Равное усыновление близко к равному доступу к обоим путям; отдельное регулирование не означает поддержки какого-либо крайнего варианта."
+      }
+    },
+    "Q16.funding_model": {
+      "matrix": {
+        "voucher": {
+          "voucher": 1,
+          "institution": 0.25
+        },
+        "institution": {
+          "voucher": 0.25,
+          "institution": 1
+        }
+      },
+      "rationale": {
+        "en": "Both use public school funding, but differ substantially in who directs it.",
+        "he": "שני המודלים משתמשים במימון ציבורי לחינוך, אך שונים מהותית במי שמכוון אותו.",
+        "ru": "Обе модели используют бюджетное финансирование школ, но существенно различаются тем, кто им распоряжается."
+      }
+    },
+    "Q16.admissions": {
+      "matrix": {
+        "open": {
+          "open": 1,
+          "selective": 0
+        },
+        "selective": {
+          "open": 0,
+          "selective": 1
+        }
+      },
+      "rationale": {
+        "en": "Open access and selective admission are opposing admission rules.",
+        "he": "קבלה פתוחה ומיון הם כללי קבלה מנוגדים.",
+        "ru": "Открытый приём и отбор — противоположные правила поступления."
+      }
+    },
+    "Q17.public_stock": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0
+        },
+        "no": {
+          "yes": 0,
+          "no": 1
+        }
+      },
+      "rationale": {
+        "en": "These are opposed answers to this explicit policy commitment; shared aspects are scored in the other component.",
+        "he": "אלה תשובות מנוגדות להתחייבות המדיניות המפורשת; היבטים משותפים נבחנים במרכיב האחר.",
+        "ru": "Это противоположные ответы на конкретный вопрос политики; общие аспекты учитываются другим компонентом."
+      }
+    },
+    "Q17.housing_tool": {
+      "matrix": {
+        "public_build": {
+          "public_build": 1,
+          "acquire": 0.75,
+          "private_supply": 0.25,
+          "rent_support": 0,
+          "land_reform": 0.25
+        },
+        "acquire": {
+          "public_build": 0.75,
+          "acquire": 1,
+          "private_supply": 0.5,
+          "rent_support": 0.25,
+          "land_reform": 0.25
+        },
+        "private_supply": {
+          "public_build": 0.25,
+          "acquire": 0.5,
+          "private_supply": 1,
+          "rent_support": 0.25,
+          "land_reform": 0.75
+        },
+        "rent_support": {
+          "public_build": 0,
+          "acquire": 0.25,
+          "private_supply": 0.25,
+          "rent_support": 1,
+          "land_reform": 0
+        },
+        "land_reform": {
+          "public_build": 0.25,
+          "acquire": 0.25,
+          "private_supply": 0.75,
+          "rent_support": 0,
+          "land_reform": 1
+        }
+      },
+      "rationale": {
+        "en": "Public construction and acquisition share public stock; private construction and land reform share supply expansion.",
+        "he": "בנייה ורכישה ציבוריות חולקות מלאי ציבורי; בנייה פרטית ורפורמת קרקע חולקות הרחבת היצע.",
+        "ru": "Государственное строительство и покупка создают публичный фонд; частная застройка и земельная реформа расширяют предложение."
+      }
+    },
+    "Q18.bargaining": {
+      "matrix": {
+        "collective": {
+          "collective": 1,
+          "individual": 0
+        },
+        "individual": {
+          "collective": 0,
+          "individual": 1
+        }
+      },
+      "rationale": {
+        "en": "Collective and individual bargaining assign negotiation power differently.",
+        "he": "משא ומתן קיבוצי ואישי מחלקים את כוח המיקוח באופן שונה.",
+        "ru": "Коллективные и индивидуальные переговоры по-разному распределяют переговорную силу."
+      }
+    },
+    "Q18.disputes": {
+      "matrix": {
+        "voluntary": {
+          "voluntary": 1,
+          "essential_arbitration": 0.5,
+          "all_arbitration": 0
+        },
+        "essential_arbitration": {
+          "voluntary": 0.5,
+          "essential_arbitration": 1,
+          "all_arbitration": 0.5
+        },
+        "all_arbitration": {
+          "voluntary": 0,
+          "essential_arbitration": 0.5,
+          "all_arbitration": 1
+        }
+      },
+      "rationale": {
+        "en": "Essential-service arbitration is a narrower intervention than arbitration across all sectors.",
+        "he": "בוררות בשירותים חיוניים היא התערבות צרה יותר מבוררות בכלל הענפים.",
+        "ru": "Арбитраж в жизненно важных службах — более узкое вмешательство, чем во всех отраслях."
+      }
+    },
+    "Q19.compulsory": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0
+        },
+        "no": {
+          "yes": 0,
+          "no": 1
+        }
+      },
+      "rationale": {
+        "en": "These are opposed answers to this explicit policy commitment; shared aspects are scored in the other component.",
+        "he": "אלה תשובות מנוגדות להתחייבות המדיניות המפורשת; היבטים משותפים נבחנים במרכיב האחר.",
+        "ru": "Это противоположные ответы на конкретный вопрос политики; общие аспекты учитываются другим компонентом."
+      }
+    },
+    "Q19.service_model": {
+      "matrix": {
+        "civilian_choice": {
+          "civilian_choice": 1,
+          "military_priority": 0.5,
+          "community": 0.5,
+          "integrated": 0.5,
+          "none": 0
+        },
+        "military_priority": {
+          "civilian_choice": 0.5,
+          "military_priority": 1,
+          "community": 0,
+          "integrated": 0.75,
+          "none": 0
+        },
+        "community": {
+          "civilian_choice": 0.5,
+          "military_priority": 0,
+          "community": 1,
+          "integrated": 0.5,
+          "none": 0.25
+        },
+        "integrated": {
+          "civilian_choice": 0.5,
+          "military_priority": 0.75,
+          "community": 0.5,
+          "integrated": 1,
+          "none": 0
+        },
+        "none": {
+          "civilian_choice": 0,
+          "military_priority": 0,
+          "community": 0.25,
+          "integrated": 0,
+          "none": 1
+        }
+      },
+      "rationale": {
+        "en": "Credit reflects shared civilian or military pathways; the separate compulsory-service component captures coercion.",
+        "he": "החפיפה משקפת מסלולים אזרחיים או צבאיים משותפים; מרכיב חובת השירות הנפרד מייצג כפייה.",
+        "ru": "Сходство отражает общие гражданские или военные пути; обязательность учитывается отдельным компонентом."
+      }
+    },
+    "Q20.binding_targets": {
+      "matrix": {
+        "yes": {
+          "yes": 1,
+          "no": 0
+        },
+        "no": {
+          "yes": 0,
+          "no": 1
+        }
+      },
+      "rationale": {
+        "en": "These are opposed answers to this explicit policy commitment; shared aspects are scored in the other component.",
+        "he": "אלה תשובות מנוגדות להתחייבות המדיניות המפורשת; היבטים משותפים נבחנים במרכיב האחר.",
+        "ru": "Это противоположные ответы на конкретный вопрос политики; общие аспекты учитываются другим компонентом."
+      }
+    },
+    "Q20.climate_tool": {
+      "matrix": {
+        "sector_budgets": {
+          "sector_budgets": 1,
+          "carbon_price": 0.5,
+          "innovation": 0.5,
+          "nuclear": 0.25
+        },
+        "carbon_price": {
+          "sector_budgets": 0.5,
+          "carbon_price": 1,
+          "innovation": 0.5,
+          "nuclear": 0.25
+        },
+        "innovation": {
+          "sector_budgets": 0.5,
+          "carbon_price": 0.5,
+          "innovation": 1,
+          "nuclear": 0.25
+        },
+        "nuclear": {
+          "sector_budgets": 0.25,
+          "carbon_price": 0.25,
+          "innovation": 0.25,
+          "nuclear": 1
+        }
+      },
+      "rationale": {
+        "en": "Plans, pricing and innovation can all reduce emissions through different tools; nuclear is a specific supply technology.",
+        "he": "תכנון, תמחור וחדשנות עשויים להפחית פליטות בכלים שונים; גרעין הוא טכנולוגיית אספקה מסוימת.",
+        "ru": "Планы, ценообразование и инновации сокращают выбросы разными инструментами; атомная энергетика — конкретная технология генерации."
+      }
+    }
+  }
+}

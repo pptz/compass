@@ -1,0 +1,180 @@
+{
+  "sources": {
+    "RDS": {
+      "title": "Religious Zionism: sovereignty policy",
+      "url": "https://zionutdatit.org.il/hityashvut/sovereignty/",
+      "date": null,
+      "type": "party_program",
+      "note": "Official page retrieved directly on 2026-09-29. Publication date not stated; not labeled a newly issued manifesto."
+    },
+    "RDJ21": {
+      "title": "Religious Zionism: judicial platform",
+      "url": "https://zionutdatit.org.il/wp-content/uploads/2021/12/משפט.pdf",
+      "date": "2021-12",
+      "type": "archive",
+      "note": "Linked by the official platform index. PDF metadata and 24th-Knesset wording establish age; judicial-appointment section visually inspected."
+    },
+    "RDI21": {
+      "title": "Religious Zionism: Jewish identity platform",
+      "url": "https://zionutdatit.org.il/wp-content/uploads/2021/12/זהות-יהודית.pdf",
+      "date": "2021-12",
+      "type": "archive",
+      "note": "Official linked PDF, visually inspected. Used for the Jewish/democratic identity component; general status-quo language is not a complete answer on transport or marriage."
+    },
+    "RDE21": {
+      "title": "Religious Zionism: economic platform",
+      "url": "https://zionutdatit.org.il/wp-content/uploads/2021/12/כלכלה.pdf",
+      "date": "2021-12",
+      "type": "archive",
+      "note": "Official linked PDF, visually inspected. Explicitly calls for compulsory arbitration in essential services."
+    },
+    "RDB23": {
+      "title": "Religious Zionism: 2023–24 budget policy",
+      "url": "https://zionutdatit.org.il/budget/",
+      "date": "2023–2024",
+      "type": "archive",
+      "note": "Official text retrieved directly; internal budget-year references establish date. Not a new 2026 program."
+    },
+    "OZ20": {
+      "title": "Otzma Yehudit: principles for the 23rd Knesset election (2020)",
+      "url": "https://www.knesset.tv/media/34728/מצע-עוצמה-יהודית.pdf",
+      "date": "2020-01-28",
+      "type": "archive",
+      "note": "Party principles archived by the Knesset channel; heading explicitly dates the election document. Section 4 visually inspected. Historical evidence, not a 2026 manifesto."
+    }
+  },
+  "positions": [
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q1",
+      "dimension_id": "statehood",
+      "value": "no",
+      "status": "P",
+      "source_ids": [
+        "RDS"
+      ],
+      "rationale": "The official sovereignty page explicitly presents preventing a Palestinian state as a policy goal.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q11",
+      "dimension_id": "unilateral_sovereignty",
+      "value": "yes",
+      "status": "P",
+      "source_ids": [
+        "RDS"
+      ],
+      "rationale": "The official page calls for Israeli sovereignty as an Israeli decision rather than a negotiated settlement.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q3",
+      "dimension_id": "appointments",
+      "value": "parliament",
+      "status": "H",
+      "source_ids": [
+        "RDJ21"
+      ],
+      "rationale": "The 2021 judicial platform calls for Knesset appointment of judges following a public committee hearing.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q4",
+      "dimension_id": "identity",
+      "value": "jewish_democratic",
+      "status": "H",
+      "source_ids": [
+        "RDI21"
+      ],
+      "rationale": "The 2021 identity platform describes a Jewish state incorporating democratic government.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q18",
+      "dimension_id": "disputes",
+      "value": "essential_arbitration",
+      "status": "H",
+      "source_ids": [
+        "RDE21"
+      ],
+      "rationale": "The 2021 economic platform explicitly proposes compulsory arbitration in essential services.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q8",
+      "dimension_id": "consumer_tool",
+      "value": "competition",
+      "status": "H",
+      "source_ids": [
+        "RDB23"
+      ],
+      "rationale": "The 2023–24 budget program supports food-market competition and removing cartel arrangements.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "religious_zionism",
+      "question_id": "Q7",
+      "dimension_id": "services",
+      "value": "expand",
+      "status": "H",
+      "source_ids": [
+        "RDB23"
+      ],
+      "rationale": "The dated budget program expands childcare, education funding, public health capacity and welfare benefits.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q4",
+      "dimension_id": "identity",
+      "value": "civic",
+      "status": "H",
+      "source_ids": [
+        "BA"
+      ],
+      "rationale": "The 2017 constitutional section defines a state of all its citizens. It also recognizes collective national rights.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "balad",
+      "question_id": "Q7",
+      "dimension_id": "funding",
+      "value": "progressive",
+      "status": "H",
+      "source_ids": [
+        "BA"
+      ],
+      "rationale": "The 2017 economic section proposes taxes on capital and wealth and lower taxes on labour, especially low incomes.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q11",
+      "dimension_id": "unilateral_sovereignty",
+      "value": "yes",
+      "status": "H",
+      "source_ids": [
+        "OZ20"
+      ],
+      "rationale": "Section 4 calls for applying Israeli sovereignty throughout the land. The program presents this as an Israeli policy, with no territorial concessions.",
+      "review_state": "editorial_draft"
+    },
+    {
+      "party_id": "otzma",
+      "question_id": "Q11",
+      "dimension_id": "territorial_route",
+      "value": "all",
+      "status": "H",
+      "source_ids": [
+        "OZ20"
+      ],
+      "rationale": "Section 4 explicitly calls for sovereignty in all parts of the land, rather than only selected areas.",
+      "review_state": "editorial_draft"
+    }
+  ]
+}

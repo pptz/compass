@@ -1,0 +1,1996 @@
+[
+  {
+    "id": "Q1",
+    "short": true,
+    "domain": "security",
+    "en": "What political framework should Israel pursue with the Palestinians?",
+    "he": "איזו מסגרת מדינית על ישראל לקדם ביחס לפלסטינים?",
+    "dimensions": [
+      {
+        "id": "statehood",
+        "en": "A separate Palestinian state",
+        "he": "מדינה פלסטינית נפרדת",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Pursue a state with security conditions",
+            "he": "לקדם מדינה בתנאי ביטחון"
+          },
+          {
+            "id": "no",
+            "en": "No separate Palestinian state",
+            "he": "ללא מדינה פלסטינית נפרדת"
+          },
+          {
+            "id": "defer",
+            "en": "Defer the final-status decision",
+            "he": "לדחות הכרעה על הסדר הקבע"
+          }
+        ]
+      },
+      {
+        "id": "framework",
+        "en": "Political framework",
+        "he": "המסגרת המדינית",
+        "weight": 1,
+        "values": [
+          {
+            "id": "bilateral",
+            "en": "Bilateral negotiated agreement",
+            "he": "הסכם במשא ומתן ישיר"
+          },
+          {
+            "id": "regional",
+            "en": "Regional agreement",
+            "he": "הסדר אזורי"
+          },
+          {
+            "id": "autonomy",
+            "en": "Autonomy under Israeli security control",
+            "he": "אוטונומיה תחת שליטה ביטחונית ישראלית"
+          },
+          {
+            "id": "interim",
+            "en": "Interim arrangements",
+            "he": "הסדרי ביניים"
+          },
+          {
+            "id": "shared",
+            "en": "One shared democratic state",
+            "he": "מדינה דמוקרטית משותפת"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "negotiated",
+        "en": "Negotiate two states with enforceable security safeguards and agreed borders.",
+        "he": "לנהל משא ומתן לשתי מדינות, עם הסדרי ביטחון ניתנים לאכיפה וגבולות מוסכמים.",
+        "profile": {
+          "statehood": "yes",
+          "framework": "bilateral"
+        }
+      },
+      {
+        "id": "regional",
+        "en": "Pursue a Palestinian state only within a wider regional agreement with Arab states and security guarantees.",
+        "he": "לקדם מדינה פלסטינית רק כחלק מהסדר אזורי רחב עם מדינות ערב וערבויות ביטחוניות.",
+        "profile": {
+          "statehood": "yes",
+          "framework": "regional"
+        }
+      },
+      {
+        "id": "autonomy",
+        "en": "Maintain Israeli security control and Palestinian civil autonomy, without a separate Palestinian state.",
+        "he": "לקיים שליטה ביטחונית ישראלית ואוטונומיה אזרחית פלסטינית, ללא מדינה פלסטינית נפרדת.",
+        "profile": {
+          "statehood": "no",
+          "framework": "autonomy"
+        }
+      },
+      {
+        "id": "interim",
+        "en": "Defer the final-status decision and pursue practical interim agreements on security, movement and economic life.",
+        "he": "לדחות את ההכרעה על הסדר הקבע ולקדם הסכמי ביניים בנושאי ביטחון, תנועה וכלכלה.",
+        "profile": {
+          "statehood": "defer",
+          "framework": "interim"
+        }
+      },
+      {
+        "id": "shared",
+        "en": "Work toward one democratic state with equal citizenship for Israelis and Palestinians, rather than two states.",
+        "he": "לפעול למדינה דמוקרטית אחת עם אזרחות שווה לישראלים ולפלסטינים, במקום שתי מדינות.",
+        "profile": {
+          "statehood": "no",
+          "framework": "shared"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q2",
+    "short": true,
+    "domain": "security",
+    "en": "How should military and civilian service be organized, including for yeshiva students?",
+    "he": "כיצד יש להסדיר שירות צבאי ואזרחי, כולל לתלמידי ישיבות?",
+    "dimensions": [
+      {
+        "id": "obligation",
+        "en": "Who is obliged to serve?",
+        "he": "על מי חלה החובה?",
+        "weight": 1,
+        "values": [
+          {
+            "id": "universal",
+            "en": "Universal obligation with narrow individual exceptions",
+            "he": "חובה כללית עם חריגים אישיים מצומצמים"
+          },
+          {
+            "id": "sector_exemption",
+            "en": "Exemption for full-time yeshiva study",
+            "he": "פטור ללימוד מלא בישיבה"
+          },
+          {
+            "id": "voluntary",
+            "en": "Voluntary service for everyone",
+            "he": "שירות מרצון לכולם"
+          }
+        ]
+      },
+      {
+        "id": "pathway",
+        "en": "Service pathway",
+        "he": "מסלול השירות",
+        "weight": 1,
+        "values": [
+          {
+            "id": "military_priority",
+            "en": "Military service takes priority",
+            "he": "עדיפות לשירות צבאי"
+          },
+          {
+            "id": "equal_choice",
+            "en": "Equal choice of military or civilian service",
+            "he": "בחירה שווה בין שירות צבאי לאזרחי"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "universal_military",
+        "en": "Require service from everyone, with the army choosing whom it needs and civilian service for the rest; allow only narrow individual exceptions.",
+        "he": "לחייב את כולם בשירות: הצבא יבחר את מי שנחוץ לו, והשאר ישרתו בשירות אזרחי; לאפשר רק חריגים אישיים מצומצמים.",
+        "profile": {
+          "obligation": "universal",
+          "pathway": "military_priority"
+        }
+      },
+      {
+        "id": "universal_choice",
+        "en": "Require a contribution from everyone, but let each person choose between military service and an equally recognized civilian route.",
+        "he": "לחייב את כולם בתרומה, אך לאפשר לכל אדם לבחור בין שירות צבאי למסלול אזרחי בעל מעמד שווה.",
+        "profile": {
+          "obligation": "universal",
+          "pathway": "equal_choice"
+        }
+      },
+      {
+        "id": "yeshiva_exemption",
+        "en": "Keep compulsory military service, while exempting full-time yeshiva students and offering adapted service to those who leave study.",
+        "he": "להשאיר שירות צבאי חובה, לפטור תלמידי ישיבות הלומדים במשרה מלאה ולהציע שירות מותאם למי שעוזבים את הלימודים.",
+        "profile": {
+          "obligation": "sector_exemption",
+          "pathway": "military_priority"
+        }
+      },
+      {
+        "id": "professional",
+        "en": "Move to a paid professional military and voluntary civilian service, ending compulsory service for everyone.",
+        "he": "לעבור לצבא מקצועי בשכר ולשירות אזרחי מרצון, ולבטל את חובת השירות לכולם.",
+        "profile": {
+          "obligation": "voluntary",
+          "pathway": "equal_choice"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q3",
+    "short": true,
+    "domain": "institutions",
+    "en": "How should power be divided between the Knesset and the judiciary?",
+    "he": "כיצד יש לחלק את הכוח בין הכנסת למערכת המשפט?",
+    "dimensions": [
+      {
+        "id": "ordinary_override",
+        "en": "Override by an ordinary coalition majority",
+        "he": "התגברות ברוב קואליציוני רגיל",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Yes",
+            "he": "כן"
+          },
+          {
+            "id": "no",
+            "en": "No",
+            "he": "לא"
+          }
+        ]
+      },
+      {
+        "id": "appointments",
+        "en": "Who selects judges?",
+        "he": "מי בוחר שופטים?",
+        "weight": 1,
+        "values": [
+          {
+            "id": "professional",
+            "en": "Professional committee",
+            "he": "ועדה מקצועית"
+          },
+          {
+            "id": "shared",
+            "en": "Government–opposition agreement",
+            "he": "הסכמה בין קואליציה לאופוזיציה"
+          },
+          {
+            "id": "parliament",
+            "en": "Parliamentary majority",
+            "he": "רוב בכנסת"
+          },
+          {
+            "id": "direct",
+            "en": "Direct public election",
+            "he": "בחירה ישירה בציבור"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "professional_review",
+        "en": "Keep rights-based judicial review without an ordinary-majority override; use a professionally led judicial appointments committee.",
+        "he": "לשמור על ביקורת שיפוטית להגנת זכויות ללא התגברות ברוב רגיל; למנות שופטים בוועדה בהובלה מקצועית.",
+        "profile": {
+          "ordinary_override": "no",
+          "appointments": "professional"
+        }
+      },
+      {
+        "id": "shared_review",
+        "en": "Require government–opposition agreement on judicial appointments, and prohibit overriding rights judgments by an ordinary coalition majority.",
+        "he": "לחייב הסכמה בין קואליציה לאופוזיציה במינוי שופטים, ולא לאפשר לרוב קואליציוני רגיל להתגבר על פסיקות המגינות על זכויות.",
+        "profile": {
+          "ordinary_override": "no",
+          "appointments": "shared"
+        }
+      },
+      {
+        "id": "parliamentary",
+        "en": "Let an ordinary Knesset majority override invalidation of a law and give elected legislators control over judicial appointments.",
+        "he": "לאפשר לרוב רגיל בכנסת להתגבר על פסילת חוק ולהעניק לנבחרי הציבור שליטה במינוי שופטים.",
+        "profile": {
+          "ordinary_override": "yes",
+          "appointments": "parliament"
+        }
+      },
+      {
+        "id": "direct_election",
+        "en": "Allow an ordinary-majority override, but have the public elect senior judges directly for fixed terms.",
+        "he": "לאפשר התגברות ברוב רגיל, אך לבחור שופטים בכירים בבחירה ישירה של הציבור לתקופות קצובות.",
+        "profile": {
+          "ordinary_override": "yes",
+          "appointments": "direct"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q4",
+    "short": true,
+    "domain": "institutions",
+    "en": "How should equality and the state's national identity be expressed in constitutional law?",
+    "he": "כיצד יש לבטא את השוויון ואת הזהות הלאומית של המדינה בחוקי היסוד?",
+    "dimensions": [
+      {
+        "id": "equality",
+        "en": "Legal protection for equal civil rights",
+        "he": "עיגון שוויון הזכויות האזרחיות",
+        "weight": 1,
+        "values": [
+          {
+            "id": "constitutional",
+            "en": "Explicit constitutional guarantee",
+            "he": "עיגון מפורש בחוק יסוד"
+          },
+          {
+            "id": "ordinary",
+            "en": "Ordinary legislation",
+            "he": "חקיקה רגילה"
+          },
+          {
+            "id": "existing",
+            "en": "Retain existing protections",
+            "he": "להשאיר את ההגנות הקיימות"
+          }
+        ]
+      },
+      {
+        "id": "identity",
+        "en": "National identity",
+        "he": "זהות לאומית",
+        "weight": 1,
+        "values": [
+          {
+            "id": "jewish_democratic",
+            "en": "Jewish and democratic",
+            "he": "יהודית ודמוקרטית"
+          },
+          {
+            "id": "civic",
+            "en": "Civic state of all citizens",
+            "he": "מדינה אזרחית של כלל אזרחיה"
+          },
+          {
+            "id": "binational",
+            "en": "Recognition of two national collectives",
+            "he": "הכרה בשני קולקטיבים לאומיים"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "jewish_equal",
+        "en": "Guarantee equal individual civil rights in a Basic Law while retaining Israel's identity as a Jewish and democratic state.",
+        "he": "לעגן בחוק יסוד שוויון זכויות אזרחיות אישיות, לצד זהותה של ישראל כמדינה יהודית ודמוקרטית.",
+        "profile": {
+          "equality": "constitutional",
+          "identity": "jewish_democratic"
+        }
+      },
+      {
+        "id": "civic_equal",
+        "en": "Guarantee constitutional equality and define the state in civic terms as belonging equally to all its citizens.",
+        "he": "לעגן שוויון חוקתי ולהגדיר את המדינה במונחים אזרחיים כשייכת באופן שווה לכל אזרחיה.",
+        "profile": {
+          "equality": "constitutional",
+          "identity": "civic"
+        }
+      },
+      {
+        "id": "collective_equal",
+        "en": "Guarantee equal individual rights and recognize both Jewish and Arab national collectives in the constitutional framework.",
+        "he": "לעגן שוויון זכויות אישיות ולהכיר במסגרת החוקתית הן בקולקטיב הלאומי היהודי והן בקולקטיב הלאומי הערבי.",
+        "profile": {
+          "equality": "constitutional",
+          "identity": "binational"
+        }
+      },
+      {
+        "id": "ordinary_equal",
+        "en": "Retain the Jewish and democratic constitutional definition, and protect equality through ordinary legislation.",
+        "he": "להשאיר את ההגדרה החוקתית היהודית והדמוקרטית ולהגן על השוויון בחקיקה רגילה.",
+        "profile": {
+          "equality": "ordinary",
+          "identity": "jewish_democratic"
+        }
+      },
+      {
+        "id": "existing",
+        "en": "Keep the Jewish and democratic definition and existing rights protections, without adding a new equality guarantee.",
+        "he": "להשאיר את ההגדרה היהודית והדמוקרטית ואת הגנות הזכויות הקיימות, ללא עיגון חדש של השוויון.",
+        "profile": {
+          "equality": "existing",
+          "identity": "jewish_democratic"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q5",
+    "short": true,
+    "domain": "religion",
+    "en": "What routes should couples have for marriage, partnership and separation?",
+    "he": "אילו מסלולים יש להציע לזוגות לנישואים, לזוגיות ולפרידה?",
+    "dimensions": [
+      {
+        "id": "civil_route",
+        "en": "Civil legal route",
+        "he": "המסלול האזרחי",
+        "weight": 1,
+        "values": [
+          {
+            "id": "marriage",
+            "en": "Civil marriage and divorce for all",
+            "he": "נישואים וגירושים אזרחיים לכולם"
+          },
+          {
+            "id": "registration",
+            "en": "Civil partnership registration",
+            "he": "רישום זוגיות אזרחית"
+          },
+          {
+            "id": "none",
+            "en": "No domestic civil route",
+            "he": "ללא מסלול אזרחי בישראל"
+          }
+        ]
+      },
+      {
+        "id": "religious_role",
+        "en": "Role of religious institutions",
+        "he": "תפקיד המוסדות הדתיים",
+        "weight": 1,
+        "values": [
+          {
+            "id": "optional",
+            "en": "Optional legally recognized religious route",
+            "he": "מסלול דתי מוכר לפי בחירה"
+          },
+          {
+            "id": "private",
+            "en": "Religious ceremonies are private",
+            "he": "טקסים דתיים הם עניין פרטי"
+          },
+          {
+            "id": "exclusive",
+            "en": "Religious institutions have exclusive jurisdiction",
+            "he": "סמכות בלעדית למוסדות הדת"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "parallel",
+        "en": "Offer civil marriage and divorce alongside an optional, legally recognized religious route.",
+        "he": "להציע נישואים וגירושים אזרחיים לצד מסלול דתי מוכר לבחירת הזוג.",
+        "profile": {
+          "civil_route": "marriage",
+          "religious_role": "optional"
+        }
+      },
+      {
+        "id": "civil_only",
+        "en": "Use civil marriage and divorce for everyone legally; religious ceremonies remain a private choice.",
+        "he": "להסדיר את הנישואים והגירושים של כולם במערכת אזרחית; טקס דתי יישאר בחירה פרטית.",
+        "profile": {
+          "civil_route": "marriage",
+          "religious_role": "private"
+        }
+      },
+      {
+        "id": "registration",
+        "en": "Add civil partnership registration with legal protections, while retaining religious marriage as a separate recognized route.",
+        "he": "להוסיף רישום זוגיות אזרחית עם הגנות משפטיות, לצד נישואים דתיים כמסלול מוכר נפרד.",
+        "profile": {
+          "civil_route": "registration",
+          "religious_role": "optional"
+        }
+      },
+      {
+        "id": "religious",
+        "en": "Keep marriage and divorce under the religious institutions, without adding a domestic civil route.",
+        "he": "להשאיר את הנישואים והגירושים בסמכות מוסדות הדת, ללא הוספת מסלול אזרחי בישראל.",
+        "profile": {
+          "civil_route": "none",
+          "religious_role": "exclusive"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q6",
+    "short": true,
+    "domain": "religion",
+    "en": "Who should decide on Shabbat transport, and what service should be available?",
+    "he": "מי צריך להחליט על תחבורה בשבת, ואיזה שירות צריך להיות זמין?",
+    "dimensions": [
+      {
+        "id": "service",
+        "en": "Public transport on Shabbat",
+        "he": "תחבורה ציבורית בשבת",
+        "weight": 1,
+        "values": [
+          {
+            "id": "limited",
+            "en": "Limited public service",
+            "he": "שירות ציבורי מצומצם"
+          },
+          {
+            "id": "full",
+            "en": "Regular public network",
+            "he": "רשת ציבורית רגילה"
+          },
+          {
+            "id": "none",
+            "en": "No public service",
+            "he": "ללא שירות ציבורי"
+          }
+        ]
+      },
+      {
+        "id": "authority",
+        "en": "Decision-making level",
+        "he": "מי מחליט?",
+        "weight": 1,
+        "values": [
+          {
+            "id": "local",
+            "en": "Municipalities",
+            "he": "רשויות מקומיות"
+          },
+          {
+            "id": "national",
+            "en": "National government",
+            "he": "הממשלה"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "local_limited",
+        "en": "Let municipalities run limited routes suited to local needs and avoid routes through religious neighborhoods.",
+        "he": "לאפשר לרשויות להפעיל קווים מצומצמים לפי הצורך המקומי, תוך הימנעות ממעבר בשכונות דתיות.",
+        "profile": {
+          "service": "limited",
+          "authority": "local"
+        }
+      },
+      {
+        "id": "national_limited",
+        "en": "Set a national limited network connecting hospitals, employment centers and major towns, with uniform rules.",
+        "he": "לקבוע רשת ארצית מצומצמת המחברת בתי חולים, מוקדי תעסוקה ויישובים מרכזיים, לפי כללים אחידים.",
+        "profile": {
+          "service": "limited",
+          "authority": "national"
+        }
+      },
+      {
+        "id": "national_regular",
+        "en": "Operate a regular national public transport network on Shabbat, with service frequency adjusted to demand.",
+        "he": "להפעיל בשבת רשת תחבורה ציבורית ארצית רגילה, בתדירות המותאמת לביקוש.",
+        "profile": {
+          "service": "full",
+          "authority": "national"
+        }
+      },
+      {
+        "id": "private_local",
+        "en": "Keep public transport closed, but let municipalities authorize privately funded shared transport.",
+        "he": "להשאיר את התחבורה הציבורית סגורה, אך לאפשר לרשויות להתיר תחבורה שיתופית במימון פרטי.",
+        "profile": {
+          "service": "none",
+          "authority": "local"
+        }
+      },
+      {
+        "id": "national_rest",
+        "en": "Maintain a national rest-day policy without public transport; keep exceptions under national rules.",
+        "he": "לקיים מדיניות יום מנוחה ארצית ללא תחבורה ציבורית, עם חריגים לפי כללים ארציים.",
+        "profile": {
+          "service": "none",
+          "authority": "national"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q7",
+    "short": true,
+    "domain": "economy",
+    "en": "What fiscal approach should guide healthcare, education and welfare?",
+    "he": "איזו מדיניות תקציבית צריכה להנחות את הבריאות, החינוך והרווחה?",
+    "dimensions": [
+      {
+        "id": "services",
+        "en": "Scale of publicly funded services",
+        "he": "היקף השירותים במימון ציבורי",
+        "weight": 1,
+        "values": [
+          {
+            "id": "expand",
+            "en": "Expand",
+            "he": "להרחיב"
+          },
+          {
+            "id": "maintain",
+            "en": "Maintain",
+            "he": "לשמר"
+          },
+          {
+            "id": "reduce",
+            "en": "Reduce state provision",
+            "he": "לצמצם את השירות המדינתי"
+          }
+        ]
+      },
+      {
+        "id": "funding",
+        "en": "Main funding approach",
+        "he": "דרך המימון העיקרית",
+        "weight": 1,
+        "values": [
+          {
+            "id": "progressive",
+            "en": "Higher taxes on high incomes and wealth",
+            "he": "הגדלת מסים על הכנסות גבוהות והון"
+          },
+          {
+            "id": "broad",
+            "en": "Broader tax increases",
+            "he": "העלאת מסים רחבה"
+          },
+          {
+            "id": "reprioritize",
+            "en": "Reallocate existing spending",
+            "he": "שינוי סדרי עדיפויות בתקציב"
+          },
+          {
+            "id": "lower_taxes",
+            "en": "Lower taxes and private provision",
+            "he": "הפחתת מסים ומענה פרטי"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "progressive_expansion",
+        "en": "Expand public services, financed mainly by higher taxes on high incomes and wealth.",
+        "he": "להרחיב שירותים ציבוריים, בעיקר באמצעות הגדלת המס על הכנסות גבוהות ועל הון.",
+        "profile": {
+          "services": "expand",
+          "funding": "progressive"
+        }
+      },
+      {
+        "id": "broad_expansion",
+        "en": "Expand universal services and finance them through broader tax increases shared across the population.",
+        "he": "להרחיב שירותים אוניברסליים ולממן אותם בהעלאות מס רחבות המתחלקות על פני האוכלוסייה.",
+        "profile": {
+          "services": "expand",
+          "funding": "broad"
+        }
+      },
+      {
+        "id": "reallocate",
+        "en": "Expand services by cutting other spending and improving efficiency, without planning a tax increase.",
+        "he": "להרחיב שירותים באמצעות קיצוץ הוצאות אחרות והתייעלות, ללא העלאת מס מתוכננת.",
+        "profile": {
+          "services": "expand",
+          "funding": "reprioritize"
+        }
+      },
+      {
+        "id": "maintain",
+        "en": "Keep the present scale of public services and concentrate on efficiency and reallocating existing budgets.",
+        "he": "לשמר את היקף השירותים הציבוריים ולהתמקד בהתייעלות ובחלוקה מחדש של התקציבים הקיימים.",
+        "profile": {
+          "services": "maintain",
+          "funding": "reprioritize"
+        }
+      },
+      {
+        "id": "smaller_state",
+        "en": "Reduce taxes and state provision, with a larger role for private insurance, households and community support.",
+        "he": "להפחית מסים ואת היקף השירות המדינתי, ולהרחיב את תפקיד הביטוח הפרטי, משקי הבית והסיוע הקהילתי.",
+        "profile": {
+          "services": "reduce",
+          "funding": "lower_taxes"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q8",
+    "short": true,
+    "domain": "economy",
+    "en": "Which mix of tools should address the cost of everyday goods?",
+    "he": "באיזה שילוב כלים יש לטפל ביוקר המוצרים היומיומיים?",
+    "dimensions": [
+      {
+        "id": "imports",
+        "en": "Import policy",
+        "he": "מדיניות יבוא",
+        "weight": 1,
+        "values": [
+          {
+            "id": "open",
+            "en": "Broadly reduce import barriers",
+            "he": "צמצום רחב של חסמי יבוא"
+          },
+          {
+            "id": "selective",
+            "en": "Selective opening with strategic protection",
+            "he": "פתיחה סלקטיבית עם הגנה על ענפים אסטרטגיים"
+          },
+          {
+            "id": "protect",
+            "en": "Retain broad import protection",
+            "he": "שימור הגנה רחבה מפני יבוא"
+          }
+        ]
+      },
+      {
+        "id": "consumer_tool",
+        "en": "Main consumer policy tool",
+        "he": "כלי המדיניות המרכזי לצרכן",
+        "weight": 1,
+        "values": [
+          {
+            "id": "competition",
+            "en": "Competition and antitrust enforcement",
+            "he": "תחרות ואכיפה נגד ריכוזיות"
+          },
+          {
+            "id": "prices",
+            "en": "Price controls",
+            "he": "פיקוח מחירים"
+          },
+          {
+            "id": "support",
+            "en": "Targeted household support",
+            "he": "סיוע ממוקד למשקי בית"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "open_competition",
+        "en": "Reduce import barriers broadly and enforce competition rules, while retaining product-safety standards.",
+        "he": "לצמצם חסמי יבוא באופן רחב ולאכוף תחרות, תוך שמירה על תקני בטיחות למוצרים.",
+        "profile": {
+          "imports": "open",
+          "consumer_tool": "competition"
+        }
+      },
+      {
+        "id": "selective_competition",
+        "en": "Open more markets to imports, protect strategic local production, and fight domestic concentration.",
+        "he": "לפתוח שווקים נוספים ליבוא, להגן על ייצור מקומי אסטרטגי ולהיאבק בריכוזיות המקומית.",
+        "profile": {
+          "imports": "selective",
+          "consumer_tool": "competition"
+        }
+      },
+      {
+        "id": "protect_prices",
+        "en": "Retain broad protection for local producers and use price controls on essential goods.",
+        "he": "לשמור על הגנה רחבה ליצרנים מקומיים ולהפעיל פיקוח מחירים על מוצרי יסוד.",
+        "profile": {
+          "imports": "protect",
+          "consumer_tool": "prices"
+        }
+      },
+      {
+        "id": "open_support",
+        "en": "Open imports broadly, but cushion living costs mainly through targeted support for low-income households.",
+        "he": "לפתוח את היבוא באופן רחב, אך להקל על יוקר המחיה בעיקר בסיוע ממוקד למשקי בית מעוטי הכנסה.",
+        "profile": {
+          "imports": "open",
+          "consumer_tool": "support"
+        }
+      },
+      {
+        "id": "selective_support",
+        "en": "Keep protection for strategic production and use targeted household support to offset higher living costs.",
+        "he": "להשאיר הגנה על ייצור אסטרטגי ולפצות על יוקר המחיה באמצעות סיוע ממוקד למשקי בית.",
+        "profile": {
+          "imports": "selective",
+          "consumer_tool": "support"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q9",
+    "short": true,
+    "domain": "services",
+    "en": "What common curriculum should schools teach, and how should they be funded and governed?",
+    "he": "איזו תוכנית לימודים משותפת צריכה לחול בבתי הספר, וכיצד יש לממן ולנהל אותם?",
+    "dimensions": [
+      {
+        "id": "core_condition",
+        "en": "Scope of the common-core requirement",
+        "he": "היקף החובה ללימודי ליבה",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Required for public funding",
+            "he": "חובה כתנאי למימון ציבורי"
+          },
+          {
+            "id": "no",
+            "en": "Not a condition of public funding",
+            "he": "אינו תנאי למימון ציבורי"
+          },
+          {
+            "id": "universal",
+            "en": "Required in every school, regardless of funding",
+            "he": "חובה בכל בית ספר, ללא תלות במימון"
+          }
+        ]
+      },
+      {
+        "id": "school_model",
+        "en": "School funding and governance",
+        "he": "מודל המימון והניהול",
+        "weight": 1,
+        "values": [
+          {
+            "id": "state",
+            "en": "Publicly funded state streams only",
+            "he": "מימון ציבורי לזרמים ממלכתיים בלבד"
+          },
+          {
+            "id": "mixed",
+            "en": "State and independent schools",
+            "he": "בתי ספר ממלכתיים ועצמאיים"
+          },
+          {
+            "id": "voucher",
+            "en": "Parent-directed vouchers",
+            "he": "שוברים לבחירת ההורים"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "state_core",
+        "en": "Fund state education streams with a common core curriculum, while allowing cultural and religious content alongside it.",
+        "he": "לממן זרמי חינוך ממלכתיים עם ליבה משותפת, לצד תכנים תרבותיים ודתיים.",
+        "profile": {
+          "core_condition": "yes",
+          "school_model": "state"
+        }
+      },
+      {
+        "id": "mixed_core",
+        "en": "Fund both state and independent schools, but make core studies a condition of public funding.",
+        "he": "לממן בתי ספר ממלכתיים ועצמאיים, אך להתנות מימון ציבורי בלימודי ליבה.",
+        "profile": {
+          "core_condition": "yes",
+          "school_model": "mixed"
+        }
+      },
+      {
+        "id": "voucher_core",
+        "en": "Let funding follow parents' school choice through vouchers, with core studies required for participating schools.",
+        "he": "להעביר את המימון באמצעות שוברים לפי בחירת ההורים, ולחייב בתי ספר משתתפים בלימודי ליבה.",
+        "profile": {
+          "core_condition": "yes",
+          "school_model": "voucher"
+        }
+      },
+      {
+        "id": "autonomous",
+        "en": "Fund state and independent religious or community schools without making the common core a funding condition.",
+        "he": "לממן בתי ספר ממלכתיים וקהילתיים או דתיים עצמאיים, בלי להתנות את המימון בליבה משותפת.",
+        "profile": {
+          "core_condition": "no",
+          "school_model": "mixed"
+        }
+      },
+      {
+        "id": "voucher_autonomy",
+        "en": "Let parents direct funding through vouchers, without a common-core condition imposed by the state.",
+        "he": "לאפשר להורים לכוון את המימון בשוברים, בלי שהמדינה תתנה אותו בליבה משותפת.",
+        "profile": {
+          "core_condition": "no",
+          "school_model": "voucher"
+        }
+      },
+      {
+        "id": "universal_core",
+        "en": "Require a common core curriculum in every education stream and school, regardless of funding, while allowing additional cultural and religious subjects. Fund both state and independent schools.",
+        "he": "לחייב תוכנית ליבה משותפת בכל זרמי החינוך ובכל בתי הספר, ללא תלות במקור המימון, ולאפשר לצדה תכנים תרבותיים ודתיים נוספים. לממן בתי ספר ממלכתיים ועצמאיים.",
+        "profile": {
+          "core_condition": "universal",
+          "school_model": "mixed"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q10",
+    "short": true,
+    "domain": "services",
+    "en": "How should serious organized crime and protection rackets be tackled?",
+    "he": "כיצד יש להתמודד עם פשיעה מאורגנת חמורה וגביית דמי חסות?",
+    "dimensions": [
+      {
+        "id": "security_role",
+        "en": "Shin Bet role beyond terrorism",
+        "he": "תפקיד לשב״כ גם מעבר לטרור",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Yes",
+            "he": "כן"
+          },
+          {
+            "id": "no",
+            "en": "No",
+            "he": "לא"
+          }
+        ]
+      },
+      {
+        "id": "lead",
+        "en": "Institutional lead",
+        "he": "הגוף המוביל",
+        "weight": 1,
+        "values": [
+          {
+            "id": "national_police",
+            "en": "National police and prosecution",
+            "he": "משטרה ארצית ופרקליטות"
+          },
+          {
+            "id": "local_police",
+            "en": "Locally accountable policing",
+            "he": "שיטור באחריות מקומית"
+          },
+          {
+            "id": "security",
+            "en": "Security-service leadership",
+            "he": "הובלה של שירותי הביטחון"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "police_only",
+        "en": "Strengthen police investigations, financial enforcement and prosecution; keep the Shin Bet focused on security threats.",
+        "he": "לחזק חקירות משטרה, אכיפה כלכלית ופרקליטות; להשאיר את השב״כ ממוקד באיומים ביטחוניים.",
+        "profile": {
+          "security_role": "no",
+          "lead": "national_police"
+        }
+      },
+      {
+        "id": "police_assisted",
+        "en": "Keep the police in charge, with a legally defined Shin Bet intelligence role in serious organized crime and judicial oversight.",
+        "he": "להשאיר את ההובלה במשטרה, עם תפקיד מודיעיני מוגדר בחוק לשב״כ בפשיעה מאורגנת חמורה ובפיקוח שיפוטי.",
+        "profile": {
+          "security_role": "yes",
+          "lead": "national_police"
+        }
+      },
+      {
+        "id": "security_led",
+        "en": "Give security services the lead against serious protection rackets, including cases not already linked to terrorism.",
+        "he": "להעניק לשירותי הביטחון הובלה במאבק בגביית דמי חסות חמורה, גם במקרים שטרם נקשרו לטרור.",
+        "profile": {
+          "security_role": "yes",
+          "lead": "security"
+        }
+      },
+      {
+        "id": "local_policing",
+        "en": "Build locally accountable policing and prevention services, supported by national investigators, without a Shin Bet role.",
+        "he": "לבנות שיטור ושירותי מניעה באחריות מקומית ובסיוע חוקרים ארציים, ללא תפקיד לשב״כ.",
+        "profile": {
+          "security_role": "no",
+          "lead": "local_police"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q11",
+    "short": false,
+    "domain": "security",
+    "en": "What territorial policy should Israel pursue in the West Bank / Judea and Samaria?",
+    "he": "איזו מדיניות טריטוריאלית על ישראל לקדם ביהודה ושומרון / הגדה המערבית?",
+    "dimensions": [
+      {
+        "id": "unilateral_sovereignty",
+        "en": "Unilateral extension of sovereignty",
+        "he": "החלת ריבונות חד־צדדית",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Yes",
+            "he": "כן"
+          },
+          {
+            "id": "no",
+            "en": "No",
+            "he": "לא"
+          }
+        ]
+      },
+      {
+        "id": "territorial_route",
+        "en": "Territorial approach",
+        "he": "המסלול הטריטוריאלי",
+        "weight": 1,
+        "values": [
+          {
+            "id": "partial",
+            "en": "Annex selected areas",
+            "he": "סיפוח אזורים נבחרים"
+          },
+          {
+            "id": "all",
+            "en": "Annex the whole territory",
+            "he": "סיפוח השטח כולו"
+          },
+          {
+            "id": "agreement",
+            "en": "Negotiated borders",
+            "he": "גבולות במשא ומתן"
+          },
+          {
+            "id": "freeze",
+            "en": "No final border change for now",
+            "he": "ללא שינוי גבול קבוע כעת"
+          },
+          {
+            "id": "withdraw",
+            "en": "Unilateral withdrawal",
+            "he": "נסיגה חד־צדדית"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "partial",
+        "en": "Extend sovereignty unilaterally to selected areas, while leaving other areas outside Israeli sovereignty.",
+        "he": "להחיל ריבונות באופן חד־צדדי על אזורים נבחרים, ולהשאיר אזורים אחרים מחוץ לריבונות ישראל.",
+        "profile": {
+          "unilateral_sovereignty": "yes",
+          "territorial_route": "partial"
+        }
+      },
+      {
+        "id": "all",
+        "en": "Extend Israeli sovereignty to the entire territory.",
+        "he": "להחיל ריבונות ישראלית על השטח כולו.",
+        "profile": {
+          "unilateral_sovereignty": "yes",
+          "territorial_route": "all"
+        }
+      },
+      {
+        "id": "agreement",
+        "en": "Make territorial changes only through a negotiated agreement with agreed borders.",
+        "he": "לבצע שינויים טריטוריאליים רק במסגרת הסכם וגבולות מוסכמים.",
+        "profile": {
+          "unilateral_sovereignty": "no",
+          "territorial_route": "agreement"
+        }
+      },
+      {
+        "id": "freeze",
+        "en": "Avoid annexation or withdrawal for now; maintain security control while deferring final borders.",
+        "he": "להימנע כעת מסיפוח ומנסיגה, ולשמר שליטה ביטחונית תוך דחיית ההכרעה על גבולות הקבע.",
+        "profile": {
+          "unilateral_sovereignty": "no",
+          "territorial_route": "freeze"
+        }
+      },
+      {
+        "id": "withdraw",
+        "en": "Withdraw unilaterally from selected areas and settlements to reduce permanent involvement, without waiting for an agreement.",
+        "he": "לסגת באופן חד־צדדי מאזורים ומיישובים נבחרים כדי לצמצם מעורבות קבועה, בלי להמתין להסכם.",
+        "profile": {
+          "unilateral_sovereignty": "no",
+          "territorial_route": "withdraw"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q12",
+    "short": false,
+    "domain": "security",
+    "en": "What should the long-term arrangement in Gaza be?",
+    "he": "מה צריך להיות ההסדר ארוך הטווח ברצועת עזה?",
+    "dimensions": [
+      {
+        "id": "settlements",
+        "en": "Israeli civilian settlements",
+        "he": "יישובים אזרחיים ישראליים",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Yes",
+            "he": "כן"
+          },
+          {
+            "id": "no",
+            "en": "No",
+            "he": "לא"
+          }
+        ]
+      },
+      {
+        "id": "administration",
+        "en": "Civil administration",
+        "he": "המנהל האזרחי",
+        "weight": 1,
+        "values": [
+          {
+            "id": "israeli",
+            "en": "Israeli administration",
+            "he": "מנהל ישראלי"
+          },
+          {
+            "id": "palestinian",
+            "en": "Palestinian administration",
+            "he": "מנהל פלסטיני"
+          },
+          {
+            "id": "international",
+            "en": "International or regional administration",
+            "he": "מנהל בינלאומי או אזורי"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "israeli_settlements",
+        "en": "Establish Israeli civilian settlements and long-term Israeli civil administration.",
+        "he": "להקים יישובים אזרחיים ישראליים ומנהל אזרחי ישראלי ארוך טווח.",
+        "profile": {
+          "settlements": "yes",
+          "administration": "israeli"
+        }
+      },
+      {
+        "id": "israeli_no_settlements",
+        "en": "Maintain long-term Israeli administration for security and reconstruction, without civilian settlements.",
+        "he": "לקיים מנהל ישראלי ארוך טווח לצורכי ביטחון ושיקום, ללא יישובים אזרחיים.",
+        "profile": {
+          "settlements": "no",
+          "administration": "israeli"
+        }
+      },
+      {
+        "id": "palestinian",
+        "en": "Establish Palestinian civil administration with enforceable security arrangements and no Israeli civilian settlements.",
+        "he": "להקים מנהל אזרחי פלסטיני עם הסדרי ביטחון ניתנים לאכיפה וללא יישובים אזרחיים ישראליים.",
+        "profile": {
+          "settlements": "no",
+          "administration": "palestinian"
+        }
+      },
+      {
+        "id": "international",
+        "en": "Seek an international or regional administration for reconstruction and governance, without Israeli civilian settlements.",
+        "he": "לפעול למנהל בינלאומי או אזורי לשיקום ולניהול אזרחי, ללא יישובים אזרחיים ישראליים.",
+        "profile": {
+          "settlements": "no",
+          "administration": "international"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q13",
+    "short": false,
+    "domain": "institutions",
+    "en": "What kind of inquiry should investigate the October 7 failures?",
+    "he": "איזה סוג של חקירה צריך לבדוק את מחדלי 7 באוקטובר?",
+    "dimensions": [
+      {
+        "id": "statutory",
+        "en": "Independent statutory commission",
+        "he": "ועדה עצמאית מכוח חוק",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Yes",
+            "he": "כן"
+          },
+          {
+            "id": "no",
+            "en": "No",
+            "he": "לא"
+          }
+        ]
+      },
+      {
+        "id": "appointment",
+        "en": "Who appoints the members?",
+        "he": "מי ממנה את החברים?",
+        "weight": 1,
+        "values": [
+          {
+            "id": "judicial",
+            "en": "President of the Supreme Court",
+            "he": "נשיא בית המשפט העליון"
+          },
+          {
+            "id": "consensus",
+            "en": "Government–opposition agreement",
+            "he": "הסכמה בין קואליציה לאופוזיציה"
+          },
+          {
+            "id": "government",
+            "en": "Government",
+            "he": "הממשלה"
+          },
+          {
+            "id": "public",
+            "en": "Public and professional bodies",
+            "he": "גופים ציבוריים ומקצועיים"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "state_commission",
+        "en": "Use a state commission of inquiry whose members are appointed by the president of the Supreme Court.",
+        "he": "להקים ועדת חקירה ממלכתית שחבריה מתמנים בידי נשיא בית המשפט העליון.",
+        "profile": {
+          "statutory": "yes",
+          "appointment": "judicial"
+        }
+      },
+      {
+        "id": "consensus_commission",
+        "en": "Create a statutory independent commission under a new appointment arrangement agreed by government and opposition.",
+        "he": "להקים ועדה עצמאית מכוח חוק, לפי הסדר מינוי חדש שיוסכם בין קואליציה לאופוזיציה.",
+        "profile": {
+          "statutory": "yes",
+          "appointment": "consensus"
+        }
+      },
+      {
+        "id": "government_inquiry",
+        "en": "Use a government-appointed inquiry with professional investigators and a publicly defined mandate.",
+        "he": "לקיים בדיקה במינוי הממשלה, עם חוקרים מקצועיים ומנדט שיפורסם לציבור.",
+        "profile": {
+          "statutory": "no",
+          "appointment": "government"
+        }
+      },
+      {
+        "id": "public_review",
+        "en": "Rely on an independent public and professional review, rather than a state commission.",
+        "he": "להסתמך על בדיקה ציבורית ומקצועית עצמאית, במקום ועדת חקירה ממלכתית.",
+        "profile": {
+          "statutory": "no",
+          "appointment": "public"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q14",
+    "short": false,
+    "domain": "institutions",
+    "en": "How should the prime minister's tenure and accountability be regulated?",
+    "he": "כיצד יש להסדיר את משך כהונת ראש הממשלה ואת האחריות כלפי הציבור?",
+    "dimensions": [
+      {
+        "id": "binding_limit",
+        "en": "Binding tenure limit",
+        "he": "הגבלת כהונה מחייבת",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Yes",
+            "he": "כן"
+          },
+          {
+            "id": "no",
+            "en": "No",
+            "he": "לא"
+          }
+        ]
+      },
+      {
+        "id": "mechanism",
+        "en": "Accountability mechanism",
+        "he": "מנגנון האחריות",
+        "weight": 1,
+        "values": [
+          {
+            "id": "terms",
+            "en": "Two-term limit",
+            "he": "הגבלה לשתי כהונות"
+          },
+          {
+            "id": "years",
+            "en": "Eight-year cumulative limit",
+            "he": "הגבלה לשמונה שנים מצטברות"
+          },
+          {
+            "id": "recall",
+            "en": "Public recall mechanism",
+            "he": "מנגנון הדחה ביוזמת הציבור"
+          },
+          {
+            "id": "elections",
+            "en": "Elections and parliamentary confidence",
+            "he": "בחירות ואמון הכנסת"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "two_terms",
+        "en": "Limit the prime minister to two terms, even if voters would otherwise elect them again.",
+        "he": "להגביל את ראש הממשלה לשתי כהונות, גם אם הבוחרים היו מעוניינים לבחור בו שוב.",
+        "profile": {
+          "binding_limit": "yes",
+          "mechanism": "terms"
+        }
+      },
+      {
+        "id": "eight_years",
+        "en": "Set an eight-year cumulative limit, regardless of how many governments or elections occur.",
+        "he": "לקבוע הגבלה מצטברת של שמונה שנים, בלי קשר למספר הממשלות או מערכות הבחירות.",
+        "profile": {
+          "binding_limit": "yes",
+          "mechanism": "years"
+        }
+      },
+      {
+        "id": "recall",
+        "en": "Allow unlimited terms but add a public recall procedure between elections.",
+        "he": "לאפשר כהונות ללא הגבלה, אך להוסיף הליך הדחה ביוזמת הציבור בין בחירות.",
+        "profile": {
+          "binding_limit": "no",
+          "mechanism": "recall"
+        }
+      },
+      {
+        "id": "elections",
+        "en": "Keep tenure unlimited and leave replacement to elections and parliamentary confidence.",
+        "he": "להשאיר את משך הכהונה ללא הגבלה ולהותיר את ההחלפה לבחירות ולאמון הכנסת.",
+        "profile": {
+          "binding_limit": "no",
+          "mechanism": "elections"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q15",
+    "short": false,
+    "domain": "religion",
+    "en": "How should the law recognize same-sex families?",
+    "he": "כיצד צריך החוק להכיר במשפחות של זוגות מאותו מין?",
+    "dimensions": [
+      {
+        "id": "parent_status",
+        "en": "Equal legal parental status",
+        "he": "מעמד הורי משפטי שווה",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Yes",
+            "he": "כן"
+          },
+          {
+            "id": "no",
+            "en": "No",
+            "he": "לא"
+          }
+        ]
+      },
+      {
+        "id": "family_routes",
+        "en": "Adoption and surrogacy policy",
+        "he": "מדיניות אימוץ ופונדקאות",
+        "weight": 1,
+        "values": [
+          {
+            "id": "separate",
+            "en": "Decide access routes separately",
+            "he": "להסדיר את דרכי הגישה בנפרד"
+          },
+          {
+            "id": "adoption",
+            "en": "Equal adoption criteria; surrogacy separate",
+            "he": "תנאי אימוץ שווים; פונדקאות בנפרד"
+          },
+          {
+            "id": "all",
+            "en": "Equal adoption and surrogacy criteria",
+            "he": "תנאים שווים באימוץ ובפונדקאות"
+          },
+          {
+            "id": "traditional",
+            "en": "Reserve routes for different-sex couples",
+            "he": "לייחד מסלולים לזוגות ממינים שונים"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "recognition",
+        "en": "Give same-sex parents equal legal status; decide adoption and surrogacy eligibility separately.",
+        "he": "להעניק להורים מאותו מין מעמד משפטי שווה, ולהסדיר בנפרד את הזכאות לאימוץ ולפונדקאות.",
+        "profile": {
+          "parent_status": "yes",
+          "family_routes": "separate"
+        }
+      },
+      {
+        "id": "adoption",
+        "en": "Provide equal parental recognition and equal adoption criteria; regulate surrogacy separately.",
+        "he": "להעניק הכרה הורית שווה ותנאי אימוץ שווים, ולהסדיר פונדקאות בנפרד.",
+        "profile": {
+          "parent_status": "yes",
+          "family_routes": "adoption"
+        }
+      },
+      {
+        "id": "all_routes",
+        "en": "Apply equal parental recognition and the same eligibility criteria to adoption and surrogacy.",
+        "he": "להעניק הכרה הורית שווה ולהחיל תנאי זכאות זהים באימוץ ובפונדקאות.",
+        "profile": {
+          "parent_status": "yes",
+          "family_routes": "all"
+        }
+      },
+      {
+        "id": "traditional",
+        "en": "Do not give same-sex couples equivalent joint parental status, and reserve adoption and surrogacy routes for different-sex couples.",
+        "he": "לא להעניק לזוגות מאותו מין מעמד הורי משותף מקביל, ולייחד מסלולי אימוץ ופונדקאות לזוגות ממינים שונים.",
+        "profile": {
+          "parent_status": "no",
+          "family_routes": "traditional"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q16",
+    "short": false,
+    "domain": "services",
+    "en": "How should school choice, funding and admissions fit together?",
+    "he": "כיצד יש לשלב בחירת בית ספר, תקצוב וקבלה של תלמידים?",
+    "dimensions": [
+      {
+        "id": "funding_model",
+        "en": "Funding model",
+        "he": "מודל התקצוב",
+        "weight": 1,
+        "values": [
+          {
+            "id": "voucher",
+            "en": "Funding follows the child through a voucher",
+            "he": "שובר אישי שהולך עם התלמיד"
+          },
+          {
+            "id": "institution",
+            "en": "Direct institutional budgets",
+            "he": "תקצוב ישיר של מוסדות"
+          }
+        ]
+      },
+      {
+        "id": "admissions",
+        "en": "Admissions rules",
+        "he": "כללי קבלה",
+        "weight": 1,
+        "values": [
+          {
+            "id": "open",
+            "en": "Open access with allocation when oversubscribed",
+            "he": "קבלה פתוחה והקצאה בעת ביקוש יתר"
+          },
+          {
+            "id": "selective",
+            "en": "School-specific published selection criteria",
+            "he": "קריטריוני מיון מפורסמים לפי בית הספר"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "open_vouchers",
+        "en": "Let funding follow the child to a parent-chosen school, with open admissions and a fair allocation rule when places run out.",
+        "he": "לתקצב באמצעות שובר לבית הספר שבחרו ההורים, עם קבלה פתוחה וכלל הקצאה הוגן כשהביקוש עולה על מספר המקומות.",
+        "profile": {
+          "funding_model": "voucher",
+          "admissions": "open"
+        }
+      },
+      {
+        "id": "selective_vouchers",
+        "en": "Let funding follow the child, while allowing schools to use published educational admission criteria.",
+        "he": "לתקצב באמצעות שובר שהולך עם התלמיד, ולאפשר לבתי הספר להשתמש בקריטריוני קבלה חינוכיים שיפורסמו מראש.",
+        "profile": {
+          "funding_model": "voucher",
+          "admissions": "selective"
+        }
+      },
+      {
+        "id": "public_open",
+        "en": "Fund institutions directly and offer choice within a public network, with open admissions and fair allocation.",
+        "he": "לתקצב מוסדות ישירות ולהציע בחירה בתוך רשת ציבורית, עם קבלה פתוחה והקצאה הוגנת.",
+        "profile": {
+          "funding_model": "institution",
+          "admissions": "open"
+        }
+      },
+      {
+        "id": "public_specialist",
+        "en": "Fund institutions directly but allow specialist schools to select pupils under published educational criteria.",
+        "he": "לתקצב מוסדות ישירות, אך לאפשר לבתי ספר ייחודיים למיין תלמידים לפי קריטריונים חינוכיים מפורסמים.",
+        "profile": {
+          "funding_model": "institution",
+          "admissions": "selective"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q17",
+    "short": false,
+    "domain": "economy",
+    "en": "What should be the main approach to affordable housing?",
+    "he": "מה צריכה להיות הדרך המרכזית לקידום דיור בר־השגה?",
+    "dimensions": [
+      {
+        "id": "public_stock",
+        "en": "Expand publicly owned rental housing",
+        "he": "הרחבת מלאי דיור ציבורי להשכרה",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Yes",
+            "he": "כן"
+          },
+          {
+            "id": "no",
+            "en": "No",
+            "he": "לא"
+          }
+        ]
+      },
+      {
+        "id": "housing_tool",
+        "en": "Main housing tool",
+        "he": "הכלי המרכזי לדיור",
+        "weight": 1,
+        "values": [
+          {
+            "id": "public_build",
+            "en": "Public construction",
+            "he": "בנייה ציבורית"
+          },
+          {
+            "id": "acquire",
+            "en": "Acquire homes from private builders",
+            "he": "רכישת דירות מקבלנים"
+          },
+          {
+            "id": "private_supply",
+            "en": "Private construction incentives",
+            "he": "תמריצים לבנייה פרטית"
+          },
+          {
+            "id": "rent_support",
+            "en": "Rent assistance",
+            "he": "סיוע בשכר דירה"
+          },
+          {
+            "id": "land_reform",
+            "en": "Land-market reform",
+            "he": "רפורמה בשוק הקרקע"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "public_build",
+        "en": "Build a substantial new stock of publicly owned rental homes for eligible households.",
+        "he": "לבנות מלאי גדול של דירות ציבוריות חדשות להשכרה לזכאים.",
+        "profile": {
+          "public_stock": "yes",
+          "housing_tool": "public_build"
+        }
+      },
+      {
+        "id": "public_acquire",
+        "en": "Expand public rental housing by buying homes from private builders, rather than making the state the builder.",
+        "he": "להרחיב דיור ציבורי להשכרה באמצעות רכישת דירות מקבלנים, במקום שהמדינה תהיה הגוף הבונה.",
+        "profile": {
+          "public_stock": "yes",
+          "housing_tool": "acquire"
+        }
+      },
+      {
+        "id": "private_supply",
+        "en": "Focus on private construction and long-term rental incentives, without expanding public ownership.",
+        "he": "להתמקד בבנייה פרטית ובתמריצים לשכירות ארוכת טווח, ללא הרחבת הבעלות הציבורית.",
+        "profile": {
+          "public_stock": "no",
+          "housing_tool": "private_supply"
+        }
+      },
+      {
+        "id": "rent_support",
+        "en": "Direct additional resources to rent assistance for households, rather than a larger public housing stock.",
+        "he": "להפנות משאבים נוספים לסיוע בשכר דירה למשקי בית, במקום להגדיל את מלאי הדיור הציבורי.",
+        "profile": {
+          "public_stock": "no",
+          "housing_tool": "rent_support"
+        }
+      },
+      {
+        "id": "land_reform",
+        "en": "Prioritize releasing land and simplifying development, without expanding publicly owned housing.",
+        "he": "לתעדף שחרור קרקעות ופישוט תהליכי פיתוח, ללא הרחבת מלאי הדיור בבעלות ציבורית.",
+        "profile": {
+          "public_stock": "no",
+          "housing_tool": "land_reform"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q18",
+    "short": false,
+    "domain": "economy",
+    "en": "How should wages, collective bargaining and industrial disputes be handled?",
+    "he": "כיצד יש להסדיר שכר, משא ומתן קיבוצי וסכסוכי עבודה?",
+    "dimensions": [
+      {
+        "id": "bargaining",
+        "en": "Main bargaining model",
+        "he": "מודל המשא ומתן המרכזי",
+        "weight": 1,
+        "values": [
+          {
+            "id": "collective",
+            "en": "Strengthen collective bargaining",
+            "he": "חיזוק המשא ומתן הקיבוצי"
+          },
+          {
+            "id": "individual",
+            "en": "Prioritize individual contracts",
+            "he": "עדיפות לחוזים אישיים"
+          }
+        ]
+      },
+      {
+        "id": "disputes",
+        "en": "Dispute-resolution approach",
+        "he": "אופן יישוב סכסוכים",
+        "weight": 1,
+        "values": [
+          {
+            "id": "voluntary",
+            "en": "Negotiation and voluntary mediation",
+            "he": "משא ומתן וגישור מרצון"
+          },
+          {
+            "id": "essential_arbitration",
+            "en": "Binding arbitration in essential services",
+            "he": "בוררות מחייבת בשירותים חיוניים"
+          },
+          {
+            "id": "all_arbitration",
+            "en": "Binding arbitration across sectors",
+            "he": "בוררות מחייבת בכלל הענפים"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "collective_strikes",
+        "en": "Strengthen unions and collective bargaining, with strikes available after negotiation and voluntary mediation.",
+        "he": "לחזק התאגדות ומשא ומתן קיבוצי, עם אפשרות לשביתה לאחר משא ומתן וגישור מרצון.",
+        "profile": {
+          "bargaining": "collective",
+          "disputes": "voluntary"
+        }
+      },
+      {
+        "id": "collective_arbitration",
+        "en": "Strengthen collective bargaining, but require binding arbitration in essential services.",
+        "he": "לחזק משא ומתן קיבוצי, אך לחייב בוררות בשירותים חיוניים.",
+        "profile": {
+          "bargaining": "collective",
+          "disputes": "essential_arbitration"
+        }
+      },
+      {
+        "id": "individual",
+        "en": "Prioritize individual employment contracts and resolve disputes through negotiation and voluntary mediation.",
+        "he": "לתת עדיפות לחוזי עבודה אישיים וליישב סכסוכים במשא ומתן ובגישור מרצון.",
+        "profile": {
+          "bargaining": "individual",
+          "disputes": "voluntary"
+        }
+      },
+      {
+        "id": "individual_arbitration",
+        "en": "Prioritize individual contracts and use binding arbitration to resolve industrial disputes across sectors.",
+        "he": "לתת עדיפות לחוזים אישיים ולהכריע בסכסוכי עבודה באמצעות בוררות מחייבת בכלל הענפים.",
+        "profile": {
+          "bargaining": "individual",
+          "disputes": "all_arbitration"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q19",
+    "short": false,
+    "domain": "security",
+    "en": "What service framework should apply to Arab citizens?",
+    "he": "איזו מסגרת שירות צריכה לחול על אזרחים ערבים?",
+    "dimensions": [
+      {
+        "id": "compulsory",
+        "en": "Compulsory service",
+        "he": "חובת שירות",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Yes",
+            "he": "כן"
+          },
+          {
+            "id": "no",
+            "en": "No",
+            "he": "לא"
+          }
+        ]
+      },
+      {
+        "id": "service_model",
+        "en": "Service framework",
+        "he": "מסגרת השירות",
+        "weight": 1,
+        "values": [
+          {
+            "id": "civilian_choice",
+            "en": "Choice among civilian placements",
+            "he": "בחירה בין מסגרות שירות אזרחי"
+          },
+          {
+            "id": "military_priority",
+            "en": "Military priority with civilian alternative",
+            "he": "עדיפות צבאית עם חלופה אזרחית"
+          },
+          {
+            "id": "community",
+            "en": "Community-run voluntary service",
+            "he": "שירות קהילתי התנדבותי"
+          },
+          {
+            "id": "integrated",
+            "en": "Voluntary national military/civilian routes",
+            "he": "מסלולים ארציים צבאיים ואזרחיים מרצון"
+          },
+          {
+            "id": "none",
+            "en": "No dedicated service framework",
+            "he": "ללא מסגרת שירות ייעודית"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "civilian_required",
+        "en": "Require civilian service, with a choice of placements in healthcare, emergency services, education or local communities.",
+        "he": "לחייב שירות אזרחי, עם בחירה בין בריאות, חירום, חינוך או מסגרות קהילתיות.",
+        "profile": {
+          "compulsory": "yes",
+          "service_model": "civilian_choice"
+        }
+      },
+      {
+        "id": "universal_military",
+        "en": "Apply the same service obligation as to other citizens: military service where needed, with a civilian alternative.",
+        "he": "להחיל חובת שירות כמו על יתר האזרחים: שירות צבאי לפי הצורך, עם חלופה אזרחית.",
+        "profile": {
+          "compulsory": "yes",
+          "service_model": "military_priority"
+        }
+      },
+      {
+        "id": "community_voluntary",
+        "en": "Keep service voluntary and support community-run programs shaped by Arab municipalities and civil society.",
+        "he": "להשאיר את השירות התנדבותי ולתמוך בתוכניות קהילתיות בעיצוב רשויות ערביות והחברה האזרחית.",
+        "profile": {
+          "compulsory": "no",
+          "service_model": "community"
+        }
+      },
+      {
+        "id": "national_voluntary",
+        "en": "Keep service voluntary while opening military and national civilian routes on equal terms.",
+        "he": "להשאיר את השירות התנדבותי ולפתוח מסלולים צבאיים ואזרחיים ארציים בתנאים שווים.",
+        "profile": {
+          "compulsory": "no",
+          "service_model": "integrated"
+        }
+      },
+      {
+        "id": "no_framework",
+        "en": "Do not create a service obligation or a dedicated national-service framework; invest directly in ordinary public services.",
+        "he": "לא ליצור חובת שירות או מסגרת שירות לאומי ייעודית; להשקיע ישירות בשירותים ציבוריים רגילים.",
+        "profile": {
+          "compulsory": "no",
+          "service_model": "none"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  },
+  {
+    "id": "Q20",
+    "short": false,
+    "domain": "services",
+    "en": "Which approach should lead climate and energy policy?",
+    "he": "איזו גישה צריכה להוביל את מדיניות האקלים והאנרגיה?",
+    "dimensions": [
+      {
+        "id": "binding_targets",
+        "en": "Binding emissions targets",
+        "he": "יעדי פליטות מחייבים",
+        "weight": 1,
+        "values": [
+          {
+            "id": "yes",
+            "en": "Yes",
+            "he": "כן"
+          },
+          {
+            "id": "no",
+            "en": "No",
+            "he": "לא"
+          }
+        ]
+      },
+      {
+        "id": "climate_tool",
+        "en": "Main policy instrument",
+        "he": "כלי המדיניות המרכזי",
+        "weight": 1,
+        "values": [
+          {
+            "id": "sector_budgets",
+            "en": "Funded sectoral plans",
+            "he": "תוכניות ענפיות מתוקצבות"
+          },
+          {
+            "id": "carbon_price",
+            "en": "Carbon pricing",
+            "he": "תמחור פחמן"
+          },
+          {
+            "id": "innovation",
+            "en": "Technology and efficiency incentives",
+            "he": "תמריצים לטכנולוגיה ולהתייעלות"
+          },
+          {
+            "id": "nuclear",
+            "en": "Nuclear generation",
+            "he": "ייצור חשמל גרעיני"
+          }
+        ]
+      }
+    ],
+    "options": [
+      {
+        "id": "sector_law",
+        "en": "Set binding emissions targets in law and fund sector-by-sector plans for transport, buildings and energy.",
+        "he": "לקבוע בחוק יעדי פליטות מחייבים ולתקצב תוכניות ענפיות לתחבורה, למבנים ולאנרגיה.",
+        "profile": {
+          "binding_targets": "yes",
+          "climate_tool": "sector_budgets"
+        }
+      },
+      {
+        "id": "carbon_price",
+        "en": "Set binding emissions targets, but rely mainly on carbon pricing and let firms choose how to reduce emissions.",
+        "he": "לקבוע יעדי פליטות מחייבים, אך להסתמך בעיקר על תמחור פחמן ולאפשר לחברות לבחור כיצד להפחית פליטות.",
+        "profile": {
+          "binding_targets": "yes",
+          "climate_tool": "carbon_price"
+        }
+      },
+      {
+        "id": "innovation",
+        "en": "Avoid binding national targets; prioritize clean technology, efficiency and competitive energy markets.",
+        "he": "להימנע מיעדים לאומיים מחייבים ולתעדף טכנולוגיה נקייה, התייעלות ושוק אנרגיה תחרותי.",
+        "profile": {
+          "binding_targets": "no",
+          "climate_tool": "innovation"
+        }
+      },
+      {
+        "id": "nuclear",
+        "en": "Prioritize nuclear generation for reliable low-emission electricity, without binding national emissions targets.",
+        "he": "לתעדף ייצור גרעיני לחשמל אמין ודל פליטות, ללא יעדי פליטות לאומיים מחייבים.",
+        "profile": {
+          "binding_targets": "no",
+          "climate_tool": "nuclear"
+        }
+      },
+      {
+        "id": "nuclear_targets",
+        "en": "Keep binding emissions targets, with nuclear generation as the main long-term supply strategy.",
+        "he": "לשמור על יעדי פליטות מחייבים, עם ייצור גרעיני כאסטרטגיית אספקה מרכזית לטווח הארוך.",
+        "profile": {
+          "binding_targets": "yes",
+          "climate_tool": "nuclear"
+        }
+      }
+    ],
+    "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
+    "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב."
+  }
+]
