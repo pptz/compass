@@ -1,4 +1,10 @@
-# Your Choice — Your Vote
+# Israeli Political Compass
+
+A multilingual political compass that helps people compare their views with the positions of Israeli political parties. Users answer a short or full multiple-choice quiz, set how much each issue matters to them, and receive ranked similarity scores that account for partial agreement. The project also explains the issues and links to sources, distinguishing documented party positions from reasoned estimates. Available in Hebrew, Russian, and English.
+
+[Try the compass](https://pptz.github.io/compass/).
+
+## Technical details
 
 Open **index.html** in a browser. The quiz and **issues.html** guide are self-contained and work without a server. Answers stay in memory and disappear on reload. External reading links require internet access.
 
@@ -30,7 +36,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 Open <http://127.0.0.1:8765/> or <http://127.0.0.1:8765/issues.html>. Stop the server with Ctrl+C.
 
-## Editing and rebuilding
+### Editing and rebuilding
 
 Authored inputs:
 
