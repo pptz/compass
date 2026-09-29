@@ -104,7 +104,7 @@ assert.equal(data.questions.filter(q=>q.short).length,10);
 assert(!data.choices, 'The old global agreement scale must not survive.');
 assert.equal(new Set(data.positions.map(p=>`${p.party_id}/${p.question_id}`)).size,320);
 for (const question of data.questions) {
-  assert(question.options.length >= 4);
+  assert(question.options.length >= 4 && question.options.length <= 5, `${question.id} must offer 4–5 substantive answers`);
   assert.equal(new Set(question.options.map(o=>o.id)).size,question.options.length);
   assert.equal(new Set(question.options.map(o=>JSON.stringify(o.profile))).size,question.options.length);
   for (const option of question.options) {

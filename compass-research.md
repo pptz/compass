@@ -1,6 +1,6 @@
 # Your Choice — Your Vote — policy choices, sources and reasoned estimates (v0.5)
 
-The browser contains **20 original questions, 91 substantive choices and 40 policy components**, in English, Hebrew and Russian. [Open the quiz](index.html) or [read the issue guide](issues.html). Each guide section introduces the dispute, presents competing approaches, poses open questions and links to further reading. The question-mark help and “About this issue” elements explain the issue itself; calculation details are separate.
+The browser contains **20 original questions, 90 substantive choices and 40 policy components**, in English, Hebrew and Russian. Each question offers at most five substantive answers. [Open the quiz](index.html) or [read the issue guide](issues.html). Each guide section introduces the dispute, presents competing approaches, poses open questions and links to further reading. The question-mark help and “About this issue” elements explain the issue itself; calculation details are separate.
 
 [Zehut's compass](https://zehut.org.il/compass), inspected on 29 September 2026, informed the policy-choice format. These are newly authored questions; neither its question bank nor its party-specific weights are reused.
 
@@ -282,16 +282,13 @@ Components: Import policy / Main consumer policy tool.
 - **B.** Fund both state and independent schools, but make core studies a condition of public funding.
   
   לממן בתי ספר ממלכתיים ועצמאיים, אך להתנות מימון ציבורי בלימודי ליבה.
-- **C.** Let funding follow parents' school choice through vouchers, with core studies required for participating schools.
-  
-  להעביר את המימון באמצעות שוברים לפי בחירת ההורים, ולחייב בתי ספר משתתפים בלימודי ליבה.
-- **D.** Fund state and independent religious or community schools without making the common core a funding condition.
+- **C.** Fund state and independent religious or community schools without making the common core a funding condition.
   
   לממן בתי ספר ממלכתיים וקהילתיים או דתיים עצמאיים, בלי להתנות את המימון בליבה משותפת.
-- **E.** Let parents direct funding through vouchers, without a common-core condition imposed by the state.
+- **D.** Let parents direct funding through vouchers, without a common-core condition imposed by the state.
   
   לאפשר להורים לכוון את המימון בשוברים, בלי שהמדינה תתנה אותו בליבה משותפת.
-- **F.** Require a common core curriculum in every education stream and school, regardless of funding, while allowing additional cultural and religious subjects. Fund both state and independent schools.
+- **E.** Require a common core curriculum in every education stream and school, regardless of funding, while allowing additional cultural and religious subjects. Fund both state and independent schools.
   
   לחייב תוכנית ליבה משותפת בכל זרמי החינוך ובכל בתי הספר, ללא תלות במקור המימון, ולאפשר לצדה תכנים תרבותיים ודתיים נוספים. לממן בתי ספר ממלכתיים ועצמאיים.
 
@@ -301,10 +298,9 @@ Components: Scope of the common-core requirement / School funding and governance
 |---|---|---|
 | A | Required for public funding | Publicly funded state streams only |
 | B | Required for public funding | State and independent schools |
-| C | Required for public funding | Parent-directed vouchers |
-| D | Not a condition of public funding | State and independent schools |
-| E | Not a condition of public funding | Parent-directed vouchers |
-| F | Required in every school, regardless of funding | State and independent schools |
+| C | Not a condition of public funding | State and independent schools |
+| D | Not a condition of public funding | Parent-directed vouchers |
+| E | Required in every school, regardless of funding | State and independent schools |
 
 ### Q10 · How should serious organized crime and protection rackets be tackled?
 **כיצד יש להתמודד עם פשיעה מאורגנת חמורה וגביית דמי חסות?**

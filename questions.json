@@ -883,15 +883,6 @@
         }
       },
       {
-        "id": "voucher_core",
-        "en": "Let funding follow parents' school choice through vouchers, with core studies required for participating schools.",
-        "he": "להעביר את המימון באמצעות שוברים לפי בחירת ההורים, ולחייב בתי ספר משתתפים בלימודי ליבה.",
-        "profile": {
-          "core_condition": "yes",
-          "school_model": "voucher"
-        }
-      },
-      {
         "id": "autonomous",
         "en": "Fund state and independent religious or community schools without making the common core a funding condition.",
         "he": "לממן בתי ספר ממלכתיים וקהילתיים או דתיים עצמאיים, בלי להתנות את המימון בליבה משותפת.",
