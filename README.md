@@ -1,6 +1,16 @@
 # Israeli Political Compass
 
+**English**
+
 A multilingual political compass that helps people compare their views with the positions of Israeli political parties. Users answer a short or full multiple-choice quiz, set how much each issue matters to them, and receive ranked similarity scores that account for partial agreement. The project also explains the issues and links to sources, distinguishing documented party positions from reasoned estimates. Available in Hebrew, Russian, and English.
+
+<p dir="rtl" lang="he"><strong>עברית</strong></p>
+
+<p dir="rtl" lang="he">מצפן פוליטי רב־לשוני המסייע להשוות בין עמדות המשתמשים לעמדות המפלגות בישראל. המשתמשים עונים על שאלון קצר או מלא עם שאלות רב־ברירה, בוחרים את מידת החשיבות של כל נושא ומקבלים דירוג התאמה המתחשב גם בהסכמה חלקית. המיזם מציג הסברים על הסוגיות וקישורים למקורות, תוך הבחנה בין עמדות מפלגה מתועדות להערכות מנומקות. זמין בעברית, ברוסית ובאנגלית.</p>
+
+**Русский**
+
+Многоязычный политический компас, который помогает сравнить свои взгляды с позициями израильских партий. Пользователи проходят короткий или полный тест с вариантами ответов, указывают важность каждой темы и получают рейтинг сходства, учитывающий частичное совпадение взглядов. Проект также объясняет спорные вопросы и даёт ссылки на источники, отделяя документированные позиции партий от обоснованных предположений. Доступен на иврите, русском и английском.
 
 [Try the compass](https://pptz.github.io/compass/).
 
