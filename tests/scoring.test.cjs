@@ -133,7 +133,14 @@ for (const question of data.questions) {
 for (const pos of data.positions) {
   const question = data.questions.find(q=>q.id===pos.question_id);
   for (const [id,evidence] of Object.entries(pos.dimensions)) {
-    assert(question.dimensions.find(d=>d.id===id)?.values.some(v=>v.id===evidence.value));
+    const values=evidence.values || [evidence.value];
+    assert(values.length && values.every(value=>question.dimensions.find(d=>d.id===id)?.values.some(v=>v.id===value)));
+    for (const estimate of [evidence.status==='I' ? evidence : null, evidence.inference].filter(Boolean)) {
+      assert.equal(estimate.status,'I');assert.equal(estimate.confidence,.6);
+      assert(estimate.rationale_localized.en && estimate.rationale_localized.ru && estimate.rationale_localized.he);
+      assert(estimate.source_ids.length && estimate.source_ids.every(s=>data.sources[s]));
+      assert((estimate.values || [estimate.value]).every(value=>question.dimensions.find(d=>d.id===id)?.values.some(v=>v.id===value)));
+    }
     assert(evidence.source_ids.length && evidence.source_ids.every(s=>data.sources[s]));
   }
 }
@@ -183,9 +190,45 @@ assert.deepEqual([...createRun(data,'long',random)].sort(),[...original].sort())
 assert.deepEqual(data.questions.map(q=>q.id),original);
 assert(data.parties.every(p=>p.ru));
 const current=score(data,answers,'long'), withHistory=score(data,answers,'long',true);
-assert.equal(current.find(r=>r.party.id==='balad').similarity,0);
+assert(current.find(r=>r.party.id==='balad').coverage>0);
 assert(withHistory.find(r=>r.party.id==='balad').coverage>0);
 assert(current.find(r=>r.party.id==='religious_zionism').matched>0);
-assert.equal(current.find(r=>r.party.id==='otzma').similarity,0);
+assert(current.find(r=>r.party.id==='otzma').coverage>0);
 assert(withHistory.find(r=>r.party.id==='otzma').coverage>0);
 console.log(`Passed: confirmed agreement (2/10 = 20%), importance weights, graded credit, ranking and ties, unknowns, evidence filters, selected runs, skips, 100 randomized runs, translations and ${data.questions.reduce((n,q)=>n+q.options.length,0)} policy profiles.`);
+// Broad inferred support for transport matches every operating-service choice, never a ban.
+const transport=data.questions.find(q=>q.id==='Q6');
+const baladTransport=data.positions.find(p=>p.party_id==='balad' && p.question_id==='Q6');
+const transportFixture={questions:[transport],parties:[data.parties.find(p=>p.id==='balad')],positions:[baladTransport]};
+for (const option of transport.options) {
+  const result=score(transportFixture,{Q6:option.id})[0];
+  assertClose(result.similarity,option.profile.service==='none' ? 0 : .3);
+  assert.equal(result.documentedCoverage,0);
+  assert.equal(result.confirmedSimilarity,0);
+  assert.equal(result.inferredCount,1);
+  assert.equal(result.items[0].components.find(c=>c.dimension.id==='authority').known,false);
+  const disabled=score(transportFixture,{Q6:option.id},'short',false,null,{},false)[0];
+  assert.equal(disabled.similarity,0);assert.equal(disabled.inferredCount,0);
+}
+// Reviewed secondary reports are enabled independently of the historical switch.
+const reported=structuredClone(fixture);
+reported.positions[0].dimensions.a.status='R';
+assertClose(score(reported,{Q1:'one'})[0].similarity,1);
+// Disabling estimates restores the documented score, preserving the denominator.
+const inferred=structuredClone(fixture);
+inferred.positions[0].dimensions.b={value:'x',status:'I',confidence:.6};
+const enabled=score(inferred,{Q1:'one'})[0];
+assertClose(enabled.similarity,.8);assertClose(enabled.confirmedSimilarity,.5);
+assertClose(enabled.inferredSimilarity,.3);assertClose(enabled.documentedCoverage,.5);
+assertClose(score(inferred,{Q1:'one'},'short',false,null,{},false)[0].similarity,.5);
+// Historical facts can have a separately labeled inference fallback when archives are off.
+inferred.positions[0].dimensions.b={value:'y',status:'H',inference:{value:'x',status:'I',confidence:.6}};
+assertClose(score(inferred,{Q1:'one'})[0].similarity,.8);
+assertClose(score(inferred,{Q1:'one'},'short',true)[0].similarity,.5);
+assertClose(score(inferred,{Q1:'one'},'short',false,null,{},false)[0].similarity,.5);
+for (const r of current) {
+  assertClose(r.similarity,r.confirmedSimilarity+r.inferredSimilarity);
+  assert(r.confirmedSimilarity<=r.documentedCoverage+1e-12);
+  assertClose(score(data,answers,'long',false,null,{},false).find(x=>x.party.id===r.party.id).similarity,r.confirmedSimilarity);
+}
+console.log('Passed: secondary sources, broad transport support, discounted inferences, separate source coverage, archive precedence, estimate toggle, and unchanged unknown-answer denominator.');

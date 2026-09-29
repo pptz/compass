@@ -1,7 +1,7 @@
-"""Recode the reviewed evidence into explicit components, never option ordinals.
+"""Recode sources and separately labeled inferences into policy components.
 
-The archived v1 rationale is provenance, not an automatic mapping from an
-agreement number to a whole policy package. New components remain unknown.
+Archived agreement numbers never imply an entire answer package. New inference
+records require a cited premise and retain their distinct evidence status.
 """
 import csv
 import json
@@ -113,20 +113,39 @@ data['sources']['RD']['note'] = 'Official index retrieved directly on 2026-09-29
 for entry in additions['positions']:
     target = next(p for p in positions if p['party_id']==entry['party_id'] and p['question_id']==entry['question_id'])
     target['dimensions'][entry['dimension_id']] = {k:v for k,v in entry.items() if k not in ['party_id','question_id','dimension_id']}
+expansion = json.loads((root/'research-expansion.json').read_text())
+data['sources'].update(expansion['sources'])
+for entry in expansion['positions']:
+    target = next(p for p in positions if p['party_id']==entry['party_id'] and p['question_id']==entry['question_id'])['dimensions']
+    key = entry['dimension_id']
+    evidence = {k:v for k,v in entry.items() if k not in ['party_id','question_id','dimension_id']}
+    previous = target.get(key)
+    if previous and (previous['status'] in ['P', 'S', 'R'] or previous['status']=='H' and evidence['status']=='H'):
+        previous.setdefault('additional_evidence', []).append(evidence)
+    elif previous and previous['status']=='H' and evidence['status']=='I':
+        # Preserve the archive; an explicit inference can be used with archives off.
+        previous['inference'] = evidence
+    else:
+        if previous:
+            evidence['previous_evidence'] = previous
+        target[key] = evidence
+data['status_legend']['R'] = 'Reviewed secondary report or institutional profile; included by default; dates remain visible.'
+data['status_legend']['I'] = 'Explicit editorial inference from cited principles or conduct; discounted to 60% and separately switchable.'
 for party in data['parties']:
     party['ru'] = ru['parties'][party['id']]
-data.update(version='0.4-confirmed-agreement', checked_at='2026-09-29', publication_ready=False,
-            description='Multilingual policy packages with explicit graded component-similarity matrices, confirmed-agreement ranking, source completeness and randomized questionnaire runs.',
+data.update(version='0.5-sourced-estimates', checked_at='2026-09-29', publication_ready=False,
+            description='Multilingual policy comparisons with reviewed secondary sources, bounded and discounted inferences, separate documented coverage, and randomized questionnaire runs.',
             questions=questions, positions=positions,
             skipped_choices=[{'id':'__skip','en':"Skip",'he':'דילוג','ru':'Пропустить'},
                              {'id':'__none','en':'None of these fits my view — leave unscored','he':'אף חלופה אינה מתאימה לעמדתי — ללא ניקוד','ru':'Ни один вариант не подходит — не учитывать'}])
 (root / 'compass-data.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 with (root / 'party-positions.csv').open('w', newline='') as f:
     writer = csv.writer(f)
-    writer.writerow(['party_id','question_id','dimension_id','value','status','source_ids'])
+    writer.writerow(['party_id','question_id','dimension_id','value','status','source_ids','inference_values','inference_confidence','inference_source_ids'])
     for row in positions:
         q = next(q for q in questions if q['id'] == row['question_id'])
         for dim in q['dimensions']:
             evidence = row['dimensions'].get(dim['id'], {})
-            writer.writerow([row['party_id'], row['question_id'], dim['id'], evidence.get('value',''), evidence.get('status','U'), ';'.join(evidence.get('source_ids',[]))])
+            inference = evidence if evidence.get('status')=='I' else evidence.get('inference', {})
+            writer.writerow([row['party_id'], row['question_id'], dim['id'], evidence.get('value','') or '|'.join(evidence.get('values',[])), evidence.get('status','U'), ';'.join(evidence.get('source_ids',[])), inference.get('value','') or '|'.join(inference.get('values',[])), inference.get('confidence',''), ';'.join(inference.get('source_ids',[]))])
 print(f"Built {len(questions)} questions, {sum(len(q['options']) for q in questions)} substantive choices, {sum(len(p['dimensions']) for p in positions)} evidenced components.")

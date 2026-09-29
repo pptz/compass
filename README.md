@@ -16,11 +16,11 @@ To publish, follow [the GitHub Pages deployment instructions](DEPLOYMENT.md). Th
 - Hover, focus or tap **?** for an overview of the issue. **About this issue** adds reading links. **Explore the issue** opens its section in the separate guide, preserving the quiz in its tab.
 - The guide discusses each issue through background, competing approaches and open questions. It is available in all three languages.
 - **How these approaches overlap** displays the graded similarity table. Results compare each evidenced policy component, including partial similarity between different but related approaches.
-- Expand a party for evidence, sources, similarity values and coverage. The main percentage is confirmed agreement divided by the weight of all answered questions. Unknown party components add no points. Two complete matches out of ten equally weighted answers give 20%. Results sort by this percentage, with more documented positions breaking ties. Detailed research rationales are still in English.
-- **Positions documented** explains how much source evidence is available, independently of agreement. A party with no usable evidence shows 0% confirmed agreement and an explicit no-data label. **Include historical / secondary evidence** exposes dated sources, including Balad's 2017 program; this is not a current-party ranking.
+- Expand a party for sources and explanations. The percentage combines sourced policy similarity with separately labeled inferences discounted to 60%. Unknown components still add no points and remain in the denominator. Two complete sourced matches and eight unknowns still give 20%. Results sort by total similarity, with more documented evidence breaking ties. The discount is editorial, not a statistical probability.
+- **Positions documented** excludes inferences and measures source completeness. Reviewed secondary reports are included by default. **Include reasoned estimates** is on by default and can be disabled independently of **Include historical sources**. Broad support (for example, allowing Shabbat transport) matches all compatible options equally without inventing a service scale or decision-making authority. The result card separates sourced and inferred contributions.
 - **Start again** clears answers and importance choices and restores the default evidence filter.
 
-The answer key remains a research draft. Low confirmed percentages can reflect incomplete source research as well as policy differences. They do not establish disagreement on unknown positions. The scoring tables are explicit editorial estimates, not scientific probabilities.
+The answer key remains a research draft. Low percentages can reflect incomplete source research as well as policy differences. They do not establish disagreement on unknown positions. Inferences have cited premises and multilingual explanations; see [the additional source review](research-expansion.md). The scoring tables are explicit editorial estimates, not scientific probabilities.
 
 To serve locally:
 
@@ -40,6 +40,7 @@ Authored inputs:
 - `topic-help.json`: multilingual overviews and source links.
 - `topic-discussion.json`: multilingual open questions for the guide.
 - `evidence-additions.json`: reviewed additions to the source registry and party positions.
+- `research-expansion.json`: additional secondary sources, broad positions and explicitly labeled inferences. Source dates and prior evidence are retained.
 - `web/`: templates, styles, UI and scoring code.
 
 Rebuild the generated dataset, CSV, research report and two standalone pages:

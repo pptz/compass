@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const data = JSON.parse(document.getElementById('compass-data').textContent);
-  const state = { lang: compassInitialLanguage(), form: 'short', optionOrders: createOptionOrders(), currentIndex: 0, answers: {}, importance: {}, view: 'quiz', historical: false, questionIds: CompassScoring.createRun(data,'short'), seen: new Set() };
+  const state = { lang: compassInitialLanguage(), form: 'short', optionOrders: createOptionOrders(), currentIndex: 0, answers: {}, importance: {}, view: 'quiz', historical: false, estimates: true, questionIds: CompassScoring.createRun(data,'short'), seen: new Set() };
   state.seen = new Set(state.questionIds);
   const $ = id => document.getElementById(id);
   let answerTransition = null;
@@ -83,13 +83,13 @@
     "checked": "Evidence checked",
     "skipNote": "Set importance before choosing an answer. An answer or Skip moves to the next question. Use Back to edit earlier choices; Next keeps a saved answer. Change question draws an unused topic.",
     "resultTitle": "Your comparisons",
-    "resultSubtitle": "Confirmed agreement across the questions you answered, ranked from highest to lowest. Each party has its own percentage.",
-    "historical": "Include historical / secondary evidence",
-    "currentNote": "Unknown party positions earn no points. Full agreement on two of ten equally weighted questions gives 20%, even if the other eight positions are unknown. Your skipped questions are excluded.",
-    "historyNote": "Historical research mode: these comparisons mix current evidence with older documents and secondary reports. They are not current-party rankings.",
+    "resultSubtitle": "Similarity across your answered questions, ranked from highest to lowest. Sourced positions and inferred contributions are shown separately.",
+    "historical": "Include historical sources",
+    "currentNote": "Unknown party positions add no points and stay in the denominator. Your skips are excluded.",
+    "historyNote": "Historical sources are included; check their dates.",
     "coverage": "positions documented",
-    "matched": "questions with some evidence",
-    "historyCount": "historical / secondary components",
+    "matched": "questions with positions or estimates",
+    "historyCount": "historical components",
     "complete": "fully evidenced questions",
     "inspect": "Inspect answers and sources",
     "user": "You",
@@ -100,7 +100,7 @@
     "component": "Policy component",
     "empty": "Answer at least one question to explore the comparisons.",
     "method": "How the calculation works",
-    "methodBody": "Each known policy component earns graded similarity credit from 0 to 100%. The question weight follows your chosen importance: more important questions influence the result more. The default is “important”. Its two components share that weight equally. We divide the weighted sum of confirmed credit by the total importance of ALL questions you answered, including unknown party positions. Unknowns earn no points; no agreement or disagreement is assumed. Skipped questions are excluded. With equal importance, two full matches and eight unknown positions give 20%. There is no additional domain weighting. Results sort by confirmed percentage, then documented share. The overlap tables are editorial estimates.",
+    "methodBody": "Each question uses your selected importance (Important by default), split equally between two policy components. Specific positions use the graded similarity tables. A broad position, such as allowing Shabbat transport without specifying its scale, matches every included operating-service alternative equally and does not match a ban. Sources and reviewed secondary reports contribute normally; reasoned inferences contribute at 60% strength and can be disabled. The 60% factor is an editorial convention, not a statistical confidence estimate. We divide by the importance of ALL substantive answers, including remaining unknown party positions. Skips are excluded. Two complete sourced matches and eight unknowns still give 20% at equal importance. Results sort by total similarity, then documented evidence. Older sources require the separate historical switch.",
     "footer": "Local research preview · answers stay in this page and disappear on reload. No analytics, account, or external requests. Source links open only when clicked. Source explanations are currently in English.",
     "domains": {
       "security": "Security & service",
@@ -114,7 +114,8 @@
       "S": "Attributable statement",
       "H": "Historical document",
       "R": "Secondary report",
-      "U": "Unknown"
+      "U": "Unknown",
+      "I": "Reasoned inference"
     },
     "explore": "Explore the issue and its open questions ↗",
     "allIssues": "Explore all the issues ↗",
@@ -122,16 +123,16 @@
     "overlap": "How these approaches overlap",
     "overlapNote": "Editorial similarity estimates, not measured probabilities. Letters identify choices; they do not indicate a scale.",
     "componentScore": "Estimated component similarity",
-    "questionScore": "Confirmed agreement on this question",
+    "questionScore": "Similarity on this question",
     "replace": "Use this question instead",
     "replacementPrompt": "Prefer a different topic? Choose an unused question.",
     "chooseReplacement": "Select a replacement…",
     "noSpare": "No unused questions remain in this run.",
-    "excludedEvidence": "Dated or secondary evidence exists for these answers but is excluded by the current filter.",
-    "includeEvidence": "Include dated / secondary sources",
-    "noCoded": "No usable position is coded for these answered topics. The 0% means no confirmed agreement, not proven disagreement.",
+    "excludedEvidence": "Historical evidence exists for these answers but is excluded by the current filter.",
+    "includeEvidence": "Include historical sources",
+    "noCoded": "No enabled position or estimate is coded for these answers. Zero means no established match, not proven disagreement.",
     "bankEvidence": "Some positions are coded on other questions in the bank.",
-    "coverageNote": "“Positions documented” is the share of your answered questions for which party positions are known, weighted by the importance you chose. Each question has two components; sometimes only one is documented. This measures available evidence, not agreement. Missing or excluded sources lower this percentage.",
+    "coverageNote": "“Positions documented” measures source coverage, weighted by your importance choices. It excludes inferences and is not your match percentage.",
     "confirmedScore": "Confirmed agreement",
     "historicalConfirmedScore": "Confirmed agreement · includes older sources",
     "noEvidenceScore": "No usable position data",
@@ -147,7 +148,14 @@
     "topicsLabel": "Quiz topics",
     "back": "Back",
     "next": "Next",
-    "step": "Question {current} of {total}"
+    "step": "Question {current} of {total}",
+    "estimates": "Include reasoned estimates",
+    "estimateNote": "Labeled inferences contribute at 60% strength and can be disabled. Each card separates their contribution.",
+    "estimatedScore": "Similarity · includes estimates",
+    "documentedPart": "From sourced positions",
+    "estimatedPart": "Added by estimates",
+    "inferenceHint": "Editorial inference: contributes at 60% strength. This is a scoring convention, not a measured probability.",
+    "broadHint": "Only this shared policy direction is known or estimated. The listed alternatives match equally; no preference between them is implied."
   },
   "he": {
     "brand": "מצפן אידאולוגי",
@@ -167,13 +175,13 @@
     "checked": "בדיקת מקורות",
     "skipNote": "בחרו חשיבות לפני התשובה. תשובה או דילוג מעבירים לשאלה הבאה. ״חזרה״ מאפשרת לערוך בחירות קודמות; ״הבא״ שומר תשובה קיימת. ״החלפת שאלה״ מגרילה נושא שטרם הוצג.",
     "resultTitle": "ההשוואות שלך",
-    "resultSubtitle": "התאמה מתועדת בכלל השאלות שעניתם עליהן, מהאחוז הגבוה לנמוך. לכל מפלגה אחוז עצמאי.",
-    "historical": "הכללת מקורות היסטוריים ודיווחים משניים",
-    "currentNote": "עמדות לא ידועות אינן מוסיפות נקודות. התאמה מלאה בשתי שאלות מתוך עשר בעלות משקל שווה נותנת 20%, גם אם שמונה העמדות האחרות חסרות. שאלות שדילגתם עליהן אינן נכללות.",
-    "historyNote": "מצב מחקר היסטורי: ההשוואה משלבת מידע עדכני עם מסמכים ישנים ודיווחים משניים. זה אינו דירוג של עמדות המפלגות כיום.",
+    "resultSubtitle": "דמיון בשאלות שעניתם עליהן, מהגבוה לנמוך. תרומת העמדות המתועדות וההערכות מוצגת בנפרד.",
+    "historical": "הכללת מקורות היסטוריים",
+    "currentNote": "עמדות לא ידועות אינן מוסיפות נקודות ונשארות במכנה. הדילוגים שלכם אינם נכללים.",
+    "historyNote": "נכללים מקורות היסטוריים — שימו לב לתאריכים.",
     "coverage": "עמדות מתועדות",
-    "matched": "שאלות עם מידע חלקי לפחות",
-    "historyCount": "מרכיבים ממקורות היסטוריים או משניים",
+    "matched": "שאלות עם עמדה או הערכה",
+    "historyCount": "מרכיבים ממקורות היסטוריים",
     "complete": "שאלות עם מידע מלא",
     "inspect": "פירוט התשובות והמקורות",
     "user": "התשובה שלך",
@@ -184,7 +192,7 @@
     "component": "מרכיב מדיניות",
     "empty": "יש לענות על שאלה אחת לפחות כדי לעיין בהשוואות.",
     "method": "איך מתבצע החישוב?",
-    "methodBody": "כל מרכיב מדיניות ידוע מקבל ניקוד דמיון מדורג מ־0 עד 100%. משקל השאלה נקבע לפי החשיבות שבחרתם: שאלות חשובות יותר משפיעות יותר על התוצאה. ברירת המחדל היא ״חשוב״. שני המרכיבים חולקים את המשקל שווה בשווה. מחלקים את סכום הניקוד המשוקלל בסכום החשיבות של כל השאלות שעניתם עליהן, כולל עמדות לא ידועות. מידע חסר אינו מוסיף נקודות, ואין הנחה של הסכמה או מחלוקת. דילוגים אינם נכללים. בחשיבות שווה, שתי התאמות מלאות ושמונה עמדות חסרות נותנות 20%. אין שקלול נוסף לפי תחום. התוצאות מסודרות לפי האחוז המתועד, ובשוויון לפי היקף המידע. טבלאות החפיפה הן אומדנים עריכתיים.",
+    "methodBody": "חשיבות השאלה (״חשוב״ כברירת מחדל) מתחלקת שווה בשווה בין שני מרכיבים. עמדות מסוימות מושוות בטבלאות דמיון מדורג. עמדה כללית, כגון תמיכה בתחבורה בשבת ללא היקף מוגדר, תואמת באותה מידה לכל חלופות ההפעלה הכלולות ואינה תואמת לאיסור. תוכניות, הצהרות ודיווחים משניים שנבדקו מקבלים משקל מלא; הערכות מנומקות תורמות במשקל 60% וניתן לכבות אותן. זהו כלל עריכתי ולא הסתברות סטטיסטית. מחלקים בחשיבות כל התשובות המהותיות, כולל עמדות מפלגה שעדיין אינן ידועות. דילוגים אינם נכללים. שתי התאמות מלאות ממקורות ושמונה עמדות חסרות עדיין נותנות 20% בחשיבות שווה. המיון הוא לפי הדמיון הכולל ואז היקף התיעוד. מקורות ישנים מופעלים בנפרד.",
     "footer": "תצוגת מחקר מקומית · התשובות נשארות בדף ונמחקות בטעינה מחדש. ללא חשבון, כלי מעקב או בקשות חיצוניות. קישורי המקורות נפתחים רק בלחיצה. הסברי המקורות מוצגים כעת באנגלית.",
     "domains": {
       "security": "ביטחון ושירות",
@@ -198,7 +206,8 @@
       "S": "הצהרה מיוחסת",
       "H": "מסמך היסטורי",
       "R": "דיווח משני",
-      "U": "לא ידוע"
+      "U": "לא ידוע",
+      "I": "הערכה מנומקת"
     },
     "explore": "להעמקה בסוגיה ובשאלות הפתוחות ↖",
     "allIssues": "להיכרות עם כל הסוגיות ↖",
@@ -206,16 +215,16 @@
     "overlap": "כיצד הגישות חופפות",
     "overlapNote": "אומדני דמיון עריכתיים, לא הסתברויות שנמדדו. האותיות מזהות חלופות ואינן סולם.",
     "componentScore": "אומדן הדמיון במרכיב",
-    "questionScore": "התאמה מתועדת בשאלה הזו",
+    "questionScore": "דמיון בשאלה זו",
     "replace": "להחליף בשאלה הזו",
     "replacementPrompt": "מעדיפים נושא אחר? בחרו שאלה שטרם הוצגה.",
     "chooseReplacement": "בחירת שאלה חלופית…",
     "noSpare": "לא נותרו שאלות שלא הוצגו בסבב הזה.",
-    "excludedEvidence": "קיימים מקורות מתוארכים או משניים לתשובות האלה, אך המסנן הנוכחי אינו כולל אותם.",
-    "includeEvidence": "הכללת מקורות מתוארכים ומשניים",
-    "noCoded": "לא קודדה עמדה מתאימה לנושאים שנענו. 0% פירושו שאין התאמה מתועדת, ולא שהוכחה מחלוקת.",
+    "excludedEvidence": "יש מקורות היסטוריים לתשובות אלה, אך הם מוחרגים במסנן הנוכחי.",
+    "includeEvidence": "הכללת מקורות היסטוריים",
+    "noCoded": "אין עמדות או הערכות מופעלות לתשובות אלה. אפס פירושו שאין התאמה מבוססת, לא שהוכחה מחלוקת.",
     "bankEvidence": "קיימות עמדות מקודדות בשאלות אחרות במאגר.",
-    "coverageNote": "״עמדות מתועדות״ הוא החלק מהשאלות שעניתם עליהן שלגביו ידועה עמדת המפלגה, בשקלול החשיבות שבחרתם. לכל שאלה שני מרכיבים, ולעיתים רק אחד מתועד. זהו מדד להיקף המידע, ולא להתאמה. מקורות חסרים או מוחרגים מורידים את האחוז הזה.",
+    "coverageNote": "״עמדות מתועדות״ מודד את היקף המקורות בשקלול החשיבות שבחרתם. הוא אינו כולל הערכות ואינו אחוז ההתאמה שלכם.",
     "confirmedScore": "התאמה מתועדת",
     "historicalConfirmedScore": "התאמה מתועדת · כולל מקורות ישנים",
     "noEvidenceScore": "אין נתוני עמדה מתאימים",
@@ -231,7 +240,14 @@
     "topicsLabel": "נושאי השאלון",
     "back": "חזרה",
     "next": "הבא",
-    "step": "שאלה {current} מתוך {total}"
+    "step": "שאלה {current} מתוך {total}",
+    "estimates": "הכללת הערכות מנומקות",
+    "estimateNote": "הערכות מסומנות תורמות במשקל של 60% וניתן לכבות אותן. תרומתן מוצגת בנפרד בכל כרטיס.",
+    "estimatedScore": "דמיון הכולל הערכות",
+    "documentedPart": "לפי מקורות",
+    "estimatedPart": "תוספת מהערכות",
+    "inferenceHint": "הערכה עריכתית: תרומה במשקל של 60%. זהו כלל חישוב ולא הסתברות שנמדדה.",
+    "broadHint": "רק הכיוון המשותף ידוע או מוערך. החלופות הרשומות תואמות אותו במידה שווה, ללא ייחוס העדפה ביניהן."
   },
   "ru": {
     "brand": "Идеологический Компас",
@@ -251,13 +267,13 @@
     "checked": "Проверка источников",
     "skipNote": "Выберите важность перед ответом. Ответ или пропуск переводит к следующему вопросу. «Обратно» позволяет изменить предыдущие выборы; «Далее» сохраняет прежний ответ. «Сменить вопрос» подставляет запасную тему.",
     "resultTitle": "Ваши сравнения",
-    "resultSubtitle": "Подтверждённое совпадение по всем вопросам, на которые вы ответили: от большего процента к меньшему. Проценты партий независимы.",
-    "historical": "Включить старые программы и вторичные сообщения",
-    "currentNote": "Неизвестные позиции партии не добавляют баллов. Полное совпадение по двум из десяти равновесных вопросов даёт 20%, даже если остальные восемь позиций неизвестны. Ваши пропуски не учитываются.",
-    "historyNote": "Исторический режим: сравнение сочетает текущие сведения со старыми документами и вторичными сообщениями. Это не рейтинг нынешних позиций партий.",
+    "resultSubtitle": "Сходство по отвеченным вопросам, от большего к меньшему. Вклад позиций из источников и предположений показан отдельно.",
+    "historical": "Включить старые источники",
+    "currentNote": "Неизвестные позиции не добавляют баллов и остаются в знаменателе. Ваши пропуски исключаются.",
+    "historyNote": "Включены старые источники — обращайте внимание на даты.",
     "coverage": "данных о позиции",
-    "matched": "вопросов хотя бы с частичными данными",
-    "historyCount": "исторических / вторичных компонентов",
+    "matched": "вопросов с позицией или оценкой",
+    "historyCount": "компонентов из старых источников",
     "complete": "вопросов с полными данными",
     "inspect": "Посмотреть ответы и источники",
     "user": "Вы",
@@ -268,7 +284,7 @@
     "component": "Компонент политики",
     "empty": "Ответьте хотя бы на один вопрос, чтобы увидеть сравнения.",
     "method": "Как считается сходство?",
-    "methodBody": "Каждый известный компонент позиции получает от 0 до 100% сходства по таблице. Вес вопроса зависит от выбранной вами важности: более важные вопросы сильнее влияют на результат. По умолчанию выбрано «Важно». Два компонента делят этот вес поровну. Сумму подтверждённых совпадений с учётом весов делим на суммарную важность ВСЕХ отвеченных вопросов, включая неизвестные позиции партии. Неизвестные позиции баллов не добавляют; мы не предполагаем ни согласия, ни несогласия. Ваши пропуски исключаются. При одинаковой важности два полных совпадения и восемь неизвестных позиций дают 20%. Дополнительных весов по темам нет. Сортировка идёт по подтверждённому проценту; при равенстве — по полноте данных. Таблицы сходства — редакционные оценки.",
+    "methodBody": "Важность вопроса («Важно» по умолчанию) делится поровну между двумя компонентами. Конкретные позиции сравниваются по таблицам частичного сходства. Общая позиция, например поддержка транспорта по субботам без уточнения масштаба, одинаково совпадает со всеми соответствующими вариантами движения и не совпадает с запретом. Позиции из программ, заявлений и проверенных вторичных источников учитываются полностью; обоснованные предположения — с коэффициентом 0,6, и их можно отключить. Этот коэффициент — редакционное правило, а не статистическая вероятность. Делим на суммарную важность ВСЕХ содержательных ответов, включая оставшиеся неизвестные позиции партии. Пропуски исключаются. Два полных совпадения по источникам и восемь неизвестных позиций всё ещё дают 20% при равной важности. Сортировка — по общему сходству, при равенстве по полноте источников. Старые источники включаются отдельно.",
     "footer": "Локальная исследовательская версия · ответы остаются на странице и исчезают при перезагрузке. Без аккаунта и аналитики. Внешние ссылки открываются только по нажатию. Примечания к партийным источникам пока на английском; язык внешнего материала указан у ссылки.",
     "domains": {
       "security": "Безопасность и служба",
@@ -282,7 +298,8 @@
       "S": "Атрибутированное заявление",
       "H": "Исторический документ",
       "R": "Вторичное сообщение",
-      "U": "Неизвестно"
+      "U": "Неизвестно",
+      "I": "Обоснованное предположение"
     },
     "explore": "Подробнее о проблеме и открытых вопросах ↗",
     "allIssues": "Обзор всех тем ↗",
@@ -290,16 +307,16 @@
     "overlap": "Насколько близки эти подходы",
     "overlapNote": "Редакционные оценки сходства, не измеренные вероятности. Буквы обозначают варианты, а не шкалу.",
     "componentScore": "Оценка сходства компонента",
-    "questionScore": "Подтверждённое совпадение по вопросу",
+    "questionScore": "Сходство по этому вопросу",
     "replace": "Заменить этим вопросом",
     "replacementPrompt": "Предпочитаете другую тему? Выберите ещё не показанный вопрос.",
     "chooseReplacement": "Выберите замену…",
     "noSpare": "В этом запуске не осталось неиспользованных вопросов.",
-    "excludedEvidence": "Для этих ответов есть старые или вторичные источники, но текущий фильтр их исключает.",
-    "includeEvidence": "Включить старые / вторичные источники",
-    "noCoded": "Для этих тем подходящая позиция не закодирована. 0% означает отсутствие подтверждённых совпадений, а не доказанное расхождение.",
+    "excludedEvidence": "По этим ответам есть старые источники, исключённые текущим фильтром.",
+    "includeEvidence": "Включить старые источники",
+    "noCoded": "Для этих ответов нет включённых позиций или оценок. Ноль означает отсутствие установленного совпадения, а не доказанное несогласие.",
     "bankEvidence": "Некоторые позиции закодированы для других вопросов банка.",
-    "coverageNote": "«Данные о позиции» — доля ваших отвеченных вопросов, для которой известны позиции партии, с учётом выбранной вами важности. У каждого вопроса два компонента; иногда известен только один. Это полнота сведений, а не совпадение взглядов. Отсутствующие или исключённые фильтром источники снижают этот показатель.",
+    "coverageNote": "«Данные о позиции» — полнота источников с учётом выбранной важности. Она не включает предположения и не означает процент совпадения.",
     "confirmedScore": "Подтверждённое совпадение",
     "historicalConfirmedScore": "Подтверждённое совпадение · со старыми источниками",
     "noEvidenceScore": "Нет пригодных данных о позиции",
@@ -315,7 +332,14 @@
     "topicsLabel": "Темы теста",
     "back": "Обратно",
     "next": "Далее",
-    "step": "Вопрос {current} из {total}"
+    "step": "Вопрос {current} из {total}",
+    "estimates": "Учитывать обоснованные предположения",
+    "estimateNote": "Помеченные предположения учитываются с коэффициентом 0,6; их можно отключить. Их вклад показан отдельно.",
+    "estimatedScore": "Сходство с учётом предположений",
+    "documentedPart": "По источникам",
+    "estimatedPart": "Добавлено предположениями",
+    "inferenceHint": "Редакционное предположение: учитывается с коэффициентом 0,6. Это правило расчёта, а не измеренная вероятность.",
+    "broadHint": "Известно или предполагается только общее направление. Перечисленные варианты совпадают с ним одинаково; предпочтение одного из них не приписывается."
   }
 };
   const t = () => words[state.lang];
@@ -377,29 +401,30 @@
     $('calculate').hidden=!last; $('calculate').disabled=!hasAnswer;
   }
   function renderResults() {
-    const all = CompassScoring.score(data, state.answers, state.form, state.historical, state.questionIds, state.importance);
+    const all = CompassScoring.score(data, state.answers, state.form, state.historical, state.questionIds, state.importance, state.estimates);
     all.sort(CompassScoring.compareResults);
-    $('mode-note').textContent = t().currentNote + (state.historical ? ' ' + t().historyNote : '');
+    $('mode-note').textContent = t().currentNote + (state.estimates ? ' ' + t().estimateNote : '') + (state.historical ? ' ' + t().historyNote : '');
     if (!all[0]?.answered) {
       $('result-cards').innerHTML = `<p class="empty">${escape(t().empty)}</p>`;
       return;
     }
     $('result-cards').innerHTML = all.map(result => {
-      const scoreLabel = result.matched === 0 ? t().noEvidenceScore : state.historical ? t().historicalConfirmedScore : t().confirmedScore;
+      const scoreLabel = result.matched === 0 ? t().noEvidenceScore : result.inferredCount ? t().estimatedScore : state.historical ? t().historicalConfirmedScore : t().confirmedScore;
       const score = `<div class="score confirmed">${percent(result.similarity)}<small>${escape(scoreLabel)}</small></div>`;
-      return `<article class="result-card" data-party="${result.party.id}" data-score="${result.similarity}" data-coverage="${result.coverage}">
-        <div class="result-main"><div><h3>${escape(result.party[state.lang])}</h3><div class="result-meta">${result.matched} / ${result.answered} ${escape(t().matched)} · ${percent(result.coverage)} ${escape(t().coverage)}<br>${result.complete} ${escape(t().complete)}${result.historicalCount ? `<br>${result.historicalCount} ${escape(t().historyCount)}` : ''}</div></div>${score}</div>
+      return `<article class="result-card" data-party="${result.party.id}" data-score="${result.similarity}" data-coverage="${result.coverage}" data-documented="${result.documentedCoverage}">
+        <div class="result-main"><div><h3>${escape(result.party[state.lang])}</h3><div class="result-meta">${result.matched} / ${result.answered} ${escape(t().matched)} · ${percent(result.documentedCoverage)} ${escape(t().coverage)}<br>${result.complete} ${escape(t().complete)}${result.historicalCount ? `<br>${result.historicalCount} ${escape(t().historyCount)}` : ''}</div></div>${score}</div>
+        ${result.inferredCount ? `<p class="score-breakdown">${escape(t().documentedPart)}: ${percent(result.confirmedSimilarity)} · ${escape(t().estimatedPart)}: +${percent(result.inferredSimilarity)}</p>` : ''}
         <div class="score-track" aria-hidden="true"><span style="width:${result.similarity * 100}%"></span></div>
         ${result.matched===0 ? `<p class="evidence-gap">${escape(result.excludedCount ? t().excludedEvidence : t().noCoded)}${result.excludedCount ? ` <button class="include-history" type="button">${escape(t().includeEvidence)}</button>` : data.positions.some(p=>p.party_id===result.party.id && Object.keys(p.dimensions).length) ? ' '+escape(t().bankEvidence) : ''}</p>` : ''}
         <details><summary>${escape(t().inspect)}</summary><div class="evidence-list">
         ${result.items.map(item => {
           return `<div class="evidence"><h4>${item.question.id} · ${escape(item.question[state.lang])}</h4>
             <p class="values">${escape(t().user)}: ${escape(item.user[state.lang])}</p><p class="importance-value">${escape(t().importance)} ${escape(importanceLabel(item.question.id))}</p>
-            <p class="question-match">${escape(t().questionScore)}: <strong>${percent(item.similarity)}</strong> · ${percent(item.coverage)} ${escape(t().coverage)}</p>
+            <p class="question-match">${escape(t().questionScore)}: <strong>${percent(item.similarity)}</strong> · ${percent(item.documentedCoverage)} ${escape(t().coverage)}</p>
             ${item.components.map(c => {
               const p = c.evidence;
-              const excluded = p && ['H', 'R'].includes(p.status) && !state.historical;
-              return `<div class="component"><h5>${escape(c.dimension[state.lang])}</h5><p>${escape(t().user)}: ${escape(componentValue(c.dimension, c.userValue))}<br>${escape(t().party)}: ${escape(c.known ? componentValue(c.dimension, p.value) : excluded ? t().excluded : t().unknown)}</p>${c.known ? `<p class="component-match">${escape(t().componentScore)}: ${percent(c.similarity)}</p><p>${escape(c.dimension.similarity.rationale[state.lang])}</p>` : ''}${p ? `<span class="evidence-tag">${escape(t().statuses[p.status])}</span><p lang="en" dir="ltr">${escape(p.rationale)}</p>${p.source_ids.map(id => `<a href="${escape(data.sources[id].url)}" target="_blank" rel="noopener noreferrer" lang="en" dir="ltr">${escape(data.sources[id].title)} (${escape(data.sources[id].date || 'undated')}) ↗</a>`).join('')}` : ''}</div>`;
+              const excluded = p && !c.known;
+              return `<div class="component"><h5>${escape(c.dimension[state.lang])}</h5><p>${escape(t().user)}: ${escape(componentValue(c.dimension, c.userValue))}<br>${escape(t().party)}: ${escape(c.known ? CompassScoring.evidenceValues(p).map(value=>componentValue(c.dimension,value)).join(' / ') : excluded ? t().excluded : t().unknown)}</p>${c.known ? `<p class="component-match">${escape(t().componentScore)}: ${percent(c.similarity)}</p><p>${escape(p.values ? t().broadHint : c.dimension.similarity.rationale[state.lang])}</p>` : ''}${p ? `<span class="evidence-tag">${escape(t().statuses[p.status])}</span><p lang="${p.rationale_localized ? state.lang : 'en'}" dir="${p.rationale_localized && state.lang==='he' ? 'rtl' : 'ltr'}">${escape(p.rationale_localized?.[state.lang] || p.rationale)}</p>${p.status==='I' ? `<p class="inference-note">${escape(t().inferenceHint)}</p>` : ''}${p.source_ids.map(id => `<a href="${escape(data.sources[id].url)}" target="_blank" rel="noopener noreferrer" lang="en" dir="ltr">${escape(data.sources[id].title)} (${escape(data.sources[id].date || 'undated')}) ↗</a>`).join('')}` : ''}</div>`;
             }).join('')}
           </div>`;
         }).join('')}
@@ -412,7 +437,7 @@
     document.documentElement.lang = state.lang;
     document.documentElement.dir = state.lang === 'he' ? 'rtl' : 'ltr';
     document.title = `${t().title} · ${t().brand}`;
-    const labels = { brand:'brand', eyebrow:'eyebrow', title:'title', subtitle:'subtitle', short:'short', long:'long', reset:'reset', back:'back', next:'next', 'quiz-tab':'quiz', 'results-tab':'results', calculate:'calculate', edit:'edit', 'skip-note':'skipNote', 'results-title':'resultTitle', 'results-subtitle':'resultSubtitle', 'coverage-note':'coverageNote', 'historical-label':'historical', 'method-title':'method', 'method-body':'methodBody', footer:'footer' };
+    const labels = { brand:'brand', eyebrow:'eyebrow', title:'title', subtitle:'subtitle', short:'short', long:'long', reset:'reset', back:'back', next:'next', 'quiz-tab':'quiz', 'results-tab':'results', calculate:'calculate', edit:'edit', 'skip-note':'skipNote', 'results-title':'resultTitle', 'results-subtitle':'resultSubtitle', 'coverage-note':'coverageNote', 'historical-label':'historical', 'estimates-label':'estimates', 'method-title':'method', 'method-body':'methodBody', footer:'footer' };
     Object.entries(labels).forEach(([id, key]) => $(id).textContent = t()[key]);
     $('topics').innerHTML=Object.values(t().domains).map(topic=>`<li>${escape(topic)}</li>`).join('');
     $('topics').setAttribute('aria-label',t().topicsLabel);
@@ -423,6 +448,7 @@
     ['short', 'long'].forEach(form => $(form).setAttribute('aria-pressed', state.form === form));
     ['quiz', 'results'].forEach(view => { $(view).hidden = state.view !== view; $(`${view}-tab`).setAttribute('aria-pressed', state.view === view); });
     $('historical').checked = state.historical;
+    $('estimates').checked = state.estimates;
     renderQuestions(); progress();
     if (state.view === 'results') renderResults();
   }
@@ -462,7 +488,7 @@
   }
   $('language').addEventListener('change', event => { state.lang = event.target.value; render(); });
   ['short', 'long'].forEach(form => $(form).addEventListener('click', () => { if(state.form!==form){startRun(form);state.view='quiz';render();} }));
-  $('reset').addEventListener('click', () => { startRun(); state.historical = false; setView('quiz'); });
+  $('reset').addEventListener('click', () => { startRun(); state.historical = false; state.estimates = true; setView('quiz'); });
   function replaceQuestion(oldId,newId) {
     const index=state.questionIds.indexOf(oldId);
     if(index<0||state.form!=='short'||!spareQuestions().some(q=>q.id===newId))return;
@@ -520,6 +546,7 @@
   $('results-tab').addEventListener('click', () => setView('results', false));
   $('quiz-tab').addEventListener('click', () => setView('quiz', false));
   $('edit').addEventListener('click', () => setView('quiz'));
+  $('estimates').addEventListener('change', event => { state.estimates = event.target.checked; renderResults(); });
   $('historical').addEventListener('change', event => { state.historical = event.target.checked; renderResults(); });
   render();
 })();

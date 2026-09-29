@@ -4,7 +4,7 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parent.parent
 data = json.loads((root/'compass-data.json').read_text())
-lines = ['''# Your Choice — Your Vote — policy choices and confirmed agreement (v0.4)
+lines = ['''# Your Choice — Your Vote — policy choices, sources and reasoned estimates (v0.5)
 
 The browser contains **20 original questions, 91 substantive choices and 40 policy components**, in English, Hebrew and Russian. [Open the quiz](index.html) or [read the issue guide](issues.html). Each guide section introduces the dispute, presents competing approaches, poses open questions and links to further reading. The question-mark help and “About this issue” elements explain the issue itself; calculation details are separate.
 
@@ -22,46 +22,47 @@ Replaced questions stay retired for that run; after ten replacements in a short 
 
 ## Scoring and evidence
 
-Answer IDs and letters have no numerical order. Each answer describes a policy package with two separately evaluated components. Each component has an explicit, symmetric similarity matrix: identical policies receive 1, related approaches can receive .25, .5 or .75, and opposed or non-overlapping approaches receive 0. The complete rules and rationales are in [similarity-rules.json](similarity-rules.json). Question-level overlap tables are also visible in the quiz.
+Each answer has two independently scored components. Importance is the only question multiplier: Critical = 1, Important = 0.8 (default), Not very important = 0.5, Not important = 0.1. The interface shows verbal importance labels. Each component receives half the question weight.
 
-These similarities are **editorial estimates of policy overlap**, not measured probabilities or a validated ideological-distance scale. Different reasonable judgments could change the result. They should be reviewed alongside the wording and evidence before public release.
+Specific party positions use the graded overlap matrices in [similarity-rules.json](similarity-rules.json). Related policies can partially match. Broad positions instead contain an explicit set of compatible values (`values`): each included alternative matches fully and alternatives outside the set receive zero. These sets express a shared policy direction, not uncertainty that the party endorses every detailed package.
 
-For example, universal service with military priority and universal service with free choice of military or civilian service share the obligation component (1), while their pathways receive .5 similarity: a fully evidenced question scores **75%**. A two-term limit and an eight-year limit share a binding limit (1); the terms/years mechanisms receive .75, producing **87.5%**. If the party's second component is unknown, it earns no credit: a full match on the one known component gives 50% confirmed agreement for that question and 50% documented positions.
+For example, Balad's secular orientation supports an **inference** in favor of allowing Shabbat transport. `service = [limited, full]` matches both kinds of operating service equally and matches `none` at zero. The decision-making authority remains unknown. No national/local preference or timetable is invented. At the default inference factor of 0.6, this one known direction contributes 30% of the two-component question, not 100%. This is an editorial discount, not a measured probability.
 
-Each question has four importance levels in this order (the interface shows only verbal labels; these are the internal weights): critical = **1.0**, important = **0.8** (default), not very important = **0.5**, not important = **0.1**. Change question appears after them as an action in the short form. Importance is the question weight; domains do not add another multiplier. The minimum is positive, so “not important” still contributes a small amount. A skipped or replaced question does not contribute.
+Evidence categories:
 
-For question i and component k:
+- **P**: published party policy; included by default.
+- **S**: attributable statement; included by default.
+- **R**: reviewed secondary report or institutional party profile; now included by default. Undated profiles are identified as such, not called new election manifestos.
+- **H**: historical source; included only with the historical switch.
+- **I**: source-linked editorial inference, with a multilingual explanation. Included by default, discounted to 60%, and independently switchable. It does not increase documented coverage.
+- **U**: unknown; contributes no credit but stays in the denominator.
+
+A documented position takes precedence over an inference. Where an archived position has a separate inference fallback, the fallback can be used with archives off; switching archives on uses the historical position, without adding or averaging both. Corroborating entries and superseded evidence remain in the dataset for review; they are not double counted.
 
 ```
-question_weight_i = user_importance_i
-component_weight_ik = question_weight_i / 2
-component_similarity_ik = matrix_k[user_value][party_value]
+question_weight = selected_importance
+component_weight = question_weight / 2
+specific_similarity = matrix[user_value][party_value]
+broad_similarity = 1 if user_value in compatible_values else 0
+D = sum(question_weight for ALL substantive answered questions)
 
-confirmed_agreement = 100 * sum(known component_weight * component_similarity)
-                           / sum(all component_weight for answered questions)
-documented_positions = 100 * sum(known component_weight)
-                 / sum(all component_weight for answered questions)
+sourced_score = sum(component_weight * similarity for enabled P/S/R/H) / D
+inferred_score = sum(component_weight * similarity * 0.6 for enabled I) / D
+result = 100 * (sourced_score + inferred_score)
+documented_share = 100 * sum(component_weight for enabled P/S/R/H) / D
 ```
 
-The denominator is the sum of chosen importance for substantive user answers. Skipped questions are excluded. The short run still samples two questions per domain, but only user importance controls scoring. A zero denominator returns no score. Parties are scored independently; percentages do not sum to 100 and the best party is not normalized to 100. Unknown party components remain in the denominator and add no confirmed agreement. They are labeled unknown, not claimed to be disagreement. With no usable party evidence the score is 0% confirmed agreement and the card explicitly says there is no usable evidence. With no substantive user answers there is no score.
+Skipped and replaced questions do not contribute. Unanswered questions do not contribute. Remaining unknown party components stay in the denominator; two complete sourced matches and eight unknowns still give 20% at equal importance. No missing position is filled by the user's own answer, another party's answer, religion, ethnicity or coalition membership alone. Each party has an independent score; the best result is not normalized to 100%.
 
-Evidence status belongs to each component: **P** = published policy; **S** = attributable statement; **H** = historical document; **R** = secondary characterization. The default filter includes P/S. The optional historical/secondary mode includes H/R and is explicitly labeled. A live undated page is not proof of a newly issued election manifesto; dates and retrieval limitations remain visible in the source registry.
+The result cards separate sourced and inferred contributions. Their documented percentage excludes all inferences. Total similarity can therefore exceed documented coverage, but cannot exceed documented coverage plus the discounted inferred component weight. With estimates off, it cannot exceed documented coverage. Sort by total similarity, then documented coverage, then total supported component weight and party ID.
 
-**Two full matches out of ten equally weighted answered questions give 20%**, even if the other eight party positions are unknown. If the two known questions have 50% similarity, the result is 10%. Scores cannot exceed the documented share. There is no extrapolation of agreement to unknown positions, and no hypothetical completion range is displayed.
-
-For example, one fully matched critical question (weight 1) and one unknown, unimportant question (weight 0.1) produce 1 / 1.1 = 90.91%. Reversing the importance gives 0.1 / 1.1 = 9.09%. The denominator still includes the unknown position at its chosen weight.
-
-Every party is ranked by confirmed agreement, highest first. Equal unrounded scores are ordered by documented share, then stable party ID. Results are no longer separated into a threshold-qualified ranking and unranked partial percentages. The old known-only normalization and coverage thresholds have been removed.
-
-“Positions documented” (formerly “coverage”) describes the importance-weighted share of answered components backed by usable evidence. It is not a match percentage: it falls when source research is incomplete, a source does not address one of a question's two components, or dated sources are excluded. Both the score and the source completeness are shown, with an explanation above the result cards.
+The coefficient 0.6 and the graded matrices are editorial conventions, not statistically calibrated confidence measures. Historical sources and secondary-source dates remain visible. A report of one lawmaker's view is not automatically generalized to every party or every issue. Policy gaps and intra-party disagreements still require research.
 
 ## Source coverage and limitations
 
-The source-linked party key is [compass-data.json](compass-data.json), with a component-level export in [party-positions.csv](party-positions.csv). The older agreement-scale number was not mapped to an entire answer option: only propositions actually supported by the evidence were recoded. The [archived investigation](archive/agreement-scale-v1/compass-research.md) preserves the earlier source search; its questionnaire and scoring rules are superseded.
+The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the additional source review, with [a readable review table](research-expansion.md). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately.
 
-This revision adds evidence from Religious Zionism's official sovereignty page, dated 2021 program documents and its 2023–24 budget discussion. Balad's official 2017 program supplies additional constitutional and economic components. Dated programs remain historical evidence. A card with no usable evidence explains whether the filter excluded available evidence or whether the answered topics have a research gap; it offers the historical filter when applicable.
-
-The evidence remains sparse. Otzma Yehudit’s 2020 principles, archived by the Knesset channel, now supply historical evidence on the sovereignty question. This does not establish its complete current program. Finding a party website or a program does not establish every component asked by this questionnaire. This prototype does not yet support a well-evidenced current all-party ranking. Russian covers the quiz, issue guide and policy labels; detailed party-evidence rationales retain their English research text, and external reading links identify the source language.
+This expansion draws on Israel Democracy Institute party profiles, Times of Israel reporting, Associated Press coverage, and historical Ynet reports. Sources document particular policy components rather than entire answer packages. Dated profiles and secondary reports are not substitutes for a comprehensive current manifesto. The earlier source investigation remains in [the archive](archive/agreement-scale-v1/compass-research.md); its old scoring rules are superseded.
 
 ## Questions and policy packages
 
@@ -80,32 +81,27 @@ lines += ['\n## Source registry\n\nDates and retrieval limitations are preserved
 for key, source in data['sources'].items():
     lines += [f"| {key} | [{source['title']}]({source['url']}) | {source.get('date') or 'Undated'} | {source.get('note','')} |\n"]
 (root/'compass-research.md').write_text(''.join(lines))
-print('Updated compass-research.md for confirmed agreement.')
+print('Updated research report, evidence coverage and source review.')
 
-gaps = ['''# Где нужны источники партийных позиций
-
-Это состояние нашей исследовательской базы, а не утверждение об отсутствии у партий программ.
-В банке 20 вопросов по два компонента: максимум 40 известных компонентов на партию.
-Числа ниже — количество компонентов во всём банке, а не процент совпадения или показатель полноты в конкретном прохождении.
-В результатах полнота данных зависит от отвеченных вопросов, их важности и фильтра источников.
-
-| Партия | Без архивов и вторичных источников (из 40) | С ними (из 40) |
-|---|---:|---:|
-''']
-counts = []
+gaps = ["# Источники и оставшиеся пробелы\n\nВ банке 40 компонентов на партию. Это число заполненных компонентов, а не процент совпадения. Предположения приведены отдельно и не считаются документированными позициями. Архив может занимать тот же компонент, что и предположение.\n\n| Партия | Источники P/S/R | Предположения I | Архив H | Без источника и оценки |\n|---|---:|---:|---:|---:|\n"]
 for party in data['parties']:
-    components = [c for p in data['positions'] if p['party_id'] == party['id'] for c in p['dimensions'].values()]
-    current = sum(c['status'] in ['P', 'S'] for c in components)
-    counts.append((current, len(components), party['ru']))
-for current, total, name in sorted(counts):
-    gaps.append(f'| {name} | {current} | {total} |\n')
-gaps.append('''
-## Чем можно помочь
-
-Особенно полезны официальные программы, тематические документы и прямые заявления по конкретным вопросам для партий с небольшим числом заполненных компонентов. Приоритет: Ликуд, ШАС, Яхадут ха-Тора, РААМ, ХАДАШ, ТААЛ, БАЛАД, Оцма Йехудит и Религиозный сионизм.
-
-Достаточно прислать ссылку, название партии и тему; если есть — дату публикации и нужный фрагмент. Старые документы тоже полезны, но будут отмечены как исторические. Общего идеологического описания недостаточно, чтобы приписать партии весь пакет ответа.
-
-Темы и варианты сформулированы в [обзоре вопросов](issues.html?lang=ru). Уже закодированные позиции и источники — в [таблице компонентов](party-positions.csv) и [исследовательском отчёте](compass-research.md).
-''')
+    components = [c for row in data['positions'] if row['party_id']==party['id'] for c in row['dimensions'].values()]
+    sourced = sum(c['status'] in ['P','S','R'] for c in components)
+    inferred = sum(c['status']=='I' or bool(c.get('inference')) for c in components)
+    archived = sum(c['status']=='H' for c in components)
+    gaps.append(f"| {party['ru']} | {sourced} | {inferred} | {archived} | {40-sourced-inferred} |\n")
+gaps.append("\nПоследний столбец относится к режиму без архивов. Вторичные источники и оценки включены по умолчанию; оценки можно отключить. Значение оценки основано только на указанном принципе или действии партии, а не на предполагаемой позиции по всему вопросу.\n\nНужны прямые и актуальные материалы по конкретным вопросам, особенно для Ликуда, Оцма Йехудит, ТААЛ и Резервистов. Присылайте ссылку, партию, тему и дату. [Обоснования дополнений](research-expansion.md), [компоненты](party-positions.csv), [вопросы](issues.html?lang=ru).\n")
 (root/'source-gaps.md').write_text(''.join(gaps))
+expansion = json.loads((root/'research-expansion.json').read_text())
+review = ["# Дополнительные источники и выводы\n\nПроверено: 2026-09-29. R — вторичное описание позиции; H — исторический материал; I — редакционное предположение с коэффициентом 0,6, а не измеренной вероятностью. Записи, подтверждающие уже имеющуюся позицию, не дают дополнительных баллов.\n\n"]
+for party in data['parties']:
+    entries = [e for e in expansion['positions'] if e['party_id']==party['id']]
+    if not entries: continue
+    review.append(f"## {party['ru']}\n\n")
+    for e in entries:
+        rationale = e.get('rationale_localized',{}).get('ru',e['rationale'])
+        values = e.get('value') or ' / '.join(e.get('values',[]))
+        links = ', '.join(f"[{sid}]({data['sources'][sid]['url']})" for sid in e['source_ids'])
+        review.append(f"- **{e['question_id']} · {e['dimension_id']} · {e['status']} · {values}** — {rationale} {links}\n")
+    review.append('\n')
+(root/'research-expansion.md').write_text(''.join(review))

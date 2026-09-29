@@ -343,19 +343,212 @@
       "date": "2020-01-28",
       "type": "archive",
       "note": "Party principles archived by the Knesset channel; heading explicitly dates the election document. Section 4 visually inspected. Historical evidence, not a 2026 manifesto."
+    },
+    "IDI_BALAD": {
+      "title": "IDI: Balad party profile",
+      "url": "https://en.idi.org.il/israeli-elections-and-parties/parties/balad/",
+      "date": null,
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I."
+    },
+    "IDI_HADASH": {
+      "title": "IDI: Hadash party profile",
+      "url": "https://en.idi.org.il/israeli-elections-and-parties/parties/hadash/",
+      "date": null,
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I."
+    },
+    "IDI_TAAL": {
+      "title": "IDI: Ta’al party profile",
+      "url": "https://en.idi.org.il/israeli-elections-and-parties/parties/taal/",
+      "date": null,
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I."
+    },
+    "IDI_RAAM": {
+      "title": "IDI: Ra’am party profile",
+      "url": "https://en.idi.org.il/israeli-elections-and-parties/parties/raam/",
+      "date": null,
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I."
+    },
+    "IDI_SHAS": {
+      "title": "IDI: Shas party profile",
+      "url": "https://en.idi.org.il/israeli-elections-and-parties/parties/shas/",
+      "date": null,
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I."
+    },
+    "IDI_UTJ": {
+      "title": "IDI: United Torah Judaism party profile",
+      "url": "https://en.idi.org.il/israeli-elections-and-parties/parties/united-torah-judaism/",
+      "date": null,
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I."
+    },
+    "IDI_LIKUD": {
+      "title": "IDI: Likud party profile",
+      "url": "https://en.idi.org.il/israeli-elections-and-parties/parties/likud/",
+      "date": null,
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I."
+    },
+    "IDI_OTZMA": {
+      "title": "IDI: Otzma Yehudit party profile",
+      "url": "https://en.idi.org.il/israeli-elections-and-parties/parties/otzma-yehudit/",
+      "date": null,
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I."
+    },
+    "TOI_REL26": {
+      "title": "ToI: Bennett backs Shabbat transport and civil marriage; Shas and UTJ respond",
+      "url": "https://www.timesofisrael.com/liveblog_entry/ex-pm-bennett-backs-public-transport-on-shabbat-civil-marriage-sparking-haredi-backlash/",
+      "date": "2026-04-20",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Reviewed secondary source; publication date is shown separately from retrieval date."
+    },
+    "TOI_SCHOOL26": {
+      "title": "ToI: additional funding for Haredi school networks",
+      "url": "https://www.timesofisrael.com/state-budget-set-to-increase-spending-on-haredi-education-by-nis-1-billion/amp/",
+      "date": "2026-02-19",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Reviewed secondary source; publication date is shown separately from retrieval date."
+    },
+    "TOI_SCHOOL25": {
+      "title": "ToI: committee funds private and exempt Haredi schools",
+      "url": "https://www.timesofisrael.com/knesset-finance-committee-approves-additional-nis-177m-for-private-haredi-schools/amp/",
+      "date": "2025-08-12",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Reports direct funding of exempt and party-affiliated schools; interpretations of core-curriculum requirements are labeled as inferences."
+    },
+    "AP_DRAFT25": {
+      "title": "AP: Shas and UTJ leave government over draft exemptions",
+      "url": "https://apnews.com/article/b58b8705277f27fa41f664c341e5a93e",
+      "date": "2025-07-16",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Reviewed secondary source; publication date is shown separately from retrieval date."
+    },
+    "TOI_JUDGES25": {
+      "title": "ToI: political control over judicial appointments",
+      "url": "https://www.timesofisrael.com/knesset-passes-law-greatly-boosting-political-control-over-judicial-appointments/",
+      "date": "2025-03-27",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "The 2025 committee model is not identical to direct appointment by parliament. Any mapping to the quiz’s broader political-selection approach is labeled an inference."
+    },
+    "TOI_PROBE26": {
+      "title": "ToI: Likud’s alternative October 7 inquiry bill",
+      "url": "https://www.timesofisrael.com/call-for-independent-inquiry-removed-from-coalition-bill-establishing-oct-7-probe/amp/",
+      "date": "2026-05-13",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Reviewed secondary source; publication date is shown separately from retrieval date."
+    },
+    "TOI_PROBE25": {
+      "title": "ToI: Blue and White presses for a state inquiry",
+      "url": "https://www.timesofisrael.com/liveblog_entry/lawmakers-defeat-motion-to-establish-state-commission-of-inquiry-into-october-7/",
+      "date": "2025-12-22",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Reviewed secondary source; publication date is shown separately from retrieval date."
+    },
+    "TOI_GAZA_RZ25": {
+      "title": "ToI: Smotrich advocates renewed Gaza settlements",
+      "url": "https://www.timesofisrael.com/liveblog_entry/smotrich-says-return-of-jewish-settlements-to-gaza-now-realistic-needs-to-be-much-bigger-than-before/",
+      "date": "2025-07-29",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Reviewed secondary source; publication date is shown separately from retrieval date."
+    },
+    "TOI_GAZA_OZ24": {
+      "title": "ToI: Ben Gvir and Smotrich advocate Gaza resettlement",
+      "url": "https://www.timesofisrael.com/ben-gvir-suggests-netanyahu-open-to-encouraging-palestinian-migration-from-gaza/",
+      "date": "2024-12-01",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Dated reporting of Ben Gvir’s position; not evidence for the stance of every coalition party."
+    },
+    "TOI_CRIME25": {
+      "title": "ToI: Ben Gvir backs treating criminal organizations as terror groups",
+      "url": "https://www.timesofisrael.com/government-greenlights-bill-to-label-certain-crime-organizations-as-terror-groups/",
+      "date": "2025-10-19",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Reviewed secondary source; publication date is shown separately from retrieval date."
+    },
+    "TOI_ARAB_CRIME26": {
+      "title": "ToI: Arab party leaders demand effective policing against organized crime",
+      "url": "https://www.timesofisrael.com/arab-blood-isnt-cheap-hundreds-rally-in-capital-alleging-police-failure-on-violent-crime/amp/",
+      "date": "2026-01-11",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Reviewed secondary source; publication date is shown separately from retrieval date."
+    },
+    "TOI_ODEH24": {
+      "title": "ToI: Odeh opposes compulsory military service",
+      "url": "https://www.timesofisrael.com/liveblog_entry/top-arab-mk-odeh-slams-haredi-idf-draft-law-citing-opposition-to-mandatory-consription/",
+      "date": "2024-06-10",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Reviewed secondary source; publication date is shown separately from retrieval date."
+    },
+    "YNET_SERVICE12": {
+      "title": "Ynet: competing views on compulsory national service for Arabs",
+      "url": "https://www.ynetnews.com/articles/0%2C7340%2CL-4232623%2C00.html",
+      "date": "2012",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Historical report: never treated as a new statement by today’s party leadership."
+    },
+    "YNET_BALAD08": {
+      "title": "Ynet: Balad platform profile",
+      "url": "https://www.ynetnews.com/articles/0%2C7340%2CL-3502144%2C00.html",
+      "date": "2008",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Historical secondary profile; constitutional commitment is marked H."
+    },
+    "TOI_ARAB20": {
+      "title": "ToI: differences among the four Joint List parties",
+      "url": "https://www.timesofisrael.com/joint-list-4-arab-parties-on-1-slate-is-poles-apart-but-strong-together/amp/",
+      "date": "2020",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Historical comparative profile. Secularism is not assumed to imply an identical stance on every family-policy question."
+    },
+    "TOI_RZ_REL19": {
+      "title": "ToI: Smotrich on religious law, marriage and Shabbat",
+      "url": "https://www.timesofisrael.com/smotrich-says-israel-should-follow-torah-law-again-drawing-ire-of-liberman/",
+      "date": "2019",
+      "type": "secondary_report",
+      "accessed_at": "2026-09-29",
+      "note": "Historical statement before the current party configuration; used only with the historical filter."
     }
   },
   "status_legend": {
     "P": "Party-published program or policy page being used as current evidence; may be undated.",
     "S": "Specific attributable public statement, possibly reported by a news outlet.",
     "H": "Historical document; excluded from current-mode scoring.",
-    "R": "Secondary characterization; excluded from current-mode scoring.",
-    "U": "Unknown or insufficiently specific; never scored as zero."
+    "R": "Reviewed secondary report or institutional profile; included by default; dates remain visible.",
+    "U": "Unknown or insufficiently specific; never scored as zero.",
+    "I": "Explicit editorial inference from cited principles or conduct; discounted to 60% and separately switchable."
   },
-  "version": "0.4-confirmed-agreement",
+  "version": "0.5-sourced-estimates",
   "checked_at": "2026-09-29",
   "publication_ready": false,
-  "description": "Multilingual policy packages with explicit graded component-similarity matrices, confirmed-agreement ranking, source completeness and randomized questionnaire runs.",
+  "description": "Multilingual policy comparisons with reviewed secondary sources, bounded and discounted inferences, separate documented coverage, and randomized questionnaire runs.",
   "questions": [
     {
       "id": "Q1",
@@ -4523,7 +4716,24 @@
     {
       "party_id": "likud",
       "question_id": "Q3",
-      "dimensions": {},
+      "dimensions": {
+        "appointments": {
+          "status": "I",
+          "source_ids": [
+            "TOI_JUDGES25"
+          ],
+          "rationale": "The party leaders’ 2025 political-selection committee model is closest to the quiz’s political-selection category, but is not identical to direct appointment by parliament.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "parliament",
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "The party leaders’ 2025 political-selection committee model is closest to the quiz’s political-selection category, but is not identical to direct appointment by parliament.",
+            "ru": "Продвигаемая руководителями партии модель 2025 года ближе к политическому назначению судей, но не тождественна прямому избранию Кнессетом.",
+            "he": "מודל הוועדה הפוליטית שקידמו ראשי המפלגה ב־2025 קרוב לחלופת המינוי הפוליטי בשאלון, אך אינו זהה למינוי ישיר בכנסת."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -4551,14 +4761,42 @@
     {
       "party_id": "likud",
       "question_id": "Q7",
-      "dimensions": {},
+      "dimensions": {
+        "funding": {
+          "status": "I",
+          "source_ids": [
+            "IDI_LIKUD"
+          ],
+          "rationale": "Limited-state, competitive-market principles suggest a lower-tax preference, not a quantified fiscal plan.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "lower_taxes",
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "Limited-state, competitive-market principles suggest a lower-tax preference, not a quantified fiscal plan.",
+            "ru": "Принципы ограниченного вмешательства государства и рыночной конкуренции предполагают предпочтение низких налогов; конкретный бюджетный план не известен.",
+            "he": "מעקרונות השוק התחרותי וההתערבות המוגבלת מוסקת העדפה למסים נמוכים; תוכנית תקציבית מפורטת אינה ידועה."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
     {
       "party_id": "likud",
       "question_id": "Q8",
-      "dimensions": {},
+      "dimensions": {
+        "consumer_tool": {
+          "status": "R",
+          "source_ids": [
+            "IDI_LIKUD"
+          ],
+          "rationale": "The profile identifies competitive markets and limited government economic intervention.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "competition"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -4593,7 +4831,18 @@
     {
       "party_id": "likud",
       "question_id": "Q13",
-      "dimensions": {},
+      "dimensions": {
+        "statutory": {
+          "status": "R",
+          "source_ids": [
+            "TOI_PROBE26"
+          ],
+          "rationale": "The Likud-sponsored proposal replaces the existing statutory state-commission model with a separate politically appointed inquiry.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "no"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -4945,7 +5194,22 @@
           ],
           "rationale": "Domestic civil registration with full rights is promised; terminology differs from civil marriage and divorce.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "additional_evidence": [
+            {
+              "status": "R",
+              "source_ids": [
+                "TOI_REL26"
+              ],
+              "rationale": "The report calls Bennett’s proposal civil marriage, but his quoted wording only establishes a domestic civil route. The existing program’s more specific registration coding is retained.",
+              "review_state": "editorial_draft",
+              "checked_at": "2026-09-29",
+              "values": [
+                "marriage",
+                "registration"
+              ]
+            }
+          ]
         }
       },
       "checked_at": "2026-09-29",
@@ -4963,7 +5227,32 @@
           ],
           "rationale": "The cited proposal assigns the decision on Shabbat transport to local authorities.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "additional_evidence": [
+            {
+              "status": "R",
+              "source_ids": [
+                "TOI_REL26"
+              ],
+              "rationale": "Bennett explicitly assigns the choice to cities.",
+              "review_state": "editorial_draft",
+              "checked_at": "2026-09-29",
+              "value": "local"
+            }
+          ]
+        },
+        "service": {
+          "status": "R",
+          "source_ids": [
+            "TOI_REL26"
+          ],
+          "rationale": "Supports Shabbat transport; the report does not settle service intensity. Both operating-service answers match this broad position.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "limited",
+            "full"
+          ]
         }
       },
       "checked_at": "2026-09-29",
@@ -5300,7 +5589,19 @@
           ],
           "rationale": "Domestic civil marriage and civil divorce for those marrying civilly.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "additional_evidence": [
+            {
+              "status": "R",
+              "source_ids": [
+                "TOI_REL26"
+              ],
+              "rationale": "Golan welcomed the civil-marriage proposal.",
+              "review_state": "editorial_draft",
+              "checked_at": "2026-09-29",
+              "value": "marriage"
+            }
+          ]
         }
       },
       "checked_at": "2026-09-29",
@@ -5575,7 +5876,23 @@
             "RDJ21"
           ],
           "rationale": "The 2021 judicial platform calls for Knesset appointment of judges following a public committee hearing.",
-          "review_state": "editorial_draft"
+          "review_state": "editorial_draft",
+          "inference": {
+            "status": "I",
+            "source_ids": [
+              "TOI_JUDGES25"
+            ],
+            "rationale": "The party leaders’ 2025 political-selection committee model is closest to the quiz’s political-selection category, but is not identical to direct appointment by parliament.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "parliament",
+            "confidence": 0.6,
+            "rationale_localized": {
+              "en": "The party leaders’ 2025 political-selection committee model is closest to the quiz’s political-selection category, but is not identical to direct appointment by parliament.",
+              "ru": "Продвигаемая руководителями партии модель 2025 года ближе к политическому назначению судей, но не тождественна прямому избранию Кнессетом.",
+              "he": "מודל הוועדה הפוליטית שקידמו ראשי המפלגה ב־2025 קרוב לחלופת המינוי הפוליטי בשאלון, אך אינו זהה למינוי ישיר בכנסת."
+            }
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -5601,7 +5918,18 @@
     {
       "party_id": "religious_zionism",
       "question_id": "Q5",
-      "dimensions": {},
+      "dimensions": {
+        "religious_role": {
+          "status": "H",
+          "source_ids": [
+            "TOI_RZ_REL19"
+          ],
+          "rationale": "Smotrich defended state enforcement of religious marriage rules.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "exclusive"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -5680,7 +6008,18 @@
     {
       "party_id": "religious_zionism",
       "question_id": "Q12",
-      "dimensions": {},
+      "dimensions": {
+        "settlements": {
+          "status": "R",
+          "source_ids": [
+            "TOI_GAZA_RZ25"
+          ],
+          "rationale": "Smotrich explicitly advocates rebuilding and expanding Israeli settlements in Gaza.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "yes"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -5753,7 +6092,24 @@
     {
       "party_id": "otzma",
       "question_id": "Q1",
-      "dimensions": {},
+      "dimensions": {
+        "statehood": {
+          "status": "I",
+          "source_ids": [
+            "IDI_OTZMA"
+          ],
+          "rationale": "Greater-Israel sovereignty policy suggests opposition to a separate Palestinian state in the same territory.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "no",
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "Greater-Israel sovereignty policy suggests opposition to a separate Palestinian state in the same territory.",
+            "ru": "Из политики суверенитета в рамках «Великого Израиля» следует вероятное неприятие отдельного палестинского государства на той же территории.",
+            "he": "ממדיניות הריבונות בארץ ישראל השלמה מוסקת התנגדות למדינה פלסטינית נפרדת באותו שטח."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -5767,7 +6123,24 @@
     {
       "party_id": "otzma",
       "question_id": "Q3",
-      "dimensions": {},
+      "dimensions": {
+        "appointments": {
+          "status": "I",
+          "source_ids": [
+            "IDI_OTZMA"
+          ],
+          "rationale": "The profile describes political selection of judges. Mapping that principle to this quiz’s parliamentary-selection category is an inference; the exact appointment procedure is unspecified.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "parliament",
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "The profile describes political selection of judges. Mapping that principle to this quiz’s parliamentary-selection category is an inference; the exact appointment procedure is unspecified.",
+            "ru": "Источник описывает политическое назначение судей. Отнесение к варианту назначения Кнессетом — предположение: конкретная процедура не указана.",
+            "he": "המקור מתאר מינוי שופטים בידי פוליטיקאים. המיפוי לחלופת מינוי בכנסת הוא הערכה; ההליך המסוים אינו מפורט."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -5816,7 +6189,18 @@
     {
       "party_id": "otzma",
       "question_id": "Q10",
-      "dimensions": {},
+      "dimensions": {
+        "security_role": {
+          "status": "R",
+          "source_ids": [
+            "TOI_CRIME25"
+          ],
+          "rationale": "Ben Gvir supports broader security-service participation against organized crime.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "yes"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -5825,13 +6209,23 @@
       "question_id": "Q11",
       "dimensions": {
         "unilateral_sovereignty": {
-          "value": "yes",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "OZ20"
+            "IDI_OTZMA"
           ],
-          "rationale": "Section 4 calls for applying Israeli sovereignty throughout the land. The program presents this as an Israeli policy, with no territorial concessions.",
-          "review_state": "editorial_draft"
+          "rationale": "The profile explicitly supports Israeli sovereignty in the West Bank.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "yes",
+          "previous_evidence": {
+            "value": "yes",
+            "status": "H",
+            "source_ids": [
+              "OZ20"
+            ],
+            "rationale": "Section 4 calls for applying Israeli sovereignty throughout the land. The program presents this as an Israeli policy, with no territorial concessions.",
+            "review_state": "editorial_draft"
+          }
         },
         "territorial_route": {
           "value": "all",
@@ -5849,7 +6243,18 @@
     {
       "party_id": "otzma",
       "question_id": "Q12",
-      "dimensions": {},
+      "dimensions": {
+        "settlements": {
+          "status": "R",
+          "source_ids": [
+            "TOI_GAZA_OZ24"
+          ],
+          "rationale": "Ben Gvir explicitly advocates Israeli resettlement of Gaza.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "yes"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -5928,7 +6333,19 @@
           ],
           "rationale": "Current reported position retains protection for full-time study while discussing adapted service for those leaving study; verify exact exemption text before release.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "additional_evidence": [
+            {
+              "status": "R",
+              "source_ids": [
+                "AP_DRAFT25"
+              ],
+              "rationale": "The party demanded broad draft exemptions for yeshiva students.",
+              "review_state": "editorial_draft",
+              "checked_at": "2026-09-29",
+              "value": "sector_exemption"
+            }
+          ]
         }
       },
       "checked_at": "2026-09-29",
@@ -5953,14 +6370,34 @@
       "question_id": "Q5",
       "dimensions": {
         "civil_route": {
-          "value": "none",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "S"
+            "TOI_REL26"
           ],
-          "rationale": "Preserving religious status quo implies opposition to the proposed optional civil route; historical interpretation.",
+          "rationale": "The party rejected Bennett’s proposal for civil marriage, defending religious marriage.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "checked_at": "2026-09-29",
+          "value": "none",
+          "previous_evidence": {
+            "value": "none",
+            "status": "H",
+            "source_ids": [
+              "S"
+            ],
+            "rationale": "Preserving religious status quo implies opposition to the proposed optional civil route; historical interpretation.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred."
+          }
+        },
+        "religious_role": {
+          "status": "R",
+          "source_ids": [
+            "TOI_REL26"
+          ],
+          "rationale": "The party defended the religious marriage status quo against a civil alternative.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "exclusive"
         }
       },
       "checked_at": "2026-09-29",
@@ -5971,14 +6408,24 @@
       "question_id": "Q6",
       "dimensions": {
         "service": {
-          "value": "none",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "S"
+            "TOI_REL26"
           ],
-          "rationale": "Preserving religious status quo; historical interpretation, not a current response.",
+          "rationale": "The party opposed the proposed introduction of public transport on Shabbat.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "checked_at": "2026-09-29",
+          "value": "none",
+          "previous_evidence": {
+            "value": "none",
+            "status": "H",
+            "source_ids": [
+              "S"
+            ],
+            "rationale": "Preserving religious status quo; historical interpretation, not a current response.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred."
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -5996,7 +6443,23 @@
           ],
           "rationale": "Explicit welfare-state and public-service expansion.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "inference": {
+            "status": "I",
+            "source_ids": [
+              "IDI_SHAS"
+            ],
+            "rationale": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "expand",
+            "confidence": 0.6,
+            "rationale_localized": {
+              "en": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+              "ru": "Социальные и образовательные приоритеты партии позволяют предположить расширение общественных услуг. Конкретный бюджет и способ финансирования из этого не следуют.",
+              "he": "סדרי העדיפויות החברתיים והחינוכיים מצביעים על הרחבת שירותים ציבוריים. תקציב ומנגנון מימון מסוימים אינם מוסקים."
+            }
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -6012,7 +6475,35 @@
     {
       "party_id": "shas",
       "question_id": "Q9",
-      "dimensions": {},
+      "dimensions": {
+        "school_model": {
+          "status": "R",
+          "source_ids": [
+            "TOI_SCHOOL26"
+          ],
+          "rationale": "The reported policy funds independent party-affiliated schools alongside the state system.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "mixed"
+        },
+        "core_condition": {
+          "status": "I",
+          "source_ids": [
+            "TOI_SCHOOL25",
+            "TOI_SCHOOL26"
+          ],
+          "rationale": "Funding schools without full core compliance suggests opposition to making the complete common core a universal funding condition. This is an inference from budget conduct.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "no",
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "Funding schools without full core compliance suggests opposition to making the complete common core a universal funding condition. This is an inference from budget conduct.",
+            "ru": "Финансирование школ без полного соблюдения общего ядра позволяет предположить, что партия против такого условия для всей бюджетной поддержки. Это вывод из бюджетной практики.",
+            "he": "מימון בתי ספר ללא עמידה מלאה בליבה מצביע על התנגדות להתניית כל תמיכה בליבה מלאה. זו הערכה המבוססת על מדיניות תקציבית."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6061,7 +6552,18 @@
     {
       "party_id": "shas",
       "question_id": "Q16",
-      "dimensions": {},
+      "dimensions": {
+        "funding_model": {
+          "status": "R",
+          "source_ids": [
+            "TOI_SCHOOL25"
+          ],
+          "rationale": "The reported allocation goes directly to school institutions, rather than parent vouchers.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "institution"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6177,7 +6679,19 @@
           ],
           "rationale": "Explicit civil marriage and divorce.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "additional_evidence": [
+            {
+              "status": "R",
+              "source_ids": [
+                "TOI_REL26"
+              ],
+              "rationale": "The report explicitly supports civil marriage.",
+              "review_state": "editorial_draft",
+              "checked_at": "2026-09-29",
+              "value": "marriage"
+            }
+          ]
         }
       },
       "checked_at": "2026-09-29",
@@ -6196,6 +6710,19 @@
           "rationale": "The cited proposal assigns the decision on Shabbat transport to local authorities.",
           "review_state": "editorial_draft",
           "provenance": "Component-level recoding of cited research; other components not inferred."
+        },
+        "service": {
+          "status": "R",
+          "source_ids": [
+            "TOI_REL26"
+          ],
+          "rationale": "Supports Shabbat transport; the report does not settle service intensity. Both operating-service answers match this broad position.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "limited",
+            "full"
+          ]
         }
       },
       "checked_at": "2026-09-29",
@@ -6400,14 +6927,24 @@
       "question_id": "Q1",
       "dimensions": {
         "statehood": {
-          "value": "yes",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "R"
+            "IDI_RAAM"
           ],
-          "rationale": "Archived platform seeks a Palestinian state alongside withdrawal from occupied territory.",
+          "rationale": "The institutional profile explicitly supports a Palestinian state.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "checked_at": "2026-09-29",
+          "value": "yes",
+          "previous_evidence": {
+            "value": "yes",
+            "status": "H",
+            "source_ids": [
+              "R"
+            ],
+            "rationale": "Archived platform seeks a Palestinian state alongside withdrawal from occupied territory.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred."
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -6432,14 +6969,24 @@
       "question_id": "Q4",
       "dimensions": {
         "equality": {
-          "value": "constitutional",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "R"
+            "IDI_RAAM"
           ],
-          "rationale": "Archived platform demands constitutionally protected minority rights and equality.",
+          "rationale": "The profile calls for minority rights to be secured in a constitution.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "checked_at": "2026-09-29",
+          "value": "constitutional",
+          "previous_evidence": {
+            "value": "constitutional",
+            "status": "H",
+            "source_ids": [
+              "R"
+            ],
+            "rationale": "Archived platform demands constitutionally protected minority rights and equality.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred."
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -6462,7 +7009,24 @@
     {
       "party_id": "raam",
       "question_id": "Q7",
-      "dimensions": {},
+      "dimensions": {
+        "services": {
+          "status": "I",
+          "source_ids": [
+            "IDI_RAAM"
+          ],
+          "rationale": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "expand",
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+            "ru": "Социальные и образовательные приоритеты партии позволяют предположить расширение общественных услуг. Конкретный бюджет и способ финансирования из этого не следуют.",
+            "he": "סדרי העדיפויות החברתיים והחינוכיים מצביעים על הרחבת שירותים ציבוריים. תקציב ומנגנון מימון מסוימים אינם מוסקים."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6483,7 +7047,27 @@
     {
       "party_id": "raam",
       "question_id": "Q10",
-      "dimensions": {},
+      "dimensions": {
+        "lead": {
+          "status": "I",
+          "source_ids": [
+            "TOI_ARAB_CRIME26"
+          ],
+          "rationale": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "national_police",
+            "local_police"
+          ],
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+            "ru": "Требования эффективной работы полиции позволяют предположить её ведущую роль. Национальная или местная организация и участие ШАБАКа не определены.",
+            "he": "מהדרישה לשיטור יעיל מוסקת הובלה משטרתית. לא מוסקים מבנה ארצי או מקומי ועמדה לגבי סיוע השב״כ."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6492,14 +7076,34 @@
       "question_id": "Q11",
       "dimensions": {
         "unilateral_sovereignty": {
-          "value": "no",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "R"
+            "IDI_RAAM"
           ],
-          "rationale": "Withdrawal and evacuation of settlements are inconsistent with unilateral annexation.",
+          "rationale": "Withdrawal and Palestinian statehood oppose unilateral Israeli annexation of that territory.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "checked_at": "2026-09-29",
+          "value": "no",
+          "previous_evidence": {
+            "value": "no",
+            "status": "H",
+            "source_ids": [
+              "R"
+            ],
+            "rationale": "Withdrawal and evacuation of settlements are inconsistent with unilateral annexation.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred."
+          }
+        },
+        "territorial_route": {
+          "status": "R",
+          "source_ids": [
+            "IDI_RAAM"
+          ],
+          "rationale": "The profile explicitly advocates withdrawal from occupied territories or dismantling settlements.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "withdraw"
         }
       },
       "checked_at": "2026-09-29",
@@ -6517,7 +7121,23 @@
           ],
           "rationale": "Withdrawal and evacuation of settlements; historical policy applied to this proposition.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "inference": {
+            "status": "I",
+            "source_ids": [
+              "IDI_RAAM"
+            ],
+            "rationale": "Opposition to occupation and support for Palestinian statehood suggest opposition to rebuilding Israeli settlements in Gaza; postwar administration is not inferred.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "no",
+            "confidence": 0.6,
+            "rationale_localized": {
+              "en": "Opposition to occupation and support for Palestinian statehood suggest opposition to rebuilding Israeli settlements in Gaza; postwar administration is not inferred.",
+              "ru": "Из поддержки палестинской государственности и прекращения оккупации следует вероятное неприятие израильских поселений в Газе. Послевоенная администрация не определяется.",
+              "he": "מהתמיכה במדינה פלסטינית ובסיום הכיבוש מוסקת התנגדות לחידוש התנחלויות בעזה. הממשל לאחר המלחמה אינו מוסק."
+            }
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -6595,14 +7215,24 @@
       "question_id": "Q1",
       "dimensions": {
         "statehood": {
-          "value": "yes",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "HH"
+            "IDI_HADASH"
           ],
-          "rationale": "2013 platform explicitly supports a Palestinian state alongside Israel.",
+          "rationale": "The institutional profile explicitly supports a Palestinian state.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "checked_at": "2026-09-29",
+          "value": "yes",
+          "previous_evidence": {
+            "value": "yes",
+            "status": "H",
+            "source_ids": [
+              "HH"
+            ],
+            "rationale": "2013 platform explicitly supports a Palestinian state alongside Israel.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred."
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -6611,7 +7241,18 @@
     {
       "party_id": "hadash",
       "question_id": "Q2",
-      "dimensions": {},
+      "dimensions": {
+        "obligation": {
+          "status": "R",
+          "source_ids": [
+            "TOI_ODEH24"
+          ],
+          "rationale": "Odeh explicitly opposed mandatory military service; this does not establish a particular civilian-service model.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "voluntary"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6643,7 +7284,18 @@
     {
       "party_id": "hadash",
       "question_id": "Q5",
-      "dimensions": {},
+      "dimensions": {
+        "religious_role": {
+          "status": "H",
+          "source_ids": [
+            "TOI_ARAB20"
+          ],
+          "rationale": "The historical comparative profile describes firm separation of religion and state.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "private"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6666,7 +7318,39 @@
           ],
           "rationale": "Public health and education and reversal of privatization.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "inference": {
+            "status": "I",
+            "source_ids": [
+              "IDI_HADASH"
+            ],
+            "rationale": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "expand",
+            "confidence": 0.6,
+            "rationale_localized": {
+              "en": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+              "ru": "Социальные и образовательные приоритеты партии позволяют предположить расширение общественных услуг. Конкретный бюджет и способ финансирования из этого не следуют.",
+              "he": "סדרי העדיפויות החברתיים והחינוכיים מצביעים על הרחבת שירותים ציבוריים. תקציב ומנגנון מימון מסוימים אינם מוסקים."
+            }
+          }
+        },
+        "funding": {
+          "status": "I",
+          "source_ids": [
+            "IDI_HADASH"
+          ],
+          "rationale": "The socialist orientation suggests progressive funding; the profile does not specify tax rates.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "progressive",
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "The socialist orientation suggests progressive funding; the profile does not specify tax rates.",
+            "ru": "Социалистическая позиция позволяет предположить прогрессивное финансирование; конкретные ставки налогов не известны.",
+            "he": "מהגישה הסוציאליסטית מוסק מימון פרוגרסיבי; שיעורי מס אינם ידועים."
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -6689,7 +7373,27 @@
     {
       "party_id": "hadash",
       "question_id": "Q10",
-      "dimensions": {},
+      "dimensions": {
+        "lead": {
+          "status": "I",
+          "source_ids": [
+            "TOI_ARAB_CRIME26"
+          ],
+          "rationale": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "national_police",
+            "local_police"
+          ],
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+            "ru": "Требования эффективной работы полиции позволяют предположить её ведущую роль. Национальная или местная организация и участие ШАБАКа не определены.",
+            "he": "מהדרישה לשיטור יעיל מוסקת הובלה משטרתית. לא מוסקים מבנה ארצי או מקומי ועמדה לגבי סיוע השב״כ."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6698,14 +7402,34 @@
       "question_id": "Q11",
       "dimensions": {
         "unilateral_sovereignty": {
-          "value": "no",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "HH"
+            "IDI_HADASH"
           ],
-          "rationale": "Withdrawal from occupied territories and opposition to settlement expansion.",
+          "rationale": "Withdrawal and Palestinian statehood oppose unilateral Israeli annexation of that territory.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "checked_at": "2026-09-29",
+          "value": "no",
+          "previous_evidence": {
+            "value": "no",
+            "status": "H",
+            "source_ids": [
+              "HH"
+            ],
+            "rationale": "Withdrawal from occupied territories and opposition to settlement expansion.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred."
+          }
+        },
+        "territorial_route": {
+          "status": "R",
+          "source_ids": [
+            "IDI_HADASH"
+          ],
+          "rationale": "The profile explicitly advocates withdrawal from occupied territories or dismantling settlements.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "withdraw"
         }
       },
       "checked_at": "2026-09-29",
@@ -6714,7 +7438,24 @@
     {
       "party_id": "hadash",
       "question_id": "Q12",
-      "dimensions": {},
+      "dimensions": {
+        "settlements": {
+          "status": "I",
+          "source_ids": [
+            "IDI_HADASH"
+          ],
+          "rationale": "Opposition to occupation and support for Palestinian statehood suggest opposition to rebuilding Israeli settlements in Gaza; postwar administration is not inferred.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "no",
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "Opposition to occupation and support for Palestinian statehood suggest opposition to rebuilding Israeli settlements in Gaza; postwar administration is not inferred.",
+            "ru": "Из поддержки палестинской государственности и прекращения оккупации следует вероятное неприятие израильских поселений в Газе. Послевоенная администрация не определяется.",
+            "he": "מהתמיכה במדינה פלסטינית ובסיום הכיבוש מוסקת התנגדות לחידוש התנחלויות בעזה. הממשל לאחר המלחמה אינו מוסק."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6776,7 +7517,23 @@
           ],
           "rationale": "Collective agreements and stronger worker protection in the 2022 joint economic program.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "inference": {
+            "status": "I",
+            "source_ids": [
+              "IDI_HADASH"
+            ],
+            "rationale": "The socialist orientation suggests a preference for collective worker bargaining; dispute-resolution rules remain unknown.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "collective",
+            "confidence": 0.6,
+            "rationale_localized": {
+              "en": "The socialist orientation suggests a preference for collective worker bargaining; dispute-resolution rules remain unknown.",
+              "ru": "Социалистическая позиция предполагает поддержку коллективных переговоров работников; правила разрешения споров остаются неизвестными.",
+              "he": "מהגישה הסוציאליסטית מוסקת העדפה למיקוח קיבוצי; כללי יישוב סכסוכים אינם ידועים."
+            }
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -6808,7 +7565,29 @@
           ],
           "rationale": "Current secondary profile reports support for a Palestinian state; primary platform not located.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "additional_evidence": [
+            {
+              "status": "R",
+              "source_ids": [
+                "IDI_TAAL"
+              ],
+              "rationale": "The institutional profile explicitly supports a Palestinian state.",
+              "review_state": "editorial_draft",
+              "checked_at": "2026-09-29",
+              "value": "yes"
+            }
+          ]
+        },
+        "framework": {
+          "status": "R",
+          "source_ids": [
+            "IDI_TAAL"
+          ],
+          "rationale": "The profile supports an Israeli–Palestinian peace process leading to a Palestinian state.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "bilateral"
         }
       },
       "checked_at": "2026-09-29",
@@ -6838,14 +7617,54 @@
     {
       "party_id": "taal",
       "question_id": "Q5",
-      "dimensions": {},
+      "dimensions": {
+        "civil_route": {
+          "status": "I",
+          "source_ids": [
+            "IDI_TAAL"
+          ],
+          "rationale": "Secularism suggests support for a civil alternative, without identifying marriage versus partnership registration.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "marriage",
+            "registration"
+          ],
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "Secularism suggests support for a civil alternative, without identifying marriage versus partnership registration.",
+            "ru": "Светская позиция позволяет предположить поддержку гражданской альтернативы; брак или регистрация партнёрства не уточняются.",
+            "he": "מהגישה החילונית מוסקת תמיכה בחלופה אזרחית, ללא הכרעה בין נישואים לרישום זוגיות."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
     {
       "party_id": "taal",
       "question_id": "Q6",
-      "dimensions": {},
+      "dimensions": {
+        "service": {
+          "status": "I",
+          "source_ids": [
+            "IDI_TAAL"
+          ],
+          "rationale": "Secular policy orientation suggests support for allowing Shabbat transport. Only availability is inferred; service scale and decision-making authority remain unspecified.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "limited",
+            "full"
+          ],
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "Secular policy orientation suggests support for allowing Shabbat transport. Only availability is inferred; service scale and decision-making authority remain unspecified.",
+            "ru": "Из светской позиции партии следует вероятная поддержка транспорта по субботам. Совпадают оба варианта с работающим транспортом; масштаб движения и полномочия не приписываются.",
+            "he": "מהגישה החילונית מוסקת תמיכה אפשרית בתחבורה בשבת. שתי חלופות ההפעלה תואמות; היקף השירות והסמכות אינם מוסקים."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6873,7 +7692,27 @@
     {
       "party_id": "taal",
       "question_id": "Q10",
-      "dimensions": {},
+      "dimensions": {
+        "lead": {
+          "status": "I",
+          "source_ids": [
+            "TOI_ARAB_CRIME26"
+          ],
+          "rationale": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "national_police",
+            "local_police"
+          ],
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+            "ru": "Требования эффективной работы полиции позволяют предположить её ведущую роль. Национальная или местная организация и участие ШАБАКа не определены.",
+            "he": "מהדרישה לשיטור יעיל מוסקת הובלה משטרתית. לא מוסקים מבנה ארצי או מקומי ועמדה לגבי סיוע השב״כ."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6947,7 +7786,18 @@
     {
       "party_id": "taal",
       "question_id": "Q19",
-      "dimensions": {},
+      "dimensions": {
+        "compulsory": {
+          "status": "H",
+          "source_ids": [
+            "YNET_SERVICE12"
+          ],
+          "rationale": "The historical report attributes opposition to compulsory national service to the party’s representative.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "no"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6961,7 +7811,18 @@
     {
       "party_id": "balad",
       "question_id": "Q1",
-      "dimensions": {},
+      "dimensions": {
+        "statehood": {
+          "status": "R",
+          "source_ids": [
+            "IDI_BALAD"
+          ],
+          "rationale": "The institutional profile explicitly supports a Palestinian state.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "yes"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -6991,16 +7852,38 @@
           ],
           "rationale": "Official 2017 program explicitly requires constitutional equality.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "additional_evidence": [
+            {
+              "status": "H",
+              "source_ids": [
+                "YNET_BALAD08"
+              ],
+              "rationale": "The historical profile calls for a Basic Law guaranteeing Arab minority equality.",
+              "review_state": "editorial_draft",
+              "checked_at": "2026-09-29",
+              "value": "constitutional"
+            }
+          ]
         },
         "identity": {
-          "value": "civic",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "BA"
+            "IDI_BALAD"
           ],
-          "rationale": "The 2017 constitutional section defines a state of all its citizens. It also recognizes collective national rights.",
-          "review_state": "editorial_draft"
+          "rationale": "The profile describes a state of all citizens.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "civic",
+          "previous_evidence": {
+            "value": "civic",
+            "status": "H",
+            "source_ids": [
+              "BA"
+            ],
+            "rationale": "The 2017 constitutional section defines a state of all its citizens. It also recognizes collective national rights.",
+            "review_state": "editorial_draft"
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -7009,14 +7892,73 @@
     {
       "party_id": "balad",
       "question_id": "Q5",
-      "dimensions": {},
+      "dimensions": {
+        "civil_route": {
+          "status": "I",
+          "source_ids": [
+            "IDI_BALAD"
+          ],
+          "rationale": "Secularism suggests support for a civil alternative, without identifying marriage versus partnership registration.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "marriage",
+            "registration"
+          ],
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "Secularism suggests support for a civil alternative, without identifying marriage versus partnership registration.",
+            "ru": "Светская позиция позволяет предположить поддержку гражданской альтернативы; брак или регистрация партнёрства не уточняются.",
+            "he": "מהגישה החילונית מוסקת תמיכה בחלופה אזרחית, ללא הכרעה בין נישואים לרישום זוגיות."
+          }
+        },
+        "religious_role": {
+          "status": "I",
+          "source_ids": [
+            "IDI_BALAD"
+          ],
+          "rationale": "Separation of religion and state suggests ending exclusive religious control; the remaining institutional role is unspecified.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "optional",
+            "private"
+          ],
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "Separation of religion and state suggests ending exclusive religious control; the remaining institutional role is unspecified.",
+            "ru": "Разделение религии и государства предполагает отказ от религиозной монополии; конкретная роль религиозных организаций не определена.",
+            "he": "מהפרדת דת ומדינה מוסק ביטול המונופול הדתי; התפקיד המוסדי שנותר אינו ידוע."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
     {
       "party_id": "balad",
       "question_id": "Q6",
-      "dimensions": {},
+      "dimensions": {
+        "service": {
+          "status": "I",
+          "source_ids": [
+            "IDI_BALAD"
+          ],
+          "rationale": "Secular policy orientation suggests support for allowing Shabbat transport. Only availability is inferred; service scale and decision-making authority remain unspecified.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "limited",
+            "full"
+          ],
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "Secular policy orientation suggests support for allowing Shabbat transport. Only availability is inferred; service scale and decision-making authority remain unspecified.",
+            "ru": "Из светской позиции партии следует вероятная поддержка транспорта по субботам. Совпадают оба варианта с работающим транспортом; масштаб движения и полномочия не приписываются.",
+            "he": "מהגישה החילונית מוסקת תמיכה אפשרית בתחבורה בשבת. שתי חלופות ההפעלה תואמות; היקף השירות והסמכות אינם מוסקים."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -7054,21 +7996,79 @@
     {
       "party_id": "balad",
       "question_id": "Q10",
-      "dimensions": {},
+      "dimensions": {
+        "lead": {
+          "status": "I",
+          "source_ids": [
+            "TOI_ARAB_CRIME26"
+          ],
+          "rationale": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "values": [
+            "national_police",
+            "local_police"
+          ],
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "The leaders’ demands for effective policing suggest a police-led response, without establishing national versus local organization or a position on Shin Bet assistance.",
+            "ru": "Требования эффективной работы полиции позволяют предположить её ведущую роль. Национальная или местная организация и участие ШАБАКа не определены.",
+            "he": "מהדרישה לשיטור יעיל מוסקת הובלה משטרתית. לא מוסקים מבנה ארצי או מקומי ועמדה לגבי סיוע השב״כ."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
     {
       "party_id": "balad",
       "question_id": "Q11",
-      "dimensions": {},
+      "dimensions": {
+        "territorial_route": {
+          "status": "R",
+          "source_ids": [
+            "IDI_BALAD"
+          ],
+          "rationale": "The profile explicitly advocates withdrawal from occupied territories or dismantling settlements.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "withdraw"
+        },
+        "unilateral_sovereignty": {
+          "status": "R",
+          "source_ids": [
+            "IDI_BALAD"
+          ],
+          "rationale": "Withdrawal and Palestinian statehood oppose unilateral Israeli annexation of that territory.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "no"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
     {
       "party_id": "balad",
       "question_id": "Q12",
-      "dimensions": {},
+      "dimensions": {
+        "settlements": {
+          "status": "I",
+          "source_ids": [
+            "IDI_BALAD"
+          ],
+          "rationale": "Opposition to occupation and support for Palestinian statehood suggest opposition to rebuilding Israeli settlements in Gaza; postwar administration is not inferred.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "no",
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "Opposition to occupation and support for Palestinian statehood suggest opposition to rebuilding Israeli settlements in Gaza; postwar administration is not inferred.",
+            "ru": "Из поддержки палестинской государственности и прекращения оккупации следует вероятное неприятие израильских поселений в Газе. Послевоенная администрация не определяется.",
+            "he": "מהתמיכה במדינה פלסטינית ובסיום הכיבוש מוסקת התנגדות לחידוש התנחלויות בעזה. הממשל לאחר המלחמה אינו מוסק."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -7128,7 +8128,18 @@
     {
       "party_id": "balad",
       "question_id": "Q19",
-      "dimensions": {},
+      "dimensions": {
+        "compulsory": {
+          "status": "H",
+          "source_ids": [
+            "YNET_SERVICE12"
+          ],
+          "rationale": "The historical report attributes opposition to compulsory national service to the party’s representative.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "no"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -7158,7 +8169,19 @@
           ],
           "rationale": "Current report describes continuing opposition to a general conscription law.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "additional_evidence": [
+            {
+              "status": "R",
+              "source_ids": [
+                "AP_DRAFT25"
+              ],
+              "rationale": "The party demanded broad draft exemptions for yeshiva students.",
+              "review_state": "editorial_draft",
+              "checked_at": "2026-09-29",
+              "value": "sector_exemption"
+            }
+          ]
         }
       },
       "checked_at": "2026-09-29",
@@ -7183,14 +8206,34 @@
       "question_id": "Q5",
       "dimensions": {
         "civil_route": {
-          "value": "none",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "UT"
+            "TOI_REL26"
           ],
-          "rationale": "Exclusive halakhic personal-status framework; historical interpretation.",
+          "rationale": "The party rejected Bennett’s proposal for civil marriage, defending religious marriage.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "checked_at": "2026-09-29",
+          "value": "none",
+          "previous_evidence": {
+            "value": "none",
+            "status": "H",
+            "source_ids": [
+              "UT"
+            ],
+            "rationale": "Exclusive halakhic personal-status framework; historical interpretation.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred."
+          }
+        },
+        "religious_role": {
+          "status": "R",
+          "source_ids": [
+            "TOI_REL26"
+          ],
+          "rationale": "The party defended the religious marriage status quo against a civil alternative.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "exclusive"
         }
       },
       "checked_at": "2026-09-29",
@@ -7201,14 +8244,24 @@
       "question_id": "Q6",
       "dimensions": {
         "service": {
-          "value": "none",
-          "status": "H",
+          "status": "R",
           "source_ids": [
-            "UT"
+            "TOI_REL26"
           ],
-          "rationale": "Opposes expansion of Shabbat work and commerce.",
+          "rationale": "The party opposed the proposed introduction of public transport on Shabbat.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "checked_at": "2026-09-29",
+          "value": "none",
+          "previous_evidence": {
+            "value": "none",
+            "status": "H",
+            "source_ids": [
+              "UT"
+            ],
+            "rationale": "Opposes expansion of Shabbat work and commerce.",
+            "review_state": "editorial_draft",
+            "provenance": "Component-level recoding of cited research; other components not inferred."
+          }
         }
       },
       "checked_at": "2026-09-29",
@@ -7217,7 +8270,24 @@
     {
       "party_id": "utj",
       "question_id": "Q7",
-      "dimensions": {},
+      "dimensions": {
+        "services": {
+          "status": "I",
+          "source_ids": [
+            "IDI_UTJ"
+          ],
+          "rationale": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "expand",
+          "confidence": 0.6,
+          "rationale_localized": {
+            "en": "The profile’s social-welfare or educational-equality priorities suggest expanding public services; a specific budget or tax mechanism is not established.",
+            "ru": "Социальные и образовательные приоритеты партии позволяют предположить расширение общественных услуг. Конкретный бюджет и способ финансирования из этого не следуют.",
+            "he": "סדרי העדיפויות החברתיים והחינוכיים מצביעים על הרחבת שירותים ציבוריים. תקציב ומנגנון מימון מסוימים אינם מוסקים."
+          }
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -7240,7 +8310,34 @@
           ],
           "rationale": "Public support for autonomous Torah education; historical inference about the proposed funding condition.",
           "review_state": "editorial_draft",
-          "provenance": "Component-level recoding of cited research; other components not inferred."
+          "provenance": "Component-level recoding of cited research; other components not inferred.",
+          "inference": {
+            "status": "I",
+            "source_ids": [
+              "TOI_SCHOOL25",
+              "TOI_SCHOOL26"
+            ],
+            "rationale": "Funding schools without full core compliance suggests opposition to making the complete common core a universal funding condition. This is an inference from budget conduct.",
+            "review_state": "editorial_draft",
+            "checked_at": "2026-09-29",
+            "value": "no",
+            "confidence": 0.6,
+            "rationale_localized": {
+              "en": "Funding schools without full core compliance suggests opposition to making the complete common core a universal funding condition. This is an inference from budget conduct.",
+              "ru": "Финансирование школ без полного соблюдения общего ядра позволяет предположить, что партия против такого условия для всей бюджетной поддержки. Это вывод из бюджетной практики.",
+              "he": "מימון בתי ספר ללא עמידה מלאה בליבה מצביע על התנגדות להתניית כל תמיכה בליבה מלאה. זו הערכה המבוססת על מדיניות תקציבית."
+            }
+          }
+        },
+        "school_model": {
+          "status": "R",
+          "source_ids": [
+            "TOI_SCHOOL26"
+          ],
+          "rationale": "The reported policy funds independent party-affiliated schools alongside the state system.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "mixed"
         }
       },
       "checked_at": "2026-09-29",
@@ -7291,7 +8388,18 @@
     {
       "party_id": "utj",
       "question_id": "Q16",
-      "dimensions": {},
+      "dimensions": {
+        "funding_model": {
+          "status": "R",
+          "source_ids": [
+            "TOI_SCHOOL25"
+          ],
+          "rationale": "The reported allocation goes directly to school institutions, rather than parent vouchers.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "institution"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },
@@ -7723,7 +8831,18 @@
     {
       "party_id": "blue_white",
       "question_id": "Q13",
-      "dimensions": {},
+      "dimensions": {
+        "statutory": {
+          "status": "R",
+          "source_ids": [
+            "TOI_PROBE25"
+          ],
+          "rationale": "Blue and White’s Alon Schuster pressed the committee to establish a statutory state commission.",
+          "review_state": "editorial_draft",
+          "checked_at": "2026-09-29",
+          "value": "yes"
+        }
+      },
       "checked_at": "2026-09-29",
       "review_state": "editorial_draft"
     },

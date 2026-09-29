@@ -52,9 +52,9 @@ const fs = require('node:fs');
     assert.equal(await evaluate('document.querySelector("legend").nextElementSibling.className'),'question-importance');
   };
   const assertRanking=async()=>{
-    const cards=await evaluate('[...document.querySelectorAll(".result-card")].map(c=>({id:c.dataset.party,score:Number(c.dataset.score),coverage:Number(c.dataset.coverage),shown:c.querySelector(".score").firstChild.textContent}))');
+    const cards=await evaluate('[...document.querySelectorAll(".result-card")].map(c=>({id:c.dataset.party,score:Number(c.dataset.score),coverage:Number(c.dataset.coverage),documented:Number(c.dataset.documented),shown:c.querySelector(".score").firstChild.textContent}))');
     assert.equal(cards.length,16);
-    cards.forEach((c,i)=>{assert.equal(c.shown,`${Math.round(c.score*100)}%`);assert(c.score<=c.coverage+1e-10);if(i){assert(cards[i-1].score>=c.score);if(cards[i-1].score===c.score)assert(cards[i-1].coverage>=c.coverage);}});
+    cards.forEach((c,i)=>{assert.equal(c.shown,`${Math.round(c.score*100)}%`);assert(c.score<=c.coverage+1e-10);if(i){assert(cards[i-1].score>=c.score);if(cards[i-1].score===c.score)assert(cards[i-1].documented>=c.documented);}});
     return cards;
   };
   const finishRun=async(skip=false)=>{
@@ -161,8 +161,15 @@ const fs = require('node:fs');
   for(let i=19;i>longOrder.indexOf('Q1');i--)await click('#back');
   assert.equal(await currentId(),'Q1');await setImportance(1);await click('#results-tab');
   const after=await assertRanking();assert.notDeepEqual(before,after);
-  assert.equal(await evaluate('document.querySelector("[data-party=balad]").dataset.score'),'0');
-  await click('[data-party=balad] .include-history');
+  assert(Number(await evaluate('document.querySelector("[data-party=balad]").dataset.documented'))>0);
+  const estimatesOn=await assertRanking();
+  await click('#estimates');
+  assert.equal(await evaluate('document.getElementById("estimates").checked'),false);
+  const estimatesOff=await assertRanking();
+  for(const card of estimatesOff){const enabled=estimatesOn.find(c=>c.id===card.id);assert(card.score<=enabled.score+1e-12);assert.equal(card.documented,enabled.documented);}
+  assert.equal(await evaluate('document.querySelectorAll(".score-breakdown").length'),0);
+  await click('#estimates');
+  await click('#historical');
   assert.equal(await evaluate('document.getElementById("historical").checked'),true);
   const english=await assertRanking();await changeLanguage('ru');assert.deepEqual(await assertRanking(),english);
   await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
@@ -188,13 +195,13 @@ const fs = require('node:fs');
   await click('.choices input');assert.equal(await step(),2);
   await click('#reset');assert.equal(await step(),1);
   assert.equal(await evaluate('document.getElementById("progress").value'),0);
-  assert.equal(await evaluate('document.querySelectorAll("input:checked").length'),0);
+  assert.equal(await evaluate('document.querySelectorAll(".question input:checked").length'),0);
   assert.equal(await evaluate('document.querySelector(".importance-select").value'),'0.8');
   assert.equal(await evaluate('document.getElementById("historical").checked'),false);
   // Reset, language changes and switching forms cancel pending timers cleanly.
   await evaluate('document.querySelector(".choices input").click();document.getElementById("reset").click()');
   await evaluate('new Promise(r=>setTimeout(r,1300))');assert.equal(await step(),1);
-  assert.equal(await evaluate('document.querySelectorAll("input:checked").length'),0);
+  assert.equal(await evaluate('document.querySelectorAll(".question input:checked").length'),0);
   const cancelledId=await currentId();
   await evaluate('document.querySelector(".choices input").click()');await changeLanguage('he');
   await evaluate('new Promise(r=>setTimeout(r,1300))');assert.equal(await currentId(),cancelledId);

@@ -98,3 +98,5 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .choice.is-confirmed:has(input:checked){background:var(--accent);border-color:var(--accent);color:white;box-shadow:inset 0 0 0 1px var(--accent)}
 .choice.is-confirmed:has(input:checked) .option-letter{background:white;color:var(--accent);border-color:white}
 @media(prefers-reduced-motion:reduce){.choice{transition:none}}
+.score-breakdown{font-size:13px;line-height:1.6;color:var(--muted);margin:12px 0}
+.evidence .inference-note{background:#eef4ff;border-inline-start:3px solid var(--accent);padding:8px 10px}

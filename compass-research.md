@@ -1,4 +1,4 @@
-# Your Choice — Your Vote — policy choices and confirmed agreement (v0.4)
+# Your Choice — Your Vote — policy choices, sources and reasoned estimates (v0.5)
 
 The browser contains **20 original questions, 91 substantive choices and 40 policy components**, in English, Hebrew and Russian. [Open the quiz](index.html) or [read the issue guide](issues.html). Each guide section introduces the dispute, presents competing approaches, poses open questions and links to further reading. The question-mark help and “About this issue” elements explain the issue itself; calculation details are separate.
 
@@ -16,46 +16,47 @@ Replaced questions stay retired for that run; after ten replacements in a short 
 
 ## Scoring and evidence
 
-Answer IDs and letters have no numerical order. Each answer describes a policy package with two separately evaluated components. Each component has an explicit, symmetric similarity matrix: identical policies receive 1, related approaches can receive .25, .5 or .75, and opposed or non-overlapping approaches receive 0. The complete rules and rationales are in [similarity-rules.json](similarity-rules.json). Question-level overlap tables are also visible in the quiz.
+Each answer has two independently scored components. Importance is the only question multiplier: Critical = 1, Important = 0.8 (default), Not very important = 0.5, Not important = 0.1. The interface shows verbal importance labels. Each component receives half the question weight.
 
-These similarities are **editorial estimates of policy overlap**, not measured probabilities or a validated ideological-distance scale. Different reasonable judgments could change the result. They should be reviewed alongside the wording and evidence before public release.
+Specific party positions use the graded overlap matrices in [similarity-rules.json](similarity-rules.json). Related policies can partially match. Broad positions instead contain an explicit set of compatible values (`values`): each included alternative matches fully and alternatives outside the set receive zero. These sets express a shared policy direction, not uncertainty that the party endorses every detailed package.
 
-For example, universal service with military priority and universal service with free choice of military or civilian service share the obligation component (1), while their pathways receive .5 similarity: a fully evidenced question scores **75%**. A two-term limit and an eight-year limit share a binding limit (1); the terms/years mechanisms receive .75, producing **87.5%**. If the party's second component is unknown, it earns no credit: a full match on the one known component gives 50% confirmed agreement for that question and 50% documented positions.
+For example, Balad's secular orientation supports an **inference** in favor of allowing Shabbat transport. `service = [limited, full]` matches both kinds of operating service equally and matches `none` at zero. The decision-making authority remains unknown. No national/local preference or timetable is invented. At the default inference factor of 0.6, this one known direction contributes 30% of the two-component question, not 100%. This is an editorial discount, not a measured probability.
 
-Each question has four importance levels in this order (the interface shows only verbal labels; these are the internal weights): critical = **1.0**, important = **0.8** (default), not very important = **0.5**, not important = **0.1**. Change question appears after them as an action in the short form. Importance is the question weight; domains do not add another multiplier. The minimum is positive, so “not important” still contributes a small amount. A skipped or replaced question does not contribute.
+Evidence categories:
 
-For question i and component k:
+- **P**: published party policy; included by default.
+- **S**: attributable statement; included by default.
+- **R**: reviewed secondary report or institutional party profile; now included by default. Undated profiles are identified as such, not called new election manifestos.
+- **H**: historical source; included only with the historical switch.
+- **I**: source-linked editorial inference, with a multilingual explanation. Included by default, discounted to 60%, and independently switchable. It does not increase documented coverage.
+- **U**: unknown; contributes no credit but stays in the denominator.
+
+A documented position takes precedence over an inference. Where an archived position has a separate inference fallback, the fallback can be used with archives off; switching archives on uses the historical position, without adding or averaging both. Corroborating entries and superseded evidence remain in the dataset for review; they are not double counted.
 
 ```
-question_weight_i = user_importance_i
-component_weight_ik = question_weight_i / 2
-component_similarity_ik = matrix_k[user_value][party_value]
+question_weight = selected_importance
+component_weight = question_weight / 2
+specific_similarity = matrix[user_value][party_value]
+broad_similarity = 1 if user_value in compatible_values else 0
+D = sum(question_weight for ALL substantive answered questions)
 
-confirmed_agreement = 100 * sum(known component_weight * component_similarity)
-                           / sum(all component_weight for answered questions)
-documented_positions = 100 * sum(known component_weight)
-                 / sum(all component_weight for answered questions)
+sourced_score = sum(component_weight * similarity for enabled P/S/R/H) / D
+inferred_score = sum(component_weight * similarity * 0.6 for enabled I) / D
+result = 100 * (sourced_score + inferred_score)
+documented_share = 100 * sum(component_weight for enabled P/S/R/H) / D
 ```
 
-The denominator is the sum of chosen importance for substantive user answers. Skipped questions are excluded. The short run still samples two questions per domain, but only user importance controls scoring. A zero denominator returns no score. Parties are scored independently; percentages do not sum to 100 and the best party is not normalized to 100. Unknown party components remain in the denominator and add no confirmed agreement. They are labeled unknown, not claimed to be disagreement. With no usable party evidence the score is 0% confirmed agreement and the card explicitly says there is no usable evidence. With no substantive user answers there is no score.
+Skipped and replaced questions do not contribute. Unanswered questions do not contribute. Remaining unknown party components stay in the denominator; two complete sourced matches and eight unknowns still give 20% at equal importance. No missing position is filled by the user's own answer, another party's answer, religion, ethnicity or coalition membership alone. Each party has an independent score; the best result is not normalized to 100%.
 
-Evidence status belongs to each component: **P** = published policy; **S** = attributable statement; **H** = historical document; **R** = secondary characterization. The default filter includes P/S. The optional historical/secondary mode includes H/R and is explicitly labeled. A live undated page is not proof of a newly issued election manifesto; dates and retrieval limitations remain visible in the source registry.
+The result cards separate sourced and inferred contributions. Their documented percentage excludes all inferences. Total similarity can therefore exceed documented coverage, but cannot exceed documented coverage plus the discounted inferred component weight. With estimates off, it cannot exceed documented coverage. Sort by total similarity, then documented coverage, then total supported component weight and party ID.
 
-**Two full matches out of ten equally weighted answered questions give 20%**, even if the other eight party positions are unknown. If the two known questions have 50% similarity, the result is 10%. Scores cannot exceed the documented share. There is no extrapolation of agreement to unknown positions, and no hypothetical completion range is displayed.
-
-For example, one fully matched critical question (weight 1) and one unknown, unimportant question (weight 0.1) produce 1 / 1.1 = 90.91%. Reversing the importance gives 0.1 / 1.1 = 9.09%. The denominator still includes the unknown position at its chosen weight.
-
-Every party is ranked by confirmed agreement, highest first. Equal unrounded scores are ordered by documented share, then stable party ID. Results are no longer separated into a threshold-qualified ranking and unranked partial percentages. The old known-only normalization and coverage thresholds have been removed.
-
-“Positions documented” (formerly “coverage”) describes the importance-weighted share of answered components backed by usable evidence. It is not a match percentage: it falls when source research is incomplete, a source does not address one of a question's two components, or dated sources are excluded. Both the score and the source completeness are shown, with an explanation above the result cards.
+The coefficient 0.6 and the graded matrices are editorial conventions, not statistically calibrated confidence measures. Historical sources and secondary-source dates remain visible. A report of one lawmaker's view is not automatically generalized to every party or every issue. Policy gaps and intra-party disagreements still require research.
 
 ## Source coverage and limitations
 
-The source-linked party key is [compass-data.json](compass-data.json), with a component-level export in [party-positions.csv](party-positions.csv). The older agreement-scale number was not mapped to an entire answer option: only propositions actually supported by the evidence were recoded. The [archived investigation](archive/agreement-scale-v1/compass-research.md) preserves the earlier source search; its questionnaire and scoring rules are superseded.
+The source-linked key is [compass-data.json](compass-data.json); [party-positions.csv](party-positions.csv) exports coarse values and inference metadata. [research-expansion.json](research-expansion.json) contains the additional source review, with [a readable review table](research-expansion.md). [source-gaps.md](source-gaps.md) lists sourced components, inferences and remaining gaps separately.
 
-This revision adds evidence from Religious Zionism's official sovereignty page, dated 2021 program documents and its 2023–24 budget discussion. Balad's official 2017 program supplies additional constitutional and economic components. Dated programs remain historical evidence. A card with no usable evidence explains whether the filter excluded available evidence or whether the answered topics have a research gap; it offers the historical filter when applicable.
-
-The evidence remains sparse. Otzma Yehudit’s 2020 principles, archived by the Knesset channel, now supply historical evidence on the sovereignty question. This does not establish its complete current program. Finding a party website or a program does not establish every component asked by this questionnaire. This prototype does not yet support a well-evidenced current all-party ranking. Russian covers the quiz, issue guide and policy labels; detailed party-evidence rationales retain their English research text, and external reading links identify the source language.
+This expansion draws on Israel Democracy Institute party profiles, Times of Israel reporting, Associated Press coverage, and historical Ynet reports. Sources document particular policy components rather than entire answer packages. Dated profiles and secondary reports are not substitutes for a comprehensive current manifesto. The earlier source investigation remains in [the archive](archive/agreement-scale-v1/compass-research.md); its old scoring rules are superseded.
 
 ## Questions and policy packages
 
@@ -628,3 +629,27 @@ Dates and retrieval limitations are preserved from the research. An undated live
 | RDE21 | [Religious Zionism: economic platform](https://zionutdatit.org.il/wp-content/uploads/2021/12/כלכלה.pdf) | 2021-12 | Official linked PDF, visually inspected. Explicitly calls for compulsory arbitration in essential services. |
 | RDB23 | [Religious Zionism: 2023–24 budget policy](https://zionutdatit.org.il/budget/) | 2023–2024 | Official text retrieved directly; internal budget-year references establish date. Not a new 2026 program. |
 | OZ20 | [Otzma Yehudit: principles for the 23rd Knesset election (2020)](https://www.knesset.tv/media/34728/מצע-עוצמה-יהודית.pdf) | 2020-01-28 | Party principles archived by the Knesset channel; heading explicitly dates the election document. Section 4 visually inspected. Historical evidence, not a 2026 manifesto. |
+| IDI_BALAD | [IDI: Balad party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/balad/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |
+| IDI_HADASH | [IDI: Hadash party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/hadash/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |
+| IDI_TAAL | [IDI: Ta’al party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/taal/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |
+| IDI_RAAM | [IDI: Ra’am party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/raam/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |
+| IDI_SHAS | [IDI: Shas party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/shas/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |
+| IDI_UTJ | [IDI: United Torah Judaism party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/united-torah-judaism/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |
+| IDI_LIKUD | [IDI: Likud party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/likud/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |
+| IDI_OTZMA | [IDI: Otzma Yehudit party profile](https://en.idi.org.il/israeli-elections-and-parties/parties/otzma-yehudit/) | Undated | Undated institutional profile, reviewed 2026-09-29. Describes standing ideology; not a newly published 2026 manifesto. Narrow policy deductions are separately labeled I. |
+| TOI_REL26 | [ToI: Bennett backs Shabbat transport and civil marriage; Shas and UTJ respond](https://www.timesofisrael.com/liveblog_entry/ex-pm-bennett-backs-public-transport-on-shabbat-civil-marriage-sparking-haredi-backlash/) | 2026-04-20 | Reviewed secondary source; publication date is shown separately from retrieval date. |
+| TOI_SCHOOL26 | [ToI: additional funding for Haredi school networks](https://www.timesofisrael.com/state-budget-set-to-increase-spending-on-haredi-education-by-nis-1-billion/amp/) | 2026-02-19 | Reviewed secondary source; publication date is shown separately from retrieval date. |
+| TOI_SCHOOL25 | [ToI: committee funds private and exempt Haredi schools](https://www.timesofisrael.com/knesset-finance-committee-approves-additional-nis-177m-for-private-haredi-schools/amp/) | 2025-08-12 | Reports direct funding of exempt and party-affiliated schools; interpretations of core-curriculum requirements are labeled as inferences. |
+| AP_DRAFT25 | [AP: Shas and UTJ leave government over draft exemptions](https://apnews.com/article/b58b8705277f27fa41f664c341e5a93e) | 2025-07-16 | Reviewed secondary source; publication date is shown separately from retrieval date. |
+| TOI_JUDGES25 | [ToI: political control over judicial appointments](https://www.timesofisrael.com/knesset-passes-law-greatly-boosting-political-control-over-judicial-appointments/) | 2025-03-27 | The 2025 committee model is not identical to direct appointment by parliament. Any mapping to the quiz’s broader political-selection approach is labeled an inference. |
+| TOI_PROBE26 | [ToI: Likud’s alternative October 7 inquiry bill](https://www.timesofisrael.com/call-for-independent-inquiry-removed-from-coalition-bill-establishing-oct-7-probe/amp/) | 2026-05-13 | Reviewed secondary source; publication date is shown separately from retrieval date. |
+| TOI_PROBE25 | [ToI: Blue and White presses for a state inquiry](https://www.timesofisrael.com/liveblog_entry/lawmakers-defeat-motion-to-establish-state-commission-of-inquiry-into-october-7/) | 2025-12-22 | Reviewed secondary source; publication date is shown separately from retrieval date. |
+| TOI_GAZA_RZ25 | [ToI: Smotrich advocates renewed Gaza settlements](https://www.timesofisrael.com/liveblog_entry/smotrich-says-return-of-jewish-settlements-to-gaza-now-realistic-needs-to-be-much-bigger-than-before/) | 2025-07-29 | Reviewed secondary source; publication date is shown separately from retrieval date. |
+| TOI_GAZA_OZ24 | [ToI: Ben Gvir and Smotrich advocate Gaza resettlement](https://www.timesofisrael.com/ben-gvir-suggests-netanyahu-open-to-encouraging-palestinian-migration-from-gaza/) | 2024-12-01 | Dated reporting of Ben Gvir’s position; not evidence for the stance of every coalition party. |
+| TOI_CRIME25 | [ToI: Ben Gvir backs treating criminal organizations as terror groups](https://www.timesofisrael.com/government-greenlights-bill-to-label-certain-crime-organizations-as-terror-groups/) | 2025-10-19 | Reviewed secondary source; publication date is shown separately from retrieval date. |
+| TOI_ARAB_CRIME26 | [ToI: Arab party leaders demand effective policing against organized crime](https://www.timesofisrael.com/arab-blood-isnt-cheap-hundreds-rally-in-capital-alleging-police-failure-on-violent-crime/amp/) | 2026-01-11 | Reviewed secondary source; publication date is shown separately from retrieval date. |
+| TOI_ODEH24 | [ToI: Odeh opposes compulsory military service](https://www.timesofisrael.com/liveblog_entry/top-arab-mk-odeh-slams-haredi-idf-draft-law-citing-opposition-to-mandatory-consription/) | 2024-06-10 | Reviewed secondary source; publication date is shown separately from retrieval date. |
+| YNET_SERVICE12 | [Ynet: competing views on compulsory national service for Arabs](https://www.ynetnews.com/articles/0%2C7340%2CL-4232623%2C00.html) | 2012 | Historical report: never treated as a new statement by today’s party leadership. |
+| YNET_BALAD08 | [Ynet: Balad platform profile](https://www.ynetnews.com/articles/0%2C7340%2CL-3502144%2C00.html) | 2008 | Historical secondary profile; constitutional commitment is marked H. |
+| TOI_ARAB20 | [ToI: differences among the four Joint List parties](https://www.timesofisrael.com/joint-list-4-arab-parties-on-1-slate-is-poles-apart-but-strong-together/amp/) | 2020 | Historical comparative profile. Secularism is not assumed to imply an identical stance on every family-policy question. |
+| TOI_RZ_REL19 | [ToI: Smotrich on religious law, marriage and Shabbat](https://www.timesofisrael.com/smotrich-says-israel-should-follow-torah-law-again-drawing-ire-of-liberman/) | 2019 | Historical statement before the current party configuration; used only with the historical filter. |
