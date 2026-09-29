@@ -813,8 +813,8 @@
     "id": "Q9",
     "short": true,
     "domain": "services",
-    "en": "What common curriculum should schools teach, and how should they be funded and governed?",
-    "he": "איזו תוכנית לימודים משותפת צריכה לחול בבתי הספר, וכיצד יש לממן ולנהל אותם?",
+    "en": "School curriculum: what common core should be compulsory, and in which schools?",
+    "he": "תוכנית הלימודים: איזו ליבה משותפת צריכה להיות חובה, ובאילו בתי ספר?",
     "dimensions": [
       {
         "id": "core_condition",
@@ -902,8 +902,8 @@
       },
       {
         "id": "universal_core",
-        "en": "Require a common core curriculum in every education stream and school, regardless of funding, while allowing additional cultural and religious subjects. Fund both state and independent schools.",
-        "he": "לחייב תוכנית ליבה משותפת בכל זרמי החינוך ובכל בתי הספר, ללא תלות במקור המימון, ולאפשר לצדה תכנים תרבותיים ודתיים נוספים. לממן בתי ספר ממלכתיים ועצמאיים.",
+        "en": "Require every school (state, private and religious) to teach a common core, regardless of funding. Allow additional subjects and public funding for both state and independent schools.",
+        "he": "לחייב כל בית ספר (ממלכתי, פרטי ודתי) ללמד ליבה משותפת, ללא תלות במקור המימון. לאפשר מקצועות נוספים ומימון ציבורי לבתי ספר ממלכתיים ועצמאיים.",
         "profile": {
           "core_condition": "universal",
           "school_model": "mixed"
@@ -1491,8 +1491,8 @@
     "id": "Q16",
     "short": false,
     "domain": "services",
-    "en": "How should school choice, funding and admissions fit together?",
-    "he": "כיצד יש לשלב בחירת בית ספר, תקצוב וקבלה של תלמידים?",
+    "en": "School choice and admissions: how should funding and pupil selection work?",
+    "he": "בחירת בית ספר וקבלת תלמידים: כיצד יש לקבוע את המימון ואת כללי הקבלה?",
     "dimensions": [
       {
         "id": "funding_model",

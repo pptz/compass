@@ -274,8 +274,8 @@ Components: Import policy / Main consumer policy tool.
 | D | Broadly reduce import barriers | Targeted household support |
 | E | Selective opening with strategic protection | Targeted household support |
 
-### Q9 · What common curriculum should schools teach, and how should they be funded and governed?
-**איזו תוכנית לימודים משותפת צריכה לחול בבתי הספר, וכיצד יש לממן ולנהל אותם?**
+### Q9 · School curriculum: what common core should be compulsory, and in which schools?
+**תוכנית הלימודים: איזו ליבה משותפת צריכה להיות חובה, ובאילו בתי ספר?**
 - **A.** Fund state education streams with a common core curriculum, while allowing cultural and religious content alongside it.
 
   לממן זרמי חינוך ממלכתיים עם ליבה משותפת, לצד תכנים תרבותיים ודתיים.
@@ -288,9 +288,9 @@ Components: Import policy / Main consumer policy tool.
 - **D.** Let parents direct funding through vouchers, without a common-core condition imposed by the state.
 
   לאפשר להורים לכוון את המימון בשוברים, בלי שהמדינה תתנה אותו בליבה משותפת.
-- **E.** Require a common core curriculum in every education stream and school, regardless of funding, while allowing additional cultural and religious subjects. Fund both state and independent schools.
+- **E.** Require every school (state, private and religious) to teach a common core, regardless of funding. Allow additional subjects and public funding for both state and independent schools.
 
-  לחייב תוכנית ליבה משותפת בכל זרמי החינוך ובכל בתי הספר, ללא תלות במקור המימון, ולאפשר לצדה תכנים תרבותיים ודתיים נוספים. לממן בתי ספר ממלכתיים ועצמאיים.
+  לחייב כל בית ספר (ממלכתי, פרטי ודתי) ללמד ליבה משותפת, ללא תלות במקור המימון. לאפשר מקצועות נוספים ומימון ציבורי לבתי ספר ממלכתיים ועצמאיים.
 
 Components: Scope of the common-core requirement / School funding and governance.
 
@@ -450,8 +450,8 @@ Components: Equal legal parental status / Adoption and surrogacy policy.
 | C | Yes | Equal adoption and surrogacy criteria |
 | D | No | Reserve routes for different-sex couples |
 
-### Q16 · How should school choice, funding and admissions fit together?
-**כיצד יש לשלב בחירת בית ספר, תקצוב וקבלה של תלמידים?**
+### Q16 · School choice and admissions: how should funding and pupil selection work?
+**בחירת בית ספר וקבלת תלמידים: כיצד יש לקבוע את המימון ואת כללי הקבלה?**
 - **A.** Let funding follow the child to a parent-chosen school, with open admissions and a fair allocation rule when places run out.
 
   לתקצב באמצעות שובר לבית הספר שבחרו ההורים, עם קבלה פתוחה וכלל הקצאה הוגן כשהביקוש עולה על מספר המקומות.

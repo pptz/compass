@@ -2426,8 +2426,8 @@
       "id": "Q9",
       "short": true,
       "domain": "services",
-      "en": "What common curriculum should schools teach, and how should they be funded and governed?",
-      "he": "איזו תוכנית לימודים משותפת צריכה לחול בבתי הספר, וכיצד יש לממן ולנהל אותם?",
+      "en": "School curriculum: what common core should be compulsory, and in which schools?",
+      "he": "תוכנית הלימודים: איזו ליבה משותפת צריכה להיות חובה, ובאילו בתי ספר?",
       "dimensions": [
         {
           "id": "core_condition",
@@ -2575,18 +2575,18 @@
         },
         {
           "id": "universal_core",
-          "en": "Require a common core curriculum in every education stream and school, regardless of funding, while allowing additional cultural and religious subjects. Fund both state and independent schools.",
-          "he": "לחייב תוכנית ליבה משותפת בכל זרמי החינוך ובכל בתי הספר, ללא תלות במקור המימון, ולאפשר לצדה תכנים תרבותיים ודתיים נוספים. לממן בתי ספר ממלכתיים ועצמאיים.",
+          "en": "Require every school (state, private and religious) to teach a common core, regardless of funding. Allow additional subjects and public funding for both state and independent schools.",
+          "he": "לחייב כל בית ספר (ממלכתי, פרטי ודתי) ללמד ליבה משותפת, ללא תלות במקור המימון. לאפשר מקצועות נוספים ומימון ציבורי לבתי ספר ממלכתיים ועצמאיים.",
           "profile": {
             "core_condition": "universal",
             "school_model": "mixed"
           },
-          "ru": "Закрепить обязательное общее ядро программы во всех школах и направлениях образования независимо от источника финансирования, разрешив дополнительные культурные и религиозные предметы. Финансировать и государственные, и независимые школы."
+          "ru": "Обязать все школы преподавать общее ядро программы (core), включая государственные, частные и религиозные школы, независимо от финансирования. Разрешить дополнительные предметы и бюджетную поддержку государственных и независимых школ."
         }
       ],
       "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
       "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב.",
-      "ru": "Какое общее ядро программы нужно школам и как организовать их финансирование и управление?",
+      "ru": "Школьная программа: какое общее ядро должно быть обязательным и в каких школах?",
       "note_ru": "Выберите пакет политики, наиболее близкий к вашей позиции. Его два компонента сравниваются отдельно; выбор не означает согласия с положениями, которые здесь не указаны.",
       "help": {
         "overview": {
@@ -3848,8 +3848,8 @@
       "id": "Q16",
       "short": false,
       "domain": "services",
-      "en": "How should school choice, funding and admissions fit together?",
-      "he": "כיצד יש לשלב בחירת בית ספר, תקצוב וקבלה של תלמידים?",
+      "en": "School choice and admissions: how should funding and pupil selection work?",
+      "he": "בחירת בית ספר וקבלת תלמידים: כיצד יש לקבוע את המימון ואת כללי הקבלה?",
       "dimensions": [
         {
           "id": "funding_model",
@@ -3972,13 +3972,13 @@
       ],
       "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
       "note_he": "בחרו את חבילת המדיניות הקרובה ביותר לעמדתכם. בכל חלופה שני מרכיבים שמושווים בנפרד; הבחירה אינה מעידה על עמדות מעבר למה שנכתב.",
-      "ru": "Как сочетать выбор школы, финансирование и правила приёма?",
+      "ru": "Выбор школы и приём учеников: как организовать финансирование и отбор?",
       "note_ru": "Выберите пакет политики, наиболее близкий к вашей позиции. Его два компонента сравниваются отдельно; выбор не означает согласия с положениями, которые здесь не указаны.",
       "help": {
         "overview": {
-          "en": "A voucher directs public funding with the pupil rather than directly to a school. Choice can widen access, but admission rules, transport and extra fees affect who benefits. Funding design and selective admissions are separate policy decisions.",
-          "he": "שובר מעביר מימון ציבורי עם התלמיד במקום ישירות למוסד. בחירה עשויה להרחיב נגישות, אך כללי קבלה, תחבורה ותשלומים נוספים משפיעים על הנהנים. מודל המימון ומיון תלמידים הם החלטות נפרדות.",
-          "ru": "Ваучер направляет бюджетные средства за учеником, а не прямо школе. Выбор может расширить доступ, но приём, транспорт и доплаты влияют на получателей выгод. Финансирование и отбор — разные решения."
+          "en": "This question concerns school choice, funding and admissions. Common-core requirements are covered in the separate school-curriculum question. A voucher directs public funding with the pupil rather than directly to a school. Choice can widen access, but admission rules, transport and extra fees affect who benefits. Funding design and selective admissions are separate policy decisions.",
+          "he": "שאלה זו עוסקת בבחירת בית ספר, במימון ובקבלה. חובת לימודי ליבה נבחנת בשאלה הנפרדת על תוכנית הלימודים. שובר מעביר מימון ציבורי עם התלמיד במקום ישירות למוסד. בחירה עשויה להרחיב נגישות, אך כללי קבלה, תחבורה ותשלומים נוספים משפיעים על הנהנים. מודל המימון ומיון תלמידים הם החלטות נפרדות.",
+          "ru": "Этот вопрос касается выбора школы, финансирования и приёма. Обязательное общее ядро рассматривается в отдельном вопросе о школьной программе. Ваучер направляет бюджетные средства за учеником, а не прямо школе. Выбор может расширить доступ, но приём, транспорт и доплаты влияют на получателей выгод. Финансирование и отбор — разные решения."
         },
         "links": [
           {
