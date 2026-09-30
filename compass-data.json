@@ -685,7 +685,7 @@
       "date": null,
       "note": "2024 review reproduces Shas and UTJ’s older explanation of sex-specific political roles. Read with the 2026 lists; not a blanket description of all Haredi people or parties.",
       "language": "he",
-      "checked_at": "2026-09-29"
+      "checked_at": "2026-09-30"
     },
     "W_BEYAHAD": {
       "title": "Beyahad: programme on the status of women",
@@ -4990,13 +4990,13 @@
       "options": [
         {
           "id": "party_autonomy",
-          "en": "Retain rules barring women from candidacy in parties that follow this religious policy, such as Shas and United Torah Judaism, without representation requirements.",
-          "he": "לשמר כללים האוסרים על נשים להתמודד ברשימות מפלגות הנוהגות כך מטעמי דת, כגון ש״ס ויהדות התורה, ללא דרישות לייצוג נשים.",
+          "en": "Reserve the party’s political representation for men: bar women from its electoral list on religious grounds, as Shas and United Torah Judaism do, with no requirement for women’s representation.",
+          "he": "לייחד את הייצוג הפוליטי של המפלגה לגברים בלבד: לאסור על נשים להתמודד ברשימתה מטעמים דתיים, כפי שנוהגות ש״ס ויהדות התורה, ללא דרישה לייצוג נשים.",
           "profile": {
             "eligibility": "exclude",
             "representation": "none"
           },
-          "ru": "Сохранить религиозный запрет на выдвижение женщин в партийные списки, как в ШАС и «Яхадут ха-Тора», без требований к женскому представительству."
+          "ru": "Оставить политическое представительство партии исключительно мужчинам: запретить женщинам выдвигаться в её списке по религиозным соображениям, как в ШАС и «Яхадут ха-Тора», без требований к женскому представительству."
         },
         {
           "id": "open_selection",
@@ -5045,17 +5045,17 @@
       "note_ru": "Выберите пакет политики, наиболее близкий к вашей позиции. Его два компонента сравниваются отдельно; выбор не означает согласия с положениями, которые здесь не указаны.",
       "help": {
         "overview": {
-          "en": "Access to candidacy, placement in viable seats and the method of achieving representation are separate issues. Supporters of quotas seek to overcome structural barriers; critics defend voter choice and party autonomy. A party can include women without supporting quotas, and a numerical balance can arise without a formal parity rule.",
-          "he": "אפשרות להתמודד, שיבוץ במקומות ריאליים והדרך להשגת ייצוג הם נושאים נפרדים. תומכי מכסות מבקשים להתגבר על חסמים מבניים; מבקרים מדגישים בחירת בוחרים ואוטונומיה מפלגתית. שילוב נשים אינו מוכיח תמיכה במכסות, ושוויון מספרי עשוי להתקיים ללא כלל רשמי.",
-          "ru": "Допуск к выдвижению, проходные места и механизм представительства — разные вопросы. Сторонники квот стремятся преодолеть структурные барьеры; критики защищают свободу выбора и самостоятельность партий. Наличие женщин не доказывает поддержку квот, а численный паритет может возникнуть без формального правила."
+          "en": "Shas and United Torah Judaism reserve their electoral lists for men on religious grounds. This is a restriction on women’s eligibility, not merely an absence of quotas. Access to candidacy, placement in viable seats and the method of achieving representation are separate issues. Supporters of quotas seek to overcome structural barriers; critics defend voter choice and party autonomy. A party can include women without supporting quotas, and a numerical balance can arise without a formal parity rule.",
+          "he": "ש״ס ויהדות התורה מייחדות את רשימותיהן לגברים מטעמים דתיים. מדובר בהגבלה על עצם האפשרות של נשים להתמודד, ולא רק בהיעדר מכסות. אפשרות להתמודד, שיבוץ במקומות ריאליים והדרך להשגת ייצוג הם נושאים נפרדים. תומכי מכסות מבקשים להתגבר על חסמים מבניים; מבקרים מדגישים בחירת בוחרים ואוטונומיה מפלגתית. שילוב נשים אינו מוכיח תמיכה במכסות, ושוויון מספרי עשוי להתקיים ללא כלל רשמי.",
+          "ru": "ШАС и «Яхадут ха-Тора» оставляют свои списки исключительно мужскими по религиозным соображениям. Это ограничение самого права женщин выдвигаться, а не просто отсутствие квот. Допуск к выдвижению, проходные места и механизм представительства — разные вопросы. Сторонники квот стремятся преодолеть структурные барьеры; критики защищают свободу выбора и самостоятельность партий. Наличие женщин не доказывает поддержку квот, а численный паритет может возникнуть без формального правила."
         },
         "links": [
           {
-            "url": "https://www.idi.org.il/articles/66220",
+            "url": "https://www.idi.org.il/articles/52982",
             "title": {
-              "en": "IDI: women in the 2026 electoral lists",
-              "he": "המכון לדמוקרטיה: נשים ברשימות לבחירות 2026",
-              "ru": "IDI: женщины в избирательных списках 2026 года"
+              "en": "IDI: Haredi political representation and the exclusion of women",
+              "he": "המכון לדמוקרטיה: ייצוג פוליטי חרדי והדרת נשים",
+              "ru": "IDI: ультраортодоксальное политическое представительство и исключение женщин"
             },
             "kind": "analysis",
             "language": "he"
@@ -5203,13 +5203,13 @@
       "options": [
         {
           "id": "active_common",
-          "en": "Actively reduce pay and career gaps and support shared caregiving; provide common public services without gender separation as the rule.",
-          "he": "לפעול לצמצום פערי שכר וקידום ולתמוך בחלוקת הטיפול במשפחה; להפעיל ככלל שירותים ציבוריים משותפים ללא הפרדה מגדרית.",
+          "en": "Actively remove barriers to women’s employment, pay and public leadership, and support shared caregiving; provide common public services without gender separation as the rule.",
+          "he": "להסיר באופן פעיל חסמים בפני נשים בתעסוקה, בשכר ובהנהגה ציבורית, ולתמוך בחלוקת הטיפול במשפחה; להפעיל ככלל שירותים ציבוריים ללא הפרדה מגדרית.",
           "profile": {
             "equality_policy": "active",
             "separation": "integrated"
           },
-          "ru": "Активно сокращать разрыв в оплате и карьере, поддерживать совместную заботу о семье; бюджетные услуги по общему правилу предоставлять без гендерного разделения."
+          "ru": "Активно устранять барьеры для женщин в занятости, оплате труда и общественном руководстве, поддерживать совместную заботу о семье; бюджетные услуги по общему правилу предоставлять без гендерного разделения."
         },
         {
           "id": "formal_common",
@@ -5223,33 +5223,33 @@
         },
         {
           "id": "active_choice",
-          "en": "Actively remove economic and career barriers; also allow separate services where participation is voluntary, resources equal and a mixed alternative accessible.",
-          "he": "להסיר באופן פעיל חסמים כלכליים ותעסוקתיים; לאפשר גם שירותים נפרדים כאשר ההשתתפות מרצון, המשאבים שווים וחלופה מעורבת נגישה.",
+          "en": "Actively remove barriers to women’s employment and public leadership; allow separate services where participation is voluntary, resources equal and a mixed alternative accessible.",
+          "he": "להסיר באופן פעיל חסמים בפני נשים בתעסוקה ובהנהגה ציבורית; לאפשר שירותים נפרדים כאשר ההשתתפות מרצון, המשאבים שווים וחלופה מעורבת נגישה.",
           "profile": {
             "equality_policy": "active",
             "separation": "voluntary"
           },
-          "ru": "Активно устранять экономические и карьерные барьеры; допускать раздельные услуги при добровольном участии, равных ресурсах и доступной совместной альтернативе."
+          "ru": "Активно устранять барьеры для женщин в занятости и общественном руководстве; допускать раздельные услуги при добровольном участии, равных ресурсах и доступной совместной альтернативе."
         },
         {
           "id": "formal_choice",
-          "en": "Guarantee equal legal opportunities without special gender programmes; permit voluntary separate settings with equal resources and access to a mixed alternative.",
-          "he": "להבטיח הזדמנויות משפטיות שוות ללא תוכניות מגדריות מיוחדות; להתיר מסגרות נפרדות מרצון עם משאבים שווים וחלופה מעורבת נגישה.",
+          "en": "Guarantee women equal legal access to work, education and public leadership without special gender programmes; permit voluntary separate settings with equal resources and an accessible mixed alternative.",
+          "he": "להבטיח לנשים גישה משפטית שווה לעבודה, להשכלה ולהנהגה ציבורית ללא תוכניות מגדריות מיוחדות; להתיר מסגרות נפרדות מרצון עם משאבים שווים וחלופה מעורבת נגישה.",
           "profile": {
             "equality_policy": "formal",
             "separation": "voluntary"
           },
-          "ru": "Гарантировать равные правовые возможности без специальных гендерных программ; разрешать добровольные раздельные учреждения при равных ресурсах и доступной совместной альтернативе."
+          "ru": "Гарантировать женщинам равный правовой доступ к работе, образованию и общественному руководству без специальных гендерных программ; разрешать добровольные раздельные учреждения при равных ресурсах и доступной совместной альтернативе."
         },
         {
           "id": "community_autonomy",
-          "en": "Let religious communities preserve their own rules on women’s and men’s roles and run separate institutions with public support; limit state intervention in those arrangements.",
-          "he": "לאפשר לקהילות דתיות לשמר כללים משלהן לתפקידי נשים וגברים ולהפעיל מוסדות נפרדים בתמיכה ציבורית; לצמצם התערבות מדינה בהסדרים אלה.",
+          "en": "Allow religious communities to reserve their political leadership and public representation for men, and to maintain gender-separated institutions with public funding; limit state intervention in these rules.",
+          "he": "לאפשר לקהילות דתיות לייחד את הנהגתן הפוליטית ואת ייצוגן הציבורי לגברים בלבד, ולקיים מוסדות בהפרדה מגדרית במימון ציבורי; לצמצם את התערבות המדינה בכללים אלה.",
           "profile": {
             "equality_policy": "community",
             "separation": "community"
           },
-          "ru": "Позволить религиозным общинам сохранять свои правила о ролях женщин и мужчин и содержать раздельные учреждения при бюджетной поддержке; ограничить вмешательство государства в эти порядки."
+          "ru": "Позволить религиозным общинам сохранять политическое руководство и общественное представительство исключительно за мужчинами, а также содержать раздельные учреждения за бюджетный счёт; ограничить вмешательство государства в эти правила."
         }
       ],
       "note": "Choose the policy package closest to your view. Each package has two separately scored components; choosing a package does not establish views beyond its wording.",
@@ -5258,19 +5258,19 @@
       "note_ru": "Выберите пакет политики, наиболее близкий к вашей позиции. Его два компонента сравниваются отдельно; выбор не означает согласия с положениями, которые здесь не указаны.",
       "help": {
         "overview": {
-          "en": "Equality involves access to education, earnings, promotion, leadership and the division of care work. Formal rights, active removal of barriers and community autonomy offer different approaches. Separate provision can facilitate participation for some people and restrict choices for others. The question concerns publicly funded civil settings, not private worship or a judgment about all religious or secular people.",
-          "he": "שוויון כולל נגישות להשכלה, שכר, קידום, הנהגה וחלוקת עבודת הטיפול. זכויות פורמליות, הסרת חסמים פעילה ואוטונומיה קהילתית מציעות גישות שונות. מסגרות נפרדות עשויות לאפשר השתתפות לחלק ולצמצם בחירה לאחרות. השאלה עוסקת במסגרות אזרחיות במימון ציבורי, לא בפולחן פרטי או בשיפוט של כלל הדתיים והחילונים.",
-          "ru": "Равноправие касается образования, доходов, продвижения, руководящих ролей и распределения заботы о семье. Формальные права, активное устранение барьеров и самостоятельность общин предлагают разные подходы. Раздельные учреждения могут облегчать участие одним и ограничивать выбор других. Речь о гражданских учреждениях с бюджетным финансированием, а не о частной религиозной практике или оценке всех религиозных и светских людей."
+          "en": "Should women have equal access to public leadership, or may a community reserve political leadership and public representation for men? Traditional Haredi parties defend male-only political representation on religious grounds; Haredi women have also challenged this exclusion. This does not describe every Orthodox community or every managerial role. The answers also distinguish active equality policies from equal legal rights alone, and voluntary separate services from community rules. These are separate choices: support for gender separation alone does not establish support for excluding women from leadership.",
+          "he": "האם לנשים צריכה להיות גישה שווה להנהגה ציבורית, או שקהילה רשאית לייחד הנהגה פוליטית וייצוג ציבורי לגברים? המפלגות החרדיות המסורתיות מצדיקות ייצוג פוליטי גברי בלבד מטעמים דתיים; גם נשים חרדיות פעלו נגד הדרה זו. אין בכך תיאור של כל קהילה דתית או של כל תפקיד ניהולי. התשובות מבחינות גם בין קידום פעיל של שוויון לבין זכויות משפטיות שוות בלבד, ובין שירותים נפרדים מרצון לבין כללי הקהילה. אלו בחירות נפרדות: תמיכה בהפרדה מגדרית לבדה אינה מוכיחה תמיכה בהדרת נשים מהנהגה.",
+          "ru": "Должны ли женщины иметь равный доступ к общественному руководству, или община вправе оставить политическое руководство и общественное представительство исключительно мужчинам? Традиционные ультраортодоксальные партии обосновывают мужское политическое представительство религиозными соображениями; против этого исключения выступали и сами ультраортодоксальные женщины. Это не описание всех религиозных общин или всех управленческих должностей. Ответы также различают активные меры равноправия и только равные юридические права, добровольные раздельные услуги и общинные правила. Это отдельные вопросы: поддержка гендерного разделения сама по себе не означает поддержку исключения женщин из руководства."
         },
         "links": [
           {
-            "url": "https://main.knesset.gov.il/news/pressreleases/pages/press06072026b.aspx",
+            "url": "https://www.idi.org.il/articles/52982",
             "title": {
-              "en": "Knesset: debate over separate academic tracks",
-              "he": "הכנסת: דיון במסלולים אקדמיים נפרדים",
-              "ru": "Кнессет: обсуждение раздельных академических программ"
+              "en": "IDI: Haredi political representation and the exclusion of women",
+              "he": "המכון לדמוקרטיה: ייצוג פוליטי חרדי והדרת נשים",
+              "ru": "IDI: ультраортодоксальное политическое представительство и исключение женщин"
             },
-            "kind": "parliament",
+            "kind": "analysis",
             "language": "he"
           },
           {
@@ -5289,19 +5289,19 @@
             "When is a choice genuinely voluntary if family or community pressure is strong?",
             "How can separate settings guarantee equal resources, opportunities and access for women staff?",
             "Which barriers need targeted action rather than equal legal rules alone?",
-            "Who should decide when community autonomy conflicts with an individual woman’s choice?"
+            "May a community reserve its political leadership and public representation for men if women within it want to stand for those roles?"
           ],
           "he": [
             "מתי בחירה היא חופשית באמת תחת לחץ משפחתי או קהילתי?",
             "כיצד מסגרות נפרדות יבטיחו משאבים והזדמנויות שווים וגישה לנשות צוות?",
             "אילו חסמים דורשים פעולה ייעודית מעבר לכללים משפטיים שווים?",
-            "מי יכריע בהתנגשות בין אוטונומיה קהילתית לבחירה של אישה יחידה?"
+            "האם קהילה רשאית לייחד את הנהגתה הפוליטית ואת ייצוגה הציבורי לגברים, כאשר נשים מתוכה מבקשות להתמודד על תפקידים אלה?"
           ],
           "ru": [
             "Когда выбор действительно доброволен при сильном давлении семьи или общины?",
             "Как в раздельных учреждениях обеспечить равные ресурсы, возможности и доступ для сотрудниц?",
             "Какие барьеры требуют специальных мер помимо равных правовых условий?",
-            "Кто должен решать конфликт между самостоятельностью общины и выбором конкретной женщины?"
+            "Вправе ли община оставлять политическое руководство и общественное представительство исключительно мужчинам, если женщины внутри неё хотят претендовать на эти роли?"
           ]
         }
       }

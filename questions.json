@@ -2041,8 +2041,8 @@
     "options": [
       {
         "id": "party_autonomy",
-        "en": "Retain rules barring women from candidacy in parties that follow this religious policy, such as Shas and United Torah Judaism, without representation requirements.",
-        "he": "לשמר כללים האוסרים על נשים להתמודד ברשימות מפלגות הנוהגות כך מטעמי דת, כגון ש״ס ויהדות התורה, ללא דרישות לייצוג נשים.",
+        "en": "Reserve the party’s political representation for men: bar women from its electoral list on religious grounds, as Shas and United Torah Judaism do, with no requirement for women’s representation.",
+        "he": "לייחד את הייצוג הפוליטי של המפלגה לגברים בלבד: לאסור על נשים להתמודד ברשימתה מטעמים דתיים, כפי שנוהגות ש״ס ויהדות התורה, ללא דרישה לייצוג נשים.",
         "profile": {
           "eligibility": "exclude",
           "representation": "none"
@@ -2145,8 +2145,8 @@
     "options": [
       {
         "id": "active_common",
-        "en": "Actively reduce pay and career gaps and support shared caregiving; provide common public services without gender separation as the rule.",
-        "he": "לפעול לצמצום פערי שכר וקידום ולתמוך בחלוקת הטיפול במשפחה; להפעיל ככלל שירותים ציבוריים משותפים ללא הפרדה מגדרית.",
+        "en": "Actively remove barriers to women’s employment, pay and public leadership, and support shared caregiving; provide common public services without gender separation as the rule.",
+        "he": "להסיר באופן פעיל חסמים בפני נשים בתעסוקה, בשכר ובהנהגה ציבורית, ולתמוך בחלוקת הטיפול במשפחה; להפעיל ככלל שירותים ציבוריים ללא הפרדה מגדרית.",
         "profile": {
           "equality_policy": "active",
           "separation": "integrated"
@@ -2163,8 +2163,8 @@
       },
       {
         "id": "active_choice",
-        "en": "Actively remove economic and career barriers; also allow separate services where participation is voluntary, resources equal and a mixed alternative accessible.",
-        "he": "להסיר באופן פעיל חסמים כלכליים ותעסוקתיים; לאפשר גם שירותים נפרדים כאשר ההשתתפות מרצון, המשאבים שווים וחלופה מעורבת נגישה.",
+        "en": "Actively remove barriers to women’s employment and public leadership; allow separate services where participation is voluntary, resources equal and a mixed alternative accessible.",
+        "he": "להסיר באופן פעיל חסמים בפני נשים בתעסוקה ובהנהגה ציבורית; לאפשר שירותים נפרדים כאשר ההשתתפות מרצון, המשאבים שווים וחלופה מעורבת נגישה.",
         "profile": {
           "equality_policy": "active",
           "separation": "voluntary"
@@ -2172,8 +2172,8 @@
       },
       {
         "id": "formal_choice",
-        "en": "Guarantee equal legal opportunities without special gender programmes; permit voluntary separate settings with equal resources and access to a mixed alternative.",
-        "he": "להבטיח הזדמנויות משפטיות שוות ללא תוכניות מגדריות מיוחדות; להתיר מסגרות נפרדות מרצון עם משאבים שווים וחלופה מעורבת נגישה.",
+        "en": "Guarantee women equal legal access to work, education and public leadership without special gender programmes; permit voluntary separate settings with equal resources and an accessible mixed alternative.",
+        "he": "להבטיח לנשים גישה משפטית שווה לעבודה, להשכלה ולהנהגה ציבורית ללא תוכניות מגדריות מיוחדות; להתיר מסגרות נפרדות מרצון עם משאבים שווים וחלופה מעורבת נגישה.",
         "profile": {
           "equality_policy": "formal",
           "separation": "voluntary"
@@ -2181,8 +2181,8 @@
       },
       {
         "id": "community_autonomy",
-        "en": "Let religious communities preserve their own rules on women’s and men’s roles and run separate institutions with public support; limit state intervention in those arrangements.",
-        "he": "לאפשר לקהילות דתיות לשמר כללים משלהן לתפקידי נשים וגברים ולהפעיל מוסדות נפרדים בתמיכה ציבורית; לצמצם התערבות מדינה בהסדרים אלה.",
+        "en": "Allow religious communities to reserve their political leadership and public representation for men, and to maintain gender-separated institutions with public funding; limit state intervention in these rules.",
+        "he": "לאפשר לקהילות דתיות לייחד את הנהגתן הפוליטית ואת ייצוגן הציבורי לגברים בלבד, ולקיים מוסדות בהפרדה מגדרית במימון ציבורי; לצמצם את התערבות המדינה בכללים אלה.",
         "profile": {
           "equality_policy": "community",
           "separation": "community"

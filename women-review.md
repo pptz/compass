@@ -80,5 +80,6 @@ The short quiz remains ten questions: one from each of six categories, then one 
 - Broad permission for separation does not establish consent safeguards, compulsory separation, or every detail in a respondent’s answer. Historical coalition commitments remain historical; continuity inferences are visible and discounted.
 - No values are assigned from a party’s religious or secular identity alone. Several parties and components remain unknown. Short runs include one or two questions from this category, never a hidden category multiplier.
 - Arabic sources were reviewed for Hadash and Balad. Joint-list totals are not transferred to Ta’al, Balad or Hadash. Old Balad programme text remains historical with separately discounted continuity estimates.
+- Q22’s community-autonomy answer explicitly includes male-only political leadership and public representation within the community. This does not assert a ban on every managerial role. Evidence about separate services scores only the separation component; it does not establish support for this leadership restriction or fill an unknown equality_policy component.
 
 Sources and multilingual rationales: [women-evidence.json](women-evidence.json). Unknown components still earn zero points and remain in the denominator. Historical evidence and inferences retain separate switches.

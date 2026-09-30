@@ -584,9 +584,9 @@ Components: Binding emissions targets / Main policy instrument.
 
 ### Q21 · How should parties include women in their electoral lists?
 **כיצד צריכות מפלגות לשלב נשים ברשימותיהן לכנסת?**
-- **A.** Retain rules barring women from candidacy in parties that follow this religious policy, such as Shas and United Torah Judaism, without representation requirements.
+- **A.** Reserve the party’s political representation for men: bar women from its electoral list on religious grounds, as Shas and United Torah Judaism do, with no requirement for women’s representation.
 
-  לשמר כללים האוסרים על נשים להתמודד ברשימות מפלגות הנוהגות כך מטעמי דת, כגון ש״ס ויהדות התורה, ללא דרישות לייצוג נשים.
+  לייחד את הייצוג הפוליטי של המפלגה לגברים בלבד: לאסור על נשים להתמודד ברשימתה מטעמים דתיים, כפי שנוהגות ש״ס ויהדות התורה, ללא דרישה לייצוג נשים.
 - **B.** Open candidacy to women and men; choose candidates without gender quotas or special incentives.
 
   לפתוח התמודדות לנשים ולגברים ולבחור מועמדים ללא מכסות מגדריות או תמריצים מיוחדים.
@@ -612,21 +612,21 @@ Components: Access to candidacy / Mechanism for representation.
 
 ### Q22 · How should the state promote women’s equality in work, education and public life while addressing community traditions?
 **כיצד על המדינה לקדם שוויון לנשים בתעסוקה, בהשכלה ובחיים הציבוריים, תוך התייחסות למסורות קהילתיות?**
-- **A.** Actively reduce pay and career gaps and support shared caregiving; provide common public services without gender separation as the rule.
+- **A.** Actively remove barriers to women’s employment, pay and public leadership, and support shared caregiving; provide common public services without gender separation as the rule.
 
-  לפעול לצמצום פערי שכר וקידום ולתמוך בחלוקת הטיפול במשפחה; להפעיל ככלל שירותים ציבוריים משותפים ללא הפרדה מגדרית.
+  להסיר באופן פעיל חסמים בפני נשים בתעסוקה, בשכר ובהנהגה ציבורית, ולתמוך בחלוקת הטיפול במשפחה; להפעיל ככלל שירותים ציבוריים ללא הפרדה מגדרית.
 - **B.** Enforce equal legal access to jobs, education and leadership without gender-specific programmes; keep public services common to women and men.
 
   לאכוף גישה משפטית שווה לעבודה, להשכלה ולהנהגה ללא תוכניות מגדריות ייעודיות; לקיים שירותים ציבוריים משותפים לנשים ולגברים.
-- **C.** Actively remove economic and career barriers; also allow separate services where participation is voluntary, resources equal and a mixed alternative accessible.
+- **C.** Actively remove barriers to women’s employment and public leadership; allow separate services where participation is voluntary, resources equal and a mixed alternative accessible.
 
-  להסיר באופן פעיל חסמים כלכליים ותעסוקתיים; לאפשר גם שירותים נפרדים כאשר ההשתתפות מרצון, המשאבים שווים וחלופה מעורבת נגישה.
-- **D.** Guarantee equal legal opportunities without special gender programmes; permit voluntary separate settings with equal resources and access to a mixed alternative.
+  להסיר באופן פעיל חסמים בפני נשים בתעסוקה ובהנהגה ציבורית; לאפשר שירותים נפרדים כאשר ההשתתפות מרצון, המשאבים שווים וחלופה מעורבת נגישה.
+- **D.** Guarantee women equal legal access to work, education and public leadership without special gender programmes; permit voluntary separate settings with equal resources and an accessible mixed alternative.
 
-  להבטיח הזדמנויות משפטיות שוות ללא תוכניות מגדריות מיוחדות; להתיר מסגרות נפרדות מרצון עם משאבים שווים וחלופה מעורבת נגישה.
-- **E.** Let religious communities preserve their own rules on women’s and men’s roles and run separate institutions with public support; limit state intervention in those arrangements.
+  להבטיח לנשים גישה משפטית שווה לעבודה, להשכלה ולהנהגה ציבורית ללא תוכניות מגדריות מיוחדות; להתיר מסגרות נפרדות מרצון עם משאבים שווים וחלופה מעורבת נגישה.
+- **E.** Allow religious communities to reserve their political leadership and public representation for men, and to maintain gender-separated institutions with public funding; limit state intervention in these rules.
 
-  לאפשר לקהילות דתיות לשמר כללים משלהן לתפקידי נשים וגברים ולהפעיל מוסדות נפרדים בתמיכה ציבורית; לצמצם התערבות מדינה בהסדרים אלה.
+  לאפשר לקהילות דתיות לייחד את הנהגתן הפוליטית ואת ייצוגן הציבורי לגברים בלבד, ולקיים מוסדות בהפרדה מגדרית במימון ציבורי; לצמצם את התערבות המדינה בכללים אלה.
 
 Components: State approach to equality / Gender separation in publicly funded settings.
 

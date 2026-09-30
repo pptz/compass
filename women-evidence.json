@@ -23,7 +23,7 @@
       "date": null,
       "note": "2024 review reproduces Shas and UTJ’s older explanation of sex-specific political roles. Read with the 2026 lists; not a blanket description of all Haredi people or parties.",
       "language": "he",
-      "checked_at": "2026-09-29"
+      "checked_at": "2026-09-30"
     },
     "W_BEYAHAD": {
       "title": "Beyahad: programme on the status of women",
@@ -633,6 +633,7 @@
     "Q22 separates active or formal equality policies from gender-separated provision. Support for separate provision does not mean opposition to women working, studying or holding every leadership role.",
     "Broad permission for separation does not establish consent safeguards, compulsory separation, or every detail in a respondent’s answer. Historical coalition commitments remain historical; continuity inferences are visible and discounted.",
     "No values are assigned from a party’s religious or secular identity alone. Several parties and components remain unknown. Short runs include one or two questions from this category, never a hidden category multiplier.",
-    "Arabic sources were reviewed for Hadash and Balad. Joint-list totals are not transferred to Ta’al, Balad or Hadash. Old Balad programme text remains historical with separately discounted continuity estimates."
+    "Arabic sources were reviewed for Hadash and Balad. Joint-list totals are not transferred to Ta’al, Balad or Hadash. Old Balad programme text remains historical with separately discounted continuity estimates.",
+    "Q22’s community-autonomy answer explicitly includes male-only political leadership and public representation within the community. This does not assert a ban on every managerial role. Evidence about separate services scores only the separation component; it does not establish support for this leadership restriction or fill an unknown equality_policy component."
   ]
 }
